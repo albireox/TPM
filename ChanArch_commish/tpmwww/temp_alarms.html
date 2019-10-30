@@ -1,0 +1,216 @@
+<html>
+<head>
+  <title>Telescope Performance Monitor Alarm Management</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#0000FF" alink="#800080">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">      
+
+<center><h1>Temperature Alarms</h1></center>
+
+<center>Peregrine M. McGehee - 31 July 2002</center>
+
+<blockquote>
+<h3>Temperature Sensors</h3>
+
+<a href="m1.html">
+<b>Module 0 - labeled "M1" in the TPM</b></a><br>
+<a href="m2.html">
+<b>Module 1 - labeled "M2" in the TPM</b></a><br>
+<a href="truss.html">
+<b>Module 2 - labeled "Telescope" in the TPM</b></a><br>
+<p>
+<h3>
+Alarm Requirements</h3>
+JEG: sdss-controls/333: The criteria for temperatures will have to be honed
+as we learn what
+<br>is important and what not, but some basic things are:
+<p>a. Alarm if the average of the front-face mirror sensors differ from
+the average of the back-face sensors by more than Mir_FB, where Mir_FB
+is something like 0.2C, separately for each mirror and each (90 degree
+?) sector. The sectors are up-down-left-right, and should perhaps be the
+upper HALF , the lower HALF, the right HALF, and the left HALF.
+<p>b. Alarm if any two sensors on a given mirror are different by more
+than Mir_Del, where Mir_Del is about 2C.
+<p>c. Alarm if any linear gradient Gx = (Sum(Tfb*x)/Sum(x^2))*D, Gy = (Sum(Tfb*y)/Sum(y^2))*D,
+Gt = sqrt( Gx^2 + Gy^2), where D is the mirror diameter and Tfb is the
+average of the front and back face sensors at a given location) is greater
+than Mir_Grad, where Mir_grad is about 1C.
+<p>d. Alarm if the radial gradient, defined as the mean of the peripheral
+sensors minus the mean of the central sensors, is greater than Mir_Rgrad,
+where Mir_Rgrad is about 1C.
+<p>e. Alarm if the mean of the primary sensors differs from the mean of
+the PSS sensors by more than Mir_denv, where Mir_denv is about 2C
+<p>f. Alarm if the mean of the primary sensors differs from the mean of
+the near-telescope air sensors by more than Tel_air, where Tel_air is about
+2C
+<p>g. Alarm if the mean of the floor sensors differs from the mean of the
+near-telescope air sensors by more than Floor_air, where floor_air is about
+2C.
+<p>h. Alarm if the return coolant temperature is different from the mean
+of the near-telescope air sensors by more than Inst_air, where Inst_air
+is about 3C (it is running at about 10C now)
+<p>i. Alarm if the mean of the lower enclosure air sensors differs from
+the mean of the near-telescope air sensors by more than Lower_air, where
+Lower_air is about 3C (it runs now at about 8C).
+<h3>
+Temperature Sensor Quantities</h3>
+<p>
+A word on notation: The sensors that make up each category are
+listed by module, block, and channel numbers as M-B-{C,..C}. Channel
+numbers prefixed by 'S' indicate sensors that are split across
+zone boundaries and are weighted by 0.5 when contributing to the
+mean.
+<p> 
+Positions are given in terms of angles measured clockwise from the
+top of the temperature sensor maps. For example, the Upper half 
+includes sensors between the angles of 270 and 90 degrees in the
+clockwise direction.
+<p>
+Each list of sensors is followed by the record type and name of 
+the associated TPM EPICS database record. For example, the mean
+of the M1 Front Upper sensors is a calc (calculation block) record
+named tpm_TM_M1FrontUpperAvg.
+<p>
+<b>average of the front-face mirror sensors - separately for each mirror
+and each (90 degree ?) sector. The sectors are up-down-left-right, and should
+perhaps be the upper HALF, the lower HALF, the right HALF, and the left
+HALF.</b>
+<p>
+M1 Front:
+<ul>
+<li>Upper (270-90): 0-0-{0,2,4,6}, 0-1-{S0}, 0-3-{S0,2,4,6}
+(calc:tpm_TM_M1FrontUpperAvg)</li>
+<li>Lower (90-270): 0-1-{S0,2,4,6}, 0-2-{0,2,4,6}, 0-3-{S0}
+(calc:tpm_TM_M1FrontLowerAvg)</li>
+<li>Right (0-180): 0-0-{S0,2,4,6}, 0-1-{0,2,4,6}, 0-2-{S0}
+(calc:tpm_TM_M1FrontRightAvg)</li>
+<li>Left (180-360): 0-0-{S0}, 0-2-{S0,2,4,6}, 0-3-{0,2,4,6}
+(calc:tpm_TM_M1FrontLeftAvg)</li>
+<li>ALL (calc:tpm_TM_M1FrontAvg)</li>
+</ul>
+M2 Front:
+<ul>
+<li>Upper (270-90): 1-0-{0,2}, 1-1-{S4,6}, 1-2-{S5,7} (calc:tpm_TM_M2FrontUpperAvg)</li>
+<li>Lower (90-270): 1-1-{0,2,S4}, 1-2-{1,3,S5} (calc:tpm_TM_M2FrontLowerAvg)</li>
+<li>Right (0-180): 1-0-{S0,S2}, 1-1-{S0}, 1-2-{S1,3,5,7}
+(calc:tpm_TM_M2FrontRightAvg)</li>
+<li>Left (180-360): 1-0-{S0,S2} 1-1-{S0,2,4,6}, 1-2-{S1}
+(calc:tpm_TM_M2FrontLeftAvg)</li>
+<li>ALL (calc:tpm_TM_M2FrontAvg)</li>
+</ul>
+<p><b>average of the back-face sensors - separately for each mirror and
+each (90 degree ?) sector. The sectors are up-down-left-right, and should
+perhaps be the upper HALF, the lower HALF, the right HALF, and the left
+HALF.</b>
+<p>M1 Back:
+<ul>
+<li>Upper (270-90): 0-0-{1,3,5,7}, 0-1-{S1}, 0-3-{S1,3,5,7}
+(calc:tpm_TM_M1BackUpperAvg)</li>
+<li>Lower (90-270): 0-1-{S1,3,5,7}, 0-2-{1,3,5,7}, 0-3-{S1}
+(calc:tpm_TM_M1BackLowerAvg)</li>
+<li>Right (0-180): 0-0-{S1,3,5,7}, 0-1-{1,3,5,7}, 0-2-{S1}
+(calc:tpm_TM_M1BackRightAvg)</li>
+<li>Left (180-360): 0-0-{S1}, 0-2-{S1,3,5,7}, 0-3-{1,3,5,7}
+(calc:tpm_TM_M1BackLeftAvg)</li>
+<li>ALL (calc:tpm_TM_M1BackAvg)</li>
+</ul>
+<p>
+M2 Back:
+<ul>
+<li>Upper (270-90): 1-0-{1,3}, 1-1-{S5,7}, 1-2-{S4,6} (calc:tpm_TM_M2BackUpperAvg)</li>
+<li>Lower (90-270): 1-1-{1,3,S5}, 1-2-{0,2,S4} (calc:tpm_TM_M2BackLowerAvg)</li>
+<li>Right (0-180): 1-0-{S1,S3}, 1-1-{S1}, 1-2-{S0,2,4,6}
+(calc:tpm_TM_M2BackRightAvg)</li>
+<li>Left (180-360): 1-0-{S1,S3} 1-1-{S1,3,5,7}, 1-2-{S0}
+(calc:tpm_TM_M2BackLeftAvg)</li>
+<li>ALL (calc:tpm_TM_M2BackAvg)</li>
+</ul>
+<p><b>any two sensors on a given mirror</b>
+<p>M1: M1 Front, M1 Back
+<p>M2: M2 Front, M2 Back
+
+<p><b>any linear gradient Gx = (Sum(Tfb*x)/Sum(x^2))*D, Gy = (Sum(Tfb*y)/Sum(y^2))*D,
+Gt = sqrt( Gx^2 + Gy^2), where D is the mirror diameter and Tfb is the
+average of the front and back face sensors at a given location)</b>
+<p>TBD.
+
+<p><b>any radial gradient, defined as the mean of the peripheral sensors
+minus the mean of the central sensors</b>
+<p>M1 Edge: 
+<ul>
+<li>0-0-{0,1,2,3,4,5}, 0-1-{0,1,2,3,4,5} (calc:tpm_TM_M1EdgeB01Sum)</li>
+<li>0-2-{0,1,2,3,4,5}, 0-3-{0,1,2,3,4,5} (calc:tpm_TM_M1EdgeB23Sum)</li>
+<li>(calc:tpm_TM_M1EdgeAvg)</li>
+</ul>
+<p>
+M1 Center: 0-0-{6,7}, 0-1-{6,7}, 0-2-{6,7}, 0-3-{6,7} (calc:tpm_TM_M1CenterAvg)
+<p>
+M2 Edge: 1-0-{0,1}, 1-1-{2,3,6,7}, 1-2-{0,1,2,3,6,7} (calc:tpm_TM_M2EdgeAvg)
+<p>
+M2 Center: 1-0-{2,3}, 1-1-{0,1,4,5}, 1-2-{4,5} (calc:tpm_TM_M2CenterAvg)
+<p>
+<b>mean of the primary sensors</b>
+<p>M1 (calc:tpm_TM_M1Avg)
+<p>M2 (calc:tpm_TM_M2Avg)
+
+<p><b>mean of the PSS sensors</b>
+<p>PMSS: 
+<ul>
+<li>0-4-{0,1,2,3,4,5,6,7} (calc:tpm_TM_PMSSB4Sum)</li>
+<li>0-5-{0,1,2,3,4,5} (calc:tpm_TM_PMSSB5Sum)</li>
+<li>(calc:tpm_TM_PMSSAvg)</li>
+</ul>
+
+<p><b>mean of the near-telescope air sensors</b>
+<p>TELAIR: 2-2-{0,2,4,6} (calc:tpm_TM_TelairAvg)
+
+<p><b>mean of the floor sensors</b>
+<p>FLOOR: 2-0-{5,6,7}, 2-1-{0} (calc:tpm_TM_FloorAvg)
+
+<p><b>return coolant temperature</b>
+<p>RETURN: 2-1-{2} (genSub:tpm_TM_M2B1Chans.VALC)
+
+<p><b>lower enclosure air sensors</b>
+<p>LOWAIR: 2-0-{0,1,2,3} (calc:tpm_TM_LowairAvg)
+<p>
+<h3>
+Alarm Thresholds</h3>
+<b>Mir_FB is something like 0.2C</b>
+<br><b></b> |mean(M1_Front) - mean(M1_Back)| > Mir_FB
+(calc:tpm_TM_M1_FB)
+<br> |mean(M2_Front) - mean(M2_Back)| > Mir_FB (calc:tpm_TM_M2_FB)
+
+<p><b>Mir_Del is about 2C</b>
+<br><b></b> max(M1) - min(M1) > Mir_Del
+<br> max(M2) - min(M2) > Mir_Del
+
+<p><b>Mir_Grad is about 1C</b>
+<br><b> </b>TBD
+
+<p><b>Mir_Rgrad is about 1C</b>
+<br><b></b> |mean(M1_Edge) - mean(M1_Center)| > Mir_Rgrad
+(calc:tpm_TM_M1_Rgrad)
+<br> |mean(M2_Edge) - mean(M2_Center)| > Mir_Rgrad (calc:tpm_TM_M2_Rgrad)A
+
+<p><b>Mir_Denv is about 2C</b>
+<br><b></b> |mean(M1) - mean(PMSS)| > Mir_Denv (calc:tpm_TM_M1_Denv)
+
+<p><b>Tel_Air is about 2C</b>
+<br><b></b> |mean(M1) - mean(TELAIR)| > Tel_Air (calc:tpm_TM_M1_Telair)
+<br><b></b> |mean(M2) - mean(TELAIR)| > Tel_Air (calc:tpm_TM_M2_Telair)
+
+<p><b>Floor_Air is about 2C</b>
+<br><b></b> |mean(FLOOR) - mean(TELAIR)| > Floor_Air
+(calc:tpm_TM_Floor_Telair)
+
+<p><b>Inst_Air is about 3C</b>
+<br><b></b> |mean(RETURN) - mean(TELAIR)| > Inst_Air
+(calc:tpm_TM_Return_Telair)
+
+<p><b>Lower_Air is about 3C</b>
+<br> |mean(LOWER) - mean(TELAIR)| > Lower_Air (calc:tpm_TM_Lower_Telair)
+</font>
+</blockquote>
+</body>
+</html>
+

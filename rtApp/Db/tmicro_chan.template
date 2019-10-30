@@ -1,0 +1,64 @@
+record(ai,"tpm_TM_M$(M)B$(B)C0") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N0) GETTEMP><%$(K01)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C1") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N1) GETTEMP><%$(K01)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C2") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N2) GETTEMP><%$(K23)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C3") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N3) GETTEMP><%$(K23)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C4") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N4) GETTEMP><%$(K45)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C5") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N5) GETTEMP><%$(K45)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C6") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N6) GETTEMP><%$(K67)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(ai,"tpm_TM_M$(M)B$(B)C7") {
+	field(SCAN,"10 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <$(N7) GETTEMP><%$(K67)k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}

@@ -1,0 +1,2 @@
+10 11 * * *  /local/ups/prd/tpm/production/ChanArch/bin/startTpmLog restart
+0,15,30,45 * * * *  /local/ups/prd/tpm/production/ChanArch/bin/startTpmLog start

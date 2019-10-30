@@ -1,0 +1,50 @@
+file absub.template {
+    pattern{FILE,NELM,INDX}
+    {I1,32,0}
+    {O1,32,32}
+    {I2,32,64}
+    {O2,32,96}
+    {I3,8,128}
+    {I4,8,136}
+    {I5,8,144}
+    {I6,2,152}
+    {I7,2,154}
+    {I8,2,156}
+    {I9,2,158}
+    {I10,2,160}
+    {O11,2,162}
+    {O12,2,164}
+    {B3,20,166}
+    {B10,4,186}
+}
+file abval32.template {
+    pattern{FILE}
+    {I1}
+    {O1}
+    {I2}
+    {O2}
+}
+file abval20.template {
+    pattern{FILE}
+    {B3}
+}
+file abval8.template {
+    pattern{FILE}
+    {I3}
+    {I4}
+    {I5}
+}
+file abval4.template {
+    pattern{FILE}
+    {B10}
+}
+file abval2.template {
+    pattern{FILE}
+    {I6}
+    {I7}
+    {I8}
+    {I9}
+    {I10}
+    {O11}
+    {O12}
+}

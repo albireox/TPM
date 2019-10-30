@@ -1,0 +1,840 @@
+<!-- Generated on Tue 05 May 1998, 15:27 using docbook-html.ts -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML><TITLE>TPM Instrumentation</TITLE>
+  <BODY BGCOLOR="#c0c0c0" TEXT="#000000">
+	<H1><FONT COLOR="#660000">TPM Instrumentation</FONT></H1>
+	<p><A HREF="mailto:neswold@fnal.gov">Rich Neswold</a></p>
+
+	<p>P.O. Box 500<br>
+	   Mail Stop 347<br>
+	   Batavia, IL 60510<br>
+	   +1 630 840-3454</p>
+	<p>$Date: 2000/01/27 21:18:18 $</P>
+	<H1><FONT COLOR="#660000">Contents</FONT></H1>
+	<OL>
+
+	  <LI><EM><A HREF="#ch-1">Introduction</A></EM></LI>
+	  <LI><EM><A HREF="#ch-2">Instrumentation Tables</A></EM></LI>
+
+	</OL>
+	<!-- Start CHAPTER 1 (): Introduction -->
+	<H1><A NAME="ch-1"></A><FONT COLOR="#660000">1.&nbsp;&nbsp;
+		Introduction</FONT></H1>
+
+	<P>The telescope performance monitor (TPM) monitors many telescope
+	parameters during a night's observation. These parameters are
+	dumped into a log file on APO's Unix box. To make it easier for
+	operators to refer to specific parameters, names have been
+	designated for each data point. This document describes the
+	name-to-parameter mapping.</P>
+
+	<!-- End CHAPTER -->
+	<!-- Start CHAPTER 2 (): Instrumentation Tables -->
+	<H1><A NAME="ch-2"></A><FONT COLOR="#660000">2.&nbsp;&nbsp;
+		Instrumentation Tables</FONT></H1>
+	<DL>
+	  <DD>2.1.&nbsp;&nbsp;<EM><A HREF="#s1-2-1">Altitude-Related Instrumentation</A></EM></DD>
+	  <DD>2.2.&nbsp;&nbsp;<EM><A HREF="#s1-2-2">Azimuth-Related Instrumentation</A></EM></DD>
+	  <DD>2.3.&nbsp;&nbsp;<EM><A HREF="#s1-2-3">Rotator-Related Instrumentation</A></EM></DD>
+	  <DD>2.4.&nbsp;&nbsp;<EM><A HREF="#s1-2-4">Environmental Instrumentation</A></EM></DD>
+	  <DD>2.5.&nbsp;&nbsp;<EM><A HREF="#s1-2-5">Mirror Instrumentation</A></EM></DD>
+	  <DD>2.6.&nbsp;&nbsp;<EM><A HREF="#s1-2-6">Miscellaneous Instrumentation</A></EM></DD>
+	  
+	</DL>
+
+	<P>These tables are a work-in-progress. As new instrumentation
+	gets added (or removed), these tables will be updated
+	appropriately.</P>
+
+	<p>The tables use a color coding to reflect the state of
+	  support. The colors are defined to be:</p>
+
+	<p>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+		<TR valign="top">
+		  <TH>Color</TH>
+		  <TH Align=LEFT>Description</TH>
+		</TR>
+		<TR valign="top">
+		  <TD BGCOLOR="#b0d0b0">&nbsp;</TD>
+		  <TD>Has TPM support and is enabled by default.</TD>
+		</TR>
+		<TR valign="top">
+		  <TD BGCOLOR="#d0d0b0">&nbsp;</TD>
+		  <TD>Has TPM support but isn't enabled by default.</TD>
+		</TR>
+		<TR valign="top">
+		  <TD BGCOLOR="#d0b0b0">&nbsp;</TD>
+		  <TD>No TPM support yet.</TD>
+		</TR>
+	  </TABLE>
+
+	<H3><A NAME="s1-2-1"></A><FONT COLOR="#660000">2.1.&nbsp;&nbsp;
+		Altitude-Related Instrumentation</FONT></H3>
+	<P><A NAME="ALTITUDE"></A><STRONG>Table 1:</STRONG>
+	  Altitude-Related Instrumentation</P>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+	  <TR BGCOLOR="#d0d0d0" valign="top">
+		<TH>Name</TH>
+		<TH>Description</TH>
+		<TH>Device<br>Type</TH>
+		<TH>Input<br>Type</TH>
+		<TH>Sample<br>Rate (Hz)</TH>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALCPOS</TD>
+		<TD>Altitude Position Command from MCP</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>200</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALCVOLT</TD>
+		<TD>Altitude Voltage Command from MCP</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALENC1</TD>
+		<TD>Altitude Position Encoder 1</TD>
+		<TD>Encoder</TD>
+		<TD>Digital</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALENC2</TD>
+		<TD>Altitude Position Encoder 2</TD>
+		<TD>Encoder</TD>
+		<TD>Digital</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALICHG</TD>
+		<TD>Altitude Instrument Change Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>200</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALLWC</TD>
+		<TD>Altitude Windscreen Collision (Lowering)</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMCPPOS</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMCPVEL</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMCPTIM</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMTRC1</TD>
+		<TD>Altitude Motor Current (Sensor 1)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMTRC2</TD>
+		<TD>Altitude Motor Current (Sensor 2)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMTRV1</TD>
+		<TD>Altitude Motor Voltage (Sensor 1)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALMTRV2</TD>
+		<TD>Altitude Motor Voltage (Sensor 2)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALP-2</TD>
+		<TD>Altitude -2&deg; Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALP100</TD>
+		<TD>Altitude 100&deg; Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALP20</TD>
+		<TD>Altitude 20&deg; Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALRWC</TD>
+		<TD>Altitude Windscreen Collision (Raising)</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALSTATE</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALSTOW</TD>
+		<TD>Altitude ``Stow'' Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALTCCPOS</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALTCCVEL</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ALTCCTIM</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ALWSPOS</TD>
+		<TD>Altitude-to-Windscreen Position</TD>
+		<TD>LVDT</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	</TABLE>
+	<H3><A NAME="s1-2-2"></A><FONT COLOR="#660000">2.2.&nbsp;&nbsp;
+		Azimuth-Related Instrumentation</FONT></H3>
+	<P><A NAME="AZIMUTH"></A><STRONG>Table 2:</STRONG>
+	  Azimuth-Related Instrumentation</P>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+	  <TR BGCOLOR="#d0d0d0" valign="top">
+		<TH>Name</TH>
+		<TH>Description</TH>
+		<TH>Device<br>Type</TH>
+		<TH>Input<br>Type</TH>
+		<TH>Sample<br>Rate (Hz)</TH>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZCPOS</TD>
+		<TD>Azimuth Position Command from MCP</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>200</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCVOLT</TD>
+		<TD>Azimuth Voltage Command from MCP</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCCWC</TD>
+		<TD>Azimuth Counter-Clockwise Windscreen Collision</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCCWHL</TD>
+		<TD>Azimuth Counter-Clockwise Hard Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCCWSL</TD>
+		<TD>Azimuth Counter-Clockwise Soft Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCWC</TD>
+		<TD>Azimuth Clockwise Windscreen Collision</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCWHL</TD>
+		<TD>Azimuth Clockwise Hard Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZCWSL</TD>
+		<TD>Azimuth Clockwise Soft Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZENC1</TD>
+		<TD>Azimuth Position Encoder 1</TD>
+		<TD>Encoder</TD>
+		<TD>Digital</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZENC2</TD>
+		<TD>Azimuth Position Encoder 2</TD>
+		<TD>Encoder</TD>
+		<TD>Digital</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZICHG</TD>
+		<TD>Azimuth Instrument Change Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMCPPOS</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMCPVEL</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMCPTIM</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMTRC1</TD>
+		<TD>Azimuth Motor Current (Sensor 1)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMTRC2</TD>
+		<TD>Azimuth Motor Current (Sensor 2)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMTRV1</TD>
+		<TD>Azimuth Motor Voltage (Sensor 1)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZMTRV2</TD>
+		<TD>Azimuth Motor Voltage (Sensor 2)</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZSTATE</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZTCCPOS</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZTCCVEL</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>AZTCCTIM</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>AZWSPOS</TD>
+		<TD>Azimuth-to-Windscreen Position</TD>
+		<TD>LVDT</TD>
+		<TD>Analog</TD>
+		<TD>0.2</TD>
+	  </TR>
+	</TABLE>
+	<H3><A NAME="s1-2-3"></A><FONT COLOR="#660000">2.3.&nbsp;&nbsp;
+		Rotator-Related Instrumentation</FONT></H3>
+	<P><A NAME="ROTATOR"></A><STRONG>Table 3:</STRONG>
+	  Rotator-Related Instrumentation</P>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+	  <TR BGCOLOR="#d0d0d0" valign="top">
+		<TH>Name</TH>
+		<TH>Description</TH>
+		<TH>Device<br>Type</TH>
+		<TH>Input<br>Type</TH>
+		<TH>Sample<br>Rate (Hz)</TH>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROCPOS</TD>
+		<TD>Rotator Position Command from MCP</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>200</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ROCVOLT</TD>
+		<TD>Rotator Voltage Command from MCP</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ROCCWHL</TD>
+		<TD>Rotator Counter-Clockwise Hard Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ROCCWSL</TD>
+		<TD>Rotator Counter-Clockwise Soft Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ROCWHL</TD>
+		<TD>Rotator Clockwise Hard Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ROCWSL</TD>
+		<TD>Rotator Clockwise Soft Limit</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROENC</TD>
+		<TD>Rotator Position Encoder</TD>
+		<TD>Encoder</TD>
+		<TD>Digital</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0d0b0" valign="top">
+		<TD>ROICHG</TD>
+		<TD>Rotator Instrument Change Position</TD>
+		<TD>SPST</TD>
+		<TD>Digital</TD>
+		<TD>0.2</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROMCPPOS</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROMCPVEL</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROMCPTIM</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROMTRC</TD>
+		<TD>Rotator Motor Current</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROMTRV</TD>
+		<TD>Rotator Motor Voltage</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>33</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROSTATE</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROTCCPOS</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROTCCVEL</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>ROTCCTIM</TD>
+		<TD>&nbsp;</TD>
+		<TD>Memory</TD>
+		<TD>Digital</TD>
+		<TD>20</TD>
+	  </TR>
+	</TABLE>
+	<H3><A NAME="s1-2-4"></A><FONT COLOR="#660000">2.4.&nbsp;&nbsp;
+		Environmental Instrumentation</FONT></H3>
+	<P><A NAME="ENVIRONMENT"></A><STRONG>Table 4:</STRONG>
+	  Environmental-Related Instrumentation</P>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+	  <TR BGCOLOR="#d0d0d0" valign="top">
+		<TH>Name</TH>
+		<TH>Description</TH>
+		<TH>Device<br>Type</TH>
+		<TH>Input<br>Type</TH>
+		<TH>Sample<br>Rate (Hz)</TH>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TEMP</TD>
+		<TD>Temperature</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>WNDDIR</TD>
+		<TD>Wind Direction</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>200</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>WNDSPD</TD>
+		<TD>Wind Speed</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>200</TD>
+	  </TR>
+	</TABLE>
+	<H3><A NAME="s1-2-5"></A><FONT COLOR="#660000">2.5.&nbsp;&nbsp;
+		Mirror Instrumentation</FONT></H3>
+	<P><A NAME="MIRROR"></A><STRONG>Table 5:</STRONG>
+	  Mirror-Related Instrumentation</P>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+	  <TR BGCOLOR="#d0d0d0" valign="top">
+		<TH>Name</TH>
+		<TH>Description</TH>
+		<TH>Device<br>Type</TH>
+		<TH>Input<br>Type</TH>
+		<TH>Sample<br>Rate (Hz)</TH>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXBELLPR1</TD>
+		<TD>Axial Bellofram Pressure 1</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXBELLPR2</TD>
+		<TD>Axial Bellofram Pressure 2</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXBELLPR3</TD>
+		<TD>Axial Bellofram Pressure 3</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXERROR1</TD>
+		<TD>Axial Pressure Error 1</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXERROR2</TD>
+		<TD>Axial Pressure Error 2</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXERROR3</TD>
+		<TD>Axial Pressure Error 3</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXLOAD1</TD>
+		<TD>Axial Load Cell 1</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXLOAD2</TD>
+		<TD>Axial Load Cell 2</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXLOAD3</TD>
+		<TD>Axial Load Cell 3</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXLVDT1</TD>
+		<TD>Axial LVDT 1</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXLVDT2</TD>
+		<TD>Axial LVDT 2</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXLVDT3</TD>
+		<TD>Axial LVDT 3</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXPRES1</TD>
+		<TD>Axial Pressure Command 1</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXPRES2</TD>
+		<TD>Axial Pressure Command 2</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXPRES3</TD>
+		<TD>Axial Pressure Command 3</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXVALVE1</TD>
+		<TD>Axial Pressure Valve 1</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXVALVE2</TD>
+		<TD>Axial Pressure Valve 2</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>AXVALVE3</TD>
+		<TD>Axial Pressure Valve 3</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TRBELLPR</TD>
+		<TD>Transverse Bellofram Pressure</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TRERROR</TD>
+		<TD>Transverse Pressure Error</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TRLOAD</TD>
+		<TD>Transverse Load Cell</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TRLVDT</TD>
+		<TD>Transverse LVDT</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TRPRES</TD>
+		<TD>Transverse Pressure Command</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	  <TR BGCOLOR="#d0b0b0" valign="top">
+		<TD>TRVALVE</TD>
+		<TD>Transverse Pressure Valve</TD>
+		<TD>Sensor</TD>
+		<TD>Analog</TD>
+		<TD>10</TD>
+	  </TR>
+	</TABLE>
+	<H3><A NAME="s1-2-6"></A><FONT COLOR="#660000">2.6.&nbsp;&nbsp;
+		Miscellaneous Instrumentation</FONT></H3>
+	<P><A NAME="ENVIRONMENT"></A><STRONG>Table 6:</STRONG>
+	  Miscellaneous Instrumentation</P>
+	  <TABLE CELLPADDING=2 CELLSPACING=0 border="1">
+	  <TR BGCOLOR="#d0d0d0" valign="top">
+		<TH>Name</TH>
+		<TH>Description</TH>
+		<TH>Device<br>Type</TH>
+		<TH>Input<br>Type</TH>
+		<TH>Sample<br>Rate (Hz)</TH>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG1</TD>
+		<TD>MIG Input #1</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG2</TD>
+		<TD>MIG Input #2</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG3</TD>
+		<TD>MIG Input #3</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG4</TD>
+		<TD>MIG Input #4</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG5</TD>
+		<TD>MIG Input #5</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG6</TD>
+		<TD>MIG Input #6</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG7</TD>
+		<TD>MIG Input #7</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	  <TR BGCOLOR="#b0d0b0" valign="top">
+		<TD>MIG8</TD>
+		<TD>MIG Input #8</TD>
+		<TD>Sensor</TD>
+		<TD>ASCII</TD>
+		<TD>1</TD>
+	  </TR>
+	</TABLE>
+	<!-- End CHAPTER -->
+	
+	
+  </BODY>
+</HTML>

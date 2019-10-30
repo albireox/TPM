@@ -1,0 +1,117 @@
+record(bi,"tpm_M2FORCE") {
+	field(DESC,"PLC:M2 Force Limit Status")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_M2FORCE")
+	field(ZNAM,"OK")
+	field(ONAM,"Triggered")
+}
+record(bi,"tpm_ALBRKENCMD") {
+	field(DESC,"PLC:Alt Brake Enable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKENCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKENSTAT") {
+	field(DESC,"PLC:Alt Brake Enable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKENSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKENMCP") {
+	field(DESC,"PLC:Alt Brake Enable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKENMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKDISCMD") {
+	field(DESC,"PLC:Alt Brake Disable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKDISCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKDISSTAT") {
+	field(DESC,"PLC:Alt Brake Disable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKDISSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKDISMCP") {
+	field(DESC,"PLC:Alt Brake Disable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKDISMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKENCMD") {
+	field(DESC,"PLC:Az Brake Enable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKENCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKENSTAT") {
+	field(DESC,"PLC:Az Brake Enable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKENSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKENMCP") {
+	field(DESC,"PLC:Az Brake Enable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKENMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKDISCMD") {
+	field(DESC,"PLC:Az Brake Disable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKDISCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKDISSTAT") {
+	field(DESC,"PLC:Az Brake Disable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKDISSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKDISMCP") {
+	field(DESC,"PLC:Az Brake Disable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKDISMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}

@@ -1,0 +1,32 @@
+tpm_TM_M1B0Chans.VALA		M2 Edge 0 Front
+tpm_TM_M1B0Chans.VALB		M2 Edge 0 Back
+tpm_TM_M1B0Chans.VALC		M2 Center 0 Front
+tpm_TM_M1B0Chans.VALD		M2 Center 0 Back
+tpm_TM_M1B0Chans.VALE		DUMMY 1 SEC	
+tpm_TM_M1B0Chans.VALF		DUMMY 2 SEC	
+tpm_TM_M1B0Chans.VALG		DUMMY 3 SEC	
+tpm_TM_M1B0Chans.VALH		DUMMY 4 SEC	
+tpm_TM_M1B1Chans.VALA		M2 Center 180 Front
+tpm_TM_M1B1Chans.VALB		M2 Center 180 Back
+tpm_TM_M1B1Chans.VALC		M2 Edge 240 Front
+tpm_TM_M1B1Chans.VALD		M2 Edge 240 Back
+tpm_TM_M1B1Chans.VALE		M2 Center 270 Front
+tpm_TM_M1B1Chans.VALF		M2 Center 270 Back
+tpm_TM_M1B1Chans.VALG		M2 Edge 300 Front
+tpm_TM_M1B1Chans.VALH		M2 Edge 300 Back
+tpm_TM_M1B2Chans.VALA		M2 Edge 180 Back
+tpm_TM_M1B2Chans.VALB		M2 Edge 180 Front
+tpm_TM_M1B2Chans.VALC		M2 Edge 120 Back
+tpm_TM_M1B2Chans.VALD		M2 Edge 120 Front
+tpm_TM_M1B2Chans.VALE		M2 Center 90 Back
+tpm_TM_M1B2Chans.VALF		M2 Center 90 Front
+tpm_TM_M1B2Chans.VALG		M2 Edge 60 Back
+tpm_TM_M1B2Chans.VALH		M2 Edge 60 Front
+tpm_TM_M1B3Chans.VALA		Truss W Middle	
+tpm_TM_M1B3Chans.VALB		Truss N Middle	
+tpm_TM_M1B3Chans.VALC		Truss E Middle	
+tpm_TM_M1B3Chans.VALD		Truss S Middle	
+tpm_TM_M1B3Chans.VALE		Truss W Top	
+tpm_TM_M1B3Chans.VALF		Truss N Top	
+tpm_TM_M1B3Chans.VALG		Truss E Top	
+tpm_TM_M1B3Chans.VALH		Truss S Top

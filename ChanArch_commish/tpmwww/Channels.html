@@ -1,0 +1,277 @@
+<title>SDSS Telescope Performance Monitor Channels</title>
+
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF" ALINK="#800080"
+background="Tests/blueback.jpg">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+
+<center><h1>SDSS Telescope Performance Monitor Channels</h1></center>
+<blockquote>
+The TPM channels archived by the 
+<a href="http://www.aps.anl.gov/epics/">EPICS</a>
+Channel Archiver are grouped into
+the six configuration files described in the following table.
+<p>
+A note on syntax: For groups of channels with similar names I will often
+use the following two constructs.
+<p>
+<blockquote>
+<li> [a..b] - Follow the ASCII character sequence from 'a' to 'b'. For example,
+[0..4] generates five names using '0', '1', '2', '3, '4'.
+<li> {ab,bc,..,yz} - Select each of the listed choices. For example, [AL,AZ,RO] generates three names using 'AL', 'AZ', 'RO'.
+</blockquote>
+<p>
+Each of these are independent, thus a name pattern 
+using both [0..4] and {AL,AZ,RO} will generate 15 unique names.
+
+<p>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Configuration File</b></td>
+<td width="50%"><b>Contents</b></td></tr>
+
+<tr><td><a href="#ab">ab.cfg</a></td>
+<td>Allen-Bradley data</a></td></tr>
+
+<tr><td><a href="#admin">admin.cfg</a></td>
+<td>TPM administrative data</a></td></tr>
+
+<tr><td><a href="#ampslip">ampslip.cfg</a></td>
+<td>Amplifier status and slip detection data</td></tr>
+
+<tr><td><a href="#interlocks">interlocks.cfg</a></td>
+<td>Selected interlock system status words</td></tr>
+
+<tr><td><a href="#mirrors">mirrors.cfg</a></td>
+<td>M1 and M2 MIG and Galil data</a></td></tr>
+
+<tr><td><a href="#mount">mount.cfg</a></td>
+<td>Mount motor and encoder data</td></tr>
+
+<tr><td><a href="#pmss">pmss.cfg</a></td>
+<td>PMSS data</td></tr>
+
+<tr><td><a href="#temperatures">temperatures.cfg</a></td>
+<td>Temperature sensor data</td></tr>
+
+</table>
+<p>
+
+<hr>
+<a name="ab"><h2>ab.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_ABI1_[00..31]</td>
+<td>32 16-bit words from file I1
+(Input)</td></tr>
+<tr><td>tpm_ABO1_[00..31]</td>
+<td>32 16-bit words from file O1
+(Output)</td></tr>
+<tr><td>tpm_ABI2_[00..31]</td>
+<td>32 16-bit words from file I2
+(Input)</td></tr>
+<tr><td>tpm_ABO2_[00..31]</td>
+<td>32 16-bit words from file O2
+(Output)</td></tr>
+<tr><td>tpm_ABI3_[00..07]</td>
+<td>8 16-bit words from file I3
+(Input)</td></tr>
+<tr><td>tpm_ABI4_[00..07]</td>
+<td>8 16-bit words from file I4
+(Input)</td></tr>
+<tr><td>tpm_ABI5_[00..07]</td>
+<td>8 16-bit words from file I5
+(Input)</td></tr>
+<tr><td>tpm_ABI6_[00..01]</td>
+<td>2 16-bit words from file I6
+(Input)</td></tr>
+<tr><td>tpm_ABI7_[00..01]</td>
+<td>2 16-bit words from file I7
+(Input)</td></tr>
+<tr><td>tpm_ABI8_[00..01]</td>
+<td>2 16-bit words from file I8
+(Input)</td></tr>
+<tr><td>tpm_ABI9_[00..01]</td>
+<td>2 16-bit words from file I9
+(Input)</td></tr>
+<tr><td>tpm_ABI10_[00..01]</td>
+<td>2 16-bit words from file I10
+(Input)</td></tr>
+<tr><td>tpm_ABO11_[00..01]</td>
+<td>2 16-bit words from file O11
+(Output)</td></tr>
+<tr><td>tpm_ABO12_[00..01]</td>
+<td>2 16-bit words from file O12
+(Output)</td></tr>
+</table>
+<p>
+
+<hr>
+<a name="admin"><h2>admin.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_uptime</td>
+<td>TPM uptime in hours</td></tr>
+<tr><td>tpm_MJD</td>
+<td>SDSS Modified Julian Date</td></tr>
+</table>
+<p>
+<hr>
+
+<a name="ampslip"><h2>ampslip.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_{AL,AZ}[1..2]_Ampstat</td>
+<td>Altitude and Azimuth motor amplifier status words</td></tr>
+<tr><td>tpm_ROT_Ampstat</td>
+<td>Rotator motor amplifier status word</td></tr>
+<tr><td>tpm_{AL,AZ}[1..2]_Slip</td>
+<td>Altitude and Azimuth motor slip detection status values</td></tr>
+<tr><td>tpm_ROT_Slip</td>
+<td>Rotator motor slip detection status value</td></tr>
+</table>
+<p>
+<hr>
+
+<a name="interlocks"><h2>interlocks.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_{AL,AZ,RO}STATE</td>
+<td>Axis state. Meaning?</td></tr>
+<tr><td>tpm_M2FORCE</td>
+<td>M2 Force Limit Switch!</td></tr>
+<tr><td>tpm_{AL,AZ,RO}BRK{EN,DIS}CMD</td>
+<td>Axis brake enable or disable command</td></tr>
+<tr><td>tpm_{AL,AZ,RO}BRK{EN,DIS}STAT</td>
+<td>Axis brake enable or disable status</td></tr>
+<tr><td>tpm_{AL,AZ,RO}BRK{EN,DIS}MCP</td>
+<td>MCP's idea of the axis brake<br>
+enable or disable status</td></tr>
+</table>
+<p>
+<hr>
+
+<a name="mirrors"><h2>mirrors.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_MIG1{A,B,C,DT,EL,FL}</td>
+<td>M1 MIG readings: axials A,B,C,<br>
+transverse D, laterals E,F
+</td></tr>
+<tr><td>tpm_MIG2{A,B,C,DT}</td>
+<td>M2 MIG readings: axials A,B,C,<br>
+transverse D</td></tr>
+<tr><td>tpm_M1GAL[0..5]A</td>
+<td>M1 Galil actual positions</td></tr>
+<tr><td>tpm_M1GAL[0..5]C</td>
+<td>M1 Galil commanded positions</td></tr>
+<tr><td>tpm_M1GAL[0..5]H</td>
+<td>M1 Galil homed status</td></tr>
+<tr><td>tpm_M2GAL[0..4]A</td>
+<td>M2 Galil actual positions</td></tr>
+<tr><td>tpm_M2GAL[0..4]C</td>
+<td>M2 Galil commanded positions</td></tr>
+<tr><td>tpm_M2GAL[0..4]H</td>
+<td>M2 Galil homed status</td></tr>
+</table><p>
+<hr>
+
+<a name="mount"><h2>mount.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_{AL,AZ,RO}CPOS</td>
+<td>Axis commanded position</td></tr>
+<tr><td>tpm_{AL,AZ,RO}CVOLT</td>
+<td>Axis motor amplifier commanded voltage</td></tr>
+<tr><td>tpm_{AL,AZ}ENC[1..2]</td>
+<td>Altitude and Azimuth encoder readings</td></tr>
+<tr><td>tpm_ROCENC</td>
+<td>Rotator encoder reading<br>
+(Should be named tpm_ROENC)</td></tr>
+<tr><td>tpm_{AL,AZ}MTRC[1..2]</td>
+<td>Altitude and Azimuth motor currents</td></tr>
+<tr><td>tpm_ROMTRC</td>
+<td>Rotator motor current</td></tr>
+<tr><td>tpm_{AL,AZ}MTRV[1..2]</td>
+<td>Altitude and Azimuth motor voltages</td></tr>
+<tr><td>tpm_ROMTRV</td>
+<td>Rotator motor voltage</td></tr>
+<tr><td>tpm_{AL,AZ,RO}ERR</td>
+<td>Axis servo errors from the MEI</td></tr>
+<tr><td>tpm_{AL,AZ,RO}MCP{POS,VEL,TIM}</td>
+<td>Axis MCP PVT triplets.<br>
+(Obtained from the MEI in a undocumented fashion)<td></tr>
+<tr><td>tpm_{AL,AZ,RO}TCC{POS,VEL,TIM}</td>
+<td>Axis TCC PVT triplets.<br>
+(Interpretation?)<td></tr>
+</table>
+<p>
+<hr>
+
+<a name="pmss"><h2>pmss.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_PMSS.VAL[A..D]</td>
+<td>Position, position error, pressure, <br>
+and pressure error measured in volts <br>
+for PMSS Zone 1: Axial A.
+</td></tr>
+<tr><td>tpm_PMSS.VAL[E..H]</td>
+<td>Position, position error, pressure, <br>
+and pressure error measured in volts <br>
+for PMSS Zone 2: Axial B. 
+</td></tr>
+<tr><td>tpm_PMSS.VAL[I..L]</td>
+<td>Position, position error, pressure, <br>
+and pressure error measured in volts <br>
+for PMSS Zone 3: Axial C. 
+</td></tr>
+<tr><td>tpm_PMSS.VAL[M..P]</td>
+<td>Position, position error, pressure, <br>
+and pressure error measured in volts <br>
+for PMSS Zone 4: Transverse D. 
+</td></tr>
+</table>
+<p>
+
+<a name="temperatures"><h2>temperatures.cfg</h2></a>
+<table border width="75%">
+<tr bgcolor="#aaaaff"><td width="50%"><b>Channel Name</b></td>
+<td width="50%"><b>Description</b><td></tr>
+<tr><td>tpm_TM_M0B[0..7]Chans.VAL[A..H]</td>
+<td>M1 (module 0) temperature sensors<br>
+on blocks 0,1,2,3,4,5,6,7<br>
+VAL[A..H] reference the eight channels<br>
+on each block.</td></tr>
+<tr><td>tpm_TM_M1B[0..7]Chans.VAL[A..H]</td>
+<td>M2 and Truss (module 1) temperature sensors<br>
+on blocks 0,1,2,3,4,5,6,7.<br>
+VAL[A..H] reference the eight channels
+<br>
+on each block.</td></tr>
+<tr><td>tpm_TM_M2B[0..7]Chans.VAL[A..H]</td>
+<td>Telescope (module 2) temperature sensors<br>
+on blocks 0,1,2,3,4,5,6,7.<br>
+VAL[A..H] reference the eight channels<br>
+on each block.</td></tr>
+<tr><td>tpm_TM_M[0..2]B[0..7]Chans.VAL[I..P]</td>
+<td>VAL[I..P] for all of the above records<br>
+are not archived but are used to drive the<br>
+temperature graphics. Their values are the<br>
+relative differences between the<br>
+corresponding VAL[A..H] and the ambient<br>
+scaled by tpm_TM_Scale.</td></tr>
+</table>
+<p>
+
+
+<hr>
+
+Last modified on 12 February 2003 by 
+Peregrine M. McGehee.
+</blockquote>

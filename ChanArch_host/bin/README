@@ -1,0 +1,17 @@
+
+The following scripts are maintained as a part of TPM and are started
+as part of a cron job run as vxboot.
+
+startTpmLog		Automatically starts TPM servers 
+			writes files in /mcptpm/$mjd
+			This now also updates the temperature
+			sensor WWW pages.
+
+
+CRON file:
+
+10 10 * * *             /p/tpmbase/ChanArch/bin/startTpmLog restart
+0,15,30,45 * * * *      /p/tpmbase/ChanArch/bin/startTpmLog start
+
+
+File last updated: 7 March 2001 - PMM

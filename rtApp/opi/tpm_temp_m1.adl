@@ -1,0 +1,2289 @@
+file {
+	name="tpm_temp_m1.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="46"
+	npc="95"
+	nstr="238"
+	ndynamic="0"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="1"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="540"
+		height="602"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="8358"
+	nwords_sta="1816"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="5950"
+	osta="4134"
+	odynamic="8346"
+	oplot="8346"
+	ord="8346"
+	oes="8346"
+	okd="8346"
+	opd="8358"
+	opo="8358"
+	opc="68"
+	ostr="1344"
+	ocmap="4134"
+	ocrules="4134"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="106"
+		y="29"
+		width="257"
+		height="26"
+		groupid="0"
+	}
+	textix="M1 and PMSS"
+	align="horiz. centered"
+}
+"rectangle" {
+	object {
+		x="77"
+		y="28"
+		width="388"
+		height="25"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="10"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"oval" {
+	object {
+		x="26"
+		y="116"
+		width="200"
+		height="200"
+		groupid="0"
+	}
+}
+"oval" {
+	object {
+		x="25"
+		y="371"
+		width="200"
+		height="200"
+		groupid="0"
+	}
+}
+"oval" {
+	object {
+		x="252"
+		y="116"
+		width="200"
+		height="200"
+		groupid="0"
+	}
+}
+"oval" {
+	object {
+		x="252"
+		y="371"
+		width="200"
+		height="200"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="23"
+		y="88"
+		width="204"
+		height="14"
+		groupid="0"
+	}
+	textix="M1 FRONT PLATE"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="250"
+		y="88"
+		width="204"
+		height="14"
+		groupid="0"
+	}
+	textix="M1 BACK PLATE"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="23"
+		y="338"
+		width="204"
+		height="14"
+		groupid="0"
+	}
+	textix="PMSS INTERNAL BAFFLE"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="254"
+		y="338"
+		width="204"
+		height="14"
+		groupid="0"
+	}
+	textix="PMSS OUTER WALL"
+	align="horiz. centered"
+}
+"line" {
+	object {
+		x="350"
+		y="117"
+		width="0"
+		height="200"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="350"
+		y="117"
+	}
+	point[1] {
+		x="350"
+		y="317"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="125"
+		y="116"
+		width="0"
+		height="200"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="125"
+		y="116"
+	}
+	point[1] {
+		x="125"
+		y="316"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="125"
+		y="371"
+		width="0"
+		height="200"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="125"
+		y="371"
+	}
+	point[1] {
+		x="125"
+		y="571"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="352"
+		y="371"
+		width="0"
+		height="200"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="352"
+		y="371"
+	}
+	point[1] {
+		x="352"
+		y="571"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="26"
+		y="216"
+		width="200"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="26"
+		y="216"
+	}
+	point[1] {
+		x="226"
+		y="216"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="25"
+		y="471"
+		width="200"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="25"
+		y="471"
+	}
+	point[1] {
+		x="225"
+		y="471"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="252"
+		y="471"
+		width="200"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="252"
+		y="471"
+	}
+	point[1] {
+		x="452"
+		y="471"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"line" {
+	object {
+		x="252"
+		y="216"
+		width="200"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="252"
+		y="216"
+	}
+	point[1] {
+		x="452"
+		y="216"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"rectangle" {
+	object {
+		x="17"
+		y="61"
+		width="452"
+		height="266"
+		groupid="0"
+	}
+}
+"rectangle" {
+	object {
+		x="17"
+		y="328"
+		width="452"
+		height="266"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="118"
+		y="314"
+		width="244"
+		height="14"
+		groupid="0"
+	}
+	textix="BOTTOM OF MIRROR - BACK SIDE"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="118"
+		y="578"
+		width="244"
+		height="14"
+		groupid="0"
+	}
+	textix="BOTTOM OF MIRROR - BACK SIDE"
+	align="horiz. centered"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALI"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALI"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALI"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="117"
+		y="121"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALM"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALM"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALM"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="76"
+		y="130"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALK"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALK"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALK"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="40"
+		y="160"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALO"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALO"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALO"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="91"
+		y="185"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALI"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALI"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALI"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="27"
+		y="197"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALM"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALM"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALM"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="36"
+		y="245"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALO"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALO"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALO"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="90"
+		y="234"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALI"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALI"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALI"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="115"
+		y="296"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALO"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALO"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALO"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="144"
+		y="234"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALK"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALK"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALK"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="188"
+		y="255"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALM"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALM"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALM"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="159"
+		y="279"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALI"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALI"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALI"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="205"
+		y="217"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALO"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALO"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALO"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="143"
+		y="185"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALM"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALM"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALM"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="200"
+		y="179"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALK"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALK"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALK"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="74"
+		y="283"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALK"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALK"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALK"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="166"
+		y="138"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALJ"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALJ"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALJ"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="340"
+		y="118"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALN"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALN"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALN"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="295"
+		y="132"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALL"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALL"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALL"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="266"
+		y="161"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALJ"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALJ"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALJ"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="252"
+		y="196"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALN"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALN"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALN"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="261"
+		y="236"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALL"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALL"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALL"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="291"
+		y="273"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALJ"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALJ"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALJ"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="340"
+		y="295"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[1] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[2] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[3] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[4] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[5] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[6] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[7] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[8] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[9] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[10] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[11] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[12] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[13] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[14] = "tpm_TM_M0B2Chans.VALP"
+			rulechan[15] = "tpm_TM_M0B2Chans.VALP"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B2Chans.VALP"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="320"
+		y="227"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[1] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[2] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[3] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[4] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[5] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[6] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[7] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[8] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[9] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[10] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[11] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[12] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[13] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[14] = "tpm_TM_M0B3Chans.VALP"
+			rulechan[15] = "tpm_TM_M0B3Chans.VALP"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B3Chans.VALP"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="319"
+		y="182"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALL"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALL"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALL"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="392"
+		y="138"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALP"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALP"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALP"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="365"
+		y="181"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[1] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[2] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[3] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[4] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[5] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[6] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[7] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[8] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[9] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[10] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[11] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[12] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[13] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[14] = "tpm_TM_M0B0Chans.VALN"
+			rulechan[15] = "tpm_TM_M0B0Chans.VALN"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0Chans.VALN"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="420"
+		y="165"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALP"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALP"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALP"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="366"
+		y="227"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALL"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALL"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALL"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="416"
+		y="253"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALN"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALN"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALN"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="382"
+		y="282"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[1] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[2] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[3] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[4] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[5] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[6] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[7] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[8] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[9] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[10] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[11] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[12] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[13] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[14] = "tpm_TM_M0B1Chans.VALJ"
+			rulechan[15] = "tpm_TM_M0B1Chans.VALJ"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B1Chans.VALJ"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="432"
+		y="213"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[1] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[2] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[3] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[4] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[5] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[6] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[7] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[8] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[9] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[10] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[11] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[12] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[13] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[14] = "tpm_TM_M0B5Chans.VALJ"
+			rulechan[15] = "tpm_TM_M0B5Chans.VALJ"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B5Chans.VALJ"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="183"
+		y="408"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALP"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALP"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALP"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="47"
+		y="515"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[1] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[2] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[3] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[4] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[5] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[6] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[7] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[8] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[9] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[10] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[11] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[12] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[13] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[14] = "tpm_TM_M0B5Chans.VALI"
+			rulechan[15] = "tpm_TM_M0B5Chans.VALI"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B5Chans.VALI"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="181"
+		y="515"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALO"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALO"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALO"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="44"
+		y="411"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[1] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[2] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[3] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[4] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[5] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[6] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[7] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[8] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[9] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[10] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[11] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[12] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[13] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[14] = "tpm_TM_M0B5Chans.VALL"
+			rulechan[15] = "tpm_TM_M0B5Chans.VALL"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B5Chans.VALL"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="144"
+		y="443"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[1] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[2] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[3] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[4] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[5] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[6] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[7] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[8] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[9] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[10] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[11] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[12] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[13] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[14] = "tpm_TM_M0B5Chans.VALK"
+			rulechan[15] = "tpm_TM_M0B5Chans.VALK"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B5Chans.VALK"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="88"
+		y="441"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[1] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[2] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[3] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[4] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[5] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[6] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[7] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[8] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[9] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[10] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[11] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[12] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[13] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[14] = "tpm_TM_M0B5Chans.VALN"
+			rulechan[15] = "tpm_TM_M0B5Chans.VALN"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B5Chans.VALN"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="88"
+		y="482"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[1] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[2] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[3] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[4] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[5] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[6] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[7] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[8] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[9] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[10] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[11] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[12] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[13] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[14] = "tpm_TM_M0B5Chans.VALM"
+			rulechan[15] = "tpm_TM_M0B5Chans.VALM"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B5Chans.VALM"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="143"
+		y="483"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALJ"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALJ"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALJ"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="254"
+		y="460"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALN"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALN"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALN"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="398"
+		y="393"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALL"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALL"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALL"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="394"
+		y="530"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALM"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALM"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALM"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="432"
+		y="461"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALK"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALK"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALK"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="290"
+		y="529"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[1] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[2] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[3] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[4] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[5] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[6] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[7] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[8] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[9] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[10] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[11] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[12] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[13] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[14] = "tpm_TM_M0B4Chans.VALI"
+			rulechan[15] = "tpm_TM_M0B4Chans.VALI"
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B4Chans.VALI"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="285"
+		y="395"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"kill display" {
+	object {
+		x="478"
+		y="558"
+		width="50"
+		height="40"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}

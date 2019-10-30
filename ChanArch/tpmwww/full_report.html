@@ -1,0 +1,7187 @@
+<html>
+<head>
+<title>tpm.qlf</title>
+<meta name="Generator" content="QUICKLIST 0.8.6">
+</head>
+
+<body bgcolor="#ffffff">
+<table width="2">
+  <tr>
+    <th>NAME</th>
+    <th>ARCHIVED</th>
+    <th>SYSTEM</th>
+    <th>SUBSYSTEM</th>
+    <th>DESC</th>
+    <th>RTYP</th>
+    <th>SCAN</th>
+    <th>DTYP</th>
+    <th>INP</th>
+    <th>OUT</th>
+  </tr>
+  <tr>
+<td>tpm_MJD</td>
+<td>VAL</td>
+<td>ADMIN</td>
+<td>TPM</td>
+<td>Modified Julian Day</td>
+<td>sub</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TimeTest</td>
+<td>VAL</td>
+<td>ADMIN</td>
+<td>TPM</td>
+<td>IOC - NTP Testing Routine</td>
+<td>sub</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_uptime</td>
+<td>VAL</td>
+<td>ADMIN</td>
+<td>TPM</td>
+<td>TPM uptime in hours</td>
+<td>calc</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_version</td>
+<td>N</td>
+<td>ADMIN</td>
+<td>TPM</td>
+<td>TPM Version ID</td>
+<td>stringin</td>
+<td>10 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_VERSION</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_vxTicks</td>
+<td>N</td>
+<td>ADMIN</td>
+<td>TPM</td>
+<td>vxWorks clock ticks since boot</td>
+<td>longin</td>
+<td>Passive</td>
+<td>vxWorks Variable</td>
+<td>@vxTicks</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm2_uptime</td>
+<td>VAL</td>
+<td>ADMIN</td>
+<td>TPM2</td>
+<td>TPM2 uptime in hours</td>
+<td>calc</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm2_version</td>
+<td>N</td>
+<td>ADMIN</td>
+<td>TPM2</td>
+<td>TPM2 Version ID</td>
+<td>stringin</td>
+<td>10 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_VERSION</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm2_vxTicks</td>
+<td>N</td>
+<td>ADMIN</td>
+<td>TPM2</td>
+<td>vxWorks clock ticks since boot</td>
+<td>longin</td>
+<td>Passive</td>
+<td>vxWorks Variable</td>
+<td>@vxTicks</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_Sdewar_imager</td>
+<td>VAL,SEVR</td>
+<td>DEWARS</td>
+<td>IMAGER</td>
+<td>Scale 2 Weight</td>
+<td>ai</td>
+<td>5 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/6 <P><%1k%f LB GR></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_SC2DBG</td>
+<td>N</td>
+<td>DEWARS</td>
+<td>IMAGER</td>
+<td>Scale 2 drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/6 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_SC2SLP</td>
+<td>N</td>
+<td>DEWARS</td>
+<td>IMAGER</td>
+<td>Scale 2 drvAscii conversion slope</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/6 <slope></td>
+  </tr>
+  <tr>
+<td>tpm_SC2TMO</td>
+<td>N</td>
+<td>DEWARS</td>
+<td>IMAGER</td>
+<td>Scale 2 drvAscii timeout</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/6 <timeout></td>
+  </tr>
+  <tr>
+<td>tpm_Ndewar_spectro</td>
+<td>VAL,SEVR</td>
+<td>DEWARS</td>
+<td>SPECTRO</td>
+<td>Scale 1 Weight</td>
+<td>ai</td>
+<td>5 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/5 <P><%1k%f LB GR></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_SC1DBG</td>
+<td>N</td>
+<td>DEWARS</td>
+<td>SPECTRO</td>
+<td>Scale 1 drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/5 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_SC1SLP</td>
+<td>N</td>
+<td>DEWARS</td>
+<td>SPECTRO</td>
+<td>Scale 1 drvAcii conversion slope</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/5 <slope></td>
+  </tr>
+  <tr>
+<td>tpm_SC1TMO</td>
+<td>N</td>
+<td>DEWARS</td>
+<td>SPECTRO</td>
+<td>Scale 1 drvAscii timeout</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/5 <timeout></td>
+  </tr>
+  <tr>
+<td>tpm_AB</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>ALL Allen-Bradley data</td>
+<td>waveform</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ILOCK</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB10</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file B10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file B3</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I1</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I1</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI10</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I2</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I3</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I4</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I5</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI6</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I6</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI7</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I7</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI8</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I8</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI9</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file I9</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file O1</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO11</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file O11</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO12</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file O12</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley file O2</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_AB.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB10_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B10</td>
+<td>AB B10 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB10.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB10_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B10</td>
+<td>AB B10 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB10.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB10_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B10</td>
+<td>AB B10 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB10.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB10_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B10</td>
+<td>AB B10 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB10.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_08</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 08</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_09</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 09</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_10</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABB3_11</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>B3</td>
+<td>AB B3 uint16 11</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABB3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_08</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 08</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_09</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 09</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_10</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_11</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 11</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_12</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 12</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_13</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 13</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_14</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 14</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_15</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 15</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_16</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 16</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_17</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 17</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_18</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 18</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_19</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 19</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_20</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 20</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_21</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 21</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_22</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 22</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_23</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 23</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_24</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 24</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_25</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 25</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_26</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 26</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_27</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 27</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_28</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 28</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_29</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 29</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_30</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 30</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI1_31</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I1</td>
+<td>AB I1 uint16 31</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI10_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I10</td>
+<td>AB I10 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI10.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI10_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I10</td>
+<td>AB I10 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI10.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_08</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 08</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_09</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 09</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_10</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_11</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 11</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_12</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 12</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_13</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 13</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_14</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 14</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_15</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 15</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_16</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 16</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_17</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 17</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_18</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 18</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_19</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 19</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_20</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 20</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_21</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 21</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_22</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 22</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_23</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 23</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_24</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 24</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_25</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 25</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_26</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 26</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_27</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 27</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_28</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 28</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_29</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 29</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_30</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 30</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI2_31</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I2</td>
+<td>AB I2 uint16 31</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI3_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I3</td>
+<td>AB I3 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI3.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI4_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I4</td>
+<td>AB I4 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI4.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI5_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I5</td>
+<td>AB I5 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI5.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI6_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I6</td>
+<td>AB I6 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI6.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI6_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I6</td>
+<td>AB I6 uint17 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI6.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI7_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I7</td>
+<td>AB I7 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI7.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI7_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I7</td>
+<td>AB I7 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI7.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI8_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I8</td>
+<td>AB I8 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI8.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI8_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I8</td>
+<td>AB I8 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI8.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI9_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I9</td>
+<td>AB I8 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI9.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABI9_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>I9</td>
+<td>AB I8 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABI9.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_InstID</td>
+<td>N</td>
+<td>ILOCK</td>
+<td>INSTID</td>
+<td>Instrument ID switches (from ILOCK)</td>
+<td>genSub</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_08</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 08</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_09</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 09</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_10</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_11</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 11</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_12</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 12</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_13</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 13</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_14</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 14</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_15</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 15</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_16</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 16</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_17</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 17</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_18</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 18</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_19</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 19</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_20</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 20</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_21</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 21</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_22</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 22</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_23</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 23</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_24</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 24</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_25</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 25</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_26</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 26</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_27</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 27</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_28</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 28</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_29</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 29</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_30</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 30</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO1_31</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O1</td>
+<td>AB O1 uint16 31</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO1.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO11_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O11</td>
+<td>AB O11 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO11.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO11_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O11</td>
+<td>AB O11 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO11.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO12_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O12</td>
+<td>AB O12 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO12.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO12_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O12</td>
+<td>AB O12 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO12.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_00</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 00</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_01</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 01</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_02</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 02</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_03</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 03</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_04</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 04</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_05</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 05</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_06</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 06</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_07</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 07</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_08</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 08</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_09</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 09</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_10</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 10</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_11</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 11</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_12</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 12</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_13</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 13</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_14</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 14</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_15</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 15</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_16</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 16</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_17</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 17</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_18</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 18</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_19</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 19</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_20</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 20</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_21</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 21</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_22</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 22</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_23</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 23</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_24</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 24</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_25</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 25</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_26</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 26</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_27</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 27</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_28</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 28</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_29</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 29</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_30</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 30</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ABO2_31</td>
+<td>VAL</td>
+<td>ILOCK</td>
+<td>O2</td>
+<td>AB O2 uint16 31</td>
+<td>subArray</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_ABO2.VAL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_A0</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of AZ1 Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C0 S255 @IP470_A</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_A1</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of AZ1 and AZ2 Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C1 S255 @IP470_A</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_A2</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of AZ2 Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C2 S255 @IP470_A</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_A3</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of ALT1 Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C3 S255 @IP470_A</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_A4</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of ALT1 and ALT2 Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C4 S255 @IP470_A</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_A5</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of ALT2 Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C5 S255 @IP470_A</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_B0</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of ROT Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C0 S255 @IP470_B</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_B1</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of ROT Motor Amp Status</td>
+<td>longin</td>
+<td>.1 second</td>
+<td>Acromag IP-470</td>
+<td>#C1 S255 @IP470_B</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_B2</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of Slip Detection Status</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Acromag IP-470</td>
+<td>#C2 S255 @IP470_B</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_B3</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Part of Slip Detection Status</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Acromag IP-470</td>
+<td>#C3 S255 @IP470_B</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_B4</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>Slip Detection and PMSS Mux Controls</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Acromag IP-470</td>
+<td>null</td>
+<td>#C4 S15 @IP470_B</td>
+  </tr>
+  <tr>
+<td>tpm_IP470_B5</td>
+<td>N</td>
+<td>IO</td>
+<td>DIGITAL</td>
+<td>MCP Shared Memory SYNC</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Acromag IP-470</td>
+<td>#C5 S255 @IP470_B</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL0A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A0 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL0C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A0 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL0H</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A0 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL1A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A1 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL1C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A1 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL1H</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A1 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL2A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A2 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL2C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A2 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL2H</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A2 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL3A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A3 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL3C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A3 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL3H</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A3 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL4A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A4 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL4C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A4 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL4H</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A4 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL5A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A5 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL5C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A5 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M1GAL5H</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil A5 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1DT</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Transverse D</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG1Parse.VALD CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1EL</td>
+<td>VAL</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Lateral E</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG1Parse.VALE CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_GAL1</td>
+<td>SEVR</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 Galil response string</td>
+<td>waveform</td>
+<td>.05 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/3 </000><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_GAL1DBG</td>
+<td>N</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>MIG1 drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/3 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_MIG1</td>
+<td>SEVR</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 MIG response string</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/7 <9><%6t%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1Parse</td>
+<td>N</td>
+<td>M1</td>
+<td>GALIL</td>
+<td>M1 MIG parse routine</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1A</td>
+<td>VAL</td>
+<td>M1</td>
+<td>MIG</td>
+<td>M1 Axial A</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG1Parse.VALA CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1B</td>
+<td>VAL</td>
+<td>M1</td>
+<td>MIG</td>
+<td>M1 Axial B</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG1Parse.VALB CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1C</td>
+<td>VAL</td>
+<td>M1</td>
+<td>MIG</td>
+<td>M1 Axial C</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG1Parse.VALC CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1DBG</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>MIG1 drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/7 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_MIG1R</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>MIG1 drvAscii response delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/7 <readCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_MIG1SLP</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>MIG1 drvAscii conversion slope</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/7 <slope></td>
+  </tr>
+  <tr>
+<td>tpm_MIG1W</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>MIG1 drvAscii command delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/7 <writeCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_dmig1a_dt</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>D MIG1A / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig1b_dt</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>D MIG1B / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig1c_dt</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>D MIG1C / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig1dt_dt</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>D MIG1DT / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig1el_dt</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>D MIG1EL / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig1fl_dt</td>
+<td>N</td>
+<td>M1</td>
+<td>MIG</td>
+<td>D MIG1FL / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS</td>
+<td>VALA-S</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS MUX (A-Q), Wind Speed(R)/Dir(S)</td>
+<td>genSub</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_A</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z1 Position - display</td>
+<td>ai</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALA</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_B</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z1 Position Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALB</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_C</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z1 Pressure - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALC</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_D</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z1 Pressure Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALD</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_E</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z2 Position - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALE</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_F</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z2 Position Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALF</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_G</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z2 Pressure - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALG</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_H</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z2 Pressure Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALH</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_I</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z3 Position - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALI</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_J</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z3 Position Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALJ</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_K</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z3 Pressure - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALK</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_L</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z3 Pressure Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_M</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z4 Position - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_N</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z4 Position Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALN</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_O</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z4 Pressure - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALO</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_P</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS Z4 Pressure Error - display</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALP</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS MUX Channel Read Select</td>
+<td>mbboDirect</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_A</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z1 Position read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B0</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_B</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z1 Position Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B1</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_C</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z1 Pressure read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B2</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_D</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z1 Pressure Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B3</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_E</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z2 Position read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B4</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_F</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z2 Position Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B5</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_G</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z2 Pressure read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B6</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_H</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z2 Pressure Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B7</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_I</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z3 Position read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B8</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_J</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z3 Position Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.B9</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_K</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z3 Pressure read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.BA</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_L</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z3 Pressure Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.BB</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_M</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z4 Position read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.BC</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_N</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z4 Position Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.BD</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_O</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z4 Pressure read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.BE</td>
+  </tr>
+  <tr>
+<td>tpm_PMSS_Select_P</td>
+<td>N</td>
+<td>M1</td>
+<td>PMSS</td>
+<td>PMSS enable Z4 Pressure Error read</td>
+<td>bo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_PMSS_Select.BF</td>
+  </tr>
+  <tr>
+<td>tpm_M2FORCE</td>
+<td>VAL</td>
+<td>M2</td>
+<td>FORCE</td>
+<td>M2 Force Limit Status</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_M2FORCE</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL0A</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A0 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL0C</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A0 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL0H</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A0 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL1A</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A1 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL1C</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A1 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL1H</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A1 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL2A</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A2 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL2C</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A2 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL2H</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A2 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL3A</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A3 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL3C</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A3 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL3H</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A3 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL4A</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A4 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL4C</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A4 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL4H</td>
+<td>VAL</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A4 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_GAL2</td>
+<td>SEVR</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil response string</td>
+<td>waveform</td>
+<td>.05 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/4 </000><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_GAL2DBG</td>
+<td>N</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>MIG2 drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/4 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL5A</td>
+<td>N</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A5 Actual</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL5C</td>
+<td>N</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A5 Command</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_M2GAL5H</td>
+<td>N</td>
+<td>M2</td>
+<td>GALIL</td>
+<td>M2 Galil A5 Homed</td>
+<td>longin</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG1FL</td>
+<td>VAL</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M1 Lateral F</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG1Parse.VALF CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2A</td>
+<td>VAL</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M2 Axial A</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG2Parse.VALA CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2B</td>
+<td>VAL</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M2 Axial B</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG2Parse.VALB CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2C</td>
+<td>VAL</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M2 Axial C</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG2Parse.VALC CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2DT</td>
+<td>VAL</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M2 Transverse D</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_MIG2Parse.VALD CPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2</td>
+<td>SEVR</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M2 MIG response string</td>
+<td>waveform</td>
+<td>1 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/8 <9><%4t%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2DBG</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>MIG2 drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/8 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_MIG2Parse</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>M2 MIG parse routine</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_MIG2R</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>MIG2 drvAscii response delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/8 <readCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_MIG2SLP</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>MIG2 drvAscii conversion slope</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/8 <slope></td>
+  </tr>
+  <tr>
+<td>tpm_MIG2W</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>MIG2 drvAscii command delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/8 <writeCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_dmig2a_dt</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>D MIG2A / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig2b_dt</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>D MIG2B / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig2c_dt</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>D MIG2C / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dmig2dt_dt</td>
+<td>N</td>
+<td>M2</td>
+<td>MIG</td>
+<td>D MIG2DT / DT</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AL1_Ampstat</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT1 Amplifier Status</td>
+<td>calc</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AL2_Ampstat</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT2 Amplifier Status</td>
+<td>calc</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALBRKDISCMD</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Brake Disable Command (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALBRKDISCMD</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALBRKDISMCP</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Brake Disable MCP (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALBRKDISMCP</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALBRKDISSTAT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Brake Disable Status (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALBRKDISSTAT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALBRKENCMD</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Brake Enable Command (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALBRKENCMD</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALBRKENMCP</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Brake Enable MCP (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALBRKENMCP</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALBRKENSTAT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Brake Enable Status (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALBRKENSTAT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALCPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Position Command</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALCPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALCVOLT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Voltage Command</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALCVOLT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALENC1</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT First Encoder</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALENC1</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALENC2</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Second Encoder</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALENC2</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALERR</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Servo Error</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALERR</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMCPPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT MCP PVT triplet: Position</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMCPPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMCPTIM</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT MCP PVT triplet: Time</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMCPTIM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMCPVEL</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT MCP PVT triplet: Velocity</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMCPVEL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRC1</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT First Motor Current</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMTRC1</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRC2</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Second Motor Current</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMTRC2</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRV1</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT First Motor Voltage</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMTRV1</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRV2</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Second Motor Voltage</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALMTRV2</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALSTATE</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Axis State</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALSTATE</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALTCCPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT TCC PVT triplet: Position</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALTCCPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALTCCTIM</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT TCC PVT triplet: Time</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALTCCTIM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALTCCVEL</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT TCC PVT triplet: Velocity</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ALTCCVEL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZBRKDISCMD</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>AZ Brake Disable Command (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZBRKDISCMD</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALCPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALCPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALCPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALCVOLT_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALCVOLT timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALCVOLT NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALENC1_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALENC1 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALENC1 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALENC2_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALENC2 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALENC2 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALERR_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALERR timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALERR NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMCPPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMCPPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMCPPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMCPTIM_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMCPTPM timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMCPTIM NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMCPVEL_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMCPVEL timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMCPVEL NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRC1_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMTRC1 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMTRC1 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRC2_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMTRC2 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMTRC2 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRV1_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMTRV1 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMTRV1 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALMTRV2_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALMTRV2 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALMTRV2 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALSTATE_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALSTATE timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALSTATE NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALTCCPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALTCCPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALTCCPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALTCCTIM_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALTCCTIM timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALTCCTIM NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ALTCCVEL_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>200 sample (10 sec) ALTCCVEL timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALTCCVEL NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_alterravg</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>Running average of ALERR</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ALERR NPP NMS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_altitude</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>ALT Position in Degrees</td>
+<td>calc</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_alttrackchk</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ALT</td>
+<td>Check ALT Tracking calculation</td>
+<td>calc</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZ1_Ampstat</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ1 Amplifier Status</td>
+<td>calc</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZ2_Ampstat</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ2 Amplifier Status</td>
+<td>calc</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZBRKDISMCP</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Brake Disable MCP (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZBRKDISMCP</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZBRKDISSTAT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Brake Disable Status (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZBRKDISSTAT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZBRKENCMD</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Brake Enable Command (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZBRKENCMD</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZBRKENMCP</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Brake Enable MCP (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZBRKENMCP</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZBRKENSTAT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Brake Enable Status (from ILOCK)</td>
+<td>bi</td>
+<td>1 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZBRKENSTAT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZCPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Position Command</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZCPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZCVOLT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Voltage Command</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZCVOLT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZENC1</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ First Encoder</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZENC1</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZENC2</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Second Encoder</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZENC2</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZERR</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Servo Error</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZERR</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMCPPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ MCP PVT triplet: Position</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMCPPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMCPTIM</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ MCP PVT triplet: Time</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMCPTIM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMCPVEL</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ MCP PVT triplet: Velocity</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMCPVEL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRC1</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ First Motor Current</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMTRC1</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRC2</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Second Motor Current</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMTRC2</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRV1</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ First Motor Voltage</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMTRV1</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRV2</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Second Motor Voltage</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZMTRV2</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZSTATE</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ Axis State</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZSTATE</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZTCCPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ TCC PVT triplet: Position</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZTCCPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZTCCTIM</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ TCC PVT triplet: Time</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZTCCTIM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZTCCVEL</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>AZ TCC PVT triplet: Velocity</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_AZTCCVEL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZCPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZCPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZCPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZCVOLT_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZCVOLT timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZCVOLT NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZENC1_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZENC1 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZENC1 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZENC2_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZENC2 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZENC2 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZERR_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZERR timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZERR NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMCPPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMCPPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMCPPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMCPTIM_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMCPTIM timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMCPTIM NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMCPVEL_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMCPVEL timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMCPVEL NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRC1_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMTRC1 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMTRC1 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRC2_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMTRC2 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMTRC2 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRV1_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMTRV1 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMTRV1 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZMTRV2_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZMTRV2 timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZMTRV2 NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZSTATE_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZSTATE timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZSTATE NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZTCCPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZTCCPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZTCCPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZTCCTIM_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZTCCTIM timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZTCCTIM NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_AZTCCVEL_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>200 sample (10 sec) AZTCCVEL timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZTCCVEL NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_azerravg</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>Running average of AZERR</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_AZERR NPP NMS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_aztrackchk</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>AZ</td>
+<td>Check AZ Tracking calculation</td>
+<td>calc</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_azimuth</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>Az</td>
+<td>Azimuth Position in Degrees</td>
+<td>calc</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROCENC</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Encoder</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROCENC</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROCPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Position Command</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROCPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROCVOLT</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Voltage Command</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROCVOLT</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROERR</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Servo Error</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROERR</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMCPPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT MCP PVT triplet: Position</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROMCPPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMCPTIM</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT MCP PVT triplet: Time</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROMCPTIM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMCPVEL</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT MCP PVT triplet: Velocity</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROMCPVEL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMTRC</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Motor Current</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROMTRC</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMTRV</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Motor Voltage</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROMTRV</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROSTATE</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Axis State</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROSTATE</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROTCCPOS</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT TCC PVT triplet: Position</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROTCCPOS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROTCCTIM</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT TCC PVT triplet: Time</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROTCCTIM</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROTCCVEL</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT TCC PVT triplet: Velocity</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_ROTCCVEL</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROT_Ampstat</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Amplifier Status</td>
+<td>calc</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROCENC_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROCENC timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROCENC NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROCPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROCPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROCPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROCVOLT_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROCVOLT timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROCVOLT NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROERR_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROERR timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROERR NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMCPPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROMCPPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROMCPPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMCPTIM_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROMCPTIM timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROMCPTIM NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMCPVEL_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROMCPVEL timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROMCPVEL NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMTRC_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROMTRC timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROMTRC NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROMTRV_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROMTRV timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROMTRV NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROSTATE_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROSTATE timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROSTATE NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROTCCPOS_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROTCCPOS timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROTCCPOS NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROTCCTIM_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROTCCTIM timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROTCCTIM NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ROTCCVEL_CB</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>200 sample (10 sec) ROTCCVEL timeseries</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROTCCVEL NPP MS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_rotator</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>ROT Position in Degrees</td>
+<td>calc</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_roterravg</td>
+<td>N</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>Running average of ROERR</td>
+<td>compress</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ROERR NPP NMS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_rottrackchk</td>
+<td>VAL</td>
+<td>MOUNT</td>
+<td>ROT</td>
+<td>Check ROT Tracking calculation</td>
+<td>calc</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_SLIP</td>
+<td>VALA-P</td>
+<td>MOUNT</td>
+<td>SLIP</td>
+<td>Slip detection channels</td>
+<td>genSub</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_CRCLOOPS</td>
+<td>VAL</td>
+<td>SHMEM</td>
+<td>CONFIG</td>
+<td>CRC check maximum loop count</td>
+<td>longin</td>
+<td>.05 second</td>
+<td>vxWorks Variable</td>
+<td>@tpm_CRCLOOPS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_get1Hzdata</td>
+<td>N</td>
+<td>SHMEM</td>
+<td>CONFIG</td>
+<td>Load data into 1 Hz global variables</td>
+<td>sub</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_get20Hzdata</td>
+<td>N</td>
+<td>SHMEM</td>
+<td>CONFIG</td>
+<td>Load data into 20 Hz global variables</td>
+<td>sub</td>
+<td>.05 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_get5Hzdata</td>
+<td>N</td>
+<td>SHMEM</td>
+<td>CONFIG</td>
+<td>Load data into 5 Hz global variables</td>
+<td>sub</td>
+<td>.2 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TMDBG</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>TMICRO drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/2 <debug></td>
+  </tr>
+  <tr>
+<td>tpm_TMR</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>TMICRO drvAscii command delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/2 <readCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_TMSLP</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>TMICRO drvAscii conversion slope</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/2 <slope></td>
+  </tr>
+  <tr>
+<td>tpm_TMTMO</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>TMICRO drvAscii timeout</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/2 <timeout></td>
+  </tr>
+  <tr>
+<td>tpm_TMW</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>TMICRO drvAscii response delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/tyCo/2 <writeCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_TM_MedianParam</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>TMICRO median filter length</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC1</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 1</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC2</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 2</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC3</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 3</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC4</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 4</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC5</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 5</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC6</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 6</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_SC7</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Scaled value for graphics: -/+ 7</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_Scale</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>CONFIG</td>
+<td>Select temperature scale (relative to ambient)</td>
+<td>mbbo</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B0Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B0C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B1Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B1C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B2Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B2C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B3Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B3C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B4Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B4C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B5Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B5C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B6Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B6C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B7Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO M0B7C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B0</td>
+<td>SEVR</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B0</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 0 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B1</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B1</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 1 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B2</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B2</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 2 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B3</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B3</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 3 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B4</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B4</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 4 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B5</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B5</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 5 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B6</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B6</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 6 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M0B7</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>TMICRO Block contents: M0B7</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <0 7 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1Avg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1BackAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Back average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1BackLeftAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Back Left Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1BackLowerAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Back Lower Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1BackRightAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Back Right Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1BackUpperAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Back Upper Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1CenterAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Center average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1EdgeAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Edge average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1EdgeB01Sum</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Edge B01 sum</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1EdgeB23Sum</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Edge B02 sum</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1FrontAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Front average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1FrontLeftAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Front Left Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1FrontLowerAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Front Lower Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1FrontRightAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Front Right Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1FrontUpperAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Front Upper Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1Left_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Left Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1Lower_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Lower Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1Right_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Right Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1Upper_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 Upper Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1_Denv</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 - Ambient delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1_Rgrad</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated M1 radial gradient</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1_Telair</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated Telescope - ambient delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_PMSSAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated PMSS average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_PMSSB4Sum</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated PMSS B4 sum</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_PMSSB5Sum</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M1</td>
+<td>Calculated PMSS B5 sum</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B0Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B0C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B1Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B1C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B2Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B2C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B3Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B3C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B4Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B4C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B5Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B5C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B6Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B6C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B7Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO M1B7C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B0</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B0</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 0 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B1</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B1</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 1 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B2</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B2</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 2 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B3</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B3</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 3 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B4</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B4</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 4 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B5</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B5</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 5 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B6</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B6</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 6 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M1B7</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>TMICRO Block contents: M1B7</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 7 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2Avg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2BackAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Back average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2BackLeftAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Back Left Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2BackLowerAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Back Lower Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2BackRightAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Back Right Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2BackUpperAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Back Upper Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2CenterAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Center average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2EdgeAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Edge average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2FrontAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Front average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2FrontLeftAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Front Left Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2FrontLowerAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Front Lower Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2FrontRightAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Front Right Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2FrontUpperAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Front Upper Half average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2Left_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Left Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2Lower_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Lower Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2Right_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Right Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2Upper_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 Upper Half front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2_FB</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 front-back delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2_Rgrad</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated M2 radial gradient</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2_Telair</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>M2</td>
+<td>Calculated Telescope-ambient delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TMTST</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TEST</td>
+<td>Test record</td>
+<td>ai</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <1 GETTEMP><%14k%f></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B0Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B0C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B1Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B1C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B2Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B2C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B3Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B3C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B4Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B4C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B5Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B5C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B6Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B6C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B7Chans</td>
+<td>VALA-H,SEVR</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO M2B7C0-7</td>
+<td>genSub</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_FloorAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>Calculated Rotating Floor average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_Floor_Telair</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>Calculated Floor-ambient delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_LowairAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>Calculated Lower Enclosure average</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_Lowair_Telair</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>Calculated Lower-ambient delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B0</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B0</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 0 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B1</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B1</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 1 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B2</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B2</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 2 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B3</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B3</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 3 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B4</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B4</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 4 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B5</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B5</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 5 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B6</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B6</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 6 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_M2B7</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>TMICRO Block contents: M2B7</td>
+<td>waveform</td>
+<td>2 second</td>
+<td>Ascii IP Octal</td>
+<td>@/tyCo/2 <2 7 GETBLKTEMP><%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_Return_Telair</td>
+<td>VAL</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>Calculated Cooling Return-ambient delta</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_TM_TelairAvg</td>
+<td>N</td>
+<td>THERMAL</td>
+<td>TRUSS</td>
+<td>Calculated ambient</td>
+<td>calc</td>
+<td>1 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_DpTemp</td>
+<td>VALA-B</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Humidity Sensor Dry and Wet Temperatures</td>
+<td>genSub</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_Humid</td>
+<td>VAL</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Relative Humidity</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_DpDep</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Dew Point Depression</td>
+<td>calc</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_DpT1</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Dew Point Sensor Raw Output</td>
+<td>stringin</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>@/pty/humid.M <T1><%1k%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_DpT3</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Dew Point Sensor Raw Output</td>
+<td>stringin</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>@/pty/humid.M <T3><%1k%s></td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_HumidDBG</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Humidity Sensor drvAscii debug</td>
+<td>longout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/pty/humid.M <debug></td>
+  </tr>
+  <tr>
+<td>tpm_HumidW</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Humidity Sensor drvAscii command delimiter</td>
+<td>stringout</td>
+<td>Passive</td>
+<td>Ascii IP Octal</td>
+<td>null</td>
+<td>@/pty/humid.M <writeCmt %s></td>
+  </tr>
+  <tr>
+<td>tpm_ambient_C</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>DpTemp.VALA timeseries</td>
+<td>compress</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>tpm_DpTemp.VALA</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_ambient_N</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Sample size for ambient_C</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_ambient_W.NELM PP NMS</td>
+  </tr>
+  <tr>
+<td>tpm_ambient_W</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>waveAnl version of ambient_C</td>
+<td>waveAnl</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_ambient_C</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dewpt_C</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>DpTemp.VALB timeseries</td>
+<td>compress</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>tpm_DpTemp.VALB</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dewpt_N</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Sample size for dewpt_C</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_dewpt_W.NELM PP NMS</td>
+  </tr>
+  <tr>
+<td>tpm_dewpt_W</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>waveAnl version of dewpt_C</td>
+<td>waveAnl</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_dewpt_C</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dpdep_C</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>DpTemp timeseries</td>
+<td>compress</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>tpm_DpDep</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_dpdep_N</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Sample size for dpdep_C</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_dpdep_W.NELM PP NMS</td>
+  </tr>
+  <tr>
+<td>tpm_dpdep_W</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>waveAnl version of dpdep_C</td>
+<td>waveAnl</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_dpdep_C</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_humid_C</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Humid timeseries</td>
+<td>compress</td>
+<td>10 second</td>
+<td>Soft Channel</td>
+<td>tpm_Humid</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_humid_N</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>Sample size for humid_C</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_humid_W.NELM PP NMS</td>
+  </tr>
+  <tr>
+<td>tpm_humid_W</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>DEWPT</td>
+<td>waveAnl version of humid_C</td>
+<td>waveAnl</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_humid_C</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_wdir_C</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>WIND</td>
+<td>PMSS.VALS timeseries</td>
+<td>compress</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALS</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_wdir_N</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>WIND</td>
+<td>Sample size for wdir_C</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_wdir_W.NELM PP NMS</td>
+  </tr>
+  <tr>
+<td>tpm_wdir_W</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>WIND</td>
+<td>waveAnl version of wdir_C</td>
+<td>waveAnl</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_wdir_C</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_wspeed_C</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>WIND</td>
+<td>PMSS.VALR timeseries</td>
+<td>compress</td>
+<td>.1 second</td>
+<td>Soft Channel</td>
+<td>tpm_PMSS.VALR</td>
+<td>null</td>
+  </tr>
+  <tr>
+<td>tpm_wspeed_N</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>WIND</td>
+<td>Sample size for wspeed_C</td>
+<td>ao</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>null</td>
+<td>tpm_wspeed_W.NELM PP NMS</td>
+  </tr>
+  <tr>
+<td>tpm_wspeed_W</td>
+<td>N</td>
+<td>WEATHER</td>
+<td>WIND</td>
+<td>waveAnl version of wspeed_C</td>
+<td>waveAnl</td>
+<td>Passive</td>
+<td>Soft Channel</td>
+<td>tpm_wspeed_C</td>
+<td>null</td>
+  </tr>
+</table>
+</body>
+</html>

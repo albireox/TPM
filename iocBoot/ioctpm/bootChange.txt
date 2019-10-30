@@ -1,0 +1,20 @@
+[tpm:]$ bootChange
+
+'.' = clear field;  '-' = go to previous field;  ^D = quit
+
+boot device          : ei 
+processor number     : 1 
+host name            : sdsshost 
+file name            : /p/vx_dsc/v5_1_1f7/config/mv162-16M/vxWorks 
+inet on ethernet (e) : 192.41.211.165:ffffff00 
+inet on backplane (b): 
+host inet (h)        : 192.41.211.171 
+gateway inet (g)     : 
+user (u)             : vxboot 
+ftp password (pw) (blank = use rsh): 
+flags (f)            : 0x29 
+target name (tn)     : sdsstpm 
+startup script (s)   : /p/tpmbase/iocBoot/ioctpm/st.cmd 
+other (o)            : 
+
+value = 0 = 0x0

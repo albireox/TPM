@@ -1,0 +1,297 @@
+record(genSub, "tpm_PMSS") {
+	field(DESC,"PMSS:PMSS MUX")
+	field(INAM, "tpmPMSSInit")
+	field(SNAM, "tpmPMSSProcess")
+        field(EFLG, "ON CHANGE")
+	field(SCAN, ".1 second")
+	field(INPA, "1.0")
+	field(INPB, "1.0")
+	field(INPC, "1.0")
+	field(INPD, "1.0")
+	field(INPE, "1.0")
+	field(INPF, "1.0")
+	field(INPG, "1.0")
+	field(INPH, "1.0")
+	field(INPI, "1.0")
+	field(INPJ, "1.0")
+	field(INPK, "1.0")
+	field(INPL, "1.0")
+	field(INPM, "1.0")
+	field(INPN, "1.0")
+	field(INPO, "1.0")
+	field(INPP, "1.0")
+	field(INPQ, "tpm_PMSS_Select")
+	field(INPR, "2.0")
+	field(FTA, "DOUBLE")
+	field(FTB, "DOUBLE")
+	field(FTC, "DOUBLE")
+	field(FTD, "DOUBLE")
+	field(FTE, "DOUBLE")
+	field(FTF, "DOUBLE")
+	field(FTG, "DOUBLE")
+	field(FTH, "DOUBLE")
+	field(FTI, "DOUBLE")
+	field(FTJ, "DOUBLE")
+	field(FTK, "DOUBLE")
+	field(FTL, "DOUBLE")
+	field(FTM, "DOUBLE")
+	field(FTN, "DOUBLE")
+	field(FTO, "DOUBLE")
+	field(FTP, "DOUBLE")
+	field(FTQ, "LONG")
+	field(FTR, "DOUBLE")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+	field(FTVG, "DOUBLE")
+	field(FTVH, "DOUBLE")
+	field(FTVI, "DOUBLE")
+	field(FTVJ, "DOUBLE")
+	field(FTVK, "DOUBLE")
+	field(FTVL, "DOUBLE")
+	field(FTVM, "DOUBLE")
+	field(FTVN, "DOUBLE")
+	field(FTVO, "DOUBLE")
+	field(FTVP, "DOUBLE")
+	field(FTVQ, "LONG")
+	field(FTVR, "DOUBLE")
+	field(FTVS, "DOUBLE")
+	field(FTVT, "DOUBLE")
+	field(FTVU, "DOUBLE")
+}
+record(mbboDirect,"tpm_PMSS_Select") {
+	field(DESC,"PMSS:PMSS MUX Select")
+	field(DTYP,"Soft Channel")
+	field(NOBT,"16")
+}
+record(bo,"tpm_PMSS_Select_A") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B0")
+}
+record(bo,"tpm_PMSS_Select_B") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B1")
+}
+record(bo,"tpm_PMSS_Select_C") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B2")
+}
+record(bo,"tpm_PMSS_Select_D") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B3")
+}
+record(bo,"tpm_PMSS_Select_E") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B4")
+}
+record(bo,"tpm_PMSS_Select_F") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B5")
+}
+record(bo,"tpm_PMSS_Select_G") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B6")
+}
+record(bo,"tpm_PMSS_Select_H") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B7")
+}
+record(bo,"tpm_PMSS_Select_I") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B8")
+}
+record(bo,"tpm_PMSS_Select_J") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B9")
+}
+record(bo,"tpm_PMSS_Select_K") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BA")
+}
+record(bo,"tpm_PMSS_Select_L") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BB")
+}
+record(bo,"tpm_PMSS_Select_M") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BC")
+}
+record(bo,"tpm_PMSS_Select_N") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BD")
+}
+record(bo,"tpm_PMSS_Select_O") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BE")
+}
+record(bo,"tpm_PMSS_Select_P") {
+	field(DESC,"PMSS:PMSS MUX Select GUI")
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BF")
+}
+record(ai,"tpm_PMSS_A") {
+	field(DESC,"PMSS:PMSS zone 1 position")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALA")
+	field(SCAN,"1 second")
+	field(FLNK,"tpm_PMSS_B")
+} 
+record(ai,"tpm_PMSS_B") {
+	field(DESC,"PMSS: PMSS zone 1 position error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALB")
+	field(FLNK,"tpm_PMSS_C")
+} 
+record(ai,"tpm_PMSS_C") {
+	field(DESC,"PMSS:PMSS zone 1 pressure")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALC")
+	field(FLNK,"tpm_PMSS_D")
+} 
+record(ai,"tpm_PMSS_D") {
+	field(DESC,"PMSS:PMSS zone 1 pressure error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALD")
+	field(FLNK,"tpm_PMSS_E")
+} 
+record(ai,"tpm_PMSS_E") {
+	field(DESC,"PMSS:PMSS zone 2 position")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALE")
+	field(FLNK,"tpm_PMSS_F")
+} 
+record(ai,"tpm_PMSS_F") {
+	field(DESC,"PMSS:PMSS zone 2 position error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALF")
+	field(FLNK,"tpm_PMSS_G")
+} 
+record(ai,"tpm_PMSS_G") {
+	field(DESC,"PMSS:PMSS zone 2 pressure")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALG")
+	field(FLNK,"tpm_PMSS_H")
+} 
+record(ai,"tpm_PMSS_H") {
+	field(DESC,"PMSS:PMSS zone 2 pressure error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALH")
+	field(FLNK,"tpm_PMSS_I")
+} 
+record(ai,"tpm_PMSS_I") {
+	field(DESC,"PMSS:PMSS zone 3 position")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALI")
+	field(FLNK,"tpm_PMSS_J")
+} 
+record(ai,"tpm_PMSS_J") {
+	field(DESC,"PMSS:PMSS zone 3 position error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALJ")
+	field(FLNK,"tpm_PMSS_K")
+} 
+record(ai,"tpm_PMSS_K") {
+	field(DESC,"PMSS:PMSS zone 3 pressure")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALK")
+	field(FLNK,"tpm_PMSS_L")
+} 
+record(ai,"tpm_PMSS_L") {
+	field(DESC,"PMSS:PMSS zone 3 pressure error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALL")
+	field(FLNK,"tpm_PMSS_M")
+} 
+record(ai,"tpm_PMSS_M") {
+	field(DESC,"PMSS:PMSS zone 4 position")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALM")
+	field(FLNK,"tpm_PMSS_N")
+} 
+record(ai,"tpm_PMSS_N") {
+	field(DESC,"PMSS:PMSS zone 4 position error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALN")
+	field(FLNK,"tpm_PMSS_O")
+} 
+record(ai,"tpm_PMSS_O") {
+	field(DESC,"PMSS:PMSS zone 4 pressure")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALO")
+	field(FLNK,"tpm_PMSS_P")
+} 
+record(ai,"tpm_PMSS_P") {
+	field(DESC,"PMSS:PMSS zone 4 pressure error")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALP")
+} 
+record(ai,"tpm_LN2press_imager") {
+	field(DESC,"DEWAR:Imager LN2 pressure")
+	field(INP,"tpm_PMSS.VALT")
+	field(EGU,"PSI")
+	field(LLSV,"MAJOR")
+	field(LSV,"MINOR")
+	field(LOW,"18")
+	field(LOLO,"15")
+	field(SCAN,"10 second")
+}
+record(ai,"tpm_LN2press_spectro") {
+	field(DESC,"DEWAR:Spectrograph LN2 pressure")
+	field(INP,"tpm_PMSS.VALU")
+	field(EGU,"PSI")
+	field(LLSV,"MAJOR")
+	field(LSV,"MINOR")
+	field(LOW,"18")
+	field(LOLO,"15")
+	field(SCAN,"10 second")
+}

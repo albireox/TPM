@@ -1,0 +1,2029 @@
+record(calc,"tpm_uptime") {
+	field(DESC,"TPM up time")
+	field(SCAN,"10 second")
+	field(CALC,"A/B")
+	field(INPA,"tpm_vxTicks PP NMS")
+	field(INPB,"360000")
+	field(EGU,"Hours")
+	field(PREC,"4")
+}
+record(longin,"tpm_vxTicks") {
+	field(DESC,"vxWorks clock ticks")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@vxTicks")
+	field(EGU,"Ticks")
+}
+record(longin,"tpm_CRCLOOPS") {
+	field(DESC,"CRC check loops")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_CRCLOOPS")
+	field(SCAN,".05 second")
+}
+record(stringin,"tpm_version") {
+	field(DESC,"TPM Version ID")
+	field(SCAN,"10 second")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_VERSION")
+}
+record(sub,"tpm_get1Hzdata") {
+	field(DESC,"Load data into global vars")
+	field(SCAN,"1 second")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub1HzProcess")
+}
+record(sub,"tpm_get5Hzdata") {
+	field(DESC,"Load data into global vars")
+	field(SCAN,".2 second")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub5HzProcess")
+}
+record(sub,"tpm_get20Hzdata") {
+	field(DESC,"Load data into global vars")
+	field(SCAN,".05 second")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub20HzProcess")
+}
+record(sub,"tpm_MJD") {
+	field(DESC,"MJD")
+	field(SCAN,"10 second")
+	field(INAM,"tpmMJDInit")
+	field(SNAM,"tpmMJDProcess")
+	field(PREC,"0")
+}
+record(sub,"tpm_PacketeerTest") {
+	field(DESC,"Test of UDP interface")
+	field(SCAN,"Passive")
+	field(INAM,"tpmPacketInit")
+	field(SNAM,"tpmPacketProcess")
+	field(PREC,"0")
+}
+record(genSub, "tpm_InstID") {
+	field(DESC,"Instrument ID switches")
+	field(INAM, "tpmInstIDInit")
+	field(SNAM, "tpmInstIDProcess")
+        field(EFLG, "ON CHANGE")
+	field(SCAN, "1 second")
+	field(INPA, "tpm_ABI1_16")
+	field(FTA, "LONG")
+	field(FTVA, "STRING")
+	field(FTVB, "STRING")
+	field(FTVC, "STRING")
+}
+record(bi,"tpm_M2FORCE") {
+	field(DESC,"M2 Force Limit Status")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_M2FORCE")
+	field(ZNAM,"OK")
+	field(ONAM,"Triggered")
+}
+record(bi,"tpm_ALBRKENCMD") {
+	field(DESC,"Alt Brake Enable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKENCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKENSTAT") {
+	field(DESC,"Alt Brake Enable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKENSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKENMCP") {
+	field(DESC,"Alt Brake Enable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKENMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKDISCMD") {
+	field(DESC,"Alt Brake Disable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKDISCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKDISSTAT") {
+	field(DESC,"Alt Brake Disable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKDISSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_ALBRKDISMCP") {
+	field(DESC,"Alt Brake Disable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALBRKDISMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKENCMD") {
+	field(DESC,"Az Brake Enable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKENCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKENSTAT") {
+	field(DESC,"Az Brake Enable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKENSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKENMCP") {
+	field(DESC,"Az Brake Enable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKENMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKDISCMD") {
+	field(DESC,"Az Brake Disable Cmd")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKDISCMD")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKDISSTAT") {
+	field(DESC,"Az Brake Disable Stat")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKDISSTAT")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(bi,"tpm_AZBRKDISMCP") {
+	field(DESC,"Az Brake Disable MCP")
+	field(SCAN,"1 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZBRKDISMCP")
+	field(ZNAM,"No")
+	field(ONAM,"Yes")
+}
+record(stringout,"tpm_MIG1W") {
+	field(DESC, "MIG1 cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r \000")
+	field(OUT,"@/tyCo/7 <writeCmt %s>")
+}
+record(stringout,"tpm_MIG1R") {
+	field(DESC, "MIG1 resp delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r")
+	field(OUT,"@/tyCo/7 <readCmt %s>")
+}
+record(longout,"tpm_MIG1DBG") {
+	field(DESC, "MIG1 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/7 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_MIG1SLP") {
+	field(DESC,"MIG1 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/7 <slope>")
+	field(DOL,"10000.0")
+	field(OMSL,"closed_loop")
+}
+record(waveform,"tpm_MIG1") {
+	field(DESC,"M1 MIG")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/7 <9><%6t%s>")
+	field(FTVL,"CHAR")
+	field(NELM,"120")
+	field(SCAN,"2 second")
+	field(FLNK,"tpm_MIG1Parse")
+}
+record(genSub, "tpm_MIG1Parse") {
+	field(DESC,"M1 MIG Parse")
+	field(INAM, "tpmMigInit")
+	field(SNAM, "tpmMigProcess")
+        field(EFLG, "ON CHANGE")
+	field(INPA, "tpm_MIG1")
+	field(FTA, "CHAR")
+	field(NOA, "120")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+}
+record(waveform,"tpm_MIG2") {
+	field(DESC,"M2 MIG")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/8 <9><%4t%s>")
+	field(FTVL,"CHAR")
+	field(NELM,"120")
+	field(SCAN,"1 second")
+	field(FLNK,"tpm_MIG2Parse")
+}
+record(genSub, "tpm_MIG2Parse") {
+	field(DESC,"M2 MIG Parse")
+	field(INAM, "tpmMigInit")
+	field(SNAM, "tpmMigProcess")
+        field(EFLG, "ON CHANGE")
+	field(INPA, "tpm_MIG2")
+	field(FTA, "CHAR")
+	field(NOA, "120")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+}
+record(ai,"tpm_MIG1A") {
+	field(DESC,"M1 Axial A")
+	field(INP,"tpm_MIG1Parse.VALA CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1B") {
+	field(DESC,"M1 Axial B")
+	field(INP,"tpm_MIG1Parse.VALB CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1C") {
+	field(DESC,"M1 Axial C")
+	field(INP,"tpm_MIG1Parse.VALC CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1DT") {
+	field(DESC,"M1 Transverse D")
+	field(INP,"tpm_MIG1Parse.VALD CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1EL") {
+	field(DESC,"M1 Lateral E (East)")
+	field(INP,"tpm_MIG1Parse.VALE CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1FL") {
+	field(DESC,"M1 Lateral F (West)")
+	field(INP,"tpm_MIG1Parse.VALF CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(stringout,"tpm_MIG2W") {
+	field(DESC, "MIG2 cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r \000")
+	field(OUT,"@/tyCo/8 <writeCmt %s>")
+}
+record(stringout,"tpm_MIG2R") {
+	field(DESC, "MIG2 resp delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r")
+	field(OUT,"@/tyCo/8 <readCmt %s>")
+}
+record(longout,"tpm_MIG2DBG") {
+	field(DESC, "MIG2 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/8 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_MIG2SLP") {
+	field(DESC,"MIG2 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/8 <slope>")
+	field(DOL,"10000.0")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_MIG2A") {
+	field(DESC,"M2 Axial A")
+	field(INP,"tpm_MIG2Parse.VALA CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG2B") {
+	field(DESC,"M2 Axial B")
+	field(INP,"tpm_MIG2Parse.VALB CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG2C") {
+	field(DESC,"M2 Axial C")
+	field(INP,"tpm_MIG2Parse.VALC CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG2DT") {
+	field(DESC,"M2 Transverse D")
+	field(INP,"tpm_MIG2Parse.VALD CPP MS")
+	field(PREC,"4")
+	field(EGU,"Inches")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(calc,"tpm_dmig1a_dt") {
+	field(DESC,"D MIG1A / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG1A NPP NMS")
+	field(INPB,"tpm_MIG1A PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig1b_dt") {
+	field(DESC,"D MIG1B / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG1B NPP NMS")
+	field(INPB,"tpm_MIG1B PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig1c_dt") {
+	field(DESC,"D MIG1C / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG1C NPP NMS")
+	field(INPB,"tpm_MIG1C PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig1dt_dt") {
+	field(DESC,"D MIG1DT / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG1DT NPP NMS")
+	field(INPB,"tpm_MIG1DT PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig1el_dt") {
+	field(DESC,"D MIG1EL / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG1EL NPP NMS")
+	field(INPB,"tpm_MIG1EL PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig1fl_dt") {
+	field(DESC,"D MIG1FL / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG1FL NPP NMS")
+	field(INPB,"tpm_MIG1FL PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig2a_dt") {
+	field(DESC,"D MIG2A / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG2A NPP NMS")
+	field(INPB,"tpm_MIG2A PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig2b_dt") {
+	field(DESC,"D MIG2B / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG2B NPP NMS")
+	field(INPB,"tpm_MIG2B PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig2c_dt") {
+	field(DESC,"D MIG2C / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG2C NPP NMS")
+	field(INPB,"tpm_MIG2C PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(calc,"tpm_dmig2dt_dt") {
+	field(DESC,"D MIG2DT / DT")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(CALC,"(B-A)/C")
+	field(INPA,"tpm_MIG2DT NPP NMS")
+	field(INPB,"tpm_MIG2DT PP NMS")
+	field(INPC,"0.2")
+	field(EGU,"1=ALARM")
+	field(PREC,"0")
+	field(HOPR,"1")
+	field(LOPR,"0")
+	field(HIHI,"0")
+	field(LOLO,"0")
+	field(HIGH,"0")
+	field(LOW,"0")
+	field(HYST,"0")
+	field(ADEL,"0")
+	field(MDEL,"0")
+}
+record(longout,"tpm_GAL1DBG") {
+	field(DESC, "MIG1 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/3 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(waveform, "tpm_GAL1") {
+	field(DESC,"M1 Galil")
+	field(PHAS,"1")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/3 <\000><%s>")
+	field(FTVL,"CHAR")
+	field(NELM,"120")
+	field(SCAN,"Passive")
+}
+record(longout,"tpm_GAL2DBG") {
+	field(DESC, "MIG2 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/4 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(waveform, "tpm_GAL2") {
+	field(DESC,"M2 Galil")
+	field(PHAS,"1")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/4 <\000><%s>")
+        field(FTVL,"CHAR")
+        field(NELM,"120")
+	field(SCAN,".05 second")
+}
+record(longin,"tpm_M1GAL0A") {
+	field(DESC,"M1 Galil A0 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL0C") {
+	field(DESC,"M1 Galil A0 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL1A") {
+	field(DESC,"M1 Galil A1 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL1C") {
+	field(DESC,"M1 Galil A1 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL2A") {
+	field(DESC,"M1 Galil A2 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL2C") {
+	field(DESC,"M1 Galil A2 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL3A") {
+	field(DESC,"M1 Galil A3 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL3C") {
+	field(DESC,"M1 Galil A3 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL4A") {
+	field(DESC,"M1 Galil A4 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL4C") {
+	field(DESC,"M1 Galil A4 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL5A") {
+	field(DESC,"M1 Galil A5 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL5C") {
+	field(DESC,"M1 Galil A5 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL0H") {
+	field(DESC,"M1 Galil A0 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL1H") {
+	field(DESC,"M1 Galil A1 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL2H") {
+	field(DESC,"M1 Galil A2 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL3H") {
+	field(DESC,"M1 Galil A3 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL4H") {
+	field(DESC,"M1 Galil A4 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL5H") {
+	field(DESC,"M1 Galil A5 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M2GAL0A") {
+	field(DESC,"M2 Galil A0 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL0C") {
+	field(DESC,"M2 Galil A0 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL1A") {
+	field(DESC,"M2 Galil A1 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL1C") {
+	field(DESC,"M2 Galil A1 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL2A") {
+	field(DESC,"M2 Galil A2 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL2C") {
+	field(DESC,"M2 Galil A2 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL3A") {
+	field(DESC,"M2 Galil A3 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL3C") {
+	field(DESC,"M2 Galil A3 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL4A") {
+	field(DESC,"M2 Galil A4 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL4C") {
+	field(DESC,"M2 Galil A4 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL5A") {
+	field(DESC,"M2 Galil A5 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL5C") {
+	field(DESC,"M2 Galil A5 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M2GAL0H") {
+	field(DESC,"M2 Galil A0 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M2GAL1H") {
+	field(DESC,"M2 Galil A1 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M2GAL2H") {
+	field(DESC,"M2 Galil A2 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M2GAL3H") {
+	field(DESC,"M2 Galil A3 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M2GAL4H") {
+	field(DESC,"M2 Galil A4 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M2GAL5H") {
+	field(DESC,"M2 Galil A5 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(calc,"tpm_altitude") {
+	field(DESC,"Altitude Position in Degrees")
+	field(SCAN,".2 second")
+	field(PHAS,"2")
+	field(CALC,"A*B/C")
+	field(INPA,"tpm_ALENC1 NPP NMS")
+	field(INPB,"0.0140099144")
+	field(INPC,"3600.0")
+	field(EGU,"Degrees")
+	field(PREC,"4")
+	field(HOPR,"100")
+	field(LOPR,"0")
+}
+record(calc,"tpm_azimuth") {
+	field(DESC,"Azimuth Position in Degrees")
+	field(SCAN,".2 second")
+	field(PHAS,"2")
+	field(CALC,"A*B/C")
+	field(INPA,"tpm_AZENC1 NPP NMS")
+	field(INPB,"0.014016710")
+	field(INPC,"3600.0")
+	field(EGU,"Degrees")
+	field(PREC,"4")
+	field(HOPR,"270")
+	field(LOPR,"-270")
+}
+record(calc,"tpm_rotator") {
+	field(DESC,"Rotator Position in Degrees")
+	field(SCAN,".2 second")
+	field(PHAS,"2")
+	field(CALC,"A*B/C")
+	field(INPA,"tpm_ROCENC NPP NMS")
+	field(INPB,"0.0213157852666")
+	field(INPC,"3600.0")
+	field(EGU,"Degrees")
+	field(PREC,"4")
+	field(HOPR,"180")
+	field(LOPR,"-180")
+}
+record(compress,"tpm_alterravg") {
+	field(DESC,"Running average of ALERR")
+	field(PHAS,"4")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(INP,"tpm_ALERR NPP NMS")
+	field(ALG,"Average")
+	field(N,"5")
+	field(NSAM,"1")
+	field(IHIL,"0")
+	field(ILIL,"0")
+	field(HOPR,"5000")
+	field(LOPR,"-5000")
+	field(PREC,"2")
+	field(EGU,"Counts")
+}
+record(compress,"tpm_azerravg") {
+	field(DESC,"Running average of AZERR")
+	field(PHAS,"4")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(INP,"tpm_AZERR NPP NMS")
+	field(ALG,"Average")
+	field(N,"5")
+	field(NSAM,"1")
+	field(IHIL,"0")
+	field(ILIL,"0")
+	field(HOPR,"5000")
+	field(LOPR,"-5000")
+	field(PREC,"2")
+	field(EGU,"Counts")
+}
+record(compress,"tpm_roterravg") {
+	field(DESC,"Running average of ROERR")
+	field(PHAS,"4")
+	field(EVNT,"0")
+	field(FLNK,"0")
+	field(INP,"tpm_ROERR NPP NMS")
+	field(ALG,"Average")
+	field(N,"5")
+	field(NSAM,"1")
+	field(IHIL,"0")
+	field(ILIL,"0")
+	field(HOPR,"5000")
+	field(LOPR,"-5000")
+	field(PREC,"2")
+	field(EGU,"Counts")
+}
+record(calc,"tpm_alttrackchk") {
+	field(DESC,"Check Alt Tracking")
+	field(SCAN,".2 second")
+	field(INPA,"tpm_ALMCPVEL")
+	field(B, "3200")
+	field(INPC,"tpm_alterravg PP NMS")
+	field(CALC,"C*(ABS(A)<=B)")
+	field(HHSV,"MAJOR")
+	field(HIHI,"10")
+	field(HSV,"MINOR")
+	field(HIGH,"7")
+	field(LSV,"MINOR")
+	field(LOW,"-7")
+	field(LLSV,"MAJOR")
+	field(LOLO,"-10")
+}
+record(calc,"tpm_aztrackchk") {
+	field(DESC,"Check Az Tracking")
+	field(SCAN,".2 second")
+	field(INPA,"tpm_AZMCPVEL")
+	field(B, "3200")
+	field(INPC,"tpm_azerravg PP NMS")
+	field(CALC,"C*(ABS(A)<=B)")
+	field(HHSV,"MAJOR")
+	field(HIHI,"10")
+	field(HSV,"MINOR")
+	field(HIGH,"7")
+	field(LSV,"MINOR")
+	field(LOW,"-7")
+	field(LLSV,"MAJOR")
+	field(LOLO,"-10")
+}
+record(calc,"tpm_rottrackchk") {
+	field(DESC,"Check Rot Tracking")
+	field(SCAN,".2 second")
+	field(INPA,"tpm_ROMCPVEL")
+	field(B, "3200")
+	field(INPC,"tpm_roterravg PP NMS")
+	field(CALC,"C*(ABS(A)<=B)")
+	field(HHSV,"MAJOR")
+	field(HIHI,"10")
+	field(HSV,"MINOR")
+	field(HIGH,"7")
+	field(LSV,"MINOR")
+	field(LOW,"-7")
+	field(LLSV,"MAJOR")
+	field(LOLO,"-10")
+}
+record(longout,"tpm_SC1DBG") {
+	field(DESC,"Scale 1 dbg")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_SC1SLP") {
+	field(DESC, "Scale 1 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <slope>")
+	field(DOL,"10.0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_SC1TMO") {
+	field(DESC, "Scale 1 timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <timeout>")
+	field(DOL,"5")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_Ndewar_spectro") {
+	field(SCAN,"5 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/5 <P><%1k%f LB GR>")
+	field(ASLO, "0.1")
+	field(EGU,"lb")
+	field(PREC,"1")
+}
+record(longout,"tpm_SC2DBG") {
+	field(DESC,"Scale 2 dbg")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/6 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_SC2SLP") {
+	field(DESC, "Scale 2 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/6 <slope>")
+	field(DOL,"10.0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_SC2TMO") {
+	field(DESC, "Scale 2 timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/6 <timeout>")
+	field(DOL,"5")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_Sdewar_imager") {
+	field(SCAN,"5 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/6 <P><%1k%f LB GR>")
+	field(ASLO,"0.1")
+	field(EGU,"lb")
+	field(PREC,"1")
+}
+record(waveform,"tpm_AB") {
+	field(SCAN,"1 second")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ILOCK")
+	field(NELM,"166")
+	field(FTVL,"USHORT")
+}
+record(subArray,"tpm_ABI1") {
+	field(SCAN,"1 second")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_AB.VAL")
+	field(NELM,"32")
+	field(MALM,"32")
+	field(INDX,"0")
+	field(FTVL,"USHORT")
+}
+record(longout,"tpm_TMDBG") {
+	field(DESC, "TempMicro Debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_TMTMO") {
+	field(DESC, "TempMicro timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <timeout>")
+	field(DOL,"1")
+	field(OMSL,"closed_loop")
+}
+record(stringout,"tpm_TMR") {
+	field(DESC, "Temp Micro Read")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <readCmt %s>")
+	field(VAL," ok\r\n")
+}
+record(stringout,"tpm_TMW") {
+	field(DESC, "Temp Micro Write")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <writeCmt %s>")
+	field(VAL,"\r")
+}
+record(ao,"tpm_TMSLP") {
+	field(DESC, "Temp Micro Slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <slope>")
+	field(DOL,"100.0")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_TMTST") {
+	field(SCAN,"Passive")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <1 GETTEMP><%14k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(longout,"tpm_TM_MedianParam") {
+	field(SCAN,"Passive")
+	field(PINI,"1")
+	field(VAL,"17")
+}
+record(mbbo,"tpm_TM_Scale") {
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(ZRST,"0.01 C")
+	field(ONST,"0.02 C")
+	field(TWST,"0.05 C")
+	field(THST,"0.1 C")
+	field(FRST,"0.2 C")
+	field(FVST,"0.5 C")
+	field(SXST,"1.0 C")
+	field(ZRVL,"100")
+	field(ONVL,"50")
+	field(TWVL,"20")
+	field(THVL,"10")
+	field(FRVL,"5")
+	field(FVVL,"2")
+	field(SXVL,"1")
+	field(VAL,"6")
+	field(PINI,"YES")
+}
+record(calc,"tpm_TM_SC7") {
+	field(SCAN,"Passive")
+	field(A,"7")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC6") {
+	field(SCAN,"Passive")
+	field(A,"6")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC5") {
+	field(SCAN,"Passive")
+	field(A,"5")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC4") {
+	field(SCAN,"Passive")
+	field(A,"4")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC3") {
+	field(SCAN,"Passive")
+	field(A,"3")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC2") {
+	field(SCAN,"Passive")
+	field(A,"2")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC1") {
+	field(SCAN,"Passive")
+	field(A,"1")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(genSub, "tpm_PMSS") {
+	field(DESC,"PMSS MUX")
+	field(INAM, "tpmPMSSInit")
+	field(SNAM, "tpmPMSSProcess")
+        field(EFLG, "ON CHANGE")
+	field(SCAN, ".01 second")
+	field(INPA, "1.0")
+	field(INPB, "1.0")
+	field(INPC, "1.0")
+	field(INPD, "1.0")
+	field(INPE, "1.0")
+	field(INPF, "1.0")
+	field(INPG, "1.0")
+	field(INPH, "1.0")
+	field(INPI, "1.0")
+	field(INPJ, "1.0")
+	field(INPK, "1.0")
+	field(INPL, "1.0")
+	field(INPM, "1.0")
+	field(INPN, "1.0")
+	field(INPO, "1.0")
+	field(INPP, "1.0")
+	field(INPQ, "tpm_PMSS_Select")
+	field(INPR, "1.0")
+	field(FTA, "DOUBLE")
+	field(FTB, "DOUBLE")
+	field(FTC, "DOUBLE")
+	field(FTD, "DOUBLE")
+	field(FTE, "DOUBLE")
+	field(FTF, "DOUBLE")
+	field(FTG, "DOUBLE")
+	field(FTH, "DOUBLE")
+	field(FTI, "DOUBLE")
+	field(FTJ, "DOUBLE")
+	field(FTK, "DOUBLE")
+	field(FTL, "DOUBLE")
+	field(FTM, "DOUBLE")
+	field(FTN, "DOUBLE")
+	field(FTO, "DOUBLE")
+	field(FTP, "DOUBLE")
+	field(FTQ, "LONG")
+	field(FTR, "DOUBLE")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+	field(FTVG, "DOUBLE")
+	field(FTVH, "DOUBLE")
+	field(FTVI, "DOUBLE")
+	field(FTVJ, "DOUBLE")
+	field(FTVK, "DOUBLE")
+	field(FTVL, "DOUBLE")
+	field(FTVM, "DOUBLE")
+	field(FTVN, "DOUBLE")
+	field(FTVO, "DOUBLE")
+	field(FTVP, "DOUBLE")
+	field(FTVQ, "LONG")
+}
+record(mbboDirect,"tpm_PMSS_Select") {
+	field(DESC,"PMSS MUX SELECT")
+	field(DTYP,"Soft Channel")
+	field(NOBT,"16")
+}
+record(bo,"tpm_PMSS_Select_A") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B0")
+}
+record(bo,"tpm_PMSS_Select_B") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B1")
+}
+record(bo,"tpm_PMSS_Select_C") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B2")
+}
+record(bo,"tpm_PMSS_Select_D") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B3")
+}
+record(bo,"tpm_PMSS_Select_E") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B4")
+}
+record(bo,"tpm_PMSS_Select_F") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B5")
+}
+record(bo,"tpm_PMSS_Select_G") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B6")
+}
+record(bo,"tpm_PMSS_Select_H") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B7")
+}
+record(bo,"tpm_PMSS_Select_I") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B8")
+}
+record(bo,"tpm_PMSS_Select_J") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.B9")
+}
+record(bo,"tpm_PMSS_Select_K") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BA")
+}
+record(bo,"tpm_PMSS_Select_L") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BB")
+}
+record(bo,"tpm_PMSS_Select_M") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BC")
+}
+record(bo,"tpm_PMSS_Select_N") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BD")
+}
+record(bo,"tpm_PMSS_Select_O") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BE")
+}
+record(bo,"tpm_PMSS_Select_P") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"1")
+	field(PINI,"YES")
+	field(OUT,"tpm_PMSS_Select.BF")
+}
+record(ai,"tpm_PMSS_A") {
+	field(DESC,"PMSS Z1 POS")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALA")
+	field(SCAN,"1 second")
+	field(FLNK,"tpm_PMSS_B")
+} 
+record(ai,"tpm_PMSS_B") {
+	field(DESC,"PMSS Z1 POSERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALB")
+	field(FLNK,"tpm_PMSS_C")
+} 
+record(ai,"tpm_PMSS_C") {
+	field(DESC,"PMSS Z1 PR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALC")
+	field(FLNK,"tpm_PMSS_D")
+} 
+record(ai,"tpm_PMSS_D") {
+	field(DESC,"PMSS Z1 PRERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALD")
+	field(FLNK,"tpm_PMSS_E")
+} 
+record(ai,"tpm_PMSS_E") {
+	field(DESC,"PMSS Z2 POS")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALE")
+	field(FLNK,"tpm_PMSS_F")
+} 
+record(ai,"tpm_PMSS_F") {
+	field(DESC,"PMSS Z2 POSERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALF")
+	field(FLNK,"tpm_PMSS_G")
+} 
+record(ai,"tpm_PMSS_G") {
+	field(DESC,"PMSS Z2 PR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALG")
+	field(FLNK,"tpm_PMSS_H")
+} 
+record(ai,"tpm_PMSS_H") {
+	field(DESC,"PMSS Z2 PRERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALH")
+	field(FLNK,"tpm_PMSS_I")
+} 
+record(ai,"tpm_PMSS_I") {
+	field(DESC,"PMSS Z3 POS")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALI")
+	field(FLNK,"tpm_PMSS_J")
+} 
+record(ai,"tpm_PMSS_J") {
+	field(DESC,"PMSS Z3 POSERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALJ")
+	field(FLNK,"tpm_PMSS_K")
+} 
+record(ai,"tpm_PMSS_K") {
+	field(DESC,"PMSS Z3 PR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALK")
+	field(FLNK,"tpm_PMSS_L")
+} 
+record(ai,"tpm_PMSS_L") {
+	field(DESC,"PMSS Z3 PRERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALL")
+	field(FLNK,"tpm_PMSS_M")
+} 
+record(ai,"tpm_PMSS_M") {
+	field(DESC,"PMSS Z4 POS")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALM")
+	field(FLNK,"tpm_PMSS_N")
+} 
+record(ai,"tpm_PMSS_N") {
+	field(DESC,"PMSS Z4 POSERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALN")
+	field(FLNK,"tpm_PMSS_O")
+} 
+record(ai,"tpm_PMSS_O") {
+	field(DESC,"PMSS Z4 PR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALO")
+	field(FLNK,"tpm_PMSS_P")
+} 
+record(ai,"tpm_PMSS_P") {
+	field(DESC,"PMSS Z4 PRERR")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_PMSS.VALP")
+} 
+record(calc,"tpm_TM_M1Upper_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1FrontUpperAvg")
+	field(INPB,"tpm_TM_M1BackUpperAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1Lower_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1FrontLowerAvg")
+	field(INPB,"tpm_TM_M1BackLowerAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1Right_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1FrontRightAvg")
+	field(INPB,"tpm_TM_M1BackRightAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1Left_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1FrontLeftAvg")
+	field(INPB,"tpm_TM_M1BackLeftAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1FrontAvg")
+	field(INPB,"tpm_TM_M1BackAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1_Rgrad") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1EdgeAvg")
+	field(INPB,"tpm_TM_M1CenterAvg")
+	field(HIHI,"1.0")
+	field(LOLO,"-1.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1_Telair") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1Avg")
+	field(INPB,"tpm_TM_TelairAvg")
+	field(HIHI,"2.0")
+	field(LOLO,"-2.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2Upper_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2FrontUpperAvg")
+	field(INPB,"tpm_TM_M2BackUpperAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2Lower_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2FrontLowerAvg")
+	field(INPB,"tpm_TM_M2BackLowerAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2Right_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2FrontRightAvg")
+	field(INPB,"tpm_TM_M2BackRightAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2Left_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2FrontLeftAvg")
+	field(INPB,"tpm_TM_M2BackLeftAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2_FB") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2FrontAvg")
+	field(INPB,"tpm_TM_M2BackAvg")
+	field(HIHI,"0.2")
+	field(LOLO,"-0.2")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2_Rgrad") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2EdgeAvg")
+	field(INPB,"tpm_TM_M2CenterAvg")
+	field(HIHI,"1.0")
+	field(LOLO,"-1.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M2_Telair") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2Avg")
+	field(INPB,"tpm_TM_TelairAvg")
+	field(HIHI,"2.0")
+	field(LOLO,"-2.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1_Denv") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M1Avg")
+	field(INPB,"tpm_TM_PMSSAvg")
+	field(HIHI,"2.0")
+	field(LOLO,"-2.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_Floor_Telair") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_FloorAvg")
+	field(INPB,"tpm_TM_TelairAvg")
+	field(HIHI,"2.0")
+	field(LOLO,"-2.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_Return_Telair") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_M2B1Chans.VALC")
+	field(INPB,"tpm_TM_TelairAvg")
+	field(HIHI,"3.0")
+	field(LOLO,"-3.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_Lowair_Telair") {
+	field(SCAN,"1 second")
+	field(PHAS,"10")
+	field(CALC,"A-B")
+	field(INPA,"tpm_TM_LowairAvg")
+	field(INPB,"tpm_TM_TelairAvg")
+	field(HIHI,"3.0")
+	field(LOLO,"-3.0")
+	field(HHSV,"MAJOR")
+}
+record(calc,"tpm_TM_M1FrontUpperAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D+E/2+F/2+G+H+I)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALA")
+	field(INPB,"tpm_TM_M0B0Chans.VALC")
+	field(INPC,"tpm_TM_M0B0Chans.VALE")
+	field(INPD,"tpm_TM_M0B0Chans.VALG")
+	field(INPE,"tpm_TM_M0B1Chans.VALA")
+	field(INPF,"tpm_TM_M0B3Chans.VALA")
+	field(INPG,"tpm_TM_M0B3Chans.VALC")
+	field(INPH,"tpm_TM_M0B3Chans.VALE")
+	field(INPI,"tpm_TM_M0B3Chans.VALG")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1FrontLowerAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B+C+D+E+F+G+H+I/2)/8")
+	field(INPA,"tpm_TM_M0B1Chans.VALA")
+	field(INPB,"tpm_TM_M0B1Chans.VALC")
+	field(INPC,"tpm_TM_M0B1Chans.VALE")
+	field(INPD,"tpm_TM_M0B1Chans.VALG")
+	field(INPE,"tpm_TM_M0B2Chans.VALA")
+	field(INPF,"tpm_TM_M0B2Chans.VALC")
+	field(INPG,"tpm_TM_M0B2Chans.VALE")
+	field(INPH,"tpm_TM_M0B2Chans.VALG")
+	field(INPI,"tpm_TM_M0B3Chans.VALA")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1FrontRightAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B+C+D+E+F+G+H+I/2)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALA")
+	field(INPB,"tpm_TM_M0B0Chans.VALC")
+	field(INPC,"tpm_TM_M0B0Chans.VALE")
+	field(INPD,"tpm_TM_M0B0Chans.VALG")
+	field(INPE,"tpm_TM_M0B1Chans.VALA")
+	field(INPF,"tpm_TM_M0B1Chans.VALC")
+	field(INPG,"tpm_TM_M0B1Chans.VALE")
+	field(INPH,"tpm_TM_M0B1Chans.VALG")
+	field(INPI,"tpm_TM_M0B2Chans.VALA")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1FrontLeftAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B/2+C+D+E+F+G+H+I)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALA")
+	field(INPB,"tpm_TM_M0B2Chans.VALA")
+	field(INPC,"tpm_TM_M0B2Chans.VALC")
+	field(INPD,"tpm_TM_M0B2Chans.VALE")
+	field(INPE,"tpm_TM_M0B2Chans.VALG")
+	field(INPF,"tpm_TM_M0B3Chans.VALA")
+	field(INPG,"tpm_TM_M0B3Chans.VALC")
+	field(INPH,"tpm_TM_M0B3Chans.VALE")
+	field(INPI,"tpm_TM_M0B3Chans.VALG")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1FrontAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"3")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M1FrontUpperAvg")
+	field(INPB,"tpm_TM_M1FrontLowerAvg")
+	field(INPC,"tpm_TM_M1FrontRightAvg")
+	field(INPD,"tpm_TM_M1FrontLeftAvg")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1BackUpperAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D+E/2+F/2+G+H+I)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALB")
+	field(INPB,"tpm_TM_M0B0Chans.VALD")
+	field(INPC,"tpm_TM_M0B0Chans.VALF")
+	field(INPD,"tpm_TM_M0B0Chans.VALH")
+	field(INPE,"tpm_TM_M0B1Chans.VALB")
+	field(INPF,"tpm_TM_M0B3Chans.VALB")
+	field(INPG,"tpm_TM_M0B3Chans.VALD")
+	field(INPH,"tpm_TM_M0B3Chans.VALF")
+	field(INPI,"tpm_TM_M0B3Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1BackLowerAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B+C+D+E+F+G+H+I/2)/8")
+	field(INPA,"tpm_TM_M0B1Chans.VALB")
+	field(INPB,"tpm_TM_M0B1Chans.VALD")
+	field(INPC,"tpm_TM_M0B1Chans.VALF")
+	field(INPD,"tpm_TM_M0B1Chans.VALH")
+	field(INPE,"tpm_TM_M0B2Chans.VALB")
+	field(INPF,"tpm_TM_M0B2Chans.VALD")
+	field(INPG,"tpm_TM_M0B2Chans.VALF")
+	field(INPH,"tpm_TM_M0B2Chans.VALH")
+	field(INPI,"tpm_TM_M0B3Chans.VALB")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1BackRightAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B+C+D+E+F+G+H+I/2)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALB")
+	field(INPB,"tpm_TM_M0B0Chans.VALD")
+	field(INPC,"tpm_TM_M0B0Chans.VALF")
+	field(INPD,"tpm_TM_M0B0Chans.VALH")
+	field(INPE,"tpm_TM_M0B1Chans.VALB")
+	field(INPF,"tpm_TM_M0B1Chans.VALD")
+	field(INPG,"tpm_TM_M0B1Chans.VALF")
+	field(INPH,"tpm_TM_M0B1Chans.VALH")
+	field(INPI,"tpm_TM_M0B2Chans.VALB")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1BackLeftAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B/2+C+D+E+F+G+H+I)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALB")
+	field(INPB,"tpm_TM_M0B2Chans.VALB")
+	field(INPC,"tpm_TM_M0B2Chans.VALD")
+	field(INPD,"tpm_TM_M0B2Chans.VALF")
+	field(INPE,"tpm_TM_M0B2Chans.VALH")
+	field(INPF,"tpm_TM_M0B3Chans.VALB")
+	field(INPG,"tpm_TM_M0B3Chans.VALD")
+	field(INPH,"tpm_TM_M0B3Chans.VALF")
+	field(INPI,"tpm_TM_M0B3Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1BackAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"3")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M1BackUpperAvg")
+	field(INPB,"tpm_TM_M1BackLowerAvg")
+	field(INPC,"tpm_TM_M1BackRightAvg")
+	field(INPD,"tpm_TM_M1BackLeftAvg")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2FrontUpperAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C/2+D+E/2+F)/5")
+	field(INPA,"tpm_TM_M1B0Chans.VALA")
+	field(INPB,"tpm_TM_M1B0Chans.VALC")
+	field(INPC,"tpm_TM_M1B1Chans.VALE")
+	field(INPD,"tpm_TM_M1B1Chans.VALG")
+	field(INPE,"tpm_TM_M1B2Chans.VALF")
+	field(INPF,"tpm_TM_M1B2Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2FrontLowerAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C/2+D+E+F/2)/5")
+	field(INPA,"tpm_TM_M1B1Chans.VALA")
+	field(INPB,"tpm_TM_M1B1Chans.VALC")
+	field(INPC,"tpm_TM_M1B1Chans.VALE")
+	field(INPD,"tpm_TM_M1B2Chans.VALB")
+	field(INPE,"tpm_TM_M1B2Chans.VALD")
+	field(INPF,"tpm_TM_M1B2Chans.VALF")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2FrontRightAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B/2+C/2+D/2+E+F+G)/5")
+	field(INPA,"tpm_TM_M1B0Chans.VALA")
+	field(INPB,"tpm_TM_M1B0Chans.VALC")
+	field(INPC,"tpm_TM_M1B1Chans.VALA")
+	field(INPD,"tpm_TM_M1B2Chans.VALB")
+	field(INPE,"tpm_TM_M1B2Chans.VALD")
+	field(INPF,"tpm_TM_M1B2Chans.VALF")
+	field(INPG,"tpm_TM_M1B2Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2FrontLeftAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B/2+C/2+D+E+F+G/2)/5")
+	field(INPA,"tpm_TM_M1B0Chans.VALA")
+	field(INPB,"tpm_TM_M1B0Chans.VALC")
+	field(INPC,"tpm_TM_M1B1Chans.VALA")
+	field(INPD,"tpm_TM_M1B1Chans.VALC")
+	field(INPE,"tpm_TM_M1B1Chans.VALE")
+	field(INPF,"tpm_TM_M1B1Chans.VALG")
+	field(INPG,"tpm_TM_M1B2Chans.VALB")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2FrontAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"3")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M2FrontUpperAvg")
+	field(INPB,"tpm_TM_M2FrontLowerAvg")
+	field(INPC,"tpm_TM_M2FrontRightAvg")
+	field(INPD,"tpm_TM_M2FrontLeftAvg")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2BackUpperAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C/2+D+E/2+F)/5")
+	field(INPA,"tpm_TM_M1B0Chans.VALB")
+	field(INPB,"tpm_TM_M1B0Chans.VALD")
+	field(INPC,"tpm_TM_M1B1Chans.VALF")
+	field(INPD,"tpm_TM_M1B1Chans.VALH")
+	field(INPE,"tpm_TM_M1B2Chans.VALE")
+	field(INPF,"tpm_TM_M1B2Chans.VALG")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2BackLowerAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C/2+D+E+F/2)/5")
+	field(INPA,"tpm_TM_M1B1Chans.VALB")
+	field(INPB,"tpm_TM_M1B1Chans.VALD")
+	field(INPC,"tpm_TM_M1B1Chans.VALF")
+	field(INPD,"tpm_TM_M1B2Chans.VALA")
+	field(INPE,"tpm_TM_M1B2Chans.VALC")
+	field(INPF,"tpm_TM_M1B2Chans.VALE")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2BackRightAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B/2+C/2+D/2+E+F+G)/5")
+	field(INPA,"tpm_TM_M1B0Chans.VALB")
+	field(INPB,"tpm_TM_M1B0Chans.VALD")
+	field(INPC,"tpm_TM_M1B1Chans.VALB")
+	field(INPD,"tpm_TM_M1B2Chans.VALA")
+	field(INPE,"tpm_TM_M1B2Chans.VALC")
+	field(INPF,"tpm_TM_M1B2Chans.VALE")
+	field(INPG,"tpm_TM_M1B2Chans.VALG")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2BackLeftAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A/2+B/2+C/2+D+E+F+G/2)/5")
+	field(INPA,"tpm_TM_M1B0Chans.VALB")
+	field(INPB,"tpm_TM_M1B0Chans.VALD")
+	field(INPC,"tpm_TM_M1B1Chans.VALB")
+	field(INPD,"tpm_TM_M1B1Chans.VALD")
+	field(INPE,"tpm_TM_M1B1Chans.VALF")
+	field(INPF,"tpm_TM_M1B1Chans.VALH")
+	field(INPG,"tpm_TM_M1B2Chans.VALA")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2BackAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"3")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M2BackUpperAvg")
+	field(INPB,"tpm_TM_M2BackLowerAvg")
+	field(INPC,"tpm_TM_M2BackRightAvg")
+	field(INPD,"tpm_TM_M2BackLeftAvg")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1EdgeB01Sum") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"A+B+C+D+E+F+G+H+I+J+K+L")
+	field(INPA,"tpm_TM_M0B0Chans.VALA")
+	field(INPB,"tpm_TM_M0B0Chans.VALB")
+	field(INPC,"tpm_TM_M0B0Chans.VALC")
+	field(INPD,"tpm_TM_M0B0Chans.VALD")
+	field(INPE,"tpm_TM_M0B0Chans.VALE")
+	field(INPF,"tpm_TM_M0B0Chans.VALF")
+	field(INPG,"tpm_TM_M0B1Chans.VALA")
+	field(INPH,"tpm_TM_M0B1Chans.VALB")
+	field(INPI,"tpm_TM_M0B1Chans.VALC")
+	field(INPJ,"tpm_TM_M0B1Chans.VALD")
+	field(INPK,"tpm_TM_M0B1Chans.VALE")
+	field(INPL,"tpm_TM_M0B1Chans.VALF")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1EdgeB23Sum") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"A+B+C+D+E+F+G+H+I+J+K+L")
+	field(INPA,"tpm_TM_M0B2Chans.VALA")
+	field(INPB,"tpm_TM_M0B2Chans.VALB")
+	field(INPC,"tpm_TM_M0B2Chans.VALC")
+	field(INPD,"tpm_TM_M0B2Chans.VALD")
+	field(INPE,"tpm_TM_M0B2Chans.VALE")
+	field(INPF,"tpm_TM_M0B2Chans.VALF")
+	field(INPG,"tpm_TM_M0B3Chans.VALA")
+	field(INPH,"tpm_TM_M0B3Chans.VALB")
+	field(INPI,"tpm_TM_M0B3Chans.VALC")
+	field(INPJ,"tpm_TM_M0B3Chans.VALD")
+	field(INPK,"tpm_TM_M0B3Chans.VALE")
+	field(INPL,"tpm_TM_M0B3Chans.VALF")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1EdgeAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"3")
+	field(CALC,"(A+B)/24")
+	field(INPA,"tpm_TM_M1EdgeB01Sum")
+	field(INPB,"tpm_TM_M1EdgeB23Sum")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1CenterAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D+E+F+G+H)/8")
+	field(INPA,"tpm_TM_M0B0Chans.VALG")
+	field(INPB,"tpm_TM_M0B0Chans.VALH")
+	field(INPC,"tpm_TM_M0B1Chans.VALG")
+	field(INPD,"tpm_TM_M0B1Chans.VALH")
+	field(INPE,"tpm_TM_M0B2Chans.VALG")
+	field(INPF,"tpm_TM_M0B2Chans.VALH")
+	field(INPG,"tpm_TM_M0B3Chans.VALG")
+	field(INPH,"tpm_TM_M0B3Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2EdgeAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D+E+F+G+H+I+J+K+L)/12")
+	field(INPA,"tpm_TM_M1B0Chans.VALA")
+	field(INPB,"tpm_TM_M1B0Chans.VALB")
+	field(INPC,"tpm_TM_M1B1Chans.VALC")
+	field(INPD,"tpm_TM_M1B1Chans.VALD")
+	field(INPE,"tpm_TM_M1B1Chans.VALG")
+	field(INPF,"tpm_TM_M1B1Chans.VALH")
+	field(INPG,"tpm_TM_M1B2Chans.VALA")
+	field(INPH,"tpm_TM_M1B2Chans.VALB")
+	field(INPI,"tpm_TM_M1B2Chans.VALC")
+	field(INPJ,"tpm_TM_M1B2Chans.VALD")
+	field(INPK,"tpm_TM_M1B2Chans.VALG")
+	field(INPL,"tpm_TM_M1B2Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2CenterAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D+E+F+G+H)/8")
+	field(INPA,"tpm_TM_M1B0Chans.VALC")
+	field(INPB,"tpm_TM_M1B0Chans.VALD")
+	field(INPC,"tpm_TM_M1B1Chans.VALA")
+	field(INPD,"tpm_TM_M1B1Chans.VALB")
+	field(INPE,"tpm_TM_M1B1Chans.VALE")
+	field(INPF,"tpm_TM_M1B1Chans.VALF")
+	field(INPG,"tpm_TM_M1B2Chans.VALE")
+	field(INPH,"tpm_TM_M1B2Chans.VALF")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M1Avg") {
+	field(SCAN,"1 second")
+	field(PHAS,"5")
+	field(CALC,"(A+B)/2")
+	field(INPA,"tpm_TM_M1EdgeAvg")
+	field(INPB,"tpm_TM_M1CenterAvg")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_M2Avg") {
+	field(SCAN,"1 second")
+	field(PHAS,"5")
+	field(CALC,"(A+B)/2")
+	field(INPA,"tpm_TM_M2EdgeAvg")
+	field(INPB,"tpm_TM_M2CenterAvg")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_PMSSB4Sum") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"A+B+C+D+E+F+G+H")
+	field(INPA,"tpm_TM_M0B4Chans.VALA")
+	field(INPB,"tpm_TM_M0B4Chans.VALB")
+	field(INPC,"tpm_TM_M0B4Chans.VALC")
+	field(INPD,"tpm_TM_M0B4Chans.VALD")
+	field(INPE,"tpm_TM_M0B4Chans.VALE")
+	field(INPF,"tpm_TM_M0B4Chans.VALF")
+	field(INPG,"tpm_TM_M0B4Chans.VALG")
+	field(INPH,"tpm_TM_M0B4Chans.VALH")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_PMSSB5Sum") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"A+B+C+D+E+F")
+	field(INPA,"tpm_TM_M0B5Chans.VALA")
+	field(INPB,"tpm_TM_M0B5Chans.VALB")
+	field(INPC,"tpm_TM_M0B5Chans.VALC")
+	field(INPD,"tpm_TM_M0B5Chans.VALD")
+	field(INPE,"tpm_TM_M0B5Chans.VALE")
+	field(INPF,"tpm_TM_M0B5Chans.VALF")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_PMSSAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"3")
+	field(CALC,"(A+B)/14")
+	field(INPA,"tpm_TM_PMSSB4Sum")
+	field(INPA,"tpm_TM_PMSSB5Sum")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_TelairAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M2B2Chans.VALA")
+	field(INPB,"tpm_TM_M2B2Chans.VALC")
+	field(INPC,"tpm_TM_M2B2Chans.VALE")
+	field(INPD,"tpm_TM_M2B2Chans.VALG")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_FloorAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M2B0Chans.VALF")
+	field(INPB,"tpm_TM_M2B0Chans.VALG")
+	field(INPC,"tpm_TM_M2B0Chans.VALH")
+	field(INPD,"tpm_TM_M2B1Chans.VALA")
+	field(PREC,"2")
+}
+record(calc,"tpm_TM_LowairAvg") {
+	field(SCAN,"1 second")
+	field(PHAS,"2")
+	field(CALC,"(A+B+C+D)/4")
+	field(INPA,"tpm_TM_M2B0Chans.VALA")
+	field(INPB,"tpm_TM_M2B0Chans.VALB")
+	field(INPC,"tpm_TM_M2B0Chans.VALC")
+	field(INPD,"tpm_TM_M2B1Chans.VALD")
+	field(PREC,"2")
+}

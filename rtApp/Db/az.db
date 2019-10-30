@@ -1,0 +1,96 @@
+record(longin,"tpm_AZCPOS") {
+	field(DESC,"Azimuth Position Command")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZCPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZENC1") {
+	field(DESC,"First Azimuth Encoder")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZENC1")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZENC2") {
+	field(DESC,"Second Azimuth Encoder")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZENC2")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZMTRC1") {
+	field(DESC,"Az. First Motor Current")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMTRC1")
+	field(EGU,"Counts")
+	field(HIHI,"2000")
+	field(HHSV,"MAJOR")
+	field(HIGH,"1000")
+	field(HSV,"MINOR")
+	field(LOW,"-1000")
+	field(LSV,"MINOR")
+	field(LOLO,"-2000")
+	field(LLSV,"MAJOR")
+}
+record(longin,"tpm_AZMTRC2") {
+	field(DESC,"Az. Second Motor Current")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMTRC2")
+	field(EGU,"Counts")
+	field(HIHI,"2000")
+	field(HHSV,"MAJOR")
+	field(HIGH,"1000")
+	field(HSV,"MINOR")
+	field(LOW,"-1000")
+	field(LSV,"MINOR")
+	field(LOLO,"-2000")
+	field(LLSV,"MAJOR")
+}
+record(longin,"tpm_AZMTRV1") {
+	field(DESC,"Az. First Motor Voltage")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMTRV1")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZMTRV2") {
+	field(DESC,"Az. Second Motor Voltage")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMTRV2")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZERR") {
+	field(DESC,"Az. Servo Error")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZERR")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZSTATE") {
+	field(DESC,"Azimuth State")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZSTATE")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZCVOLT") {
+	field(DESC,"Azimuth Voltage Command")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZCVOLT")
+	field(EGU,"Counts")
+}

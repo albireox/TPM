@@ -1,0 +1,74 @@
+record(longout,"tpm_SC1DBG") {
+	field(DESC,"DEWAR:Scale 1 dbg")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_SC1SLP") {
+	field(DESC, "DEWAR:Scale 1 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <slope>")
+	field(DOL,"10.0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_SC1TMO") {
+	field(DESC, "DEWAR:Scale 1 timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <timeout>")
+	field(DOL,"5")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_Ndewar_spectro") {
+	field(DESC, "DEWAR:Spectro dewar weight")
+	field(SCAN,"5 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/5 <P><%1k%f LB GR>")
+	field(ASLO, "0.1")
+	field(EGU,"lb")
+	field(PREC,"1")
+	field(LOW, "100.0")
+	field(LSV, "MINOR")
+	field(LOLO,"50.0")
+	field(LLSV,"MAJOR")
+}
+record(longout,"tpm_SC2DBG") {
+	field(DESC,"DEWAR:Scale 2 dbg")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/6 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_SC2SLP") {
+	field(DESC, "DEWAR:Scale 2 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/6 <slope>")
+	field(DOL,"10.0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_SC2TMO") {
+	field(DESC, "DEWAR:Scale 2 timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/6 <timeout>")
+	field(DOL,"5")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_Sdewar_imager") {
+	field(DESC, "DEWAR:Imager dewar weight")
+	field(SCAN,"5 second")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/6 <P><%1k%f LB GR>")
+	field(ASLO,"0.1")
+	field(EGU,"lb")
+	field(PREC,"1")
+	field(LOW,"100.0")
+	field(LSV,"MINOR")
+	field(LOLO,"50.0")
+	field(LLSV,"MAJOR")
+}

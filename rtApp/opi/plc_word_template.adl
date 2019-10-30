@@ -1,0 +1,487 @@
+file {
+	name="CHANNEL.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="3"
+	nstr="52"
+	ndynamic="1"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="1"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="300"
+		height="300"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="908"
+	nwords_sta="400"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="830"
+	osta="430"
+	odynamic="830"
+	oplot="896"
+	ord="896"
+	oes="896"
+	okd="896"
+	opd="908"
+	opo="908"
+	opc="68"
+	ostr="90"
+	ocmap="430"
+	ocrules="430"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1152"
+	pixht="900"
+	mmwid="390"
+	mmht="305"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="3"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="5"
+		width="290"
+		height="20"
+		groupid="0"
+	}
+	textix="CHANNEL"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="5"
+		y="30"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="0"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="45"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="1"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="60"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="2"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="75"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="3"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="90"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="4"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="105"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="5"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="120"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="6"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="135"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="7"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="150"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="8"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="165"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="9"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="180"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="10"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="195"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="11"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="210"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="12"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="225"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="13"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="240"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="14"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="5"
+		y="255"
+		width="20"
+		height="15"
+		groupid="0"
+	}
+	textix="15"
+	align="horiz. right"
+}
+"text" {
+	object {
+		x="50"
+		y="30"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC00"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="45"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC01"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="60"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC02"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="75"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC03"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="90"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC04"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="105"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC05"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="120"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC06"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="135"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC07"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="150"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC08"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="165"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC09"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="179"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC10"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="195"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC11"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="210"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC12"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="225"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC13"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="240"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC14"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="50"
+		y="255"
+		width="245"
+		height="15"
+		groupid="0"
+	}
+	textix="DESC15"
+	align="horiz. left"
+}
+"byte" {
+	object {
+		x="30"
+		y="30"
+		width="15"
+		height="240"
+		groupid="0"
+	}
+	monitor {
+		chan="CHANNEL"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	sbit="0"
+	ebit="15"
+	direction="down"
+}
+"kill display" {
+	object {
+		x="220"
+		y="270"
+		width="65"
+		height="20"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}

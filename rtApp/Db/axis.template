@@ -1,0 +1,24 @@
+record(longin,"tpm_$(NAME)") {
+	field(DESC,"$(DESC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_$(NAME)")
+	field(EGU,"Counts")
+	field(HHSV,"MAJOR")
+	field(HSV,"MINOR")
+	field(LSV,"MINOR")
+	field(LLSV,"MAJOR")
+	field(HIHI,"$(HIHI)")
+	field(HIGH,"$(HIGH)")
+	field(LOW,"-$(HIGH)")
+	field(LOLO,"-$(HIHI)")
+	field(FLNK,"tpm_$(NAME)_CB")
+}
+record(compress,"tpm_$(NAME)_CB") {
+	field(DESC,"$(DESC) - buffer")
+	field(SCAN,"Passive")
+	field(INP, "tpm_$(NAME) NPP MS")
+	field(NSAM, "200")
+	field(ALG, "Circular Buffer")
+}

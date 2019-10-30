@@ -1,0 +1,64 @@
+record(longin,"tpm_ROCENC") {
+	field(DESC,"Rotator Position Encoder")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROCENC")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROCPOS") {
+	field(DESC,"Rotator Position Command")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROCPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROCVOLT") {
+	field(DESC,"Rotator Voltage Command")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROCVOLT")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROMTRC") {
+	field(DESC,"Rot. Motor Current")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROMTRC")
+	field(EGU,"Counts")
+	field(HIHI,"2000")
+	field(HHSV,"MAJOR")
+	field(HIGH,"1000")
+	field(HSV,"MINOR")
+	field(LOW,"-1000")
+	field(LSV,"MINOR")
+	field(LOLO,"-2000")
+	field(LLSV,"MAJOR")
+}
+record(longin,"tpm_ROMTRV") {
+	field(DESC,"Rot. Motor Voltage")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROMTRV")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROERR") {
+	field(DESC,"Rot. Error")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROERR")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROSTATE") {
+	field(DESC,"Rotator State")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROSTATE")
+	field(EGU,"Counts")
+}

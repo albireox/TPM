@@ -1,0 +1,986 @@
+file {
+	name="tpm_ampslip.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="104"
+	nstr="132"
+	ndynamic="13"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="1"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="692"
+		height="244"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="3406"
+	nwords_sta="336"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="2536"
+	osta="2200"
+	odynamic="2536"
+	oplot="3394"
+	ord="3394"
+	oes="3394"
+	okd="3394"
+	opd="3406"
+	opo="3406"
+	opc="68"
+	ostr="1198"
+	ocmap="2200"
+	ocrules="2200"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="30"
+		y="39"
+		width="37"
+		height="10"
+		groupid="0"
+	}
+	textix="AZ1"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="55"
+		y="39"
+		width="38"
+		height="10"
+		groupid="0"
+	}
+	textix="AZ2"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="22"
+		y="15"
+		width="244"
+		height="24"
+		groupid="0"
+	}
+	textix="Amplifier Status"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="82"
+		y="39"
+		width="37"
+		height="10"
+		groupid="0"
+	}
+	textix="AL1"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="108"
+		y="39"
+		width="37"
+		height="10"
+		groupid="0"
+	}
+	textix="AL2"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="134"
+		y="39"
+		width="38"
+		height="10"
+		groupid="0"
+	}
+	textix="ROT"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="47"
+		width="62"
+		height="19"
+		groupid="0"
+	}
+	textix="AL1:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="69"
+		width="62"
+		height="19"
+		groupid="0"
+	}
+	textix="AL2:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="363"
+		y="15"
+		width="244"
+		height="24"
+		groupid="0"
+	}
+	textix="Slip Detection"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="90"
+		width="66"
+		height="20"
+		groupid="0"
+	}
+	textix="AZ1:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="114"
+		width="62"
+		height="20"
+		groupid="0"
+	}
+	textix="AZ2:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="136"
+		width="62"
+		height="19"
+		groupid="0"
+	}
+	textix="ROT:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="55"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="Power Supply Status"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="66"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="Motor I Limit"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="77"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="Bi-Directional Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="88"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="In/Out Error"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="99"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="Motor Sense Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="110"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="+15 Volt Status Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="121"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="-15 Volt Status Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="132"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="+60 Volt Status Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="143"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="Klixon Status Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="154"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="120 Volt Status Output"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="165"
+		width="140"
+		height="10"
+		groupid="0"
+	}
+	textix="Inhibit Error"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="164"
+		y="176"
+		width="200"
+		height="10"
+		groupid="0"
+	}
+	textix="Relay Activation Bit (INVERTED!)"
+	align="horiz. left"
+}
+"rectangle" {
+	object {
+		x="294"
+		y="17"
+		width="0"
+		height="1"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="364"
+		y="158"
+		width="66"
+		height="20"
+		groupid="0"
+	}
+	textix="ALV:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="181"
+		width="62"
+		height="20"
+		groupid="0"
+	}
+	textix="AZV:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="364"
+		y="204"
+		width="62"
+		height="19"
+		groupid="0"
+	}
+	textix="ROTV:"
+	align="horiz. left"
+}
+"byte" {
+	object {
+		x="24"
+		y="49"
+		width="25"
+		height="138"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_AZ1_Ampstat"
+		clr="15"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	sbit="0"
+	ebit="11"
+	direction="up"
+}
+"text update" {
+	object {
+		x="433"
+		y="46"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALA"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="433"
+		y="68"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALB"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="433"
+		y="90"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALC"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="433"
+		y="113"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALD"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="433"
+		y="135"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALE"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"byte" {
+	object {
+		x="51"
+		y="49"
+		width="26"
+		height="138"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_AZ2_Ampstat"
+		clr="15"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	sbit="0"
+	ebit="11"
+	direction="up"
+}
+"byte" {
+	object {
+		x="78"
+		y="49"
+		width="26"
+		height="138"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_AL1_Ampstat"
+		clr="15"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	sbit="0"
+	ebit="11"
+	direction="up"
+}
+"byte" {
+	object {
+		x="105"
+		y="49"
+		width="26"
+		height="138"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_AL2_Ampstat"
+		clr="15"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	sbit="0"
+	ebit="11"
+	direction="up"
+}
+"byte" {
+	object {
+		x="131"
+		y="49"
+		width="26"
+		height="138"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_ROT_Ampstat"
+		clr="15"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	sbit="0"
+	ebit="11"
+	direction="up"
+}
+"text update" {
+	object {
+		x="433"
+		y="158"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALF"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="433"
+		y="180"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALG"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="433"
+		y="203"
+		width="140"
+		height="21"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SLIP.VALH"
+		clr="14"
+		bclr="0"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"kill display" {
+	object {
+		x="614"
+		y="196"
+		width="63"
+		height="43"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}

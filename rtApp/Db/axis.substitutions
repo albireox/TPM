@@ -1,0 +1,64 @@
+file axis.template {
+	pattern{NAME,DESC,HIGH,HIHI}
+	{ALENC1,"SERVO:First Altitude Encoder","0","0"}
+	{ALCPOS,"SERVO:Altitude Position Command","0","0"}
+	{ALCVOLT,"MOTOR:Altitude Voltage Command","0","0"}
+	{ALENC2,"SERVO:Second Altitude Encoder","0","0"}
+	{ALMTRC1,"MOTOR:Alt First Motor Current",1000,2000}
+	{ALMTRC2,"MOTOR:Alt Second Motor Current",1000,2000}
+	{ALMTRV1,"MOTOR:Alt First Motor Voltage","0","0"}
+	{ALMTRV2,"MOTOR:Alt Second Motor Voltage","0","0"}
+	{ALERR,"SERVO:Alt Servo Error","0","0"}
+	{ALSTATE,"SERVO:Altitude State","0","0"}
+}
+
+file axis.template {
+	pattern{NAME,DESC,HIGH,HIHI}
+	{AZCPOS,"SERVO:Azimuth Position Command","0","0"}
+	{AZENC1,"SERVO:First Azimuth Encoder","0","0"}
+	{AZENC2,"SERVO:Second Azimuth Encoder","0","0"}
+	{AZMTRC1,"MOTOR:Az First Motor Current",1000,2000}
+	{AZMTRC2,"MOTOR:Az Second Motor Current",1000,2000}
+	{AZMTRV1,"MOTOR:Az First Motor Voltage","0","0"}
+	{AZMTRV2,"MOTOR:Az Second Motor Voltage","0","0"}
+	{AZERR,"SERVO:Az Servo Error","0","0"}
+	{AZSTATE,"SERVO:Azimuth State","0","0"}
+	{AZCVOLT,"MOTOR:Azimuth Voltage Command","0","0"}
+}
+
+file axis.template {
+	pattern{NAME,DESC,HIGH,HIHI}
+	{ROCENC,"SERVO:Rotator Position Encoder","0","0"}
+	{ROCPOS,"SERVO:Rotator Position Command","0","0"}
+	{ROCVOLT,"MOTOR:Rotator Voltage Command","0","0"}
+	{ROMTRC,"MOTOR:Rot Motor Current",1000,2000}
+	{ROMTRV,"MOTOR:Rot Motor Voltage","0","0"}
+	{ROERR,"SERVO:Rot Error","0","0"}
+	{ROSTATE,"SERVO:Rotator State","0","0"}
+}
+
+file axis.template {
+	pattern{NAME,DESC,HIGH,HIHI}
+	{ALMCPPOS,"SERVO:Alt MCP PVT position","0","0"}
+	{ALMCPVEL,"SERVO:Alt MCP PVT velocity","0","0"}
+	{ALMCPTIM,"SERVO:Alt MCP PVT time","0","0"}
+	{AZMCPPOS,"SERVO:Az MCP PVT position","0","0"}
+	{AZMCPVEL,"SERVO:Az MCP PVT velocity","0","0"}
+	{AZMCPTIM,"SERVO:Az MCP PVT time","0","0"}
+	{ROMCPPOS,"SERVO:Rot MCP PVT position","0","0"}
+	{ROMCPVEL,"SERVO:Rot MCP PVT velocity","0","0"}
+	{ROMCPTIM,"SERVO:Rot MCP PVT time","0","0"}
+}
+
+file axis.template {
+	pattern{NAME,DESC,HIGH,HIHI}
+	{ALTCCPOS,"SERVO:Alt TCC PVT position","0","0"}
+	{ALTCCVEL,"SERVO:Alt TCC PVT velocity","0","0"}
+	{ALTCCTIM,"SERVO:Alt TCC PVT time","0","0"}
+	{AZTCCPOS,"SERVO:Az TCC PVT position","0","0"}
+	{AZTCCVEL,"SERVO:Az TCC PVT velocity","0","0"}
+	{AZTCCTIM,"SERVO:Az TCC PVT time","0","0"}
+	{ROTCCPOS,"SERVO:Rot TCC PVT position","0","0"}
+	{ROTCCVEL,"SERVO:Rot TCC PVT velocity","0","0"}
+	{ROTCCTIM,"SERVO:Rot TCC PVT time","0","0"}
+}

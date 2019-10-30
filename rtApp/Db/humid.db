@@ -1,0 +1,74 @@
+record(stringout,"tpm_HumidW") {
+	field(DESC, "WEATHER:Humidity cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\000")
+	field(OUT,"@/pty/humid.M <writeCmt %s>")
+}
+record(longout,"tpm_HumidDBG") {
+	field(DESC, "WEATHER:Humidity debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/pty/humid.M <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(stringin,"tpm_DpT1") {
+	field(DESC, "WEATHER:Dew Point Sensor Raw Output")
+	field(DTYP, "Ascii IP Octal")
+	field(INP, "@/pty/humid.M <T1><%1k%s>")
+	field(SCAN, "Passive")
+}
+record(stringin,"tpm_DpT3") {
+	field(DESC, "WEATHER:Dew Point Sensor Raw Output")
+	field(DTYP, "Ascii IP Octal")
+	field(INP, "@/pty/humid.M <T3><%1k%s>")
+	field(SCAN, "Passive")
+}
+record(genSub, "tpm_DpTemp") {
+	field(DESC, "WEATHER:Temperatures")
+	field(INAM, "tpmDPInit")
+	field(SNAM, "tpmDPProcess")
+	field(INPA, "tpm_DpT1 PP NMS")
+	field(INPB, "tpm_DpT3 PP NMS")
+	field(EFLG, "ON CHANGE")
+	field(FTA, "STRING")
+	field(FTB, "STRING")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "CHAR")
+	field(NOVC, "120")
+	field(PREC, "1")
+	field(SCAN, "10 second")
+	field(FLNK, "tpm_DpDep")
+}
+record(calc, "tpm_DpDep") {
+	field(DESC, "WEATHER:Dew Point Depression")
+	field(INPA, "tpm_DpTemp.VALA NPP MS")
+	field(INPB, "tpm_DpTemp.VALB NPP MS")
+	field(CALC, "A-B")
+	field(EGU, "C")
+	field(HIHI, "999.0")
+	field(LOLO, "3.0")
+	field(HIGH, "999.0")
+	field(LOW, "6.0")
+	field(PREC, "1")
+	field(LLSV, "MAJOR")
+	field(LSV, "MINOR")
+	field(FLNK, "tpm_Humid")
+}
+record(calc, "tpm_Humid") {
+	field(DESC, "WEATHER:Relative Humidity")
+	field(INPA, "tpm_DpTemp.VALA NPP MS")
+	field(INPB, "tpm_DpTemp.VALB NPP MS")
+	field(C, "237.7")
+	field(CALC, "10.0^(2.0-7.5*((A/(A+C))-(B/(B+C))))")
+	field(EGU, "%")
+	field(HIHI, "90")
+	field(LOLO, "0")
+	field(HIGH, "80")
+	field(LOW, "0")
+	field(PREC, "1")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}

@@ -1,0 +1,5 @@
+#RELEASE Location of external products
+EPICS_BASE=${EPICS}/base
+TEMPLATE_TOP=${EPICS}/base/templates/makeBaseApp/top
+#SHARE=/u2/aptdvl/prod/share
+#MASTER_ARCH=/u4/aptdvl_archives/master_arch

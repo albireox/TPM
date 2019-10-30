@@ -1,0 +1,2 @@
+#local driver support
+driver(drvSerial)

@@ -1,0 +1,60 @@
+
+This along with the capfast schematic was copied from
+
+	~ahoney/kroot/kss/dcs/dev/drvAscii/drvAscii
+
+
+
+drvAscii README
+
+drvAscii.tar.gz contains the device and driver support for records interfaced 
+to a remote device which communicates with ascii strings over a serial link.
+This driver must be layered on top of the serial driver written by Jhill for 
+the Keck Observatory.
+
+The driver supports bi, bo, mbbi, mbbo, ai, ao, longin, longout, stringin, 
+stringout, mbbi direct, mbbo direct, and waveform (long stringin) records. 
+The mechanism for determining how to convert to/from strings and record vals 
+is embedded in the records' PARM fields (inp and out).
+
+Special parm field tags (special records)  allow control over certain comms 
+features such as command terminators (carriage-return linefeed by default).
+Unfortunately an anomoly exists with respect to the write and read command
+terminators. Ideally one would want to set a specific stringout record's 
+PINI=YES and sets its initial val field to the desired command terminator(s) 
+(eg. '\r'), such that on record init the desired terminator(s) would be in 
+effect. The problem is that e2sr strips off all backslashes.
+
+When implementing the driver I thought the best approach was to treat the val 
+strings as 'C' strings which may have character and numeric escape codes 
+embedded. I think any other solution is wrong. In any event, one can use 
+backslashes with dbpf (eg. '\r') and triple backslashes with caput 
+(eg. '\\\r') so... the desired command terminators can be setup after record 
+init with a script.  
+
+The documentation, such as it is, is simply the headers of the .c files.
+
+I have included a test database which contains at least one record of each 
+type and, in most cases, a faulty record of each type. The test database
+connects all records to the vxworks '\tyCo\1' device. To experiment with 
+the driver you must connect transmit to receive of the serial port associated 
+with said device (ie. the database is setup so that it appears as though the
+remote device simply echoes).
+
+One must obtain the serial driver -sioSup.tar.gz- 
+
+drvAscii.tar.gz contains the following files:
+         devAscii.c
+         drvAscii.c
+         drvAscii.h
+         devSup.ascii
+         drvSup.ascii
+         drvAscii.sch
+	 drvAscii.db
+         drvAscii.README
+         Makefile
+         Makefile.Vx
+
+Any suggestions, improvements, or fixes please contacted Allan Honey at
+ahoney@keck.hawaii.edu
+

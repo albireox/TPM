@@ -1,0 +1,155 @@
+<title>SDSS Telescope Performance Monitor Systems and Subsystems</title>
+
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF" ALINK="#800080"
+background="blueback.jpg">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+
+<blockquote>
+<center><h1>SDSS Telescope Performance Monitor Systems and Subsystems</h1></center>
+
+The following table provides short descriptions of the systems and subsystems
+monitored and archived by the TPM. These are the same designations used
+in the <a href="ChannelGuide.html">Complete Channel Guide</a> pages
+and reports.
+
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width="20%"><b>System</b></td>
+<td width="20%"><b>Subsystem</b></td>
+<td width="60%"><b>Description</b></td></tr>
+
+<tr><td>ADMIN</td>
+<td>TPM</td>
+<td>Administrative information for <i>sdsstpm</i></td></tr>
+<tr><td></td>
+<td>TPM2</td>
+<td>Administrative information for <i>sdsstpm2</i></td></tr>
+
+<tr><td>DEWARS</td>
+<td>IMAGER</td>
+<td>Imager 180<i>l</i> dewar monitoring</td></tr>
+<tr><td> </td>
+<td>SPECTRO</td>
+<td>Spectrograph 180<i>l</i> dewar monitoring</td></tr>
+
+<tr><td>ILOCK</td>
+<td>ARRAY</td>
+<td>Allen-Bradley PLC-based interlock system data structures</td></tr>
+<tr><td></td>
+<td>B3</td>
+<td>16-bit words from PLC file B3</td></tr>
+<tr><td></td>
+<td>B10</td>
+<td>16-bit words from PLC file B10</td></tr>
+<tr><td></td>
+<td>I1</td>
+<td>16-bit words from PLC file I1</td></tr>
+<tr><td></td>
+<td>I2</td>
+<td>16-bit words from PLC file I2</td></tr>
+<tr><td></td>
+<td>I3</td>
+<td>16-bit words from PLC file I3</td></tr>
+<tr><td></td>
+<td>I4</td>
+<td>16-bit words from PLC file I4</td></tr>
+<tr><td></td>
+<td>I5</td>
+<td>16-bit words from PLC file I5</td></tr>
+<tr><td></td>
+<td>I6</td>
+<td>16-bit words from PLC file I6</td></tr>
+<tr><td></td>
+<td>I7</td>
+<td>16-bit words from PLC file I7</td></tr>
+<tr><td></td>
+<td>I8</td>
+<td>16-bit words from PLC file I8</td></tr>
+<tr><td></td>
+<td>I9</td>
+<td>16-bit words from PLC file I9</td></tr>
+<tr><td></td>
+<td>I10</td>
+<td>16-bit words from PLC file I10</td></tr>
+<tr><td></td>
+<td>O1</td>
+<td>16-bit words from PLC file O1</td></tr>
+<tr><td></td>
+<td>O2</td>
+<td>16-bit words from PLC file O2</td></tr>
+<tr><td></td>
+<td>O11</td>
+<td>16-bit words from PLC file O11</td></tr>
+<tr><td></td>
+<td>O12</td>
+<td>16-bit words from PLC file O12</td></tr>
+
+<tr><td>IO</td>
+<td>DIGITAL</td>
+<td>Raw data from IP-470 DIO Industry Pack Modules</td></tr>
+
+<tr><td>M1</td>
+<td>GALIL</td>
+<td>Mirror position information from GALIL motion controller</td></tr>
+<tr><td></td>
+<td>MIG</td>
+<td>Mirror position information from Mitutoyo gauges</td></tr>
+<tr><td></td>
+<td>PMSS</td>
+<td>Primary mirror support system data</td></tr>
+
+<tr><td>M2</td>
+<td>GALIL</td>
+<td>Mirror position information from GALIL motion controller</td></tr>
+<tr><td></td>
+<td>MIG</td>
+<td>Mirror position information from Mitutoyo gauges</td></tr>
+
+<tr><td>MOUNT</td>
+<td>ALT</td>
+<td>Altitude axis motor, servo, and amplifier data</td></tr>
+<tr><td></td>
+<td>AZ</td>
+<td>Azimuth axis motor, servo, and amplifier data</td></tr>
+<tr><td>MOUNT</td>
+<td>ROT</td>
+<td>Rotatoraxis motor, servo, and amplifier data</td></tr>
+
+<tr><td>SHMEM</td>
+<td>CONFIG</td>
+<td>MCP-TPM shared memory interface configuration</td></tr>
+
+<tr><td>THERMAL</td>
+<td>CONFIG</td>
+<td>Thermal monitoring system configuration</td></tr>
+<tr><td></td>
+<td>M1</td>
+<td>Temperature data for M1 Module</td></tr>
+<tr><td></td>
+<td>M1</td>
+<td>Temperature data for M1 Module</td></tr>
+<tr><td></td>
+<td>M2</td>
+<td>Temperature data for M2 Module</td></tr>
+<tr><td></td>
+<td>TEST</td>
+<td>Test record</td></tr>
+<tr><td></td>
+<td>TRUSS</td>
+<td>Temperature data for Truss Module</td></tr>
+
+<tr><td>WEATHER</td>
+<td>DEWPT</td>
+<td>Dew point and humidity sensor data</td></tr>
+<tr><td></td>
+<td>WIND</td>
+<td>Wind speed and direction</td></tr>
+
+</table>
+<p>
+
+<hr>
+
+Last modified on 15 November 2002 by 
+<a href="mailto:peregrin@apo.nmsu.edu">Peregrine M. McGehee</a>.
+</blockquote>

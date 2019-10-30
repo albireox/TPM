@@ -1,0 +1,72 @@
+record(longin,"tpm_IP470_A0") {
+	field(DESC, "DIO:AMP AZ1[0:7]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C0 S255 @IP470_A")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_A1") {
+	field(DESC, "DIO:AMP AZ1[9:11]/AZ2[0:3]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C1 S255 @IP470_A")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_A2") {
+	field(DESC, "DIO:AMP AZ2[4:11]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C2 S255 @IP470_A")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_A3") {
+	field(DESC, "DIO:AMP AL1[0:7]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C3 S255 @IP470_A")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_A4") {
+	field(DESC, "DIO:AMP AL1[9:11]/AL2[0:3]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C4 S255 @IP470_A")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_A5") {
+	field(DESC, "DIO:AMP AL2[4:11]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C5 S255 @IP470_A")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_B0") {
+	field(DESC, "DIO:AMP ROT[0:7]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C0 S255 @IP470_B")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_B1") {
+	field(DESC, "DIO:AMP ROT[9:11]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C1 S255 @IP470_B")
+	field(SCAN,".1 second")
+}
+record(longin,"tpm_IP470_B2") {
+	field(DESC, "DIO:SLIP[0:7]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C2 S255 @IP470_B")
+	field(SCAN,"Passive")
+}
+record(longin,"tpm_IP470_B3") {
+	field(DESC, "DIO:SLIP[8:11]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C3 S255 @IP470_B")
+	field(SCAN,"Passive")
+}
+record(longout,"tpm_IP470_B4") {
+	field(DESC, "DIO:SLIP MUX[0:3][PMSS 4:7]")
+	field(DTYP,"Acromag IP-470")
+	field(OUT,"#C4 S15 @IP470_B")
+	field(SCAN,"Passive")
+}
+record(longin,"tpm_IP470_B5") {
+	field(DESC, "DIO:MCP SYNC[0]")
+	field(DTYP,"Acromag IP-470")
+	field(INP,"#C5 S255 @IP470_B")
+	field(SCAN,"Passive")
+}

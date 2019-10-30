@@ -1,0 +1,44 @@
+\section{Subsystems}
+
+The TPM is logically composed of a number of subsystems. Within
+Table \ref{tbl-systems} we provide short descriptions of each of these
+Each channel within the TPM is associated with a specific subsystem. 
+The description field (DESC) within the each EPICS database record
+contains the name of the associated subsystem using the syntax
+``<subsystem>:<description>''. 
+
+This use of the DESC field to 
+hold information utilized by the documentation system often
+results in the total string length exceeding the
+29 character limit for this field. As a consequence 
+error messages of the form ``Cannot set field DESC..'' 
+appear during the
+execution of {\tt dbLoadRecords} at IOC startup.
+The error message is somewhat misleading because the string 
+is truncated to 29 characters and then written into the real-time
+database. This has no effect on IOC operation.
+
+\begin{deluxetable}{ll} 
+\tablecaption{TPM Logical Subsystems\label{tbl-systems}}
+\tablehead{
+\colhead{Subsystem} &
+\colhead{Description}
+}
+\startdata
+    ADMIN & Administrative information for sdsstpm and sdsstpm2 \\
+    AMP & Drive amplifier data \\
+    DEWAR &  Imager and Spectrograph 180l dewar weight and pressure \\
+    DIO & Raw digital data from IP-470 DIO Industry Pack Modules \\
+    GALIL & M1 and M2 mirror position information from GALIL motion controller \\
+    MIG & M1 and M2 Mirror position information from Mitutoyo gauges \\
+    MOTOR & Motor current and voltage data \\
+    PLC & Allen-Bradley PLC-based interlock system data structures \\
+    PMSS & Primary mirror support system data \\
+    SERVO & Servo systems data: position, velocity, errors \\
+    SHMEM & MCP-TPM shared memory interface configuration \\
+    SLIP & Slip detection system \\
+    THERMAL & Thermal monitoring system \\
+    WEATHER & Dew point and humidity sensor data, wind speed and direction \\
+\enddata
+\end{deluxetable}
+

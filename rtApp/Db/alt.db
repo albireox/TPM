@@ -1,0 +1,104 @@
+record(longin,"tpm_ALENC1") {
+	field(DESC,"First Altitude Encoder")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALENC1")
+	field(EGU,"Counts")
+}
+record(compress,"tpm_ALENC1CB") {
+	field(SCAN,".05 second")
+	field(INP, "tpm_ALENC1")
+	field(NSAM, "20")
+	field(ALG, "Circular Buffer")
+}
+record(longin,"tpm_ALCPOS") {
+	field(DESC,"Altitude Position Command")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALCPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALCVOLT") {
+	field(DESC,"Altitude Voltage Command")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALCVOLT")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALENC2") {
+	field(DESC,"Second Altitude Encoder")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALENC2")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALMTRC1") {
+	field(DESC,"Alt. First Motor Current")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMTRC1")
+	field(EGU,"Counts")
+	field(HIHI,"2000")
+	field(HHSV,"MAJOR")
+	field(HIGH,"1000")
+	field(HSV,"MINOR")
+	field(LOW,"-1000")
+	field(LSV,"MINOR")
+	field(LOLO,"-2000")
+	field(LLSV,"MAJOR")
+}
+
+record(longin,"tpm_ALMTRC2") {
+	field(DESC,"Alt. Second Motor Current")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMTRC2")
+	field(EGU,"Counts")
+	field(HIHI,"2000")
+	field(HHSV,"MAJOR")
+	field(HIGH,"1000")
+	field(HSV,"MINOR")
+	field(LOW,"-1000")
+	field(LSV,"MINOR")
+	field(LOLO,"-2000")
+	field(LLSV,"MAJOR")
+}
+
+record(longin,"tpm_ALMTRV1") {
+	field(DESC,"Alt. First Motor Voltage")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMTRV1")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALMTRV2") {
+	field(DESC,"Alt. Second Motor Voltage")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMTRV2")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALERR") {
+	field(DESC,"Alt. Servo Error")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALERR")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALSTATE") {
+	field(DESC,"Altitude State")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALSTATE")
+	field(EGU,"Counts")
+}

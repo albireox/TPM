@@ -1,0 +1,102 @@
+record(longin,"tpm_M1GAL0A") {
+	field(DESC,"GALIL:M1 Galil A0 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL0C") {
+	field(DESC,"GALIL:M1 Galil A0 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL1A") {
+	field(DESC,"GALIL:M1 Galil A1 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL1C") {
+	field(DESC,"GALIL:M1 Galil A1 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL2A") {
+	field(DESC,"GALIL:M1 Galil A2 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL2C") {
+	field(DESC,"GALIL:M1 Galil A2 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL3A") {
+	field(DESC,"GALIL:M1 Galil A3 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL3C") {
+	field(DESC,"GALIL:M1 Galil A3 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL4A") {
+	field(DESC,"GALIL:M1 Galil A4 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL4C") {
+	field(DESC,"GALIL:M1 Galil A4 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL5A") {
+	field(DESC,"GALIL:M1 Galil A5 Actual")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL5C") {
+	field(DESC,"GALIL:M1 Galil A5 Command")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_M1GAL0H") {
+	field(DESC,"GALIL:M1 Galil A0 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL1H") {
+	field(DESC,"GALIL:M1 Galil A1 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL2H") {
+	field(DESC,"GALIL:M1 Galil A2 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL3H") {
+	field(DESC,"GALIL:M1 Galil A3 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL4H") {
+	field(DESC,"GALIL:M1 Galil A4 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}
+record(longin,"tpm_M1GAL5H") {
+	field(DESC,"GALIL:M1 Galil A5 Homed")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+}

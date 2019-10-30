@@ -1,0 +1,8 @@
+record(waveform,"tpm_AB") {
+	field(DESC,"PLC:Local storage for PLC data")
+	field(SCAN,"1 second")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ILOCK")
+	field(NELM,"182")
+	field(FTVL,"USHORT")
+}

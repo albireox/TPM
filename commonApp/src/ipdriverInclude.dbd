@@ -1,0 +1,15 @@
+include "base.dbd"
+include "rp.dbd.1.0"
+device(ai,VME_IO,devAiGsIp16ADC,"GS IP-16-ADC")
+device(ao,VME_IO,devAoGsIpDACsu,"GS IP-DAC-SU")
+device(bi,VME_IO,devBiGsIpDig,"GS IP-UniDig-I-E")
+device(bi,VME_IO,devBiGsIpDigHV,"GS IP-UniDig-I-HV")
+device(bo,VME_IO,devBoGsIpDig,"GS IP-UniDig-I-E")
+device(bo,VME_IO,devBoGsIpDigHV,"GS IP-UniDig-I-HV")
+device(bo,VME_IO,devBoGsIpRel,"GS IP-Relay")
+driver(drvGsIPIC)
+driver(drvGsIp16ADC)
+driver(drvGsIpDACsu)
+driver(drvGsIpDig)
+driver(drvGsIpDigHV)
+driver(drvGsIpRel)

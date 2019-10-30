@@ -1,0 +1,3 @@
+# local device support
+device(longin,	VME_IO, devLonginAcromagIp470,   "Acromag IP-470")
+device(longout,	VME_IO, devLongoutAcromagIp470,   "Acromag IP-470")

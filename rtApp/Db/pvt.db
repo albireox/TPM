@@ -1,0 +1,132 @@
+record(longin,"tpm_ALMCPPOS") {
+	field(DESC,"Altitude Position (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMCPPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALMCPVEL") {
+	field(DESC,"Altitude Velocity (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMCPVEL")
+}
+record(longin,"tpm_ALMCPTIM") {
+	field(DESC,"Altitude Time (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMCPTIM")
+}
+record(longin,"tpm_AZMCPPOS") {
+	field(DESC,"Azimuth Position (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMCPPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZMCPVEL") {
+	field(DESC,"Azimuth Velocity (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMCPVEL")
+}
+record(longin,"tpm_AZMCPTIM") {
+	field(DESC,"Azimuth Time (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMCPTIM")
+}
+record(longin,"tpm_ROMCPPOS") {
+	field(DESC,"Rotator Position (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROMCPPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROMCPVEL") {
+	field(DESC,"Rotator Velocity (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROMCPVEL")
+}
+record(longin,"tpm_ROMCPTIM") {
+	field(DESC,"Rotator Time (MCP)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROMCPTIM")
+}
+record(longin,"tpm_ALTCCPOS") {
+	field(DESC,"Altitude Position (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALTCCPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALTCCVEL") {
+	field(DESC,"Altitude Velocity (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALTCCVEL")
+}
+record(longin,"tpm_ALTCCTIM") {
+	field(DESC,"Altitude Time (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALTCCTIM")
+}
+record(longin,"tpm_AZTCCPOS") {
+	field(DESC,"Azimuth Position (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZTCCPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZTCCVEL") {
+	field(DESC,"Azimuth Velocity (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZTCCVEL")
+}
+record(longin,"tpm_AZTCCTIM") {
+	field(DESC,"Azimuth Time (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZTCCTIM")
+}
+record(longin,"tpm_ROTCCPOS") {
+	field(DESC,"Rotator Position (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROTCCPOS")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROTCCVEL") {
+	field(DESC,"Rotator Velocity (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROTCCVEL")
+}
+record(longin,"tpm_ROTCCTIM") {
+	field(DESC,"Rotator Time (TCC)")
+	field(SCAN,".05 second")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROTCCTIM")
+}

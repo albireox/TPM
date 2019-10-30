@@ -1,0 +1,42 @@
+record(stringout,"tpm_MIG1W") {
+	field(DESC, "MIG1 cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r \000")
+	field(OUT,"@/tyCo/1 <writeCmt %s>")
+}
+record(stringout,"tpm_MIG1R") {
+	field(DESC, "MIG1 resp delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r")
+	field(OUT,"@/tyCo/1 <readCmt %s>")
+}
+record(ao,"tpm_MIG1ASLP") {
+	field(DESC, "MIG1A slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/1 <slope %s>")
+	field(DOL,"10000.0")
+	field(OMSL, "closed_loop")
+}
+record(longout,"tpm_MIG1DBG") {
+	field(DESC, "MIG1 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/1 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_MIG1A") {
+	field(DESC,"M1 Axial A")
+	field(PHAS,"1")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/1 <1><%2k%f>")
+	field(PREC,"4")
+	field(LINR,"NO CONVERSION")
+	field(ASLO,"0.0001")
+	field(EGU,"Inches")
+	field(HOPR,"3.0")
+	field(LOPR,"-3.0")
+}

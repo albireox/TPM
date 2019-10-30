@@ -1,0 +1,132 @@
+record(calc,"tpm_uptime") {
+	field(DESC,"ADMIN:TPM up time")
+	field(SCAN,"10 second")
+	field(CALC,"A/B")
+	field(INPA,"tpm_vxTicks PP NMS")
+	field(INPB,"216000")
+	field(EGU,"Hours")
+	field(PREC,"4")
+}
+record(longin,"tpm_vxTicks") {
+	field(DESC,"ADMIN:vxWorks clock ticks")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@vxTicks")
+	field(EGU,"Ticks")
+}
+record(calc,"tpm_telescope_mode") {
+	field(DESC,"SERVO:Is the telescope in use")
+	field(SCAN,".1 second")
+	field(CALC,"C||((A&16)&&(B=4092))")
+     	field(INPA,"tpm_ABI8_00")
+	field(INPB,"tpm_AL1_Ampstat")
+	field(INPC,"0")
+} 
+record(calc,"tpm_altinrange") {
+	field(DESC, "SERVO:Is the ALT position OK?")
+	field(SCAN,".1 second")
+	field(INPA,"tpm_ALENC1")
+	field(B,"5142857")
+	field(C,"21857142")
+	field(CALC,"(A>B)&&(A<C)?1:0")
+}
+record(calc, "tpm_TrackStart") {
+	field(DESC, "SERVO:Last time stamp not tracking")
+	field(INPA, "tpm_ALMCPVEL")
+	field(INPB, "tpm_AL1_Ampstat")
+	field(INPC, "tpm_uptime")
+	field(INPD, "tpm_TrackStart")
+	field(E, "3200")
+	field(CALC, "(ABS(A)<E||B#4092)?C:D")
+	field(EGU, "Hours")
+	field(PREC, "4")
+	field(SCAN, "10 second")
+	field(FLNK, "tpm_TrackTime")
+}
+record(calc, "tpm_TrackTime") {
+	field(DESC, "SERVO:Elapsed time into track")
+	field(INPA, "tpm_uptime")
+	field(INPB, "tpm_TrackStart")
+	field(CALC, "(A-B)*60")
+	field(EGU, "Minutes")
+	field(PREC, "4")
+}
+record(longin,"tpm_CRCLOOPS") {
+	field(DESC,"SHMEM:CRC check loops")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_CRCLOOPS")
+	field(SCAN,".05 second")
+}
+record(longin,"tpm_SHMLOOPS") {
+	field(DESC,"SHMEM:Total of SHM loops")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_SHMLOOPS")
+	field(SCAN,".05 second")
+}
+record(longin,"tpm_MCPCOUNT") {
+	field(DESC,"SHHEM:MCP SHMEM Counter")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_MCPCOUNT")
+	field(SCAN,".05 second")
+}
+record(longin,"tpm_DALENC1") {
+	field(DESC,"SERVO:delta ALENC1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_DALENC1")
+	field(SCAN,".05 second")
+}
+record(stringin,"tpm_version") {
+	field(DESC,"ADMIN:TPM Version ID")
+	field(SCAN,"10 second")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_VERSION")
+}
+record(sub,"tpm_get1Hzdata") {
+	field(DESC,"SHMEM:Load data into global vars")
+	field(SCAN,"1 second")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub1HzProcess")
+}
+record(sub,"tpm_get5Hzdata") {
+	field(DESC,"SHMEM:Load data into global vars")
+	field(SCAN,".2 second")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub5HzProcess")
+}
+record(sub,"tpm_get20Hzdata") {
+	field(DESC,"SHMEM:Load data into global vars")
+	field(SCAN,".05 second")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub20HzProcess")
+}
+record(sub,"tpm_MJD") {
+	field(DESC,"ADMIN:MJD")
+	field(SCAN,"10 second")
+	field(INAM,"tpmMJDInit")
+	field(SNAM,"tpmMJDProcess")
+	field(PREC,"0")
+}
+record(sub,"tpm_TimeTest") {
+	field(DESC,"ADMIN:IOC - NTP")
+	field(SCAN,"1 second")
+	field(INAM,"tpmTimeTestInit")
+	field(SNAM,"tpmTimeTestProcess")
+	field(PREC,"6")
+}
+record(genSub, "tpm_InstID") {
+	field(DESC,"PLC:Instrument ID switches")
+	field(INAM, "tpmInstIDInit")
+	field(SNAM, "tpmInstIDProcess")
+        field(EFLG, "ON CHANGE")
+	field(SCAN, "1 second")
+	field(INPA, "tpm_ABI1_16")
+	field(FTA, "LONG")
+	field(FTVA, "STRING")
+	field(FTVB, "STRING")
+	field(FTVC, "STRING")
+}
+record(calc, "tpm_20HzCount") {
+	field(DESC, "ADMIN:Test 20Hz Loop")
+	field(SCAN, ".05 second")
+	field(CALC, "A + 1")
+	field(INPA, "tpm_20HzCount")
+}

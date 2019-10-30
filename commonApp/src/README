@@ -1,0 +1,26 @@
+LogFile
+~~~~~~~
+
+Rich Neswold (neswold@fnal.gov)
+$Id: README,v 1.1.1.1 2000/01/27 21:18:15 cvsuser Exp $
+
+
+Introduction
+~~~~~~~~~~~~
+
+The log file library allows an application to read or write a data
+file containing sampled data.
+
+
+Compiling
+~~~~~~~~~
+
+To compile, rename the appropriate makefile to "Makefile" (or use the
+-f option of make to specify the correct file.)
+
+
+Using
+~~~~~
+
+To use the library on VxWorks, include "logfile.h" in your source code
+and load the logfile module before loading your own modules.

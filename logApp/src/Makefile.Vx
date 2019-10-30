@@ -1,0 +1,26 @@
+# Makefile.Vx
+TOP = ../../..
+include $(TOP)/config/CONFIG_APP
+#----------------------------------------
+#  ADD MACRO DEFINITIONS AFTER THIS LINE
+USR_CFLAGS += -D_VXWORKS -I$(TOP)/mcp
+#USR_CFLAGS += -I/p/mcp/v4_1_1/mcp-new
+CC += -Wall
+
+SRCS.c += ../loadtime.c ../logger.c ../logfile.c ../logreg.c
+SRCS.c += ../cmd.c ../telnetCmds.c
+LIBOBJS += loadtime.o logger.o logfile.o logreg.o 
+LIBOBJS += cmd.o telnetCmds.o
+
+LIBNAME = tpmlogLib
+
+INC = lf.h logfile.h
+
+#INSTALLS += ../errlog
+
+#Note that the command line that builds the
+#library $(LIBNAME) may be HUGE (>3kB)
+#
+include $(TOP)/config/RULES.Vx
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE

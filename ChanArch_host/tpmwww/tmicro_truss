@@ -1,0 +1,40 @@
+tpm_TM_M2B0Chans.VALA		Air temp - lower level - NE side of rotating floor
+tpm_TM_M2B0Chans.VALB		Air temp - lower level - SE side of rotating floor
+tpm_TM_M2B0Chans.VALC		Air temp - lower level - SW side of rotating floor
+tpm_TM_M2B0Chans.VALD		Air temp - lower level - NW side of rotating floor
+tpm_TM_M2B0Chans.VALE		Air temp - lower level - above TEC chiller air outlet
+tpm_TM_M2B0Chans.VALF		Rotating floor girder temp - NE side
+tpm_TM_M2B0Chans.VALG		Rotating floor temp - SE side
+tpm_TM_M2B0Chans.VALH		Rotating floor girder temp - SW side
+tpm_TM_M2B1Chans.VALA		Rotating floor temp - NW side
+tpm_TM_M2B1Chans.VALB		Imager glycol supply temperature
+tpm_TM_M2B1Chans.VALC		Imager glycol return temperature
+tpm_TM_M2B1Chans.VALD		Spectro glycol supply temperature
+tpm_TM_M2B1Chans.VALE		Spectro glycol return temperature
+tpm_TM_M2B1Chans.VALF		DUMMY 1 TEL
+tpm_TM_M2B1Chans.VALG		DUMMY 2 TEL
+tpm_TM_M2B1Chans.VALH		DUMMY 3 TEL
+tpm_TM_M2B2Chans.VALA		Air temp - N fork - upper
+tpm_TM_M2B2Chans.VALB		N fork temp - upper
+tpm_TM_M2B2Chans.VALC		N fork temp - lower
+tpm_TM_M2B2Chans.VALD		Air temp - N fork - lower
+tpm_TM_M2B2Chans.VALE		Air temp - S fork - upper
+tpm_TM_M2B2Chans.VALF		S fork temp - upper
+tpm_TM_M2B2Chans.VALG		S fork temp - lower
+tpm_TM_M2B2Chans.VALH		Air temp - S fork - lower
+tpm_TM_M2B3Chans.VALA		Windbaffle - N - Upper Left
+tpm_TM_M2B3Chans.VALB		Windbaffle - N - Upper Right	
+tpm_TM_M2B3Chans.VALC		Windbaffle - N - Lower Left	
+tpm_TM_M2B3Chans.VALD		Windbaffle - N - Lower Right
+tpm_TM_M2B3Chans.VALE		Windbaffle - E - Upper Left
+tpm_TM_M2B3Chans.VALF		Windbaffle - E - Upper Right	
+tpm_TM_M2B3Chans.VALG		Windbaffle - E - Lower Left	
+tpm_TM_M2B3Chans.VALH		Windbaffle - E - Lower Right
+tpm_TM_M2B4Chans.VALA		Windbaffle - S - Upper Left
+tpm_TM_M2B4Chans.VALB		Windbaffle - S - Upper Right	
+tpm_TM_M2B4Chans.VALC		Windbaffle - S - Lower Left	
+tpm_TM_M2B4Chans.VALD		Windbaffle - S - Lower Right
+tpm_TM_M2B4Chans.VALE		Windbaffle - W - Upper Left
+tpm_TM_M2B4Chans.VALF		Windbaffle - W - Upper Right	
+tpm_TM_M2B4Chans.VALG		Windbaffle - W - Lower Left	
+tpm_TM_M2B4Chans.VALH		Windbaffle - W - Lower Right

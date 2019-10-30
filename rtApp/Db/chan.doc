@@ -1,0 +1,94 @@
+record(calc,"tpm_altitude") {
+record(calc,"tpm_azimuth") {
+record(calc,"tpm_roterr") {
+record(calc,"tpm_alterr") {
+record(calc,"tpm_azerr") {
+record(calc,"tpm_rotator") {
+record(calc,"tpm_uptime") {
+record(longin,"tpm_vxTicks") {
+record(longin,"tpm_ALENC1") {
+record(longin,"tpm_ALCPOS") {
+record(longin,"tpm_ALCVOLT") {
+record(longin,"tpm_ALENC2") {
+record(longin,"tpm_ALLWC") {
+record(longin,"tpm_ALMTRC1") {
+record(longin,"tpm_ALMTRC2") {
+record(longin,"tpm_ALMTRV1") {
+record(longin,"tpm_ALMTRV2") {
+record(longin,"tpm_ALP100") {
+record(longin,"tpm_ALP20") {
+record(longin,"tpm_ALP_2") {
+record(longin,"tpm_ALRWC") {
+record(longin,"tpm_ALSTOW") {
+record(longin,"tpm_ALWSPOS") {
+record(longin,"tpm_AZCPOS") {
+record(longin,"tpm_AZCCWC") {
+record(longin,"tpm_AZCCWHL") {
+record(longin,"tpm_AZCCWSL") {
+record(longin,"tpm_AZCWC") {
+record(longin,"tpm_AZCWHL") {
+record(longin,"tpm_AZCWSL") {
+record(longin,"tpm_AZENC1") {
+record(longin,"tpm_AZENC2") {
+record(longin,"tpm_AZMTRC1") {
+record(longin,"tpm_AZMTRC2") {
+record(longin,"tpm_AZMTRV1") {
+record(longin,"tpm_AZMTRV2") {
+record(longin,"tpm_ROCENC") {
+record(longin,"tpm_ROCPOS") {
+record(longin,"tpm_ROCVOLT") {
+record(longin,"tpm_ROCCWHL") {
+record(longin,"tpm_ROCCWSL") {
+record(longin,"tpm_ROCWHL") {
+record(longin,"tpm_ROCWSL") {
+record(longin,"tpm_ROMTRC") {
+record(longin,"tpm_ROMTRV") {
+record(longin,"tpm_ROICHG") {
+record(sub,"tpm_getdata") {
+	field(DESC,"Altitude Position in Degrees")
+	field(DESC,"Azimuth Position in Degrees")
+	field(DESC,"Rotator Servo Error")
+	field(DESC,"Altitude Servo Error")
+	field(DESC,"Azimuth Servo Error")
+	field(DESC,"Rotator Position in Degrees")
+	field(DESC,"TPM up time")
+	field(DESC,"vxWorks clock ticks")
+	field(DESC,"First Altitude Encoder")
+	field(DESC,"Altitude Position Command")
+	field(DESC,"Altitude Voltage Command")
+	field(DESC,"Second Altitude Encoder")
+	field(DESC,"Alt. WS Lower Collision")
+	field(DESC,"Alt. First Motor Current")
+	field(DESC,"Alt. Second Motor Current")
+	field(DESC,"Alt. First Motor Voltage")
+	field(DESC,"Alt. Second Motor Voltage")
+	field(DESC,"Alt. 100 degree limit switch")
+	field(DESC,"Alt. 20 degree limit switch")
+	field(DESC,"Alt. -2 degree limit switch")
+	field(DESC,"Alt. WS raise collision")
+	field(DESC,"Alt. Stow Interlock")
+	field(DESC,"LVDT WS Position")
+	field(DESC,"Azimuth Voltage Command")
+	field(DESC,"Azimuth WS CCW Limit Switch")
+	field(DESC,"Azimuth WS CCW Hard Limit")
+	field(DESC,"Azimuth WS CCW Soft Limit")
+	field(DESC,"Azimuth WS CW Limit Switch")
+	field(DESC,"Azimuth WS CW Hard Limit")
+	field(DESC,"Azimuth WS CW Soft Limit")
+	field(DESC,"First Azimuth Encoder")
+	field(DESC,"Second Azimuth Encoder")
+	field(DESC,"Az. First Motor Current")
+	field(DESC,"Az. Second Motor Current")
+	field(DESC,"Az. First Motor Voltage")
+	field(DESC,"Az. Second Motor Voltage")
+	field(DESC,"Rotator Position Encoder")
+	field(DESC,"Rotator Position Command")
+	field(DESC,"Rotator Voltage Command")
+	field(DESC,"Rot. CCW Hard Limit")
+	field(DESC,"Rot. CCW Soft Limit")
+	field(DESC,"Rot. CCW Soft Limit")
+	field(DESC,"Rot. CW Soft Limit")
+	field(DESC,"Rot. Motor Current")
+	field(DESC,"Rot. Motor Voltage")
+	field(DESC,"Rot. Instrument Change")
+	field(DESC,"Load data into global vars")

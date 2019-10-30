@@ -1,0 +1,599 @@
+tpm_20HzCount 0.05 Monitor
+tpm2_uptime 60
+tpm_ABB10_00 1
+tpm_ABB10_01 1
+tpm_ABB10_02 1
+tpm_ABB10_03 1
+tpm_ABB3_00 1
+tpm_ABB3_01 1
+tpm_ABB3_02 1
+tpm_ABB3_03 1
+tpm_ABB3_04 1
+tpm_ABB3_05 1
+tpm_ABB3_06 1
+tpm_ABB3_07 1
+tpm_ABB3_08 1
+tpm_ABB3_09 1
+tpm_ABB3_10 1
+tpm_ABB3_11 1
+tpm_ABB3_12 1
+tpm_ABB3_13 1
+tpm_ABB3_14 1
+tpm_ABB3_15 1
+tpm_ABB3_16 1
+tpm_ABB3_17 1
+tpm_ABB3_18 1
+tpm_ABB3_19 1
+tpm_ABI10_00 1
+tpm_ABI1_00 1
+tpm_ABI10_01 1
+tpm_ABI1_01 1
+tpm_ABI1_02 1
+tpm_ABI1_03 1
+tpm_ABI1_04 1
+tpm_ABI1_05 1
+tpm_ABI1_06 1
+tpm_ABI1_07 1
+tpm_ABI1_08 1
+tpm_ABI1_09 1
+tpm_ABI1_10 1
+tpm_ABI1_11 1
+tpm_ABI1_12 1
+tpm_ABI1_13 1
+tpm_ABI1_14 1
+tpm_ABI1_15 1
+tpm_ABI1_16 1
+tpm_ABI1_17 1
+tpm_ABI1_18 1
+tpm_ABI1_19 1
+tpm_ABI1_20 1
+tpm_ABI1_21 1
+tpm_ABI1_22 1
+tpm_ABI1_23 1
+tpm_ABI1_24 1
+tpm_ABI1_25 1
+tpm_ABI1_26 1
+tpm_ABI1_27 1
+tpm_ABI1_28 1
+tpm_ABI1_29 1
+tpm_ABI1_30 1
+tpm_ABI1_31 1
+tpm_ABI2_00 1
+tpm_ABI2_01 1
+tpm_ABI2_02 1
+tpm_ABI2_03 1
+tpm_ABI2_04 1
+tpm_ABI2_05 1
+tpm_ABI2_06 1
+tpm_ABI2_07 1
+tpm_ABI2_08 1
+tpm_ABI2_09 1
+tpm_ABI2_10 1
+tpm_ABI2_11 1
+tpm_ABI2_12 1
+tpm_ABI2_13 1
+tpm_ABI2_14 1
+tpm_ABI2_15 1
+tpm_ABI2_16 1
+tpm_ABI2_17 1
+tpm_ABI2_18 1
+tpm_ABI2_19 1
+tpm_ABI2_20 1
+tpm_ABI2_21 1
+tpm_ABI2_22 1
+tpm_ABI2_23 1
+tpm_ABI2_24 1
+tpm_ABI2_25 1
+tpm_ABI2_26 1
+tpm_ABI2_27 1
+tpm_ABI2_28 1
+tpm_ABI2_29 1
+tpm_ABI2_30 1
+tpm_ABI2_31 1
+tpm_ABI3_00 1
+tpm_ABI3_01 1
+tpm_ABI3_02 1
+tpm_ABI3_03 1
+tpm_ABI3_04 1
+tpm_ABI3_05 1
+tpm_ABI3_06 1
+tpm_ABI3_07 1
+tpm_ABI4_00 1
+tpm_ABI4_01 1
+tpm_ABI4_02 1
+tpm_ABI4_03 1
+tpm_ABI4_04 1
+tpm_ABI4_05 1
+tpm_ABI4_06 1
+tpm_ABI4_07 1
+tpm_ABI5_00 1
+tpm_ABI5_01 1
+tpm_ABI5_02 1
+tpm_ABI5_03 1
+tpm_ABI5_04 1
+tpm_ABI5_05 1
+tpm_ABI5_06 1
+tpm_ABI5_07 1
+tpm_ABI6_00 1
+tpm_ABI6_01 1
+tpm_ABI7_00 1
+tpm_ABI7_01 1
+tpm_ABI8_00 1
+tpm_ABI8_01 1
+tpm_ABI9_00 1
+tpm_ABI9_01 1
+tpm_ABO1_00 1
+tpm_ABO1_01 1
+tpm_ABO1_02 1
+tpm_ABO1_03 1
+tpm_ABO1_04 1
+tpm_ABO1_05 1
+tpm_ABO1_06 1
+tpm_ABO1_07 1
+tpm_ABO1_08 1
+tpm_ABO1_09 1
+tpm_ABO11_00 1
+tpm_ABO1_10 1
+tpm_ABO11_01 1
+tpm_ABO1_11 1
+tpm_ABO1_12 1
+tpm_ABO1_13 1
+tpm_ABO1_14 1
+tpm_ABO1_15 1
+tpm_ABO1_16 1
+tpm_ABO1_17 1
+tpm_ABO1_18 1
+tpm_ABO1_19 1
+tpm_ABO12_00 1
+tpm_ABO1_20 1
+tpm_ABO12_01 1
+tpm_ABO1_21 1
+tpm_ABO1_22 1
+tpm_ABO1_23 1
+tpm_ABO1_24 1
+tpm_ABO1_25 1
+tpm_ABO1_26 1
+tpm_ABO1_27 1
+tpm_ABO1_28 1
+tpm_ABO1_29 1
+tpm_ABO1_30 1
+tpm_ABO1_31 1
+tpm_ABO2_00 1
+tpm_ABO2_01 1
+tpm_ABO2_02 1
+tpm_ABO2_03 1
+tpm_ABO2_04 1
+tpm_ABO2_05 1
+tpm_ABO2_06 1
+tpm_ABO2_07 1
+tpm_ABO2_08 1
+tpm_ABO2_09 1
+tpm_ABO2_10 1
+tpm_ABO2_11 1
+tpm_ABO2_12 1
+tpm_ABO2_13 1
+tpm_ABO2_14 1
+tpm_ABO2_15 1
+tpm_ABO2_16 1
+tpm_ABO2_17 1
+tpm_ABO2_18 1
+tpm_ABO2_19 1
+tpm_ABO2_20 1
+tpm_ABO2_21 1
+tpm_ABO2_22 1
+tpm_ABO2_23 1
+tpm_ABO2_24 1
+tpm_ABO2_25 1
+tpm_ABO2_26 1
+tpm_ABO2_27 1
+tpm_ABO2_28 1
+tpm_ABO2_29 1
+tpm_ABO2_30 1
+tpm_ABO2_31 1
+tpm_AL1_Ampstat 0.1
+tpm_AL2_Ampstat 0.1
+tpm_ALBRKDISCMD 1.0
+tpm_ALBRKDISMCP 1.0
+tpm_ALBRKDISSTAT 1.0
+tpm_ALBRKENCMD 1.0
+tpm_ALBRKENMCP 1.0 
+tpm_ALBRKENSTAT 1.0
+tpm_ALCPOS 0.05 Monitor
+tpm_ALCVOLT 0.05 Monitor
+tpm_ALENC1 0.05 Monitor
+tpm_ALENC2 0.05 Monitor
+tpm_ALERR 0.05 Monitor
+tpm_ALMCPPOS 0.05 Monitor
+tpm_ALMCPTIM 0.05 Monitor
+tpm_ALMCPVEL 0.05 Monitor
+tpm_ALMTRC1 0.05 Monitor
+tpm_ALMTRC2 0.05 Monitor
+tpm_ALMTRV1 0.05 Monitor
+tpm_ALMTRV2 0.05 Monitor
+tpm_ALSTATE 1.0 
+tpm_ALTCCPOS 0.05 Monitor
+tpm_ALTCCTIM 0.05 Monitor
+tpm_ALTCCVEL 0.05 Monitor
+tpm_alttrackchk	0.05
+tpm_AltWindErr	1.0
+tpm_AZ1_Ampstat 0.1
+tpm_AZ2_Ampstat 0.1
+tpm_AZBRKDISCMD 1.0
+tpm_AZBRKDISMCP 1.0
+tpm_AZBRKDISSTAT 1.0
+tpm_AZBRKENCMD 1.0
+tpm_AZBRKENMCP 1.0
+tpm_AZBRKENSTAT 1.0
+tpm_AZCPOS 0.05 Monitor
+tpm_AZCVOLT 0.05 Monitor
+tpm_AZENC1 0.05 Monitor
+tpm_AZENC2 0.05 Monitor
+tpm_AZERR 0.05 Monitor
+tpm_AZMCPPOS 0.05 Monitor
+tpm_AZMCPTIM 0.05 Monitor
+tpm_AZMCPVEL 0.05 Monitor
+tpm_AZMTRC1 0.05 Monitor
+tpm_AZMTRC2 0.05 Monitor
+tpm_AZMTRV1 0.05 Monitor
+tpm_AZMTRV2 0.05 Monitor
+tpm_AZSTATE 1.0 
+tpm_AZTCCPOS 0.05 Monitor
+tpm_AZTCCTIM 0.05 Monitor
+tpm_AZTCCVEL 0.05 Monitor
+tpm_aztrackchk	0.05
+tpm_AzWindErr 1.0
+tpm_CRCLOOPS 0.05 Monitor
+tpm_CW1Pos	1.0
+tpm_CW2Pos	1.0
+tpm_CW3Pos	1.0
+tpm_CW4Pos	1.0
+tpm_DALENC1 0.05 Monitor
+tpm_DpTemp.VALA 10
+tpm_DpTemp.VALB 10
+tpm_GAL1.SEVR	10
+tpm_GAL2.SEVR	10
+tpm_Humid 10
+tpm_LiftForce	1.0
+tpm_LiftPos	1.0
+tpm_LN2press_imager 10
+tpm_LN2press_spectro 10
+tpm_M1GAL0A 0.05
+tpm_M1GAL0C 0.05
+tpm_M1GAL0H 0.05
+tpm_M1GAL1A 0.05
+tpm_M1GAL1C 0.05
+tpm_M1GAL1H 0.05
+tpm_M1GAL2A 0.05
+tpm_M1GAL2C 0.05
+tpm_M1GAL2H 0.05
+tpm_M1GAL3A 0.05
+tpm_M1GAL3C 0.05
+tpm_M1GAL3H 0.05
+tpm_M1GAL4A 0.05
+tpm_M1GAL4C 0.05
+tpm_M1GAL4H 0.05
+tpm_M1GAL5A 0.05
+tpm_M1GAL5C 0.05
+tpm_M1GAL5H 0.05
+tpm_M2FORCE 1.0
+tpm_M2GAL0A 0.05
+tpm_M2GAL0C 0.05
+tpm_M2GAL0H 0.05
+tpm_M2GAL1A 0.05
+tpm_M2GAL1C 0.05
+tpm_M2GAL1H 0.05
+tpm_M2GAL2A 0.05
+tpm_M2GAL2C 0.05 
+tpm_M2GAL2H 0.05
+tpm_M2GAL3A 0.05
+tpm_M2GAL3C 0.05
+tpm_M2GAL3H 0.05
+tpm_M2GAL4A 0.05
+tpm_M2GAL4C 0.05
+tpm_M2GAL4H 0.05
+tpm_MCPCOUNT 0.05 Monitor
+tpm_MIG1A 0.2
+tpm_MIG1B 0.2
+tpm_MIG1C 0.2
+tpm_MIG1DT 0.2
+tpm_MIG1EL 0.2 
+tpm_MIG1FL 0.2
+tpm_MIG1.SEVR	10
+tpm_MIG2A 0.2
+tpm_MIG2B 0.2
+tpm_MIG2C 0.2
+tpm_MIG2DT 0.2
+tpm_MIG2.SEVR	10
+tpm_MJD 60
+tpm_Ndewar_spectro 5
+tpm_Ndewar_spectro.SEVR	10
+tpm_PMSS.VALA 0.1 Monitor
+tpm_PMSS.VALB 0.1 Monitor
+tpm_PMSS.VALC 0.1 Monitor
+tpm_PMSS.VALD 0.1 Monitor
+tpm_PMSS.VALE 0.1 Monitor
+tpm_PMSS.VALF 0.1 Monitor
+tpm_PMSS.VALG 0.1 Monitor
+tpm_PMSS.VALH 0.1 Monitor
+tpm_PMSS.VALI 0.1 Monitor
+tpm_PMSS.VALJ 0.1 Monitor
+tpm_PMSS.VALK 0.1 Monitor
+tpm_PMSS.VALL 0.1 Monitor
+tpm_PMSS.VALM 0.1 Monitor
+tpm_PMSS.VALN 0.1 Monitor
+tpm_PMSS.VALO 0.1 Monitor
+tpm_PMSS.VALP 0.1 Monitor
+tpm_PMSS.VALR 0.1 Monitor
+tpm_PMSS.VALS 0.1 Monitor
+tpm_ROCENC 0.05 Monitor
+tpm_ROCPOS 0.05 Monitor
+tpm_ROCVOLT 0.05 Monitor
+tpm_ROERR 0.05 Monitor
+tpm_ROMCPPOS 0.05 Monitor
+tpm_ROMCPTIM 0.05 Monitor
+tpm_ROMCPVEL 0.05 Monitor
+tpm_ROMTRC 0.05 Monitor
+tpm_ROMTRV 0.05 Monitor
+tpm_ROSTATE 1.0
+tpm_ROT_Ampstat 0.1
+tpm_ROTCCPOS 0.05 Monitor
+tpm_ROTCCTIM 0.05 Monitor
+tpm_ROTCCVEL 0.05 Monitor
+tpm_rottrackchk	0.05
+tpm_Sdewar_imager 5
+tpm_Sdewar_imager.SEVR	10
+tpm_SHMLOOPS 0.05 Monitor
+tpm_SLIP.VALA 0.2
+tpm_SLIP.VALB 0.2
+tpm_SLIP.VALC 0.2
+tpm_SLIP.VALD 0.2
+tpm_SLIP.VALE 0.2
+tpm_SLIP.VALF 0.2
+tpm_SLIP.VALG 0.2
+tpm_SLIP.VALH 0.2
+tpm_SLIP.VALI 0.2
+tpm_SLIP.VALJ 0.2
+tpm_SLIP.VALK 0.2
+tpm_SLIP.VALL 0.2
+tpm_SLIP.VALM 0.2
+tpm_SLIP.VALN 0.2
+tpm_SLIP.VALO 0.2
+tpm_SLIP.VALP 0.2
+tpm_telescope_mode 0.1 Monitor
+tpm_TimeTest 1
+tpm_TM_Floor_Telair	10
+tpm_TM_Lowair_Telair	10
+tpm_TM_M0B0Chans.SEVR	10
+tpm_TM_M0B0Chans.VALA 10.0 
+tpm_TM_M0B0Chans.VALB 10.0 
+tpm_TM_M0B0Chans.VALC 10.0 
+tpm_TM_M0B0Chans.VALD 10.0 
+tpm_TM_M0B0Chans.VALE 10.0 
+tpm_TM_M0B0Chans.VALF 10.0 
+tpm_TM_M0B0Chans.VALG 10.0 
+tpm_TM_M0B0Chans.VALH 10.0 
+tpm_TM_M0B0.SEVR	10
+tpm_TM_M0B1Chans.SEVR	10
+tpm_TM_M0B1Chans.VALA 10.0 
+tpm_TM_M0B1Chans.VALB 10.0 
+tpm_TM_M0B1Chans.VALC 10.0 
+tpm_TM_M0B1Chans.VALD 10.0 
+tpm_TM_M0B1Chans.VALE 10.0 
+tpm_TM_M0B1Chans.VALF 10.0 
+tpm_TM_M0B1Chans.VALG 10.0 
+tpm_TM_M0B1Chans.VALH 10.0 
+tpm_TM_M0B2Chans.SEVR	10
+tpm_TM_M0B2Chans.VALA 10.0 
+tpm_TM_M0B2Chans.VALB 10.0 
+tpm_TM_M0B2Chans.VALC 10.0 
+tpm_TM_M0B2Chans.VALD 10.0 
+tpm_TM_M0B2Chans.VALE 10.0 
+tpm_TM_M0B2Chans.VALF 10.0 
+tpm_TM_M0B2Chans.VALG 10.0 
+tpm_TM_M0B2Chans.VALH 10.0 
+tpm_TM_M0B3Chans.SEVR	10
+tpm_TM_M0B3Chans.VALA 10.0 
+tpm_TM_M0B3Chans.VALB 10.0 
+tpm_TM_M0B3Chans.VALC 10.0 
+tpm_TM_M0B3Chans.VALD 10.0 
+tpm_TM_M0B3Chans.VALE 10.0 
+tpm_TM_M0B3Chans.VALF 10.0 
+tpm_TM_M0B3Chans.VALG 10.0 
+tpm_TM_M0B3Chans.VALH 10.0 
+tpm_TM_M0B4Chans.SEVR	10
+tpm_TM_M0B4Chans.VALA 10.0 
+tpm_TM_M0B4Chans.VALB 10.0 
+tpm_TM_M0B4Chans.VALC 10.0 
+tpm_TM_M0B4Chans.VALD 10.0 
+tpm_TM_M0B4Chans.VALE 10.0 
+tpm_TM_M0B4Chans.VALF 10.0 
+tpm_TM_M0B4Chans.VALG 10.0 
+tpm_TM_M0B4Chans.VALH 10.0 
+tpm_TM_M0B5Chans.SEVR	10
+tpm_TM_M0B5Chans.VALA 10.0 
+tpm_TM_M0B5Chans.VALB 10.0 
+tpm_TM_M0B5Chans.VALC 10.0 
+tpm_TM_M0B5Chans.VALD 10.0 
+tpm_TM_M0B5Chans.VALE 10.0 
+tpm_TM_M0B5Chans.VALF 10.0 
+tpm_TM_M0B5Chans.VALG 10.0 
+tpm_TM_M0B5Chans.VALH 10.0 
+tpm_TM_M0B6Chans.SEVR	10
+tpm_TM_M0B6Chans.VALA 10.0 
+tpm_TM_M0B6Chans.VALB 10.0 
+tpm_TM_M0B6Chans.VALC 10.0 
+tpm_TM_M0B6Chans.VALD 10.0 
+tpm_TM_M0B6Chans.VALE 10.0 
+tpm_TM_M0B6Chans.VALF 10.0 
+tpm_TM_M0B6Chans.VALG 10.0 
+tpm_TM_M0B6Chans.VALH 10.0 
+tpm_TM_M0B7Chans.SEVR	10
+tpm_TM_M0B7Chans.VALA 10.0 
+tpm_TM_M0B7Chans.VALB 10.0 
+tpm_TM_M0B7Chans.VALC 10.0 
+tpm_TM_M0B7Chans.VALD 10.0 
+tpm_TM_M0B7Chans.VALE 10.0 
+tpm_TM_M0B7Chans.VALF 10.0 
+tpm_TM_M0B7Chans.VALG 10.0 
+tpm_TM_M0B7Chans.VALH 10.0 
+tpm_TM_M1B0Chans.SEVR	10
+tpm_TM_M1B0Chans.VALA 10.0 
+tpm_TM_M1B0Chans.VALB 10.0 
+tpm_TM_M1B0Chans.VALC 10.0 
+tpm_TM_M1B0Chans.VALD 10.0 
+tpm_TM_M1B0Chans.VALE 10.0 
+tpm_TM_M1B0Chans.VALF 10.0 
+tpm_TM_M1B0Chans.VALG 10.0 
+tpm_TM_M1B0Chans.VALH 10.0 
+tpm_TM_M1B1Chans.SEVR	10
+tpm_TM_M1B1Chans.VALA 10.0 
+tpm_TM_M1B1Chans.VALB 10.0 
+tpm_TM_M1B1Chans.VALC 10.0 
+tpm_TM_M1B1Chans.VALD 10.0 
+tpm_TM_M1B1Chans.VALE 10.0 
+tpm_TM_M1B1Chans.VALF 10.0 
+tpm_TM_M1B1Chans.VALG 10.0 
+tpm_TM_M1B1Chans.VALH 10.0 
+tpm_TM_M1B2Chans.SEVR	10
+tpm_TM_M1B2Chans.VALA 10.0 
+tpm_TM_M1B2Chans.VALB 10.0 
+tpm_TM_M1B2Chans.VALC 10.0 
+tpm_TM_M1B2Chans.VALD 10.0 
+tpm_TM_M1B2Chans.VALE 10.0 
+tpm_TM_M1B2Chans.VALF 10.0 
+tpm_TM_M1B2Chans.VALG 10.0 
+tpm_TM_M1B2Chans.VALH 10.0 
+tpm_TM_M1B3Chans.SEVR	10
+tpm_TM_M1B3Chans.VALA 10.0 
+tpm_TM_M1B3Chans.VALB 10.0 
+tpm_TM_M1B3Chans.VALC 10.0 
+tpm_TM_M1B3Chans.VALD 10.0 
+tpm_TM_M1B3Chans.VALE 10.0 
+tpm_TM_M1B3Chans.VALF 10.0 
+tpm_TM_M1B3Chans.VALG 10.0 
+tpm_TM_M1B3Chans.VALH 10.0 
+tpm_TM_M1B4Chans.SEVR	10
+tpm_TM_M1B4Chans.VALA 10.0 
+tpm_TM_M1B4Chans.VALB 10.0 
+tpm_TM_M1B4Chans.VALC 10.0 
+tpm_TM_M1B4Chans.VALD 10.0 
+tpm_TM_M1B4Chans.VALE 10.0 
+tpm_TM_M1B4Chans.VALF 10.0 
+tpm_TM_M1B4Chans.VALG 10.0 
+tpm_TM_M1B4Chans.VALH 10.0 
+tpm_TM_M1B5Chans.SEVR	10
+tpm_TM_M1B5Chans.VALA 10.0 
+tpm_TM_M1B5Chans.VALB 10.0 
+tpm_TM_M1B5Chans.VALC 10.0 
+tpm_TM_M1B5Chans.VALD 10.0 
+tpm_TM_M1B5Chans.VALE 10.0 
+tpm_TM_M1B5Chans.VALF 10.0 
+tpm_TM_M1B5Chans.VALG 10.0 
+tpm_TM_M1B5Chans.VALH 10.0 
+tpm_TM_M1B6Chans.SEVR	10
+tpm_TM_M1B6Chans.VALA 10.0 
+tpm_TM_M1B6Chans.VALB 10.0 
+tpm_TM_M1B6Chans.VALC 10.0 
+tpm_TM_M1B6Chans.VALD 10.0 
+tpm_TM_M1B6Chans.VALE 10.0 
+tpm_TM_M1B6Chans.VALF 10.0 
+tpm_TM_M1B6Chans.VALG 10.0 
+tpm_TM_M1B6Chans.VALH 10.0 
+tpm_TM_M1B7Chans.SEVR	10
+tpm_TM_M1B7Chans.VALA 10.0 
+tpm_TM_M1B7Chans.VALB 10.0 
+tpm_TM_M1B7Chans.VALC 10.0 
+tpm_TM_M1B7Chans.VALD 10.0 
+tpm_TM_M1B7Chans.VALE 10.0 
+tpm_TM_M1B7Chans.VALF 10.0 
+tpm_TM_M1B7Chans.VALG 10.0 
+tpm_TM_M1B7Chans.VALH 10.0 
+tpm_TM_M1_Denv	10
+tpm_TM_M1_FB	10
+tpm_TM_M1Left_FB	10
+tpm_TM_M1Lower_FB	10
+tpm_TM_M1_Rgrad	10
+tpm_TM_M1Right_FB	10
+tpm_TM_M1_Telair	10
+tpm_TM_M1Upper_FB	10
+tpm_TM_M2B0Chans.SEVR	10
+tpm_TM_M2B0Chans.VALA 10.0 
+tpm_TM_M2B0Chans.VALB 10.0 
+tpm_TM_M2B0Chans.VALC 10.0 
+tpm_TM_M2B0Chans.VALD 10.0 
+tpm_TM_M2B0Chans.VALE 10.0 
+tpm_TM_M2B0Chans.VALF 10.0 
+tpm_TM_M2B0Chans.VALG 10.0 
+tpm_TM_M2B0Chans.VALH 10.0 
+tpm_TM_M2B1Chans.SEVR	10
+tpm_TM_M2B1Chans.VALA 10.0 
+tpm_TM_M2B1Chans.VALB 10.0 
+tpm_TM_M2B1Chans.VALC 10.0 
+tpm_TM_M2B1Chans.VALD 10.0 
+tpm_TM_M2B1Chans.VALE 10.0 
+tpm_TM_M2B1Chans.VALF 10.0 
+tpm_TM_M2B1Chans.VALG 10.0 
+tpm_TM_M2B1Chans.VALH 10.0 
+tpm_TM_M2B2Chans.SEVR	10
+tpm_TM_M2B2Chans.VALA 10.0 
+tpm_TM_M2B2Chans.VALB 10.0 
+tpm_TM_M2B2Chans.VALC 10.0 
+tpm_TM_M2B2Chans.VALD 10.0 
+tpm_TM_M2B2Chans.VALE 10.0 
+tpm_TM_M2B2Chans.VALF 10.0 
+tpm_TM_M2B2Chans.VALG 10.0 
+tpm_TM_M2B2Chans.VALH 10.0 
+tpm_TM_M2B3Chans.SEVR	10
+tpm_TM_M2B3Chans.VALA 10.0 
+tpm_TM_M2B3Chans.VALB 10.0 
+tpm_TM_M2B3Chans.VALC 10.0 
+tpm_TM_M2B3Chans.VALD 10.0 
+tpm_TM_M2B3Chans.VALE 10.0 
+tpm_TM_M2B3Chans.VALF 10.0 
+tpm_TM_M2B3Chans.VALG 10.0 
+tpm_TM_M2B3Chans.VALH 10.0 
+tpm_TM_M2B4Chans.SEVR	10
+tpm_TM_M2B4Chans.VALA 10.0 
+tpm_TM_M2B4Chans.VALB 10.0 
+tpm_TM_M2B4Chans.VALC 10.0 
+tpm_TM_M2B4Chans.VALD 10.0 
+tpm_TM_M2B4Chans.VALE 10.0 
+tpm_TM_M2B4Chans.VALF 10.0 
+tpm_TM_M2B4Chans.VALG 10.0 
+tpm_TM_M2B4Chans.VALH 10.0 
+tpm_TM_M2B5Chans.SEVR	10
+tpm_TM_M2B5Chans.VALA 10.0 
+tpm_TM_M2B5Chans.VALB 10.0 
+tpm_TM_M2B5Chans.VALC 10.0 
+tpm_TM_M2B5Chans.VALD 10.0 
+tpm_TM_M2B5Chans.VALE 10.0 
+tpm_TM_M2B5Chans.VALF 10.0 
+tpm_TM_M2B5Chans.VALG 10.0 
+tpm_TM_M2B5Chans.VALH 10.0 
+tpm_TM_M2B6Chans.SEVR	10
+tpm_TM_M2B6Chans.VALA 10.0 
+tpm_TM_M2B6Chans.VALB 10.0 
+tpm_TM_M2B6Chans.VALC 10.0 
+tpm_TM_M2B6Chans.VALD 10.0 
+tpm_TM_M2B6Chans.VALE 10.0 
+tpm_TM_M2B6Chans.VALF 10.0 
+tpm_TM_M2B6Chans.VALG 10.0 
+tpm_TM_M2B6Chans.VALH 10.0 
+tpm_TM_M2B7Chans.SEVR	10
+tpm_TM_M2B7Chans.VALA 10.0 
+tpm_TM_M2B7Chans.VALB 10.0 
+tpm_TM_M2B7Chans.VALC 10.0 
+tpm_TM_M2B7Chans.VALD 10.0 
+tpm_TM_M2B7Chans.VALE 10.0 
+tpm_TM_M2B7Chans.VALF 10.0 
+tpm_TM_M2B7Chans.VALG 10.0 
+tpm_TM_M2B7Chans.VALH 10.0 
+tpm_TM_M2_FB	10
+tpm_TM_M2Left_FB	10
+tpm_TM_M2Lower_FB	10
+tpm_TM_M2_Rgrad	10
+tpm_TM_M2Right_FB	10
+tpm_TM_M2Upper_FB	10
+tpm_TM_Return_Telair	10
+tpm_TrackTime 10
+tpm_uptime 60

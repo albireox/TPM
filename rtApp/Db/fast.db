@@ -1,0 +1,78 @@
+record(sub,"tpm_get200Hzdata") {
+	field(DESC,"Load data into global vars")
+	field(SCAN,"Passive")
+	field(INAM,"tpmSubInit")
+	field(SNAM,"tpmSub200HzProcess")
+}
+record(longin,"tpm_AZENC1F") {
+	field(DESC,"First Azimuth Encoder")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZENC1F")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZMTRC1F") {
+	field(DESC,"Az. First Motor Current")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZMTRC1F")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_AZERRF") {
+	field(DESC,"Az. Servo Error")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_AZERRF")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALENC1F") {
+	field(DESC,"First Altitude Encoder")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALENC1F")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALMTRC1F") {
+	field(DESC,"Alt. First Motor Current")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALMTRC1F")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ALERRF") {
+	field(DESC,"Alt. Servo Error")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ALERRF")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROCENCF") {
+	field(DESC,"Rotator Position Encoder")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROCENCF")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROMTRCF") {
+	field(DESC,"Rot. Motor Current")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROMTRCF")
+	field(EGU,"Counts")
+}
+record(longin,"tpm_ROERRF") {
+	field(DESC,"Rot. Error")
+	field(SCAN,"Passive")
+	field(PHAS,"1")
+	field(DTYP,"vxWorks Variable")
+	field(INP,"@tpm_ROERRF")
+	field(EGU,"Counts")
+}

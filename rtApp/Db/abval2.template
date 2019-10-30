@@ -1,0 +1,22 @@
+record(subArray,"tpm_AB$(FILE)_00") {
+	field(DESC,"PLC:Word in Allen-Bradley file $(FILE)")
+	field(SCAN,"1 second")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_AB$(FILE).VAL")
+	field(NELM,"1")
+	field(MALM,"32")
+	field(INDX,"0")
+	field(FTVL,"USHORT")
+	field(PHAS,"2")
+}
+record(subArray,"tpm_AB$(FILE)_01") {
+	field(DESC,"PLC:Word in Allen-Bradley file $(FILE)")
+	field(SCAN,"1 second")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_AB$(FILE).VAL")
+	field(NELM,"1")
+	field(MALM,"32")
+	field(INDX,"1")
+	field(FTVL,"USHORT")
+	field(PHAS,"2")
+}

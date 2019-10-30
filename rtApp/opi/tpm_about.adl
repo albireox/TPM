@@ -1,0 +1,132 @@
+file {
+	name="tpm_about.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="27"
+	nstr="116"
+	ndynamic="0"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="1"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="589"
+		height="194"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="1592"
+	nwords_sta="64"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="1580"
+	osta="1516"
+	odynamic="1580"
+	oplot="1580"
+	ord="1580"
+	oes="1580"
+	okd="1580"
+	opd="1592"
+	opo="1592"
+	opc="68"
+	ostr="338"
+	ocmap="1516"
+	ocrules="1516"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="44"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="-1"
+		y="15"
+		width="640"
+		height="21"
+		groupid="0"
+	}
+	textix="Displays and IOC (vxWorks) software maintained by:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="153"
+		y="40"
+		width="380"
+		height="22"
+		groupid="0"
+	}
+	textix="Peregrine M. McGehee"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="153"
+		y="58"
+		width="400"
+		height="22"
+		groupid="0"
+	}
+	textix="Los Alamos National Laboratory"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="153"
+		y="76"
+		width="400"
+		height="23"
+		groupid="0"
+	}
+	textix="(505) 667-3273"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="153"
+		y="95"
+		width="400"
+		height="23"
+		groupid="0"
+	}
+	textix="peregrin@apo.nmsu.edu"
+	align="horiz. left"
+}
+"kill display" {
+	object {
+		x="488"
+		y="128"
+		width="57"
+		height="47"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}

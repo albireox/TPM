@@ -1,0 +1,198 @@
+record(stringout,"tpm_MIG1W") {
+	field(DESC, "MIG:MIG1 cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r \000")
+	field(OUT,"@/tyCo/7 <writeCmt %s>")
+}
+record(stringout,"tpm_MIG1R") {
+	field(DESC, "MIG:MIG1 resp delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r")
+	field(OUT,"@/tyCo/7 <readCmt %s>")
+}
+record(longout,"tpm_MIG1DBG") {
+	field(DESC, "MIG:MIG1 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/7 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_MIG1SLP") {
+	field(DESC,"MIG:MIG1 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/7 <slope>")
+	field(DOL,"10000.0")
+	field(OMSL,"closed_loop")
+}
+record(waveform,"tpm_MIG1") {
+	field(DESC,"MIG:M1 MIG")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/7 <9><%6t%s>")
+	field(FTVL,"CHAR")
+	field(NELM,"120")
+	field(SCAN,"2 second")
+	field(FLNK,"tpm_MIG1Parse")
+}
+record(genSub, "tpm_MIG1Parse") {
+	field(DESC,"MIG:M1 MIG Parse")
+	field(INAM, "tpmMigInit")
+	field(SNAM, "tpmMigProcess")
+        field(EFLG, "ON CHANGE")
+	field(INPA, "tpm_MIG1")
+	field(FTA, "CHAR")
+	field(NOA, "120")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+}
+record(waveform,"tpm_MIG2") {
+	field(DESC,"MIG:M2 MIG")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/8 <9><%4t%s>")
+	field(FTVL,"CHAR")
+	field(NELM,"120")
+	field(SCAN,"1 second")
+	field(FLNK,"tpm_MIG2Parse")
+}
+record(genSub, "tpm_MIG2Parse") {
+	field(DESC,"MIG:M2 MIG Parse")
+	field(INAM, "tpmMigInit")
+	field(SNAM, "tpmMigProcess")
+        field(EFLG, "ON CHANGE")
+	field(INPA, "tpm_MIG2")
+	field(FTA, "CHAR")
+	field(NOA, "120")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+}
+record(ai,"tpm_MIG1A") {
+	field(DESC,"MIG:M1 Axial A")
+	field(INP,"tpm_MIG1Parse.VALA CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1B") {
+	field(DESC,"MIG:M1 Axial B")
+	field(INP,"tpm_MIG1Parse.VALB CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1C") {
+	field(DESC,"MIG:M1 Axial C")
+	field(INP,"tpm_MIG1Parse.VALC CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG1DT") {
+	field(DESC,"MIG:M1 Transverse D")
+	field(INP,"tpm_MIG1Parse.VALD CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(calc,"tpm_MIG1EL_SCALE") {
+	field(DESC,"MIG:M1 Lateral E Scale")
+	field(INPA,"tpm_MIG1Parse.VALE CPP MS")
+	field(CALC,"A*25.4")
+}
+record(ai,"tpm_MIG1EL") {
+	field(DESC,"MIG:M1 Lateral E - East")
+	field(INP,"tpm_MIG1EL_SCALE CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(calc,"tpm_MIG1FL_SCALE") {
+	field(DESC,"MIG:M1 Lateral F Scale")
+	field(INPA,"tpm_MIG1Parse.VALF CPP MS")
+	field(CALC,"A*25.4")
+}
+record(ai,"tpm_MIG1FL") {
+	field(DESC,"MIG:M1 Lateral F - West")
+	field(INP,"tpm_MIG1FL_SCALE CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(stringout,"tpm_MIG2W") {
+	field(DESC, "MIG:MIG2 cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r \000")
+	field(OUT,"@/tyCo/8 <writeCmt %s>")
+}
+record(stringout,"tpm_MIG2R") {
+	field(DESC, "MIG:MIG2 resp delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r")
+	field(OUT,"@/tyCo/8 <readCmt %s>")
+}
+record(longout,"tpm_MIG2DBG") {
+	field(DESC, "MIG:MIG2 debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/8 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(ao,"tpm_MIG2SLP") {
+	field(DESC,"MIG:MIG2 slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/8 <slope>")
+	field(DOL,"10000.0")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_MIG2A") {
+	field(DESC,"MIG:M2 Axial A")
+	field(INP,"tpm_MIG2Parse.VALA CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG2B") {
+	field(DESC,"MIG:M2 Axial B")
+	field(INP,"tpm_MIG2Parse.VALB CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG2C") {
+	field(DESC,"MIG:M2 Axial C")
+	field(INP,"tpm_MIG2Parse.VALC CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}
+record(ai,"tpm_MIG2DT") {
+	field(DESC,"MIG:M2 Transverse D")
+	field(INP,"tpm_MIG2Parse.VALD CPP MS")
+	field(PREC,"4")
+	field(EGU,"mm")
+	field(HOPR,"5.0")
+	field(LOPR,"-5.0")
+}

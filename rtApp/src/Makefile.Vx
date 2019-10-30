@@ -1,0 +1,36 @@
+# Makefile.Vx
+TOP = ../../..
+include $(TOP)/config/CONFIG_APP
+#----------------------------------------
+#  ADD MACRO DEFINITIONS AFTER THIS LINE
+USR_CFLAGS += -D_VXWORKS -I$(TOP)/mcp
+
+LIBOBJS += tpmSub.o 
+LIBOBJS += tpmAlarm.o
+LIBOBJS += tpmGalil.o
+LIBOBJS += tpmMJD.o
+LIBOBJS += tpmTMicro.o
+LIBOBJS += tpmPMSS.o
+LIBOBJS += tpmSlip.o
+LIBOBJS += tpmMig.o
+LIBOBJS += tpmInstID.o
+LIBOBJS += tpmDP.o
+LIBOBJS += tpmMode.o
+LIBOBJS += tpmSerial.o
+LIBOBJS += tpmMean.o
+LIBOBJS += tpmUPS.o
+#LIBOBJS += packeteer.o
+#LIBOBJS += dgTest.o
+
+
+include ../baseLIBOBJS
+
+LIBNAME = tpmrtLib
+INSTALLS += iocCore seq
+
+#Note that the command line that builds the
+#library $(LIBNAME) may be HUGE (>3kB)
+#
+include $(TOP)/config/RULES.Vx
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE

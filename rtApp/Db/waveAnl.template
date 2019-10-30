@@ -1,0 +1,30 @@
+record(ao,"tpm_$(A)_N") {
+	field(DESC,"$(DESC) - array size")
+	field(DRVL,"1")
+	field(DRVH,"$(MAX)")
+	field(VAL,"$(N)")
+	field(PINI,"YES")
+	field(OUT,"tpm_$(A)_W.NELM PP NMS")
+}
+record(compress,"tpm_$(A)_C") {
+	field(DESC,"$(DESC) - buffer")
+	field(INP,"$(INP)")
+	field(SCAN,"$(SCAN)")
+ 	field(ALG,"Circular Buffer")
+	field(NSAM,"$(MAX)")
+        field(FLNK,"tpm_$(A)_W")
+}
+record(waveAnl,"tpm_$(A)_W") {
+	field(DESC,"$(DESC) - waveform")
+	field(INP,"tpm_$(A)_C")
+	field(EGUX,"$(EGU)")
+	field(NELM,"$(MAX)")
+        field(FLNK,"tpm_$(A)_M")
+}
+record(compress,"tpm_$(A)_M") {
+	field(DESC,"$(DESC) - mean")
+	field(INP,"tpm_$(A)_C")
+ 	field(ALG,"N to 1 Average")
+	field(NSAM,"$(N)")
+	field(N,"1")
+}

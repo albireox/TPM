@@ -1,0 +1,5 @@
+#!/usr/local/bin/bash
+cd $1
+umask 000
+ArchiveEngine tpm.cfg &
+exit

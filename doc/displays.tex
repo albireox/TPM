@@ -1,0 +1,119 @@
+\section{Displays}
+
+Within this section we describe the EDD/DM display
+hierarchy. The top-level TPM real-time display is invoked 
+using {\tt \$ dm tpm.dl} on sdsshost. The structure
+of the display system is summarized in Tables
+\ref{tbl-display1},
+\ref{tbl-display2},
+\ref{tbl-display3},
+\ref{tbl-display4},
+\ref{tbl-display5}, and \ref{tbl-display6}.
+
+\begin{deluxetable}{ll}
+\tablecaption{TPM Top-Level Display Hierarchy\label{tbl-display1}}
+\tablehead{
+\colhead{Name} &
+\colhead{Description}
+}
+\startdata
+About & Product information \\
+Details & Menu to access subsystem displays \\
+Temperature & Menu to access thermal management displays \\
+System Checks & Menu to access test configurations \\
+Interlocks & Menu to access display of PLC files \\
+Time Series & Menu to invoke Stripcharts \\
+Weather & Weather data
+\enddata
+\end{deluxetable}
+
+\begin{deluxetable}{ll}
+\tablecaption{Details - Subsystem Displays\label{tbl-display2}}
+\tablehead{
+\colhead{Name} &
+\colhead{Description}
+}
+\startdata
+Axis & Altitude, azimuth, and rotator drive information \\
+PVTs & MCP and TCC Position, Velocity, and Time triplets \\
+M1/M2 Galils & Galil motor controller information for mirrors \\
+Amp/Slip & Drive amplifier and slip detection status \\
+PMSS & Primary mirror support system readings \\
+PLC Analog & Display of analog values read from PLCs
+\enddata
+\end{deluxetable}
+
+\begin{deluxetable}{ll}
+\tablecaption{Temperature Displays\label{tbl-display3}}
+\tablehead{
+\colhead{Name} &
+\colhead{Description}
+}
+\startdata
+Sensor Data & Temperature readings grouped by module \\
+Graphics & Color-coded schematics of mirror and truss temperatures \\
+Alarms & State of thermal management alarms \\
+Enclosure Dew Pt & Status and alarm display for enclosure DP depression
+\enddata
+\end{deluxetable}
+
+\begin{deluxetable}{ll}
+\tablecaption{System Checks\label{tbl-display4}}
+\tablehead{
+\colhead{Name} &
+\colhead{Description}
+}
+\startdata
+Tests & Configuration information for system tests
+\enddata
+\end{deluxetable}
+
+\begin{deluxetable}{ll}
+\tablecaption{Interlocks\label{tbl-display5}}
+\tablehead{
+\colhead{Name} &
+\colhead{Description}
+}
+\startdata
+I1 & Allen-Bradley PLC file display \\
+01 & Allen-Bradley PLC file display \\
+I2 & Allen-Bradley PLC file display \\
+02 & Allen-Bradley PLC file display \\
+I3 & Allen-Bradley PLC file display \\
+I4 & Allen-Bradley PLC file display \\
+I5 & Allen-Bradley PLC file display \\
+I6 & Allen-Bradley PLC file display \\
+I7 & Allen-Bradley PLC file display \\
+I8 & Allen-Bradley PLC file display \\
+I9 & Allen-Bradley PLC file display \\
+I10 & Allen-Bradley PLC file display \\
+O11 & Allen-Bradley PLC file display \\
+O12 & Allen-Bradley PLC file display \\
+B3 & Allen-Bradley PLC file display \\
+B10 & Allen-Bradley PLC file display 
+\enddata
+\end{deluxetable}
+
+\begin{deluxetable}{ll}
+\tablecaption{Time Series\label{tbl-display6}}
+\tablehead{
+\colhead{Name} &
+\colhead{Description}
+}
+\startdata
+Generic & StripTool with no predefined configuration \\
+Position Errors & StripTool showing servo errors \\
+Rotator & StripTool showing rotator axis data \\
+Altitude & STripTool showing altitude axis data \\
+Azimuth & StripTool showing azimuth axis data \\
+Current & StripTool showing drive current readings
+\enddata
+\end{deluxetable}
+
+\subsection{Screen Shots}
+
+\begin{figure}
+\caption{{\bf Need to display subregions as the resolution is poor 
+for this version.}}
+\plotone{tpm_dl.ps}
+\end{figure}

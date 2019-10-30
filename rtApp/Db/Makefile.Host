@@ -1,0 +1,66 @@
+# Makefile.Host
+TOP = ../../..
+include $(TOP)/config/CONFIG_APP
+#----------------------------------------
+#  ADD MACRO DEFINITIONS AFTER THIS LINE
+
+#----------------------------------------------------
+#  Optimization of db files using dbst (default: NO)
+#DB_OPT = YES
+
+#----------------------------------------------------
+#  Optimization needs the name of the appropriate
+#  dbd file (compare with ../src/Makefile.Vx)
+#DBDNAME = exampleApp.dbd
+
+#----------------------------------------------------
+# Add databases, templates, substitutions like this
+DB += util.db
+DB += util2.db
+DB += ilock.db
+DB += mig.db dmig_dt.db
+DB += galil.db galil_m1.db galil_m2.db
+DB += scaled.db
+DB += tests_axis.db
+DB += scale.db
+DB += ab.db
+DB += tmicro.db
+DB += pmss.db
+DB += temp_alarms.db
+#DB += fast.db 
+DB += absub.db
+#DB += tmicro_chan.db
+DB += tmicro_block.db
+DB += axis.db
+DB += ip470.db 
+DB += ampstat.db
+DB += slip.db
+DB += humid.db
+DB += waveAnl.db
+DB += plc_analog.db
+DB += temp_means.db
+DB += encl_humid.db
+DB += imager_ups.db
+#--------
+# Special file for IOP tpmHandler used with caGet1.
+# _NOT_ an EPICS ASCII database file.
+DB += tpmAlarms.db
+#--------
+
+#----------------------------------------------------
+# Declare template files which do not show up in DB
+USES_TEMPLATE += absub.template abval32.template abval20.template
+USES_TEMPLATE += abval8.template abval4.template abval2.template
+#USES_TEMPLATE += tmicro_chan.template
+USES_TEMPLATE += tmicro_block.template
+USES_TEMPLATE += axis.template
+USES_TEMPLATE += waveAnl.template
+USES_TEMPLATE += temp_means.template
+
+#----------------------------------------------------
+# The following line is for local dbd expansion
+#DBDEXPAND = tpmInclude.dbd
+
+include $(TOP)/config/RULES.Db
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE

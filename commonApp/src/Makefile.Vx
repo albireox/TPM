@@ -1,0 +1,48 @@
+# Makefile.Vx
+TOP = ../../..
+include $(TOP)/config/CONFIG_APP
+#----------------------------------------
+#  ADD MACRO DEFINITIONS AFTER THIS LINE
+MCP_BASE = /p/mcpbase
+MCP_DIR = $(MCP_BASE)
+
+USR_CFLAGS += -D_VXWORKS -DNDEBUG -I$(MCP_DIR)/charlie/vx_dsc/config/mv162
+USR_CFLAGS += -I$(TOP)/mcp
+
+SRCS.c += ../timer.c 
+SRCS.c += ../tagname.c
+SRCS.c += ../mv162IndPackInit.c ../ipOctalSerial.c
+SRCS.c += ../drvSerial.c ../drvAscii.c ../devAscii.c
+SRCS.c += ../serial_init.c
+SRCS.c += ../cnfg470.c ../rpnt470.c ../rprt470.c ../rsts470.c ../wpnt470.c\
+	  ../wprt470.c ../drvr470.o ../carrier.o ../vxw.o    
+SRCS.c += ../devAcromagIp470.c
+#SRCS.c += ../devAiGsIp16ADC.c 
+SRCS.c += ../drvGsIp16ADC.c  ../drvIpac.c  ../drvIpMv162.c
+SRCS.c += ../genSubRecord.c ../genSubUtil.c
+SRCS.c += ../tnetDev.c
+SRCS.c += ../waveAnlRecord.c
+
+LIBOBJS += timer.o tagname.o 
+LIBOBJS += mv162IndPackInit.o ipOctalSerial.o
+LIBOBJS += drvSerial.o drvAscii.o devAscii.o
+LIBOBJS += serial_init.o
+LIBOBJS += cnfg470.o rpnt470.o rprt470.o rsts470.o wpnt470.o wprt470.o\
+          drvr470.o carrier.o vxw.o    
+LIBOBJS += devAcromagIp470.o
+#LIBOBJS += devAiGsIp16ADC.o 
+LIBOBJS += drvGsIp16ADC.o drvIpac.o drvIpMv162.o 
+LIBOBJS += genSubRecord.o genSubUtil.o
+LIBOBJS += tnetDev.o
+LIBOBJS += waveAnlRecord.o
+
+LIBNAME = tpmcommonLib
+
+INC += timer.h genSubRecord.h genSubUtil.h ip470.h drvGsIp16ADC.h drvIpac.h ipic.h tnetDev.h waveAnlRecord.h
+
+#Note that the command line that builds the
+#library $(LIBNAME) may be HUGE (>3kB)
+#
+include $(TOP)/config/RULES.Vx
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE

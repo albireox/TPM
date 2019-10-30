@@ -1,0 +1,221 @@
+<title>SDSS Telescope Performance Monitor Release Notes</title>
+
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF" ALINK="#800080"
+background="Tests/blueback.jpg">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+
+<center><h1>SDSS <a href="index.html">Telescope Performance Monitor</a> Release Notes</h1></center>
+<blockquote>
+<hr>
+<h2>v2_3_0 (9 March 2001)</h3>
+<hr>
+<h3>Temperature Sensors</h3>
+Fixed M2 Back Plate graphic - misidentification of top sensor.
+<p>
+<b>Shakedown: </b>
+Verify sensor channel - should be Module 1, Block 0, Sensor 1
+[VALA (raw) or VALJ (scaled)].
+<p>
+Added temperature inhomogeneity calculations and displays. These
+implement what was specified in Jim Gunn's requirements document
+(sdss-controls/333, 1 Nov 2000) with the exception of:
+<ul>
+<li>Item b: Alarm if any two sensors on a given mirror are different
+by more than Mir_Del, where Mir_Del is about 2C.</li>
+<li>Item c: Alarm if any linear gradient is greater than Mir_Grad,
+where Mir_Grad is about 2C.
+</ul>
+Supporting documentation includes 
+<a href="temp_alarms.html">
+details on the temperature alarms</a>
+and <a href="alarms.html">
+general notes on alarms.</a>
+<p>
+<b>Shakedown: </b>
+Examine and understand alarm displays. See below for new
+display hierarchy.
+<p>
+Created temperature sensor WWW pages that are updated every 15 minutes.
+These are accessible from the main TPM WWW page and require
+RELOAD or Shift-RELOAD to update.
+This task was added to the
+<b>/p/tpmbase/ChanArch/bin/startTpmLog start</b>
+cron job that executes at 0, 15, 30, and 45 minutes past the hour. This
+is not much more than reformatting of output from the caGet1 UNIX
+executable.
+<p>
+<b>Shakedown: </b>
+Examine WWW pages.
+<p>
+Changed the default temperature sensor median filter length from
+16 to 17.
+<p>
+<b>Shakedown: </b>
+Note change on SENSOR DATA display - see below.
+<p> 
+Restructured the temperature sensor displays. The new hierarchy 
+starting from the TEMPERATURES pull-down menu on the main display
+is:
+<ul>
+<li>SENSOR DATA - tpm_micro.dl
+<ul>
+<li>Pull down menus for eight channel blocks on each of the three sensor 
+modules (tpm_microblk.dl).
+</ul>
+<li>GRAPHICS - tpm_temp_graphics.dl
+<ul>
+<li>M1 - tpm_temp_m1.dl
+<li>M2 - tpm_temp_m2.dl
+<li>TRUSS - tpm_temp_truss.dl
+</ul>
+<li>ALARMS - tpm_temp_alarms.dl
+<ul>
+<li>ALARM CONFIG - tpm_temp_config.dl (informational only)
+</ul>
+</ul>
+<p>
+<b>Shakedown: </b>
+Become familiar with new display tree.
+<p>
+<hr>
+<h3>Archiver</h3>
+Added Allen-Bradley interlock system data to the archiver.
+The configuration file ab.cfg contains all 166 16-bit words
+obtained from the Allen-Bradley system. The TPM channel guide
+<a href="Channels.html">
+document</a> was updated to include these channels.
+<p>
+<b>Shakedown: </b>
+Verify presence of Allen-Bradley channels in archive files.
+<p>
+
+Installed a static-tcl build of CASI using SWIG 1.1p5 under
+EPICS_EXTENSIONS. <b>PR: tpm/2095</b>.
+ I've tested a few of the demo applications
+that didn't require BLT - which I didn't include. This is
+just a build of something we've already had - not a new
+product.
+The documentation is on the TPM WWW page - follow the
+link to LANL.
+<p>   
+As an example:<br>
+    % setup tpm<br>
+    % cd $EPICS_EXTENSIONS/src/ChannelArchiver/casi/tcl <br>
+    % casiwish dump.tcl /mcptpm/51977/freq_directory tpm_uptime "2001/03/08
+18:00:00" "2001/03/08 18:10:00" <br>
+    2001/03/08 18:00:59.098513495 18.5061<br>
+    2001/03/08 18:01:50.683206719 18.5200<br>
+    2001/03/08 18:02:52.578000079 18.5366<br>
+    2001/03/08 18:03:54.470606291 18.5533<br>
+    2001/03/08 18:04:56.375027160 18.5700<br>
+    2001/03/08 18:05:58.349154885 18.5867<br>
+    2001/03/08 18:06:49.934950587 18.6006<br>
+    2001/03/08 18:07:51.820844203 18.6173<br>
+    2001/03/08 18:08:53.692487736 18.6339<br>
+    2001/03/08 18:09:55.586991099 18.6506
+<p>
+<b>Shakedown: </b>
+Study on-line documentation at LANL WWW pages and understand
+the examples in $EPICS_EXTENSIONS/src/ChannelArchiver/casi/tcl.
+<p>
+<hr>
+<h3>UPS</h3>
+Modified the TPM ups table (tpm.table) to use envAppend() instead
+of pathAppend(). <b>PRs: tpm/1750, tpm/2033.</b>
+<p>
+<b>Shakedown: </b>
+Test TPM setup under different shells. Please note that I never
+had a problem under bash.
+<p>
+<hr>
+<h3>Serial Ports</h3>
+Rearranged some of the serial port assignments on the 8 port
+transition module. The specific changes were:
+<ul>
+<li>Moved the M1 MIG from the TPM console to Port 6.
+<li>Moved the M2 MIG from Port 1 to Port 7.
+<li>Moved the TMICRO from Port 6 to Port 1.
+</ul>
+<p>
+The present port configuration is:
+<table border width="75%">
+<tr bgcolor="#aaaaff"><th width="20%">Port #</th>
+<th width="50%">Device</th>
+<th width="30%">Setup</th></tr>
+<tr><td>1</td><td>TMICRO</td><td>9600, 8N1</td></tr>
+<tr><td>2</td><td>M1 Galil</td><td>38400, 8N1</td></tr>
+<tr><td>3</td><td>M2 Galil</td><td>38400, 8N1</td></tr>
+<tr><td>4</td><td>Spectro dewar scale</td><td>2400, 8N1</td></tr>
+<tr><td>5</td><td>Imager dewar scale</td><td>2400, 8N1</td></tr>
+<tr><td>6</td><td>M1 MIG</td><td>9600, 8N1</td></tr>
+<tr><td>7</td><td>M2 MIG</td><td>9600, 8N1</td></tr>
+<tr><td>8</td><td>*EMPTY*</td><td>9600, 8N1</td></tr>
+</table>
+<p>
+<b>Shakedown: </b>
+Check M1 MIG, M2 MIG, and TMICRO displays for proper data.
+<p>
+<hr>
+<h3>Galils</h3>
+Modified the Galil interface parsing logic due to addition of a
+new field (timestamp?) by Russell Owen. In theory the TPM has
+to parse responses from both the M1 and M2 Galils which have different
+channel counts. Previously it counted the number of fields
+in the string (nf) and assigned:
+<ul>
+<li>0 - expected strlen
+<li>1 .. nf-3 - values
+<li>nf-2 - home flag
+<li>nf-1 - commanded/current flag
+</ul>
+The new assignments are:
+<ul>
+<li>0 - expected strlen
+<li>1 .. nf-4 - values
+<li>nf-3 - home flag
+<li>nf-2 - commanded/current flag
+<li>nf-1 - timestamp (ignored) 
+</ul>
+<p>
+<b>Shakedown: </b>
+Check the M2 Galil display for proper data.
+The M2 Galil interface is scanned once every .05 second.
+The TPM interface to the M1 Galil is presently turned
+off since no encoder information is available.
+<p>
+<hr>
+<h3>PMSS</h3>
+The PMSS MUX was tested and the following changes were made to the
+TPM:
+<ul>
+<li>Input scale factor was decreased by a factor of 2
+<li>For output the MUX control word had to be inverted to use active-low logic
+<li>For output the order of the bits had to be reversed to work with the as-built wiring
+</ul>
+<p>
+The PMSS MUX Control word is (X = don't care):
+<table border width="75%">
+<tr bgcolor="#aaaaff"><th width="50%">Bits</th>
+<th width="50%">Selection</th></tr>
+<tr><td>0x0X</td><td>ZONE AXIAL A</td></tr>
+<tr><td>0x1X</td><td>ZONE AXIAL B</td></tr>
+<tr><td>0x2X</td><td>ZONE AXIAL C</td></tr>
+<tr><td>0x3X</td><td>ZONE TRANSVERSE D</td></tr>
+<tr><td>0xX0</td><td>CHANNEL POSITION</td></tr>
+<tr><td>0xX1</td><td>CHANNEL POSITION ERROR</td></tr>
+<tr><td>0xX2</td><td>CHANNEL PRESSURE</td></tr>
+<tr><td>0xX3</td><td>CHANNEL PRESSURE ERROR</td></tr>
+</table>
+<p>
+<b>Shakedown: </b>
+<ul>
+<li>Reread sdss-controls/1751 (04 Jan 2001) to help understand the
+PMSS displays.</li>
+<li>Study the noise statistics on the PMSS channels using the StripTool
+and/or the Archiver. You may need to refer to the TPM Channel Name document. </li>
+</ul>
+<p>
+<hr>
+Last modified on 12 February 2003 
+Peregrine M. McGehee.
+</blockquote>

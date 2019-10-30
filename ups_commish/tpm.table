@@ -1,0 +1,19 @@
+File=Table
+Product=tpm
+
+#*************************************************
+
+Group:
+  Flavor=Linux+2
+  Qualifiers=""
+
+Common:
+   Action=setup
+      proddir()
+      setupenv()
+      setupRequired("epics")
+      envSet(EPICS_DISPLAY_PATH, .:/local/ups/prd/tpm/production/opi:${UPS_PROD_DIR}/rtApp/opi)
+      envSet(EPICS_TS_MIN_WEST, 0)
+      envAppend(PATH, ${UPS_PROD_DIR}/bin)
+#*************************************************
+

@@ -1,0 +1,35 @@
+#!/usr/bin/bash
+#
+# Start (or restart) the TPM logger
+#
+
+export TCL_LIBRARY=/p/tcl/v8_0_2/lib/tcl8.0
+export TCLLIBPATH=/p/tcl/v8_0_2/lib/tcl8.0:/p/tk/v8_0_2/lib/tk8.0
+export TCL_DIR=/p/tcl/v8_0_2       
+export TK_DIR=/p/tk/v8_0_2
+export TK_LIBRARY=/p/tk/v8_0_2/lib/tk8.0   
+export EPICS=/p/epics
+export EPICS_EXTENSIONS=$EPICS/extensions
+export PATH=/p/tpmbase/ChanArch/bin:/p/tcl/v8_0_2/bin:/p/tk/v8_0_2/bin:.:/usr/sbin:/usr/bsd:/sbin:/usr/bin:/bin:/usr/bin/X11:/usr/local/bin:/p/vx_dsc/v5_1_1f4/bin/iris:/p/vx_dsc/v5_1_1f4/iris.68k/bin:/p/epics/base/bin/iris:/p/epics/extensions/bin/iris:/p/tpmbase/bin/iris     
+export LD_LIBRARY_PATH=/p/epics/extensions/lib/iris  
+
+# Get CURRENT (ups declare -c) and TEST (ups declare -t) versions of TPM
+export TPM_CURRENT=`grep VERSION /p/upsdb/tpm/current.chain | awk '{print $3;}'`         
+export TPM_TEST=`grep VERSION /p/upsdb/tpm/test.chain | awk '{print $3;}'`         
+# Update the temperature sensor WWW pages in the actual directories
+# used by the apache www_server.
+cd /p/tpmbase/ChanArch/tpmwww
+tmicro_www.sh
+
+# copy to CURRENT
+cp m1.html m2.html truss.html /p/tpm/$TPM_CURRENT/ChanArch/tpmwww/. 2> /dev/null
+
+# copy to TEST
+cp m1.html m2.html truss.html /p/tpm/$TPM_TEST/ChanArch/tpmwww/. 2> /dev/null
+
+# Check the status of the archiver using whatever code version is active
+# (i.e., that tpmbase points to).
+#cd /p/tpmbase/ChanArch/bin
+#et_tclsh tpmLog.tcl $1
+
+exit

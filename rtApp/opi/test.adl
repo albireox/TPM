@@ -1,0 +1,329 @@
+file {
+	name="test.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="10"
+	nstr="6"
+	ndynamic="2"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="0"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="326"
+		height="176"
+	}
+	clr="0"
+	bclr="1"
+	nwords_dspy="464"
+	nwords_sta="0"
+	nwords_cmap="36"
+	nwords_crules="106"
+	odyng="332"
+	osta="332"
+	odynamic="332"
+	oplot="464"
+	ord="464"
+	oes="464"
+	okd="464"
+	opd="464"
+	opo="464"
+	opc="68"
+	ostr="154"
+	ocmap="190"
+	ocrules="226"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap=""
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<color map>>" {
+	ncolors="8"
+	dl_color {
+		r="255"
+		g="255"
+		b="255"
+		inten="255"
+		blink="off"
+	}
+	dl_color {
+		r="0"
+		g="0"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="255"
+		g="0"
+		b="0"
+		inten="255"
+		blink="off"
+	}
+	dl_color {
+		r="255"
+		g="0"
+		b="0"
+		inten="255"
+		blink="on"
+	}
+	dl_color {
+		r="255"
+		g="255"
+		b="0"
+		inten="255"
+		blink="off"
+	}
+	dl_color {
+		r="255"
+		g="255"
+		b="0"
+		inten="255"
+		blink="on"
+	}
+	dl_color {
+		r="0"
+		g="0"
+		b="255"
+		inten="255"
+		blink="off"
+	}
+	dl_color {
+		r="0"
+		g="0"
+		b="255"
+		inten="255"
+		blink="on"
+	}
+}
+"<<color rules>>" {
+	nrules="1"
+	dl_color_rule {
+		name="alarm"
+		info[0] {
+			chan="$(C).SEVR"
+			value="MAJOR"
+			connector="use"
+			comparator="equals"
+			clr="2"
+		}
+		info[1] {
+			chan="$(C).SEVR"
+			value="MINOR"
+			connector="use"
+			comparator="equals"
+			clr="4"
+		}
+		info[2] {
+			chan="$(C).SEVR"
+			value="INFO"
+			connector="use"
+			comparator="equals"
+			clr="6"
+		}
+		info[3] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[4] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[5] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[6] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[7] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[8] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[9] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[10] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[11] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[12] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[13] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[14] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		info[15] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="1"
+		}
+		fg_enable="on"
+		bg_enable="on"
+		default_fg="0"
+		default_bg="1"
+	}
+}
+"text update" {
+	object {
+		x="49"
+		y="59"
+		width="89"
+		height="37"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SCALE1"
+		clr="0"
+		bclr="1"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="61"
+		width="89"
+		height="37"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_SCALE2"
+		clr="0"
+		bclr="1"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}

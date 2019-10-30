@@ -1,0 +1,181 @@
+/*
+ *******************************************************************************
+ * THIS IS NOT A FINAL VERSION !  THIS RECORD IS CURRENTLY UNDER DEVELLOPMENT !
+ *******************************************************************************
+*/
+menu(archPCAB) {
+        choice(archPCAB_absolute,"absolute")
+        choice(archPCAB_relative,"relative")
+        choice(archPCAB_abs_and_rel,"abs && rel")
+        choice(archPCAB_abs_or_rel,"abs || rel")
+        choice(archPCAB_on_change,"on change")
+        choice(archPCAB_allways,"allways")
+        choice(archPCAB_never,"never")
+}
+recordtype(arch) {
+        include "dbCommon.dbd" 
+        field(VAL,DBF_NOACCESS) {
+                prompt("Array Value")
+                asl(ASL0)
+                special(SPC_DBADDR)
+                size(4)
+                extra("void *val")
+        }
+        field(CVAL,DBF_DOUBLE) {
+                prompt("Current Value")
+                pp(TRUE)
+        }
+        field(RVAL,DBF_DOUBLE) {
+                prompt("Raw value")
+        }
+        field(TIM,DBF_NOACCESS) {
+                prompt("Array Times sec")
+                special(SPC_DBADDR)
+                size(4)
+                extra("void *tim")
+        }
+        field(NSC,DBF_NOACCESS) {
+                prompt("Array Times nsec")
+                special(SPC_DBADDR)
+                size(4)
+                extra("void *nsc")
+        }
+        field(VALS,DBF_NOACCESS) {
+                prompt("Values Array")
+                special(SPC_NOMOD)
+                interest(4)
+                size(4)
+                extra("float *vals")
+        }
+        field(TIMS,DBF_NOACCESS) {
+                prompt("Times Array sec")
+                special(SPC_NOMOD)
+                interest(4)
+                size(4)
+                extra("long *tims")
+        }
+        field(NSCS,DBF_NOACCESS) {
+                prompt("Times Array nsec")
+                special(SPC_NOMOD)
+                interest(4)
+                size(4)
+                extra("long *nscs")
+        }
+        field(ARCH,DBF_NOACCESS) {
+                prompt("Archive Array")
+                special(SPC_NOMOD)
+                interest(4)
+                size(4)
+                extra("void *arch")
+        }
+        field(LVAL,DBF_DOUBLE) {
+                prompt("Last Value stored")
+                special(SPC_NOMOD)
+                interest(1)
+        }
+        field(CCNT,DBF_ULONG) {
+                prompt("Curr. Buffer Counter")
+                special(SPC_NOMOD)
+                interest(1)
+        }
+        field(FLSH,DBF_ULONG) {
+                prompt("Flush flag")
+                special(SPC_MOD)
+        }
+        field(INP,DBF_INLINK) {
+                prompt("Input Specification")
+                promptgroup(GUI_INPUTS)
+                special(SPC_NOMOD)
+                interest(1)
+        }
+        field(NVAL,DBF_ULONG) {
+                prompt("Number of Values")
+                promptgroup(GUI_DISPLAY)
+                special(SPC_NOMOD)
+                interest(1)
+                initial("100")
+        }
+        field(STIM,DBF_ULONG) {
+                prompt("Save time in sec")
+                promptgroup(GUI_DISPLAY)
+                asl(ASL0)
+                interest(1)
+                initial("900")
+        }
+        field(FTIM,DBF_ULONG) {
+                prompt("Flush time in sec")
+                promptgroup(GUI_DISPLAY)
+                asl(ASL0)
+                interest(1)
+                initial("900")
+        }
+        field(FTOF,DBF_ULONG) {
+                prompt("Flush time offset")
+                asl(ASL0)
+                special(SPC_NOMOD)
+        }
+        field(AVAR,DBF_FLOAT) {
+                prompt("Diff. last-curr. abs ")
+                promptgroup(GUI_DISPLAY)
+                asl(ASL0)
+                interest(1)
+        }
+        field(RVAR,DBF_FLOAT) {
+                prompt("Diff. last-curr. in %")
+                promptgroup(GUI_DISPLAY)
+                asl(ASL0)
+                interest(1)
+        }
+        field(PCAB,DBF_MENU) {
+                prompt("Absolute or Percent")
+                promptgroup(GUI_DISPLAY)
+                asl(ASL0)
+                interest(1)
+                menu(archPCAB)
+        }
+        field(HOPR,DBF_FLOAT) {
+                prompt("High Oper.Range Value")
+                promptgroup(GUI_DISPLAY)
+                interest(1)
+        }
+        field(LOPR,DBF_FLOAT) {
+                prompt("Low  Oper.Range Value")
+                promptgroup(GUI_DISPLAY)
+                interest(1)
+        }
+        field(PREC,DBF_SHORT) {
+                prompt("Display Precis. Value")
+                promptgroup(GUI_DISPLAY)
+                interest(1)
+        }
+        field(EGU,DBF_STRING) {
+                prompt("Eng. Units for VALUE")
+                promptgroup(GUI_DISPLAY)
+                interest(1)
+                size(16)
+        }
+        field(MASK,DBF_USHORT) {
+                prompt("Bit Mask")
+                promptgroup(GUI_DISPLAY)
+                special(SPC_NOMOD)
+                base(HEX)
+                interest(1)
+        }
+        field(NUSE,DBF_ULONG) {
+                prompt("Number Used")
+                special(SPC_NOMOD)
+        }
+        field(NUSB,DBF_ULONG) {
+                prompt("Number Used in Buf.")
+                special(SPC_NOMOD)
+        }
+        field(LTIM,DBF_ULONG) {
+                prompt("Last Time Monitored")
+                special(SPC_NOMOD)
+        }
+        field(RES,DBF_SHORT) {
+                prompt("Reset")
+                special(SPC_RESET)
+                interest(3)
+        }
+}

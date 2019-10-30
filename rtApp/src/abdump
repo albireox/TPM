@@ -1,0 +1,46 @@
+#!/p/epics/extensions/bin/iris/casiwish 
+source /p/tpmbase/bin/iris/tpmABData.tcl
+set state getarg
+set cnt 1
+set i 0
+foreach arg $argv {
+    switch -- $state {
+        getarg {
+	    switch -glob -- $arg {
+	        -cnt {
+		    set state getcnt
+	 	}
+		default {
+		    set abarg($i) $arg 
+    		    incr i
+		}
+	    }
+	}
+	getcnt {
+	    set cnt $arg
+	    set state getarg
+	}
+    }
+}
+
+if {$i == 4} {
+    ABDump $abarg(0) $cnt $abarg(1) $abarg(2) $abarg(3)
+} elseif {$i == 5} {
+    ABDump $abarg(0) $cnt $abarg(1) $abarg(2) $abarg(3) $abarg(4)
+} else {
+    puts " "
+    puts -nonewline "Usage: "
+    puts "abdump outfile \{-cnt \{cnt 1\}\} month day hms \{year THISYEAR\}"
+    puts " "
+    puts "\toutfile = name of Yanny parameter file to create"
+    puts "\tcnt	= Number of 1Hz samples to acquire"
+    puts "\tmonth = Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+    puts "\tday = 1..31"
+    puts "\thms = HH:MM:SS (must be in UT)"
+    puts "\tyear = Gregorian year, e.g. 2002"
+    puts "The default year selects between 1 Jan and TODAY of this year"
+    puts "and between TODAY and 31 Dec of last year."
+}
+    
+	
+exit

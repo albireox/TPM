@@ -1,0 +1,975 @@
+file {
+	name="tpm_tmicro.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="2"
+	nstr="70"
+	ndynamic="1"
+	nplot="0"
+	nrd="6"
+	nes="0"
+	nkd="1"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="384"
+		height="196"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="1710"
+	nwords_sta="52"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="672"
+	osta="620"
+	odynamic="672"
+	oplot="738"
+	ord="738"
+	oes="1698"
+	okd="1698"
+	opd="1710"
+	opo="1710"
+	opc="68"
+	ostr="86"
+	ocmap="620"
+	ocrules="620"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="12"
+		y="9"
+		width="339"
+		height="20"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="63"
+		y="10"
+		width="238"
+		height="15"
+		groupid="0"
+	}
+	textix="TEMPERATURE SENSORS"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="11"
+		y="56"
+		width="238"
+		height="15"
+		groupid="0"
+	}
+	textix="Length of Median Filter:"
+	align="horiz. left"
+}
+"rectangle" {
+	object {
+		x="11"
+		y="143"
+		width="0"
+		height="0"
+		groupid="0"
+	}
+}
+"rectangle" {
+	object {
+		x="11"
+		y="142"
+		width="35"
+		height="1"
+		groupid="0"
+	}
+}
+"text entry" {
+	object {
+		x="233"
+		y="53"
+		width="114"
+		height="20"
+		groupid="0"
+	}
+	control {
+		chan="tpm_TM_MedianParam"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"related display" {
+	object {
+		x="12"
+		y="91"
+		width="170"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="MODULE 0 (M1):"
+		name="tpm_tmicromod.dl"
+		args="M=0"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="11"
+		y="124"
+		width="170"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="MODULE 1 (M2):"
+		name="tpm_tmicromod.dl"
+		args="M=1"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="11"
+		y="158"
+		width="170"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="MODULE 2(TEL):"
+		name="tpm_tmicromod.dl"
+		args="M=2"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="178"
+		y="91"
+		width="114"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="BLOCK 0"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=0"
+	}
+	display[1] {
+		label="BLOCK 1"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=1"
+	}
+	display[2] {
+		label="BLOCK 2"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=2"
+	}
+	display[3] {
+		label="BLOCK 3"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=3"
+	}
+	display[4] {
+		label="BLOCK 4"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=4"
+	}
+	display[5] {
+		label="BLOCK 5"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=5"
+	}
+	display[6] {
+		label="BLOCK 6"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=6"
+	}
+	display[7] {
+		label="BLOCK 7"
+		name="tpm_tmicroblk.dl"
+		args="M=0,B=7"
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title="BLOCK MENU"
+	decorate="none"
+}
+"related display" {
+	object {
+		x="178"
+		y="124"
+		width="114"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="BLOCK 0"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=0"
+	}
+	display[1] {
+		label="BLOCK 1"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=1"
+	}
+	display[2] {
+		label="BLOCK 2"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=2"
+	}
+	display[3] {
+		label="BLOCK 3"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=3"
+	}
+	display[4] {
+		label="BLOCK 4"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=4"
+	}
+	display[5] {
+		label="BLOCK 5"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=5"
+	}
+	display[6] {
+		label="BLOCK 6"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=6"
+	}
+	display[7] {
+		label="BLOCK 7"
+		name="tpm_tmicroblk.dl"
+		args="M=1,B=7"
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title="BLOCK MENU"
+	decorate="none"
+}
+"related display" {
+	object {
+		x="178"
+		y="158"
+		width="114"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="BLOCK 0"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=0"
+	}
+	display[1] {
+		label="BLOCK 1"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=1"
+	}
+	display[2] {
+		label="BLOCK 2"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=2"
+	}
+	display[3] {
+		label="BLOCK 3"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=3"
+	}
+	display[4] {
+		label="BLOCK 4"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=4"
+	}
+	display[5] {
+		label="BLOCK 5"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=5"
+	}
+	display[6] {
+		label="BLOCK 6"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=6"
+	}
+	display[7] {
+		label="BLOCK 7"
+		name="tpm_tmicroblk.dl"
+		args="M=2,B=7"
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title="BLOCK MENU"
+	decorate="none"
+}
+"kill display" {
+	object {
+		x="319"
+		y="140"
+		width="46"
+		height="34"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}

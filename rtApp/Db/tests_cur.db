@@ -1,0 +1,27 @@
+record(ao,"tpm_alcurlim") {
+	field(DESC,"Alt Current Limit")
+	field(EGU,"Counts")
+}
+record(ao,"tpm_azcurlim") {
+	field(DESC,"Az Current Limit")
+	field(EGU,"Counts")
+}
+record(ao,"tpm_rocurlim") {
+	field(DESC, "Rot Current Limit")
+	field(EGU,"Counts")
+}
+record(bi,"tpm_alcurstate") {
+	field(DESC, "Alt Current State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_azcurstate") {
+	field(DESC, "Az Current State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_rocurstate") {
+	field(DESC, "Rot Current State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}

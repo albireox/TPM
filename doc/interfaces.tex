@@ -1,0 +1,77 @@
+\section{Interfaces}
+
+The SDSS Telescope Peformance Monitor acquires engineering data 
+from a heterogeneous collection of interfaces. These interfaces 
+and the data acquired from them are described in this document.
+
+The real-time component of the Telescope Performance Monitor is 
+implemented on two Motorola MV162 CPUs that run the vxWorks 
+operating system and the EPICS control system tool-kit.
+
+The machine sdsstpm shares a VMEbus crate with the Mount 
+Control Processor. The physical interfaces utilized by sdsstpm 
+to acquire data are summarized in Table \ref{tbl-tpmif}.
+All serial communications are handled by sdsstpm2, which resides 
+in a separate VMEbus crate. These interfaces are listed in
+Table \ref{tbl-tpm2if}
+
+The engineering drawings that document the TPM electronic
+interfaces are available via the FermiLab DCS. 
+{\bf Need list of drawing numbers and working access method}. 
+The exception is the
+documentation for the thermal monitoring
+system which is found at
+\htmladdnormallink{ftp://ftp.astro.princeton.edu/jeg/Thermometer}{ftp://ftp.astro.princeton.edu/jeg/Thermometer}.
+
+\subsection{SDSSTPM Interfaces}
+.
+\begin{deluxetable}{ll}
+\tablecaption{sdsstpm Physical Interfaces\label{tbl-tpmif}}
+\tablehead{
+\colhead{Interface} &
+\colhead{Subsystems} 
+}
+\startdata
+MCP-TPM Shared memory & MCP \\
+& MEI Data \\
+& Allen-Bradley PLC Data \\
+Acromag IP470, 12-bit DIO: IP Slot A & Word 0: AMP:AZ1(0:7) \\
+& Word 1: AMP:AZ1(9:11)/AZ2(0:3) \\
+& Word 2: AMP:AZ2(4:11) \\
+& Word 3: AMP:AL1(0:7) \\
+& Word 4: AMP:AL1(9:11)/AL2(0:3) \\
+& Word 5: AMP:AL2(4:11) \\
+Acromag IP470, 12-bit DIO: IP Slot B & Word 0: AMP:ROT(0:7) \\
+& Word 1: AMP:ROT(9:11) \\
+& Word 2: SLIP(0:7) \\
+& Word 3: SLIP(8:11) \\
+& Word 4: SLIP MUX(0:3)[PMSS 4:7] \\
+& Word 5: MCP SYNC(0) \\
+Greensprings IP-16ADC: IP Slot C & Channel 0: PMSS \\
+& Channel 1: Wind Speed \\
+& Channel 2: Wind Direction \\
+& Channel 3: Imager LN2 Pressure \\
+& Channel 4: Spectrograph LN2 Pressure \\
+\enddata
+\end{deluxetable}
+
+\subsection{SDSSTPM\#2 Interfaces}
+
+\begin{deluxetable}{ll}
+\tablecaption{sdsstpm2 Physical Interfaces\label{tbl-tpm2if}}
+\tablehead{
+\colhead{Interface} &
+\colhead{Subsystems} 
+}
+\startdata
+Serial (GreenSprings IP Octal Serial RS-232 Module): IP Slot D & Port 1: Temperature Micro \\
+& Port 2: M1 Galil \\
+& Port 3: M2 Galil \\
+& Port 4: Spectrograph dewar scale \\
+& Port 5: Imager dewar scale \\
+& Port 6: M1 MIG \\
+& Port 7: M2 MIG \\
+& Port 8: *EMPTY* \\
+Telnet to monts.apo.nmsu.edu terminal server & Port 2500: Humidity sensor \\
+\enddata
+\end{deluxetable}

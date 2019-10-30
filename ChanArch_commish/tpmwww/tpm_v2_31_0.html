@@ -1,0 +1,130 @@
+<html>
+<h2>
+<center>
+SDSS Telescope Performance Monitor (TPM)<br>
+Version tpm_v2_31_0 shakedown request and release notes<br>
+September 2003
+</center>
+</h2>
+
+<h3>Serial communications error rate</h3>
+<p>
+<b>PR 4973/4494:</b>
+TPM Alarms
+<p>    
+<b>Item:</b>
+Changes to serial communications error handling (fixed bug).
+<p>
+<b>To test:</b>
+Examine rate of serial communications alarms reported by TPM/watcher.
+<p>
+Working file: rtApp/src/tpmSerial.c
+<p>
+
+<h3>Handling of faulty temperature sensors</h3>
+<p>
+<b>PR 4973/4494:</b>
+TPM Alarms
+<p>
+<b>Item:</b>
+Improved temperature sensor fault handling. New .db file.
+<p>
+<b>To test:</b> No action required.<br>
+<p>
+Working file: iocBoot/ioctpm2/st.cmd
+
+<p>
+<b>Item:</b>
+Improved temperature sensor fault handling.
+<p>
+<b>To test:</b>
+The TPM now only alarms on sensor values less than -200 degC
+which indicate a broken sensor. Values less than -50 degC
+are interpreted as from sensors that are patched by a resistor.
+The TPM no longer indicates sensors whose readings are less
+than -50 degC in the computation of thermal gradients and 
+differences used in computing alarms.
+<p>
+Please check the TPM temperature displays for reasonable values.
+<p>
+Working file: rtApp/Db/Makefile.Host<br>
+Working file: rtApp/Db/temp_alarms.db<br>
+Working file: rtApp/Db/temp_means.substitutions<br>
+Working file: rtApp/Db/temp_means.template<br>
+Working file: rtApp/Db/tmicro_block.template<br>
+Working file: rtApp/src/Makefile.Vx<br>
+Working file: rtApp/src/tpmMean.c<br>
+Working file: rtApp/src/tpmTMicro.c<br>
+<p>
+
+<b>Item:</b>
+Updated temperature sensor WWW pages to include status and
+to populate both CURRENT and TEST areas.
+<p>
+<b>To test:</b>
+Examine TPM WWW pages under tpmTest. The pages listed under
+<b>Current temperature sensor data (updated every 15 minutes:</b> 
+now include a STATUS column indicating BAD, Patched, or good
+(nothing) based on value.  Updated values are now seen under
+both the tpm (points to current) and the tpmTest (points
+to test) WWW pages.
+<p>
+Working file: ChanArch/bin/startTpmLog<br>
+Working file: ChanArch/tpmwww/mktable.awk<br>
+Working file: ChanArch/tpmwww/tmicro_www.sh<br>
+<p>
+
+<h4>PLC analog values</h4>
+<p>
+<b>PR 4659:</b> 
+Analog values
+<p>
+<b>Item:</b>
+Jon Brinkmann writes:
+Attached is my revision of the file plc_analog.db, reflected the
+revised channel assignments and names from John Anderson in v17 of the
+PLC code.  Since we access the channels by their addresses rather than
+their names, the change in the EPICS database is independent of cutting
+a new MCP and IOP with the new data_collection.h.
+<p>
+Now that we have the correct channels for the windbaffle servo loop errors,
+think we have the scaling incorrect.  The 1746-NI4 Allen-Bradley module
+outputs 16 bit two's complement values, i.e., the output ranges from
+-32,768 to 32,768.  It appears that the TPM is handling the record
+as 16 bit unsigned.  Is that correct?  If so, what would be the best
+way to get the records, tpm_AzWindErr and tpm_AltWindErr, converted
+to 16 bit two's complement?  The calc that I have used is not correct.
+<p>
+<b>To test:</b>
+View PLC analog values on TPM display. Verify reasonableness
+of values, including the windbaffle servo errors
+<p>
+Working file: rtApp/Db/plc_analog.db
+<p>
+
+<h3>Other work (bug fixes)</bf>
+
+<h4>MIG1 Scaling: per 10 Sept 03 Engineering phone-con</h4>
+<p>
+<b>Item:</b>
+Scaled MIG1_EL and MIG1_FL from inches to mm, changed
+all EGU (engineering units) to "mm".
+<p>
+<b>To test:</b>
+Read MIG1 values.
+<p>
+Working file: rtApp/Db/mig.db
+
+<h4>Wrong TPM channel on sensor module display</h4>
+<p>
+<b>Item:</b>
+Corrected PV associated with sensor 01 value.
+<p>
+<b>To test:</b>
+Verify (via middle mouse click) TPM channel name 
+associated sensor #01 text display on temperature
+sensor module display.
+<p>
+Working file: rtApp/opi/tpm_tmicromod.dl
+
+</html>

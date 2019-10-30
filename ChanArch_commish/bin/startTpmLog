@@ -1,0 +1,22 @@
+####/usr/local/bin/bash
+#
+# Start or restart the TPM logger
+#
+
+export TCL_DIR=/home/peregrin/tcl8.0.5/unix
+export TK_DIR=/home/peregrin/tk8.0.5/unix
+export TK_LIBRARY=$TK_DIR/../library
+export TCL_LIBRARY=$TCL_DIR/../library
+export TCLLIBPATH=$TCL_LIBRARY:$TK_LIBRARY
+export EPICS=/local/ups/prd/epics
+export EPICS_EXTENSIONS=$EPICS/extensions
+export TPMBIN=/local/ups/prd/tpm/production/ChanArch/bin
+export PATH=$TPMBIN:$TCL_DIR:$TK_DIR:.:$EPICS/base/bin/Linux:$EPICS_EXTENSIONS/bin/Linux:/bin:/usr/bin:/usr/local/bin
+export LD_LIBRARY_PATH=$EPICS_EXTENSIONS/lib/Linux
+
+# Check the status of the archiver using whatever code version is active
+# i.e., that tpmbase points to.
+cd $TPMBIN
+$EPICS_EXTENSIONS/bin/Linux/et_tclsh tpmLog.tcl $1
+
+exit

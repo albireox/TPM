@@ -1,0 +1,108 @@
+<title>SDSS Telesscope Performance Guide Channel Guide</title>
+
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF" ALINK="#800080"
+background="Tests/blueback.jpg">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+
+<blockquote>
+<center><h1>SDSS Telescope Performance Monitor Channel Guide</h1></center>
+<p>
+
+This page contains links to a number of different views, or 
+<a href="#reports">reports</a> , of the
+TPM EPICS database contents.
+These reports use the system and subsystem designations defined
+in the <a href="Systems.html">Systems and Subsystems</a> page.
+<p>
+Users can also obtain information on specific channels via
+a <a href="#getinfo">query interface</a>. 
+<hr>
+<p>
+<center>
+<h2>
+<a name="getinfo"><b>Get Channel Information</b></a></h2>
+</center>
+
+Please enter the name of a TPM channel:
+<FORM METHOD="POST" ACTION="/tpm/Tests/cgi/getChannelInfo.cgi">
+<INPUT TYPE="TEXT" NAME="PV">
+</FORM>
+
+<hr>
+The following table provides a list of fields that will appear in the
+reports. Of these, the first five 
+<i>(NAME, ARCHIVED, SYSTEM, SUBSYSTEM, and DESC)</i>
+are of general interest. The remainder describe some aspects
+of the EPICS database configuration.
+
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width="40%"><b>Field</td>
+<td width="60%"><b>Description</b></td></tr>
+
+<tr><td>NAME</td>
+<td>EPICS database record name</td>
+
+<tr><td>ARCHIVED</td>
+<td><b><i>Is this channel archived?</i></b><br>
+N -  NO<br>
+VAL - default record value archived<br>
+VALA-Z - fields VALA through VALZ of record archived</td></tr>
+
+<tr><td>SYSTEM</td>
+<td>System name</td></tr>
+
+<tr><td>SUBSYSTEM</td>
+<td>Subsystem name</td></tr>
+
+<tr><td>DESC</td>
+<td>Description of record contents</td></tr>
+
+<tr><td>RTYP</td>
+<td>EPICS database record type</td></tr>
+
+<tr><td>SCAN</td>
+<td>EPICS database record scanning mechanism</td></tr>
+
+<tr><td>DTYP</td>
+<td>EPICS database device support type</td></tr>
+
+<tr><td>INP</td>
+<td>EPICS database input link specifier</td></tr>
+
+<tr><td>OUT</td>
+<td>EPICS database output link specifier</td></tr>
+
+</table>
+<p>
+<hr>
+<center>
+<h2>
+<a name="reports"><b>Reports</b></a></h2>
+</center>
+
+Each report is available as a separate HTML file. Spreadsheet
+users may wish to obtain the complete database as
+a comma separated value (CSV) format text file from
+<a href="tpm.csv">here</a>.
+<p>
+
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width="40%"><b>Report Name</td>
+<td width="60%"><b>Contents</b></td></tr>
+
+<tr><td><a href="full_report.html">Full</a></td>
+<td>NAME,ARCHIVED,SYSTEM,SUBSYSTEM,DESC</td></tr>
+
+<tr><td><a href="not_archived_report.html">Records Not Archived</a></td>
+<td>NAME,ARCHIVED,SYSTEM,SUBSYSTEM,DESC</td></tr>
+
+</table>
+
+
+<hr>
+
+Last modified on 12 February 2003 by 
+Peregrine M. McGehee.
+</blockquote>

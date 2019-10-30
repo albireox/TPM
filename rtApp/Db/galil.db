@@ -1,0 +1,50 @@
+record(longout,"tpm_GAL1DBG") {
+	field(DESC, "GALIL:M1 Galil debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/3 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(waveform, "tpm_GAL1") {
+	field(DESC,"GALIL:M1 Galil")
+	field(PHAS,"1")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/3 <\000><%s>")
+	field(FTVL,"CHAR")
+	field(NELM,"140")
+	field(SCAN,".05 second")
+}
+record(longout,"tpm_GAL2DBG") {
+	field(DESC, "GALIL:M2 Galil debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/4 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(waveform, "tpm_GAL2") {
+	field(DESC,"GALIL:M2 Galil")
+	field(PHAS,"1")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/4 <\000><%s>")
+        field(FTVL,"CHAR")
+        field(NELM,"140")
+	field(SCAN,".05 second")
+}
+record(ai, "tpm_GAL1:tsCom") {
+	field(DESC,"GALIL:M1 Galil Command Time")
+	field(PREC, "3")
+}
+record(ai, "tpm_GAL1:tsCur") {
+	field(DESC,"GALIL:M1 Galil Current Time")
+	field(PREC, "3")
+}
+record(ai, "tpm_GAL2:tsCom") {
+	field(DESC,"GALIL:M2 Galil Command Time")
+	field(PREC, "3")
+}
+record(ai, "tpm_GAL2:tsCur") {
+	field(DESC,"GALIL:M2 Galil Current Time")
+	field(PREC, "3")
+}

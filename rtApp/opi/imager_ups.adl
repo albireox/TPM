@@ -1,0 +1,1918 @@
+file {
+	name="imager_ups.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="7"
+	npc="16"
+	nstr="51"
+	ndynamic="14"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="1"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="250"
+		height="350"
+	}
+	clr="0"
+	bclr="14"
+	nwords_dspy="2626"
+	nwords_sta="88"
+	nwords_cmap="264"
+	nwords_crules="310"
+	odyng="1294"
+	osta="1206"
+	odynamic="1690"
+	oplot="2614"
+	ord="2614"
+	oes="2614"
+	okd="2614"
+	opd="2626"
+	opo="2626"
+	opc="68"
+	ostr="254"
+	ocmap="632"
+	ocrules="896"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap=""
+	pixwid="1152"
+	pixht="900"
+	mmwid="390"
+	mmht="305"
+}
+"<<color map>>" {
+	ncolors="65"
+	dl_color {
+		r="255"
+		g="255"
+		b="255"
+		inten="255"
+		blink="off"
+	}
+	dl_color {
+		r="236"
+		g="236"
+		b="236"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="218"
+		g="218"
+		b="218"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="200"
+		g="200"
+		b="200"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="187"
+		g="187"
+		b="187"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="174"
+		g="174"
+		b="174"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="158"
+		g="158"
+		b="158"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="145"
+		g="145"
+		b="145"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="133"
+		g="133"
+		b="133"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="120"
+		g="120"
+		b="120"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="105"
+		g="105"
+		b="105"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="90"
+		g="90"
+		b="90"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="70"
+		g="70"
+		b="70"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="45"
+		g="45"
+		b="45"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="0"
+		g="0"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="0"
+		g="216"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="30"
+		g="187"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="51"
+		g="153"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="45"
+		g="127"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="33"
+		g="108"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="253"
+		g="0"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="222"
+		g="19"
+		b="9"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="190"
+		g="25"
+		b="11"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="160"
+		g="18"
+		b="7"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="130"
+		g="4"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="88"
+		g="147"
+		b="255"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="89"
+		g="126"
+		b="225"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="75"
+		g="110"
+		b="199"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="58"
+		g="94"
+		b="171"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="39"
+		g="84"
+		b="141"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="251"
+		g="243"
+		b="74"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="249"
+		g="218"
+		b="60"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="238"
+		g="182"
+		b="43"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="225"
+		g="144"
+		b="21"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="205"
+		g="97"
+		b="0"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="255"
+		g="176"
+		b="255"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="214"
+		g="127"
+		b="226"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="174"
+		g="78"
+		b="188"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="139"
+		g="26"
+		b="150"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="97"
+		g="10"
+		b="117"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="164"
+		g="170"
+		b="255"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="135"
+		g="147"
+		b="226"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="106"
+		g="115"
+		b="193"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="77"
+		g="82"
+		b="164"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="52"
+		g="51"
+		b="134"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="199"
+		g="187"
+		b="109"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="183"
+		g="157"
+		b="92"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="164"
+		g="126"
+		b="60"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="125"
+		g="86"
+		b="39"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="88"
+		g="52"
+		b="15"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="153"
+		g="255"
+		b="255"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="115"
+		g="223"
+		b="255"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="78"
+		g="165"
+		b="249"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="42"
+		g="99"
+		b="228"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="10"
+		g="0"
+		b="184"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="235"
+		g="241"
+		b="181"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="212"
+		g="219"
+		b="157"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="187"
+		g="193"
+		b="135"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="166"
+		g="164"
+		b="98"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="139"
+		g="130"
+		b="57"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="115"
+		g="255"
+		b="107"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="82"
+		g="218"
+		b="59"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="60"
+		g="180"
+		b="32"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="40"
+		g="147"
+		b="21"
+		inten="0"
+		blink="off"
+	}
+	dl_color {
+		r="26"
+		g="115"
+		b="9"
+		inten="0"
+		blink="off"
+	}
+}
+"<<color rules>>" {
+	nrules="3"
+	dl_color_rule {
+		name="alarm"
+		info[0] {
+			chan="$(C).SEVR"
+			value="MAJOR"
+			connector="use"
+			comparator="equals"
+			clr="20"
+		}
+		info[1] {
+			chan="$(C).SEVR"
+			value="MINOR"
+			connector="use"
+			comparator="equals"
+			clr="30"
+		}
+		info[2] {
+			chan="$(C).SEVR"
+			value="NO_ALARM"
+			connector="use"
+			comparator="equals"
+			clr="15"
+		}
+		info[3] {
+			chan="$(C).SEVR"
+			value="INVALID"
+			connector="use"
+			comparator="equals"
+			clr="25"
+		}
+		info[4] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[5] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[6] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[7] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[8] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[9] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[10] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[11] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[12] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[13] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[14] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		info[15] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="equals"
+			clr="14"
+		}
+		fg_enable="off"
+		bg_enable="off"
+		default_fg="0"
+		default_bg="14"
+	}
+	dl_color_rule {
+		name="fault"
+		info[0] {
+			chan="$(C)"
+			value="0"
+			connector="use"
+			comparator="greater than"
+			clr="20"
+		}
+		info[1] {
+			chan="$(C)"
+			value="0"
+			connector="use"
+			comparator="equals"
+			clr="13"
+		}
+		info[2] {
+			chan="$(C)"
+			value="0"
+			connector="use"
+			comparator="less than"
+			clr="30"
+		}
+		info[3] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[4] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[5] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[6] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[7] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[8] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[9] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[10] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[11] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[12] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[13] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[14] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		info[15] {
+			chan=""
+			value=""
+			connector="use"
+			comparator="less than"
+			clr="1"
+		}
+		fg_enable="off"
+		bg_enable="off"
+		default_fg="0"
+		default_bg="1"
+	}
+	dl_color_rule {
+		name="temperature"
+		info[0] {
+			chan="$(C)"
+			value="-7"
+			connector="use"
+			comparator="less than"
+			clr="39"
+		}
+		info[1] {
+			chan="$(C)"
+			value="-6"
+			connector="use"
+			comparator="less than"
+			clr="37"
+		}
+		info[2] {
+			chan="$(C)"
+			value="-5"
+			connector="use"
+			comparator="less than"
+			clr="54"
+		}
+		info[3] {
+			chan="$(C)"
+			value="-4"
+			connector="use"
+			comparator="less than"
+			clr="53"
+		}
+		info[4] {
+			chan="$(C)"
+			value="-3"
+			connector="use"
+			comparator="less than"
+			clr="52"
+		}
+		info[5] {
+			chan="$(C)"
+			value="-2"
+			connector="use"
+			comparator="less than"
+			clr="51"
+		}
+		info[6] {
+			chan="$(C)"
+			value="-1"
+			connector="use"
+			comparator="less than"
+			clr="50"
+		}
+		info[7] {
+			chan="$(C)"
+			value="0"
+			connector="use"
+			comparator="less than"
+			clr="15"
+		}
+		info[8] {
+			chan="$(C)"
+			value="1"
+			connector="use"
+			comparator="less than"
+			clr="30"
+		}
+		info[9] {
+			chan="$(C)"
+			value="2"
+			connector="use"
+			comparator="less than"
+			clr="31"
+		}
+		info[10] {
+			chan="$(C)"
+			value="3"
+			connector="use"
+			comparator="less than"
+			clr="32"
+		}
+		info[11] {
+			chan="$(C)"
+			value="4"
+			connector="use"
+			comparator="less than"
+			clr="33"
+		}
+		info[12] {
+			chan="$(C)"
+			value="5"
+			connector="use"
+			comparator="less than"
+			clr="34"
+		}
+		info[13] {
+			chan="$(C)"
+			value="6"
+			connector="use"
+			comparator="less than"
+			clr="22"
+		}
+		info[14] {
+			chan="$(C)"
+			value="7"
+			connector="use"
+			comparator="less than"
+			clr="21"
+		}
+		info[15] {
+			chan="$(C)"
+			value="7"
+			connector="use"
+			comparator="greater than"
+			clr="20"
+		}
+		fg_enable="off"
+		bg_enable="off"
+		default_fg="0"
+		default_bg="1"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="130"
+		y="30"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="In"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="130"
+		y="80"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="Fault"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="130"
+		y="130"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="Out"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="130"
+		y="180"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="Load"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="130"
+		y="230"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="Freq"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="130"
+		y="280"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="Batt"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="130"
+		y="330"
+		width="50"
+		height="15"
+		groupid="0"
+	}
+	textix="Temp"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALH"
+			rulechan[1] = "tpm_UPSParse.VALH"
+			rulechan[2] = "tpm_UPSParse.VALH"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALH"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="5"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="Utility Fail"
+	align="horiz. left"
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALI"
+			rulechan[1] = "tpm_UPSParse.VALI"
+			rulechan[2] = "tpm_UPSParse.VALI"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALI"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="45"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="Low Battery"
+	align="horiz. left"
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALJ"
+			rulechan[1] = "tpm_UPSParse.VALJ"
+			rulechan[2] = "tpm_UPSParse.VALJ"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALJ"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="85"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="Bypass Active"
+	align="horiz. left"
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALK"
+			rulechan[1] = "tpm_UPSParse.VALK"
+			rulechan[2] = "tpm_UPSParse.VALK"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALK"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="125"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="UPS Failure"
+	align="horiz. left"
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALL"
+			rulechan[1] = "tpm_UPSParse.VALL"
+			rulechan[2] = "tpm_UPSParse.VALL"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALL"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="165"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="UPS offline"
+	align="horiz. left"
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALM"
+			rulechan[1] = "tpm_UPSParse.VALM"
+			rulechan[2] = "tpm_UPSParse.VALM"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALM"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="205"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="Testing"
+	align="horiz. left"
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="0"
+			rulecolorbg="0"
+			chan=""
+			rulechan[0] = "tpm_UPSParse.VALN"
+			rulechan[1] = "tpm_UPSParse.VALN"
+			rulechan[2] = "tpm_UPSParse.VALN"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="fault"
+			clrargs="C=tpm_UPSParse.VALN"
+		}
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="245"
+		width="120"
+		height="15"
+		groupid="0"
+	}
+	textix="Shutdown"
+	align="horiz. left"
+}
+"bar" {
+	object {
+		x="130"
+		y="5"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALA"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="125"
+		ldl="115"
+		prec="1"
+		newunits="V"
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="30"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALA"
+		clr="0"
+		bclr="14"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"bar" {
+	object {
+		x="130"
+		y="55"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALB"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="125"
+		ldl="115"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="80"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALB"
+		clr="0"
+		bclr="14"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"bar" {
+	object {
+		x="130"
+		y="105"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALC"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="125"
+		ldl="115"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="130"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALC"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"bar" {
+	object {
+		x="130"
+		y="155"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALD"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="100"
+		ldl="0"
+		prec="1"
+		newunits="%"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="180"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALD"
+		clr="0"
+		bclr="14"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="%"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"bar" {
+	object {
+		x="130"
+		y="205"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALE"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="61"
+		ldl="59"
+		prec="1"
+		newunits="Hz"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="230"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALE"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="Hz"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"bar" {
+	object {
+		x="130"
+		y="255"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALF"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="120"
+		ldl="100"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="280"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALF"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="V"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"bar" {
+	object {
+		x="130"
+		y="305"
+		width="115"
+		height="25"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALG"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="rule"
+		rulechan[0] = "tpm_UPSStatus.SEVR"
+		rulechan[1] = "tpm_UPSStatus.SEVR"
+		rulechan[2] = "tpm_UPSStatus.SEVR"
+		rulechan[3] = "tpm_UPSStatus.SEVR"
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs="C=tpm_UPSStatus"
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="30"
+		ldl="0"
+		prec="1"
+		newunits="C"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	direction="right"
+	fillmod="from edge"
+}
+"text update" {
+	object {
+		x="180"
+		y="330"
+		width="65"
+		height="15"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_UPSParse.VALG"
+		clr="0"
+		bclr="14"
+		label="outline"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="1"
+		newunits="C"
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. right"
+	format="decimal"
+}
+"kill display" {
+	object {
+		x="5"
+		y="300"
+		width="120"
+		height="45"
+		groupid="0"
+	}
+	label=""
+	clr="20"
+	bclr="14"
+	decorate="outward"
+}

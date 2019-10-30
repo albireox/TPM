@@ -1,0 +1,224 @@
+<title>Telescope Performance Monitor Alarm Management</title>
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF"
+ALINK="#800080">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+
+<center><h1>Telescope Performance Monitor Alarm Management</h1>
+Peregrine M. McGehee - 31 July 2002
+</center>
+
+<blockquote>
+<h3>Action Items</h3>
+Feedback is required from the following individuals as part
+of the TPM Alarm system design process:
+<ul>
+<li>John Anderson - motor current limits
+<li>Jim Gunn/Russell Owen - M1 oscillation amplitude as seen by the MIGs.
+<li>Jim Gunn/Russell Owen - conditions for excess M2 tilt as seen by the MIGs.
+<li>Jim Gunn - the signatures for thermal management problems on M1, M2, and the truss. 
+</ul>
+<h3>Requirements</h3>
+The TPM is responsible for the monitoring and archiving of engineering 
+parameters specific to the mount and other telescope subsystems. To ensure 
+the quality of the science data during the course of a run, it is required 
+that the TPM inform the users in real-time that non-optimal conditions exist
+in the performance of the telescope.
+<p>
+Specific requirements are:
+<ul>
+R1. The state of the TPM alarms shall be visible to the observers and 
+engineering staff in the SDSS control room, at the telescope, and at 
+remote locations.<p>
+R2. TPM alarm history shall be stored in a time-stamped log to facilitate
+comparison with other archived engineering data. <p>
+R3. The parameters that define the generation of alarms shall have 
+sensible values upon startup but shall be able to be modified without
+reboot of the TPM upon a consensus of the operations staff and project 
+management. <p>
+R4. The TPM shall send a signal to the Watcher indicating that a 
+TPM alarm has occurred and that the operators should refer to the 
+TPM for specifics.
+</ul>
+<p>
+Additional goals are:
+<ul>
+G1. The TPM shall generate an auditory signal to alert operations staff.
+<p>
+G2. The visual and auditory alarms shall require operator acknowledgement.
+</ul>
+<p>
+The performance areas of concern presently identified by the project are:
+<ul>
+A1. Tracking performance. For each the three axes of the telescope, 
+an alarm will
+be generated under conditions of tracking when the reported servo error exceeds
+a threshold. Tracking is presently defined as the absolute value of the
+velocity component of the MCP PVT triplet being less than a set value, 
+presently three times the sidereal rate of 15 arcsec/sec. For the altitude
+and azimuth axes this translates to 3200 counts/sec. The equivalent rate
+for the rotator is 2100 counts/sec. The threshold for the MEI reported servo 
+error is 10 counts.
+<p>
+A2. High motor current. For each of the five motor amplifiers, two 
+possible alarms shall be generated. A warning alarm shall be generated
+when the reported motor current exceeds 50% of the maximum value. A critical
+alarm shall be generated when the reported motor current exceeds
+90% of the maximum value. The maximum reported current is TBD (John Anderson).
+<p>
+A3. M1 oscillation. When the primary mirror oscillates it does
+so at a rate of approximately 1Hz. The TPM shall generate 
+an alarm if the time rate of change in M1 MIG positions exceeds a set value. 
+This threshold is TBD (Russell Owen and Jim Gunn).
+<p>
+A4. M2 tilt. Large differences between the M2 MIG readings may indicate
+an out of range tilt. The TPM shall generate 
+an alarm if the differences between the M2 MIG positions exceeds a set value. 
+This threshold is TBD (Russell Owen and Jim Gunn).
+<p>
+A5. Thermal management. The TPM shall generate an alarm if the temperature 
+differential across the M1 support, the M2 support, or the truss exceeds 
+a limit. An alarm shall also be generated if the time rate of change of 
+the reported temperatures exceeds a limit. The details are pending an 
+analysis (Jim Gunn).
+<p>
+A6. MS.ON failure. The TPM shall generate an alarm when MS.ON
+encounters an error that is too large to correct.
+</ul>
+<p>
+
+<h3>Overview of TPM architecture</h3>
+
+The TPM is based on the 
+<a href="http://www.aps.anl.gov/epics/index.php">
+Experimental Physics and Industrial Control System 
+(EPICS)</a>
+toolkit which is in widespread use across the international 
+telescope and accelerator communities including at the Gemini and Keck 
+Observatories. EPICS provides an infrastructure for the creation of 
+distributed real-time control systems that is robust, flexible, and 
+extensible.  The control system model implemented by EPICS is that of
+a client-server architecture operating on global namespace of process 
+variables. The operations supported by the communications protocol 
+(channel access) include get and put actions, notification of changes 
+in value or alarm status via monitors, connection management, and a
+non-centralized discovery mechanism to connect to process variable servers.
+<p>
+Each process variable has an associated alarm status, indicating the nature
+of the alarm, and an alarm severity. The alarm severity can take on one of 
+the following four values listed here in order of increasing severity: 
+NONE, MINOR, MAJOR, and INVALID (generally a communications error).
+<p>
+All of the operator applications that comprise the TPM, the displays, 
+stripcharts, and archiver, are clients of the channel access communications 
+protocol.
+<p>
+In the case of the TPM, the process variables are tied to a real-time 
+VxWorks-based database where the name of each process variable reflects 
+the name and the field (or attribute) of each record. 
+<p>
+
+<h3>Implementation</h3>
+
+The proposed implementation of the TPM alarm system makes use of the 
+existing capabilities of the EPICS toolkit as installed at Apache Point. 
+Specifcally, the requirements are met using the operator displays and the 
+TPM archiver. The alarm management goals are met by simple configuration of 
+the standard EPICS alarm handler tool.
+<p>
+<b>Generation of Alarms</b>
+<p>
+The TPM will internally generate alarms using constructs built
+using
+<a href="http://www.aps.anl.gov/asd/controls/epics/EpicsDocumentation/AppDevManuals/RecordRef/Recordref-1.html">records</a> within the EPICS
+database. 
+Specific use will be
+made of the ability to configure the alarm generation of the 
+<a href="http://www.aps.anl.gov/asd/controls/epics/EpicsDocumentation/AppDevManuals/RecordRef/Recordref-8.html#HEADING8-0">Analog Input record.</a>
+<p>
+<center>
+<b>Analog Input Fields Related to Alarms</b><p>
+<TABLE BORDER="1"><TH>Field<TH>Summary<TR>
+<TD>HIHI<TD>Hihi Alarm Limit<TR>
+<TD>LOLO<TD>Lolo Alarm Limit<TR>
+<TD>HIGH<TD>High Alarm Limit<TR>
+<TD>LOW<TD>Low Alarm Limit<TR>
+<TD>HHSV<TD>Hihi Alarm Severity<TR>
+<TD>LLSV<TD>Lolo Alarm Severity<TR>
+<TD>HSV<TD>High Alarm Severity<TR>
+<TD>LSV<TD>Low Alarm Severity<TR>
+<TD>HYST<TD>Alarm Deadband</TABLE>
+</center>
+<p>
+Required calculations will be performed in the EPICS database using
+Calculation, and if need be, Subroutine (or GenSub) records.
+<p>
+Signal processing can be performed by using a Compression record
+with the ALG (algorithm) set to "N to 1 Average" to compute the mean
+value. A median filter can be created using a Subroutine record in
+a manner similar to that used on the temperature sensor data.
+<p>
+
+<b>Configuration and Display of Alarms</b>
+<p>
+The Display Manager 
+(<a href="http://lansce.lanl.gov:80/lansce8/Epics/OPI/opintro-1.html">DM</a>) 
+application implements the TPM real-time displays 
+that are now a familiar part of the SDSS controls environment. DM supports 
+the concept of color rules, in which the appearance of a graphical widget 
+can change based on a process variable value or alarm state. The DM displays 
+also have read and write access to the process variables that define each 
+alarm. We suggest that a DM interface into the TPM alarms fulfulls
+requirements R1 and R3. 
+<p>
+<b>Archival of Alarms</b>
+<p>
+The existing channel archiver maintains a log of the value, timestamp,
+and alarm status and severity for each process variable that it
+archives. The alarm status and severity can be obtained via the
+<a href="Tests/cgi/dir.cgi">
+CGI-BIN interface</a>
+by selecting the Status option and issuing a GET command. 
+<p>
+Additional process variables can be created in the database
+that summarize the alarms for groups of channels, such as the tracking status
+for all three axes. 
+<p>
+This satisfies requirement 
+R2 and maintains a single point of access for all engineering data.
+<p>
+<b>Watcher Notification</b>
+<p>
+Communication between the TPM and the Watcher requires that either
+the Watcher become aware of the channel access protocol, or that
+the TPM supports the "packeteer" UDP based system. While channel
+access is designed specifically for distributed control systems,
+it is the latter option that will most likely be implemented for
+compatibility with historical systems at the SDSS.
+<p>
+The TPM and the Watcher will share a minimal interface in which the
+only signal sent from the TPM informs the Watcher that a TPM alarm
+has occurred. No communciations will be sent from the Watcher to the 
+TPM. This satisfies requirement R4.
+<p>
+<b>Advanced Alarm Management</b>
+<p>
+In order to support the additional goals, we will need to configure the 
+EPICS 
+<a href="http://www.aps.anl.gov/epics/extensions/alh/index.php">
+Alarm Handler application (ALH)</a>. 
+ALH is another channel access client 
+that supports definition of a hierarchical alarm tree via a 
+simple ASCII file. ALH functions include:
+<ul>
+<li>Pop-up window for new alarms
+<li>Audible signal
+<li>Hierarchical display of system alarms
+<li>Options to require operator acknowledgement (alarms can be masked to
+bypass this feature)
+<li>Optional help dialogs and operator initiated recovery procedures
+<li>Maintenance of alarm history logs
+</ul>
+<p>
+ALH was built on sdsshost as part of the original EPICS installation.
+</blockquote>
+

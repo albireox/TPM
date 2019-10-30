@@ -1,0 +1,2648 @@
+file {
+	name="tpm_temp_graphics.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="12"
+	nstr="58"
+	ndynamic="30"
+	nplot="0"
+	nrd="3"
+	nes="0"
+	nkd="2"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="520"
+		height="452"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="3918"
+	nwords_sta="732"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="1434"
+	osta="702"
+	odynamic="1434"
+	oplot="3414"
+	ord="3414"
+	oes="3894"
+	okd="3894"
+	opd="3918"
+	opo="3918"
+	opc="68"
+	ostr="190"
+	ocmap="702"
+	ocrules="702"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="-1"
+		y="38"
+		width="508"
+		height="20"
+		groupid="0"
+	}
+	textix="RELATIVE TO AMBIENT"
+	align="horiz. centered"
+}
+"rectangle" {
+	object {
+		x="48"
+		y="15"
+		width="428"
+		height="40"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="20"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="99"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="21"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="120"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="22"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="141"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="34"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="162"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="33"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="184"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="32"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="205"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="31"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="226"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="30"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="247"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="15"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="269"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="50"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="290"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="39"
+		y="60"
+		width="163"
+		height="381"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="51"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="311"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="52"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="332"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="53"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="354"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="54"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="375"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="37"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="396"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="39"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="113"
+		y="418"
+		width="20"
+		height="20"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="49"
+		y="65"
+		width="145"
+		height="14"
+		groupid="0"
+	}
+	textix="Temperature Deltas"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="56"
+		y="84"
+		width="40"
+		height="14"
+		groupid="0"
+	}
+	textix="Min"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="150"
+		y="84"
+		width="40"
+		height="14"
+		groupid="0"
+	}
+	textix="Max"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="64"
+		y="250"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	textix="0.00"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="43"
+		y="101"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="124"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="144"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="167"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="187"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="210"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="230"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="273"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="296"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="316"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="339"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="358"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="43"
+		y="381"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="42"
+		y="400"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="155"
+		y="270"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	textix="0.00"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="134"
+		y="121"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="144"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="164"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="187"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="207"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="230"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="250"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="+"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="293"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="316"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="336"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="359"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="378"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="134"
+		y="401"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="133"
+		y="420"
+		width="20"
+		height="14"
+		groupid="0"
+	}
+	textix="-"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="222"
+		y="93"
+		width="80"
+		height="14"
+		groupid="0"
+	}
+	textix="Ambient:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="222"
+		y="124"
+		width="271"
+		height="14"
+		groupid="0"
+	}
+	textix="The ambient is the average of"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="222"
+		y="137"
+		width="282"
+		height="14"
+		groupid="0"
+	}
+	textix="the four air sensors on the forks."
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="222"
+		y="189"
+		width="271"
+		height="14"
+		groupid="0"
+	}
+	textix="The displayed temperature deltas"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="222"
+		y="200"
+		width="271"
+		height="14"
+		groupid="0"
+	}
+	textix="are multiplied by 1/step where"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="222"
+		y="212"
+		width="271"
+		height="14"
+		groupid="0"
+	}
+	textix="the step is set by the menu."
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="235"
+		y="310"
+		width="236"
+		height="14"
+		groupid="0"
+	}
+	textix="Color-coded Temperature Maps"
+	align="horiz. centered"
+}
+"rectangle" {
+	object {
+		x="218"
+		y="296"
+		width="270"
+		height="97"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="62"
+		y="14"
+		width="400"
+		height="26"
+		groupid="0"
+	}
+	textix="TEMPERATURES"
+	align="horiz. centered"
+}
+"menu" {
+	object {
+		x="222"
+		y="238"
+		width="161"
+		height="22"
+		groupid="0"
+	}
+	control {
+		chan="tpm_TM_Scale"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	menu_title="Temperature Scale"
+}
+"text update" {
+	object {
+		x="64"
+		y="102"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC7"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="123"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC6"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="144"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC5"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="165"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC4"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="186"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC3"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="208"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC2"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="229"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC2"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="271"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC1"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="292"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC2"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="314"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC3"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="335"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC4"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="356"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC5"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="377"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC6"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="64"
+		y="399"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC7"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="122"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC7"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="143"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC6"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="164"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC5"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="185"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC4"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="206"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC3"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="228"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC2"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="249"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC1"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="291"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC1"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="312"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC2"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="334"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC3"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="355"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC4"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="376"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC5"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="397"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC6"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="155"
+		y="419"
+		width="41"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_SC7"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="304"
+		y="87"
+		width="121"
+		height="26"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_TM_TelairAvg.VALA"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="append"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"related display" {
+	object {
+		x="244"
+		y="333"
+		width="70"
+		height="35"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="M1   "
+		name="tpm_temp_m1.dl"
+		args=""
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="318"
+		y="333"
+		width="70"
+		height="35"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="M2   "
+		name="tpm_temp_m2.dl"
+		args=""
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="391"
+		y="333"
+		width="70"
+		height="35"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="TRUSS"
+		name="tpm_temp_truss.dl"
+		args=""
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"kill display" {
+	object {
+		x="900"
+		y="557"
+		width="116"
+		height="63"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="434"
+		y="402"
+		width="50"
+		height="40"
+		groupid="0"
+	}
+	label=""
+	clr="14"
+	bclr="20"
+	decorate="none"
+}

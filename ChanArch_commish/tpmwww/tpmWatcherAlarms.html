@@ -1,0 +1,227 @@
+<title>SDSS Telescope Performance Monitor Watcher Alarms</title>
+ 
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF" ALINK="#800080"
+background="Tests/blueback.jpg">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+ 
+<center><h1>SDSS Telescope Performance Monitor Watcher Alarms</h1>
+Version: 15 August 2003</center>
+<blockquote>
+The SDSS TPM sends a subset of its native alarms to the Watcher.
+Within IOP a tpmHandler process is periodically run that uses the
+EPICS Channel Access client interface (via the UNIX executable
+caGet1) to obtain the alarm severities of a number of TPM records.
+These records are then grouped by category, for example M1_TEMP
+for all primary mirror thermal management problems. 
+<p>
+The alarm severities are, in order of increasing criticality,
+NO_ALARM, MINOR, MAJOR, and INVALID. The INVALID state
+is set when communications with a device are lost, i.e. when
+we have no information about a system.
+<p>
+The IOP tpmHandler finds the maximum severity within each group,
+and populates the tpmError array with that severity and the tpmData
+array with the corresponding catagory. These two arrays are
+then transmitted to the Watcher.
+<p>
+The following tables list the individual TPM channels that IOP and
+the Watcher monitor, the Watcher alarm category they contribute
+to, and a short description. More detailed channel descriptions
+can be found using the <a href="ChannelGuide.html#getinfo">
+TPM channel query interfaces</a>.
+
+<p>
+<h3>Alarm Group: M1_TEMP</h3>
+The M1_TEMP alarm group checks for thermal gradients within the 
+primary mirror of the SDSS 2.5 meter and excessive differences
+between the mirror and its environment. The quoted limits are in degC
+and are those originally specified by Jim Gunn. The TPM is presently
+running with these limits uniformly increased by a factor of 3.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_TM_M1Upper_FB</td>
+<td>Excessive front to back gradient in upper half of M1</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M1Lower_FB</td>
+<td>Excessive front to back gradient in lower half of M1</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M1Right_FB</td>
+<td>Excessive front to back gradient in right half of M1</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M1Left_FB</td>
+<td>Excessive front to back gradient in left half of M1</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M1_FB</td>
+<td>Excessive front to back gradient in M1</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M1_Rgrad</td>
+<td>Excessive radial (center to edge) gradient in M1</td><td>-1.0, 1.0</td></tr>
+<tr><td>tpm_TM_M1_Telair</td>
+<td>Excessive mirror to ambient difference for M1</td><td>-2.0, 2.0</td></tr>
+<tr><td>tpm_TM_M1_Denv</td>
+<td>Excessive mirror to PMSS difference for M1</td><td>-2.0, 2.0</td></tr></table>
+
+<h3>Alarm Group: M2_TEMP</h3>
+The M2_TEMP alarm group checks for thermal gradients within the 
+secondary mirror of the SDSS 2.5 meter and excessive differences
+between the mirror and its environment. The quoted limits are in degC
+and are those originally specified by Jim Gunn. The TPM is presently
+running with these limits uniformly increased by a factor of 3.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_TM_M2Upper_FB</td>
+<td>Excessive front to back gradient in upper half of M2</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M2Lower_FB</td>
+<td>Excessive front to back gradient in lower half of M2</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M2Right_FB</td>
+<td>Excessive front to back gradient in right half of M2</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M2Left_FB</td>
+<td>Excessive front to back gradient in left half of M2</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M2_FB</td>
+<td>Excessive front to back gradient in M2</td><td>-0.2, 0.2</td></tr>
+<tr><td>tpm_TM_M2_Rgrad</td>
+<td>Excessive radial (center to edge) gradient in M2</td><td>-1.0, 1.0</td></tr></table>
+
+<h3>Alarm Group: ENV_TEMP</h3>
+The ENV_TEMP alarm group checks for  
+excessive differences between the telescope structure, the rotating floor,
+the lower enclosure, the return air from cooling system,
+and the environments.
+The quoted limits are in degC
+and are those originally specified by Jim Gunn. The TPM is presently
+running with these limits uniformly increased by a factor of 3.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_TM_Floor_Telair</td>
+<td>Excessive difference between floor and ambient</td><td>-2.0, 2.0</td></tr>
+<tr><td>tpm_TM_Return_Telair</td>
+<td>Excessive difference between cooling return air and ambient</td><td>-2.0, 2.0</td></tr>
+<tr><td>tpm_TM_Lowair_Telair</td>
+<td>Excessive difference betweer lower enclosure and ambient</td><td>-3.0, 3.0</td></tr></table>
+
+<h3>Alarm Group: TRACKING</h3>
+The TRACKING alarm group checks the magnitudes of the axis servo errors
+when the telescope is assumed to be tracking. The alarm limits are in encoder
+counts and define the MINOR (warning level) and MAJOR (problems) conditions.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_alttrackchk</td>
+<td>Altitude servo error exceeds limits when tracking</td><td>-10, -7, 7, 10 when v < 3200 counts/sec</td></tr>
+<tr><td>tpm_aztrackchk</td>
+<td>Azimuth servo error exceeds limits when tracking</td><td>-10, -7, 7, 10 when v < 3200 counts/sec</td></tr>
+<tr><td>tpm_rottrackchk</td>
+<td>Rotator servo error exceeds limits when tracking</td><td>-2800, -1400, 1400, 2800 when v < 3200 counts/sec</td></tr></table>
+
+<h3>Alarm Group: CURRENTS</h3>
+The CURRENTS alarm group checks the reported motor currents for possible
+problems. The present limits (in counts) are arbitrary. These alarms
+have never been enabled.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_ALMTRC1</td>
+<td>Altitude drive motor #1 current exceeds limits</td><td>1000, 2000</td></tr>
+<tr><td>tpm_ALMTRC2</td>
+<td>Altitude drive motor #2 current exceeds limits</td><td>1000, 2000</td></tr>
+<tr><td>tpm_AZMTRC1</td>
+<td>Azimuth drive motor #1 current exceeds limits</td><td>1000, 2000</td></tr>
+<tr><td>tpm_AZMTRC2</td>
+<td>Azimuth drive motor #2 current exceeds limits</td><td>1000, 2000</td></tr>
+<tr><td>tpm_ROMTRC</td>
+<td>Rotator drive motor current exceeds limits</td><td>1000, 2000</td></tr></table>
+
+<h3>Alarm Group: DEWARS</h3>
+The DEWARS alarm group checks for the imager and spectrograph dewar
+weights dropping below safe levels. These alarms also check the status of
+the serial communications between the TPM and the dewar scales.
+The alarm limits define the MINOR (warning level) and MAJOR (problem)
+weight limits in pounds.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_Ndewar_spectro</td>
+<td>Spectro dewar weight too low or communications failure</td><td>50, 75 and comm</td></tr>
+<tr><td>tpm_Sdewar_imager</td>
+<td>Imager dewar weight too low or communications failure</td><td>50, 75 and comm</td></tr></table>
+
+<h3>Alarm Group: MIGS</h3>
+The MIGS alarm group monitors the state of the serial
+communications between the TPM and the M1/M2 MIGS.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_MIG1A</td>
+<td>M1 MIG communications failure</td><td>comm</td></tr>
+<tr><td>tpm_MIG2A</td>
+<td>M2 MIG communications failure</td><td>comm</td></tr></table>
+
+<h3>Alarm Group: GALILS</h3>
+The GALILS alarm group monitors the state of the serial
+communications between the TPM and the M1/M2 Galils. The
+mirror misposition alarms proposed by Jim Gunn have not
+been implemented.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_GAL1</td>
+<td>M1 Galil communications failure</td><td>comm</td></tr>
+<tr><td>tpm_GAL2</td>
+<td>M2 Galil communications failure</td><td>comm</td></tr></table>
+
+<h3>Alarm Group: TMICRO</h3>
+The TMICRO alarm group monitors the state of the serial communication
+between the TPM and the Temperature Micro in addition to checking
+for broken or faulty sensors. A sensor fault condition is assumed
+if the readback is less than -50 degC.
+<p>
+<table border width="90%">
+<tr bgcolor="#aaaaff"><td width=30%> <b>TPM CHANNEL</b></td>
+<td><b>DESCRIPTION</b></td>
+<td><b>LIMITS</b></td></tr>
+<tr><td>tpm_TM_M0B0</td>
+<td>TMICRO communications failures</td><td>comm</td></tr>
+<tr><td>tpm_TM_M0B0Chans</td>
+<td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B1Chans</td>
+<td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B2Chans</td>
+<td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B3Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B4Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B5Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B6Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M0B7Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B0Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B1Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B2Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B3Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B4Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B5Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B6Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M1B7Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B0Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B1Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B2Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B3Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B4Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B5Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B6Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+<tr><td>tpm_TM_M2B7Chans</td><td>Faulty temperature sensors</td><td>-50</td></tr>
+</table>
+</blockquote>
+

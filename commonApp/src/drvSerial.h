@@ -1,0 +1,196 @@
+/*
+static char rcsid[] = "$Id: drvSerial.h,v 1.1 2000/04/20 01:37:14 peregrin Exp $";
+*/ 
+/*
+ *     	Serial Port EPICS Driver Support
+ *
+ *      Author:         Jeffrey O. Hill
+ *      Date:           6-6-95
+ *
+ * NOTES:
+ */
+
+/*
+ * Buffer large enough to hold the largest response
+ */
+#define DRV_SERIAL_BUF_SIZE 0x400
+
+typedef struct 
+{
+	void		*pAppPrivate; 
+	unsigned        bufCount;
+	uint8_t		buf[DRV_SERIAL_BUF_SIZE];
+}               drvSerialResponse;
+
+typedef void   *drvSerialLinkId; 
+
+/*
+ * returns number of bytes added to pResp or EOF 
+ * (called by the in task)
+ */
+typedef int drvSerialParseInput(FILE *pf,  
+	drvSerialResponse *pResp, void *pAppPrivate);
+
+long drvSerialInit(void);
+
+long drvSerialInitSts(void);
+
+long 
+drvSerialCreateLink(
+		    const char *pDeviceName,	/* STDIO file name */
+		    drvSerialParseInput *pAppParser,
+		    void *pAppPrivate,
+		    drvSerialLinkId * pId
+);
+
+long 
+drvSerialAttachLink(
+                    const char *pName,
+                    drvSerialParseInput *pParser,
+                    void **ppAppPrivate
+);
+
+long 
+drvSerialGetLinkState( drvSerialLinkId id );
+
+/*
+ * returns the integer file descriptor for this serial link
+ * if the link is open (otherwise it returns EOF).
+ */
+int             drvSerialFileno(drvSerialLinkId id);
+
+typedef enum 
+{
+	linkNormal, linkDown
+}               linkState;
+#define linkStateFirst linkNormal
+#define linkStateLast linkDown
+#ifdef drvSerialGlobal
+char           *pLinkStateNames[linkStateLast + 1] = {"normal", "down"}; 
+#else				/* drvSerialGlobal */
+extern char    *pLinkStateNames[linkStateLast + 1]; 
+#endif				/* drvSerialGlobal */
+
+
+/*
+ * Pull the next response off the response queue
+ * (return error if none are present)
+ */
+long 
+drvSerialNextResponse(
+		      drvSerialLinkId id,
+		      drvSerialResponse * pResponse);
+
+/*
+ * Buffer large enough to hold the largest request
+ *
+ * The send call back is called to deliver the frame
+ * to the stream by the send task when the
+ * frame reaches the top of the queue
+ *
+ * returns 0 on success or EOF
+ */
+typedef struct drvSerialRequestTag 
+{
+	int		(*pCB)(FILE *pf, struct drvSerialRequestTag *pReq);
+	void           	*pAppPrivate;
+	unsigned        bufCount;
+	uint8_t		buf[DRV_SERIAL_BUF_SIZE];
+}               drvSerialRequest;
+typedef int drvSerialSendCB(FILE *pf, drvSerialRequest *pReq); 
+
+/*
+ * Place a request in the request queue
+ *
+ * The events callback is called immediately after sending
+ */
+typedef enum 
+{
+	dspLow, dspHigh
+}               drvSerialPriority;
+#define dspLowest dspLow
+#define dspHighest dspHigh
+
+long 
+drvSerialSendRequest(
+		     drvSerialLinkId id,
+		     drvSerialPriority pri,
+		     const drvSerialRequest * pRequest);
+
+
+/*
+ * Return a file pointer - allows app code to manipulate ioctl.
+ */
+FILE
+*drvSerialGetFile(
+		 drvSerialLinkId id,
+		 long            direction);
+    
+/*
+ * Return the link state - allows app code to determine the link state.
+ */
+long 
+drvSerialGetLinkState( drvSerialLinkId id );
+
+/*
+ * need to register this in errMdef.h
+ */
+#define M_drvSerialLib (1000<<16)
+#define S_drvSerial_OK 0
+#define S_drvSerial_noEntry (M_drvSerialLib | 1) 	/*Sio driver: no response on the queue*/
+#define S_drvSerial_badParam (M_drvSerialLib | 2)	/*Sio driver: unable to set option*/
+#define S_drvSerial_paramConflict (M_drvSerialLib | 3)	/*Sio driver: requested options  conflict between applications*/
+#define S_drvSerial_noInit (M_drvSerialLib | 4)		/*Sio driver: init driver not called*/
+#define S_drvSerial_linkInUse (M_drvSerialLib | 5)	/*Sio driver: serial device is in use*/
+#define S_drvSerial_noParser (M_drvSerialLib | 6)	/*Sio driver: no parser*/
+#define S_drvSerial_EOF (M_drvSerialLib | 7)		/*Sio driver: link down*/
+#define S_drvSerial_OVF (M_drvSerialLib | 8)		/*Sio driver: no msg term before buf ovf*/
+#define S_drvSerial_queueFull (M_drvSerialLib | 9)	/*Sio driver: queue quota exceeded*/
+#define S_drvSerial_invalidArg (M_drvSerialLib | 10)	/*Sio driver: invalid argument*/
+#define S_drvSerial_noDevRead (M_drvSerialLib | 11)	/*Sio driver: open for read failed*/
+#define S_drvSerial_noDevWrite (M_drvSerialLib | 12)	/*Sio driver: open for write failed*/
+#define S_drvSerial_linkDown (M_drvSerialLib | 13)	/*Sio driver: serial link is down*/
+#define S_drvSerial_noMemory (M_drvSerialLib | 14)	/*Sio driver: out of dynamic memory*/
+#define S_drvSerial_noneAttached (M_drvSerialLib | 15)	/*Sio driver: no app is using the link*/
+#define S_drvSerial_internal (M_drvSerialLib | 16)	/*Sio driver: internal*/
+
+/*+*********************************************************************
+  $Log: drvSerial.h,v $
+  Revision 1.1  2000/04/20 01:37:14  peregrin
+  End of April bright time devel.
+
+  Revision 1.1  1998/12/03 23:56:15  ktsubota
+  Initial insertion
+
+  Revision 1.2  1998/02/06 07:38:06  ktsubota
+  Initial EPICS R3.13 conversion
+
+  Revision 1.5  1997/05/13 02:35:54  ahoney
+  Added prototypes for drvSerialInit() and drvSerialInitSts()
+
+ * Revision 1.4  1997/04/30  18:37:11  ahoney
+ * Added drvSerialGetLinkState so application code can determine whether
+ * or not a serial link is down.
+ *
+ * Also added an epicsPrintf so a message is logged whenever the read and
+ * write tasks are restarted.
+ *
+ * Revision 1.3  1997/01/23  02:12:08  ahoney
+ * Added drvSerialGetFile() which returns a file pointer to the opened
+ * stream. This was to facilitate ioctl functions.
+ *
+ * Revision 1.2  1996/05/04  02:10:40  ahoney
+ * Prefaced all error code strings with 'Sio driver:'
+ *
+ * Revision 1.1  1995/10/27  20:24:24  ahoney
+ * MOved from dev/src/drv to dev/sioSup
+ *
+ * Revision 1.2  1995/09/01  07:44:31  jhill
+ * parens in macro
+ *
+ * Revision 1.1  1995/08/24  07:12:43  jhill
+ * installed into cvs
+ *
+ *
+***********************************************************************/
+ 

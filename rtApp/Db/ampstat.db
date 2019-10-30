@@ -1,0 +1,35 @@
+record(calc,"tpm_AZ1_Ampstat") {
+	field(DESC, "AMP:AZ1 Amplifier Status")
+        field(INPA, "tpm_IP470_A0")
+	field(INPB, "tpm_IP470_A1")
+	field(CALC, "(A<<4)+((B&240)>>4)")	
+	field(SCAN, ".1 second")
+}
+record(calc,"tpm_AZ2_Ampstat") {
+	field(DESC, "AMP:AZ2 Amplifier Status")
+	field(INPA, "tpm_IP470_A1")
+	field(INPB, "tpm_IP470_A2")
+	field(CALC, "((A&15)<<8)+B")
+	field(SCAN, ".1 second")
+}
+record(calc,"tpm_AL1_Ampstat") {
+	field(DESC, "AMP:AL1 Amplifier Status")
+        field(INPA, "tpm_IP470_A3")
+	field(INPB, "tpm_IP470_A4")
+	field(CALC, "(A<<4)+((B&240)>>4)")	
+	field(SCAN, ".1 second")
+}
+record(calc,"tpm_AL2_Ampstat") {
+	field(DESC, "AMP:AL2 Amplifier Status")
+	field(INPA, "tpm_IP470_A4")
+	field(INPB, "tpm_IP470_A5")
+	field(CALC, "((A&15)<<8)+B")
+	field(SCAN, ".1 second")
+}
+record(calc,"tpm_ROT_Ampstat") {
+	field(DESC, "AMP:Rot Amplifier Status")
+        field(INPA, "tpm_IP470_B0")
+	field(INPB, "tpm_IP470_B1")
+	field(CALC, "(A<<4)+((B&240)>>4)")	
+	field(SCAN, ".1 second")
+}

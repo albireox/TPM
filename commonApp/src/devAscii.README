@@ -1,0 +1,247 @@
+static char rcsid[] = "$Id: devAscii.README,v 1.1 2000/06/23 01:54:13 peregrin Exp $"; 
+/*
+ * Author: Allan Honey (Keck observatory) with considerable collaboration 
+ *         by W.Lupton.
+ *
+ *         Derived from the Compumotor SX device support (devCmSx.c)
+ *         written by Jeff Hill.
+ *         
+ */
+
+/*
+ * devAscii provides the interface between records, whose DTYP='Ascii SIO',
+ * and drvAscii. The records supported are ai, ao, bi, bo, mbbi, mbbi direct,
+ * mbbo, mbbo direct, longin, longout, stringin, stringout, and waveform.
+ * Where the waveform record is used as a long stringin record such that
+ * strings greater than MAX_STRING_SIZE (40) can be handled. 
+ *
+ * The basic design is to pass record specific data to drvAscii, which 
+ * formats a request for drvSerial which eventually asynchronously calls 
+ * back devAscii with the response.
+ *
+ * During record init the PARM string (record's INP or OUT field) is parsed
+ * and the information is cached and passed to drvAscii. drvAscii uses the 
+ * information to determine how to handle i/o for the record.
+ *
+ * The format of the PARM string is: 
+ *    serial port name {[signal number | array size] @}
+                       {<special record> || 
+ *                      [<command prompt><response format>]
+ *                     {<readback prompt><readback response format>}}
+ *
+ *    where:
+ *    signal number = Sn @     - not implemented
+ *    array number  = An @     - not implemented
+ *
+ *    special_record 
+ *    = [ slope || 
+ *        timeout || 
+ *        writeCmt %s || 
+ *        readCmt %s || 
+ *        connect || 
+ *        connectSts || 
+ *        debug ]
+ *
+ *    note that the %s for the write and read command terminators are 
+ *    necessary!
+ *
+ *    Note that all records must have a serial port name. As of Jan 97 the
+ *    driver was not tested with file streams but in principle only minor
+ *    changes should needed to be made to make it work. All records
+ *    except a stringout record must have a command prompt.
+ *
+ * The 'special_records' control various aspects of how drvAscii functions.
+ * Note that a special record affects the i/o of all records associated
+ * with a serial link. A description of each 'special' record follows.
+ *
+ * 'slope' is used to manipulate analog i/o values. Slope is needed because: 
+ * the RVAL for an analog input record is an integer and there is no way to 
+ * circumvent conversion from RVAL to VAL (probably would not want to anyways)
+ * so ESLO, ASLO and ROFF come into play; the RVAL from an analog output 
+ * record is an integer and if one used VAL then the ESLO, ASLO and ROFF 
+ * would be circumvented. Thus all analog output values (rval) are divided
+ * by slope prior to formatting the output string, and all analog input values
+ * are multiplied by slope (eg. a remote device which returns values with a
+ * precision to the second decimal place, such as 2.34, may have a slope of
+ * 100 such that the associated AI rval would be 234 -> 0xea, the record's
+ * EGUL and EGUF could be set so that the original value is restored or
+ * converted directly into some other unit). 
+ *
+ * The 'slope' record should be associated with an AO record.
+ *
+ * 'timeout' allows one to control the maximum time that drvAscii will wait
+ * for a response to a command/prompt. 'timeout' should be associated with
+ * a longout record. (future mod is to allow this to be a float so fractions
+ * of seconds can be specified).
+ *
+ * 'writeCmt %s' and 'readCmt %s' allows one to change the write and read 
+ * command terminators. The writeCmt is tagged on to the end of the output 
+ * string (prompts), the default is 'crlf'. The readCmt defines the end of 
+ * a response string, default is 'crlf'. The associated records must be 
+ * stringout records. The command terminator strings will be parsed using C 
+ * character and numeric escape codes - be aware that dbpf and caput do not 
+ * handle escape codes identically! Also converting from a capfast drawing
+ * to a database strips the '/' in '/n' so one cannot currently specify the
+ * usual command terminators as a constant to a capfast record.
+ *
+ * 'connect' allows one to change the connection state of a serial link.
+ * Upon successful initialization the connection state will be on (1).
+ * When the connection state is off (0) then drvAscii will not perform any
+ * i/o. 
+ *
+ * 'connectSts' returns the current connection state of a serial link
+ * where 1 means on or ok and 0 means off or disabled.
+ *
+ *
+ *      PROMPT AND RESPONSE FORMAT STRINGS (extensions to scanf syntax)
+ *
+ * KILL SYNTAX
+ * In order to make drvAscii as flexible as possible, with respect to remotely
+ * connected devices, (at least as far as my imagination could fathom) the
+ * format strings were extended beyond the usual '%' C specifications.
+ *
+ * drvAscii makes extensive use of sscanf, sprintf, strlen, ...
+ * thus certain values embedded in return strings could cause problems. One
+ * of the first uses of drvAscii, at Keck, was interfacing to the shutter
+ * clinometers.  Unfortunately, the underlying device preceeds its response 
+ * with a NULL byte ('\0'). Which of course is going to make string processing 
+ * very cumbersome (the string appears to be a null string).
+ *
+ * To provide a mechanism for 'ignoring' a leading null byte or, for that
+ * matter, any series of leading bytes, a kill syntax was implemented 
+ * ('%nk' or '%*k'). This essentially means skip the first 'n' characters 
+ * in a response, '%*k' means ignore the entire response. If the kill syntax 
+ * is used it must be the first characters in the response format string and 
+ * only one such specification is permitted. The kill syntax is not permitted
+ * in a prompt string as it would be meaningless.
+ *
+ *
+ * MULTILINE INPUT SYNTAX
+ * At Keck the infra-red choppers have status request commands which generate
+ * multi-line responses. To handle this type of response it is necessary to
+ * circumvent the normal read command terminator mechanism (ie. the low level
+ * framing routine normally waits for a single command terminator sequence).
+ * This was accomplished by the command terminator count syntax '%nt'. This
+ * causes the framing to wait for 'n' command terminator sequences. 
+ *
+ * The command terminator count format string must be either at the beginning 
+ * of the response format string or immediately following the kill string.
+ *
+ * 
+ * BINARY CONVERSIONS
+ * At Keck the secondary actuators are driven by Compumotor motor controllers,
+ * to which the interface is via serial i/o. Several of the commands to these
+ * controllers return statuses as a string of '0' and '1' such as '1011001101'
+ * or '1110_0110_1111'. It is necessary to convert these strings to integer
+ * values before returning them to the Epics records, which cannot be done
+ * with standard C scanf syntax.
+ *
+ * drvAscii augments the standard C scanf syntax with '%nb %[abc...]'. This
+ * syntax indicates that the incoming string is a sequence of '1' and '0' 
+ * which must be converted to an integer value (eg. '101101' -> 0x2d -> 45).
+ * The optional '%[abc...]' syntax allows one to specify a list of delimiter 
+ * characters. If the delimiter string exists then it must immediately follow
+ * the '%nb' string. Also note that '%*b' is not valid, as the same can be
+ * accomplished with '%*d' or '%*f'.
+ *
+ * 
+ * STRING TO NUMERIC
+ * At, Keck we have some devices, namely the Compumotor motor controllers, 
+ * which return statuses as ascii characters (why they did this with some
+ * statuses and binary strings '0' and '1' for other statuses and did not
+ * allow one to select a mode is a mystery). In any event, drvAscii allows
+ * '%nc' or '%ns' to be specified for numerica data. Note that 'n' may not
+ * be larger than 4.  
+ *
+ * This syntax will cause the incoming string to be converted to an integer, 
+ * and hence to a float for analog inputs. For instance the string "abcd" 
+ * would be converted to the integer value 1633837924 which is 0x61626364.
+ * Note that the first character of the incoming string will be the high
+ * byte of the resultant integer value.
+ *
+ * Note that this implementation is not complete and actually unacceptable
+ * with converting string<->numeric. The problem is that string functions
+ * are extensively used and, therefore, a 0 is converted to a null byte, 
+ * causing unexpected results. I suggest that string->numeric be used for
+ * single character values and numeric->string not be used at all! A long
+ * term plan is to correct this but it requires extensive mods that I am not
+ * currently (1/97) able to devote the time to.
+
+ * LONG STRING INPUTS
+ * At Keck we had a need to allow inputting of strings longer than the 
+ * maximum string allowed for a stringin record (40 bytes). To accommodate
+ * this, device support for the waveform record was implemented. This allows
+ * strings upto DRV_SERIAL_BUF_SIZE (currently defined in drvSerial.h as
+ * 0x400 -> 1024). 
+ *
+ * Note that the user is assumed to have connected the waveform record to a 
+ * subroutine record (or equivalent) so as to parse the incoming string as 
+ * desired.
+ *
+ *  
+ * PARM STRING EXAMPLES 
+ *    @/tyCo/1 <timeout>
+ *    this would be a record, associated with the link on '/tyCo/1' (which 
+ *    is the vxworks stream associated with an on board serial port), that
+ *    allows control of the i/o timeout for asynchronous i/o.
+ *
+ *    @/tyCo/1
+ *    this would have to be a stringout record as they are the only records 
+ *    for which a command/prompt is not necessary.
+ *
+ *    @/tyCo/1 <CHN1><001,%f>
+ *    this would be an AI record for which a remote device would respond
+ *    to the prompt 'CHN1' with '001,' followed by a floating point value.
+ *    Note that the angle brackets are necessary delimiters however they 
+ *    are stripped off and never seen by drvAscii. At this time, Jan 97,
+ *    there is no provision for an escape code for angle brackets.
+ *
+ *    @/tyCo/1 <CHN1><%4k%f>
+ *    same as the previous example except the '001,' will be ignored (ie.
+ *    pattern matching will not occur). Note that all characters in an 
+ *    input stream must be consumed or the stream is rejected. So if a
+ *    remote device returns a string of characters before and/or after 
+ *    a numeric string then those strings must be specified in the response
+ *    format string. If the before or after strings can vary then it is
+ *    necessary to input to a stringin or waveform record and process the
+ *    stream with a subroutine.
+ *
+ *    @/tyCo/1 <CHN1><%*k>
+ *    this is invalid as an input record cannot ignore all characters.
+ * 
+ * A word of warning! Be very careful how one uses '%nc' as '%c' does
+ * not function that same as '%1c' and '%*c', with Vxworks implementation
+ * of sscanf. In actual fact '%1c' and '%*c' function as though they were
+ * '%1s'. I also believe that '%[^...]' is incorrect. 
+
+ * If one has the following string as input "1RA\r*@\r" then only the 
+ * following response  format string will succeed "%2t1RA%*[*]%s". These 
+ * will not "%2t1RA%*c%s", "%2t1RA%*[^*]%s". The problem is that leading 
+ * whitespace is incorrectly handled by sscanf.
+ *
+ *   
+ * PROCESSING
+ * When an Ascii SIO record processes, the devAscii i/o function passes 
+ * drvAscii a pointer to an asynchronous IO structure and a pointer to an 
+ * output value. drvAscii formats an ascii string, as per the format 
+ * registered on record init as specified in the record's parm string 
+ * (INP or OUT field), setups up a callback routine, queues the string 
+ * plus port specific info, to the appropriate transmit task in drvSerial,
+ * and returns a status value to devAscii.
+
+ * If a response is expected then the status is set to
+ * S_drvAscii_AsyncCompletion (only occurs for input records) causing devAscii 
+ * to mark the record's PACT=true. If and when the remote device responds the 
+ * response string is parsed, as per the specified response string format and, 
+ * in the case of input records, the devAscii asynchronous callback routine
+ * is called. 
+ *
+ * If the write/read cycle fails then the asynchronous callback routine is
+ * passed an error status such that devAscii sets the records alarm state.
+ *
+ * The async callback routine sets the records rval (val for stringin) then 
+ * causes the record to be processed again, which ultimately will clear the 
+ * PACT.
+ * 
+ */
+ 

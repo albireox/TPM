@@ -1,0 +1,54 @@
+<title>SDSS Specific Channel Archiver Information</title>
+
+<body BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#0000FF" ALINK="#800080"
+background="Tests/blueback.jpg">
+<font COLOR="#000000" FACE="Comic Sans MS, Arial, Helvetica">
+
+<center><h1>SDSS Specific Channel Archiver Information</h1></center>
+<blockquote>
+<h2>Introduction</h2>
+The original TPM logging system was replaced by the Experimental Physics and Industrial
+Control System (EPICS) channel archiver during the summer shutdown of 2000. 
+This document describes the SDSS specific installation and operation of archive
+engine and of the archive data clients.
+<p>
+<h2>Archive Engine</h2>
+Unlike the TPM logger which ran on the TPM vxWorks CPU, the EPICS channel archiver
+is resident on a workstation, in our case sdsshost. The archiver utilizes the channel
+access communications protocol to acquire control system data across the local network.
+Channel access is the fundamental TCP/IP protocol used in the EPICS toolkit and it is
+used by the real-time displays.
+
+<h3>Archive Engine Startup</h3>
+In order to manually start the archive engine an ASCII configuration file must be
+created. 
+See the LANL documentation on the configuration
+<a href="http://lansce.lanl.gov/lansce8/epics/PC/ArchiverLibrary/doc/engine/usage.htm">
+file syntax</a>.
+<p>
+The first step to working with the archiver, as with any TPM subsystem, is to 
+properly set up your user environment on sdsshost. This is accomplished by typing: <br>
+% setup tpm<br>
+at the UNIX command prompt.<p>
+
+The archiver can then be started with a number of command line options:<br>
+<menu>
+<li>% ArchiveEngine [Options] config-file &<br>
+OR<br>
+<li>% ArchiveEngine [Options] config-file directory-file &<br>
+</menu>
+<br>
+Options:<br><menu>
+<li>-port port-number
+<ul>WWW server's TCP port (default 4812)</ul>
+<li>-description text-string
+<ul>description for HTTP display</ul>
+<li>-log file-name
+<ul>write logfile</ul>
+</menu>
+<br> 
+Default directory-file: 'freq_directory'<p>
+                                                 
+Last modified on 12 February 2003 by 
+Peregrine M. McGehee.
+</blockquote>

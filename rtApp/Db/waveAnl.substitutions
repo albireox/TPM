@@ -1,0 +1,9 @@
+file waveAnl.template {
+    pattern{A,INP,SCAN,MAX,N,EGU,DESC}
+    {wspeed,tpm_PMSS.VALR,".1 second",50,5,mph,"WEATHER:Wind speed"}
+    {wdir,tpm_PMSS.VALS,".1 second",50,5,deg,"WEATHER:Wind direction"}
+    {humid,tpm_Humid,"10 second",20,5,%,"WEATHER:Humidity"}
+    {dpdep,tpm_DpDep,"10 second",20,5,deg,"WEATHER:Dewpoint depression"}
+    {ambient,tpm_DpTemp.VALA,"10 second",20,5,deg,"WEATHER:Ambient temperature"}
+    {dewpt,tpm_DpTemp.VALB,"10 second",20,5,deg,"WEATHER:Dewpoint"}
+}

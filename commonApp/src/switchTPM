@@ -1,0 +1,29 @@
+#!/bin/sh
+
+UPS_SHELL=sh;  export UPS_SHELL
+
+if [ X$TPM_DIR = X"" ]; then
+    echo 'Please set the TPM version with the setup command' >2
+    exit 1
+fi
+
+if [ ! -d $TPM_DIR ]; then
+    echo "Directory $TPM_DIR doesn't exist" >2
+    exit 1
+fi
+umask 002
+
+cd /p/tpmbase
+
+for f in  db dbd bin opi iocBoot ChanArch; do
+    if [ -l $f ]; then 
+	rm $f
+    fi
+
+    ln -s $TPM_DIR/$f $f
+done
+
+exit 0
+
+
+

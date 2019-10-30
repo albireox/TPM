@@ -1,0 +1,158 @@
+file {
+	name="tpm_temps.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="1"
+	npc="182"
+	nstr="158"
+	ndynamic="0"
+	nplot="0"
+	nrd="0"
+	nes="0"
+	nkd="2"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="787"
+		height="367"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="3598"
+	nwords_sta="24"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="3518"
+	osta="3494"
+	odynamic="3574"
+	oplot="3574"
+	ord="3574"
+	oes="3574"
+	okd="3574"
+	opd="3598"
+	opo="3598"
+	opc="68"
+	ostr="2002"
+	ocmap="3494"
+	ocrules="3494"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="288"
+	mmht="216"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="181"
+		y="22"
+		width="414"
+		height="26"
+		groupid="0"
+	}
+	textix="TELESCOPE PERFORMANCE TESTS"
+	align="horiz. left"
+}
+"rectangle" {
+	object {
+		x="7"
+		y="22"
+		width="762"
+		height="25"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_TM_M0B0C0"
+			rulechan[1] = "tpm_TM_M0B0C0"
+			rulechan[2] = "tpm_TM_M0B0C0"
+			rulechan[3] = "tpm_TM_M0B0C0"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="temperature"
+			clrargs="C=tpm_TM_M0B0C0"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="97"
+		y="123"
+		width="47"
+		height="40"
+		groupid="0"
+	}
+}
+"kill display" {
+	object {
+		x="906"
+		y="645"
+		width="116"
+		height="63"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="676"
+		y="329"
+		width="51"
+		height="34"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}

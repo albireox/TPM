@@ -1,0 +1,29 @@
+#
+#       Set up our network environment.
+#
+hostAdd("sampepys", "192.41.211.1")
+routeAdd("0", "sampepys")
+
+dbgInit()
+
+#
+#       Setup the environment.
+#
+shellPromptSet("[tpm:~]$ ")
+tyBackspaceSet(0x08)
+iam "neswold"
+cd "/home/neswold/tpm-staging"
+
+#
+#       Load up the modules that we use.
+#
+ld 1 < errlog
+ld 1 < logfile
+ld 1 < logger
+
+#
+#       Start our processes.
+#
+logInit
+systemTimeSet "sdsshost"
+migInit

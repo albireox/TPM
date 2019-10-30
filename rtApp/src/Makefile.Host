@@ -1,0 +1,17 @@
+# Makefile.Host
+TOP = ../../..
+include $(TOP)/config/CONFIG_APP
+#----------------------------------------
+#  ADD MACRO DEFINITIONS AFTER THIS LINE
+
+USER_DBDFLAGS += -I .. -I $(EPICS_BASE)/dbd
+DBDEXPAND = tpmrtInclude.dbd
+DBDNAME = tpmrt.dbd
+
+SCRIPTS += ../abdump ../tpmABData.tcl ../tpmgetnew.tcl
+SCRIPTS += ../tpmHandler.tcl
+SCRIPTS += ../gnumake
+
+include $(TOP)/config/RULES.Host
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE

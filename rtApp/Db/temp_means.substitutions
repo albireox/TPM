@@ -1,0 +1,177 @@
+file temp_means.template {
+    pattern{NAME,NF,A,B,C,D,E,F,G,H,I,J,K,L,DESC}
+    {ReturnAvg,1,
+	tpm_TM_M2B1Chans.VALC,0,0,0,
+	0,0,0,0,
+	0,0,0,0, "THERMAL:Return air - average"}
+
+    {M1FrontUpperAvg,9,
+	tpm_TM_M0B0Chans.VALA, tpm_TM_M0B0Chans.VALC,
+	tpm_TM_M0B0Chans.VALE, tpm_TM_M0B0Chans.VALG,
+	tpm_TM_M0B1Chans.VALA, tpm_TM_M0B3Chans.VALA,
+	tpm_TM_M0B3Chans.VALC, tpm_TM_M0B3Chans.VALE,
+	tpm_TM_M0B3Chans.VALG, 0,0,0, "THERMAL:M1 front side upper half average"}
+
+    {M1FrontLowerAvg,9,
+	tpm_TM_M0B1Chans.VALA, tpm_TM_M0B1Chans.VALC,
+	tpm_TM_M0B1Chans.VALE, tpm_TM_M0B1Chans.VALG,
+	tpm_TM_M0B2Chans.VALA, tpm_TM_M0B2Chans.VALC,
+	tpm_TM_M0B2Chans.VALE, tpm_TM_M0B2Chans.VALG,
+	tpm_TM_M0B3Chans.VALA, 0,0,0, "THERMAL:M1 front side lower half average"}
+
+    {M1FrontRightAvg,9,
+	tpm_TM_M0B0Chans.VALA, tpm_TM_M0B0Chans.VALC,
+	tpm_TM_M0B0Chans.VALE, tpm_TM_M0B0Chans.VALG,
+	tpm_TM_M0B1Chans.VALA, tpm_TM_M0B1Chans.VALC,
+	tpm_TM_M0B1Chans.VALE, tpm_TM_M0B1Chans.VALG,
+	tpm_TM_M0B2Chans.VALA, 0,0,0, "THERMAL:M1 front side right half average"}
+
+    {M1FrontLeftAvg,9,
+	tpm_TM_M0B0Chans.VALA, tpm_TM_M0B2Chans.VALA,
+	tpm_TM_M0B2Chans.VALC, tpm_TM_M0B2Chans.VALE,
+	tpm_TM_M0B2Chans.VALG, tpm_TM_M0B3Chans.VALA,
+	tpm_TM_M0B3Chans.VALC, tpm_TM_M0B3Chans.VALE,
+	tpm_TM_M0B3Chans.VALG, 0,0,0, "THERMAL:M1 front side left half average"}
+
+    {M1BackUpperAvg,9,
+	tpm_TM_M0B0Chans.VALB, tpm_TM_M0B0Chans.VALD,
+	tpm_TM_M0B0Chans.VALF, tpm_TM_M0B0Chans.VALH,
+	tpm_TM_M0B1Chans.VALB, tpm_TM_M0B3Chans.VALB,
+	tpm_TM_M0B3Chans.VALD, tpm_TM_M0B3Chans.VALF,
+	tpm_TM_M0B3Chans.VALH, 0,0,0, "THERMAL:M1 back side upper half average"}
+
+    {M1BackLowerAvg,9,
+	tpm_TM_M0B1Chans.VALB, tpm_TM_M0B1Chans.VALD,
+	tpm_TM_M0B1Chans.VALF, tpm_TM_M0B1Chans.VALH,
+	tpm_TM_M0B2Chans.VALB, tpm_TM_M0B2Chans.VALD,
+	tpm_TM_M0B2Chans.VALF, tpm_TM_M0B2Chans.VALH,
+	tpm_TM_M0B3Chans.VALB, 0,0,0, "THERMAL:M1 back side lower half average"}
+
+    {M1BackRightAvg,9,
+	tpm_TM_M0B0Chans.VALB, tpm_TM_M0B0Chans.VALD,
+	tpm_TM_M0B0Chans.VALF, tpm_TM_M0B0Chans.VALH,
+	tpm_TM_M0B1Chans.VALB, tpm_TM_M0B1Chans.VALD,
+	tpm_TM_M0B1Chans.VALF, tpm_TM_M0B1Chans.VALH,
+	tpm_TM_M0B2Chans.VALB, 0,0,0, "THERMAL:M1 back side right half average"}
+
+    {M1BackLeftAvg,9,
+	tpm_TM_M0B0Chans.VALB, tpm_TM_M0B2Chans.VALB,
+	tpm_TM_M0B2Chans.VALD, tpm_TM_M0B2Chans.VALF,
+	tpm_TM_M0B2Chans.VALH, tpm_TM_M0B3Chans.VALB,
+	tpm_TM_M0B3Chans.VALD, tpm_TM_M0B3Chans.VALF,
+	tpm_TM_M0B3Chans.VALH, 0,0,0, "THERMAL:M1 back side left half average"}
+
+    {M2FrontUpperAvg,6,
+	tpm_TM_M1B0Chans.VALA, tpm_TM_M1B0Chans.VALC,
+	tpm_TM_M1B1Chans.VALE, tpm_TM_M1B1Chans.VALG,
+	tpm_TM_M1B2Chans.VALF, tpm_TM_M1B2Chans.VALH,
+	0,0,0,0,0,0, "THERMAL:M2 front side upper half average"}
+
+    {M2FrontLowerAvg,6,
+	tpm_TM_M1B1Chans.VALA, tpm_TM_M1B1Chans.VALC,
+	tpm_TM_M1B1Chans.VALE, tpm_TM_M1B2Chans.VALB,
+	tpm_TM_M1B2Chans.VALD, tpm_TM_M1B2Chans.VALF,
+	0,0,0,0,0,0, "THERMAL:M2 front side lower half average"}
+
+    {M2FrontRightAvg,7,
+	tpm_TM_M1B0Chans.VALA, tpm_TM_M1B0Chans.VALC,
+	tpm_TM_M1B1Chans.VALA, tpm_TM_M1B2Chans.VALB,
+	tpm_TM_M1B2Chans.VALD, tpm_TM_M1B2Chans.VALF,
+	tpm_TM_M1B2Chans.VALH, 0,0,0,0,0, "THERMAL:M2 front side right half average"}
+
+    {M2FrontLeftAvg,7,
+	tpm_TM_M1B0Chans.VALA, tpm_TM_M1B0Chans.VALC,
+	tpm_TM_M1B1Chans.VALA, tpm_TM_M1B1Chans.VALC,
+	tpm_TM_M1B1Chans.VALE, tpm_TM_M1B1Chans.VALG,
+	tpm_TM_M1B2Chans.VALB, 0,0,0,0,0, "THERMAL:M2 front side left half average"}
+
+    {M2BackUpperAvg,6,
+	tpm_TM_M1B0Chans.VALB, tpm_TM_M1B0Chans.VALD,
+	tpm_TM_M1B1Chans.VALF, tpm_TM_M1B1Chans.VALH,
+	tpm_TM_M1B2Chans.VALE, tpm_TM_M1B2Chans.VALG,
+	0,0,0,0,0,0, "THERMAL:M2 back side upper half average"}
+
+    {M2BackLowerAvg,6,
+	tpm_TM_M1B1Chans.VALB, tpm_TM_M1B1Chans.VALD,
+	tpm_TM_M1B1Chans.VALF, tpm_TM_M1B2Chans.VALA,
+	tpm_TM_M1B2Chans.VALC, tpm_TM_M1B2Chans.VALE,
+	0,0,0,0,0,0, "THERMAL:M2 back side lower half average"}
+
+    {M2BackRightAvg,7,
+	tpm_TM_M1B0Chans.VALB, tpm_TM_M1B0Chans.VALD,
+	tpm_TM_M1B1Chans.VALB, tpm_TM_M1B2Chans.VALA,
+	tpm_TM_M1B2Chans.VALC, tpm_TM_M1B2Chans.VALE,
+	tpm_TM_M1B2Chans.VALG, 0,0,0,0,0, "THERMAL:M2 back side right half average"}
+
+    {M2BackLeftAvg,7,
+	tpm_TM_M1B0Chans.VALB, tpm_TM_M1B0Chans.VALD,
+	tpm_TM_M1B1Chans.VALB, tpm_TM_M1B1Chans.VALD,
+	tpm_TM_M1B1Chans.VALF, tpm_TM_M1B1Chans.VALH,
+	tpm_TM_M1B2Chans.VALA, 0,0,0,0,0, "THERMAL:M2 back side left half average"}
+
+    {M1EdgeB01Avg,12,
+	tpm_TM_M0B0Chans.VALA, tpm_TM_M0B0Chans.VALB,
+	tpm_TM_M0B0Chans.VALC, tpm_TM_M0B0Chans.VALD,
+	tpm_TM_M0B0Chans.VALE, tpm_TM_M0B0Chans.VALF,
+	tpm_TM_M0B1Chans.VALA, tpm_TM_M0B1Chans.VALB,
+	tpm_TM_M0B1Chans.VALC, tpm_TM_M0B1Chans.VALD,
+	tpm_TM_M0B1Chans.VALE, tpm_TM_M0B1Chans.VALF, "THERMAL:M1 edge block 1/2 average"}
+
+    {M1EdgeB23Avg,12,
+	tpm_TM_M0B2Chans.VALA, tpm_TM_M0B2Chans.VALB,
+	tpm_TM_M0B2Chans.VALC, tpm_TM_M0B2Chans.VALD,
+	tpm_TM_M0B2Chans.VALE, tpm_TM_M0B2Chans.VALF,
+	tpm_TM_M0B3Chans.VALA, tpm_TM_M0B3Chans.VALB,
+	tpm_TM_M0B3Chans.VALC, tpm_TM_M0B3Chans.VALD,
+	tpm_TM_M0B3Chans.VALE, tpm_TM_M0B3Chans.VALF, "THERMAL:M1 edge block 3/4 average"}
+
+    {M1CenterAvg,8,
+	tpm_TM_M0B0Chans.VALG, tpm_TM_M0B0Chans.VALH,
+	tpm_TM_M0B1Chans.VALG, tpm_TM_M0B1Chans.VALH,
+	tpm_TM_M0B2Chans.VALG, tpm_TM_M0B2Chans.VALH,
+	tpm_TM_M0B3Chans.VALG, tpm_TM_M0B3Chans.VALH,
+	0,0,0,0, "THERMAL:M1 center average"}
+
+    {M2EdgeAvg,12,
+	tpm_TM_M1B0Chans.VALA, tpm_TM_M1B0Chans.VALB,
+	tpm_TM_M1B1Chans.VALC, tpm_TM_M1B1Chans.VALD,
+	tpm_TM_M1B1Chans.VALG, tpm_TM_M1B1Chans.VALH,
+	tpm_TM_M1B2Chans.VALA, tpm_TM_M1B2Chans.VALB,
+	tpm_TM_M1B2Chans.VALC, tpm_TM_M1B2Chans.VALD,
+	tpm_TM_M1B2Chans.VALG, tpm_TM_M1B2Chans.VALH, "THERMAL:M2 edge average"}
+
+    {M2CenterAvg,8,
+	tpm_TM_M1B0Chans.VALC, tpm_TM_M1B0Chans.VALD,
+	tpm_TM_M1B1Chans.VALA, tpm_TM_M1B1Chans.VALB,
+	tpm_TM_M1B1Chans.VALE, tpm_TM_M1B1Chans.VALF,
+	tpm_TM_M1B2Chans.VALE, tpm_TM_M1B2Chans.VALF,
+	0,0,0,0, "THERMAL:M2 center average"}
+
+    {PMSSB4Avg,8,
+	tpm_TM_M0B4Chans.VALA, tpm_TM_M0B4Chans.VALB,
+	tpm_TM_M0B4Chans.VALC, tpm_TM_M0B4Chans.VALD,
+	tpm_TM_M0B4Chans.VALE, tpm_TM_M0B4Chans.VALF,
+	tpm_TM_M0B4Chans.VALG, tpm_TM_M0B4Chans.VALH,
+	0,0,0,0, "THERMAL:PMSS block 4 average"}
+
+    {PMSSB5Avg,6,
+	tpm_TM_M0B5Chans.VALA, tpm_TM_M0B5Chans.VALB,
+	tpm_TM_M0B5Chans.VALC, tpm_TM_M0B5Chans.VALD,
+	tpm_TM_M0B5Chans.VALE, tpm_TM_M0B5Chans.VALF,
+	0,0,0,0,0,0, "THERMAL:PMSS block 5 average"}
+
+    {TelairAvg,4,
+	tpm_TM_M2B2Chans.VALA, tpm_TM_M2B2Chans.VALC,
+	tpm_TM_M2B2Chans.VALD, tpm_TM_M2B2Chans.VALH,
+	0,0,0,0,0,0,0,0, "THERMAL:Ambient average"}
+
+    {FloorAvg,4,
+	tpm_TM_M2B0Chans.VALF, tpm_TM_M2B0Chans.VALG,
+	tpm_TM_M2B0Chans.VALH, tpm_TM_M2B1Chans.VALA,
+	0,0,0,0,0,0,0,0, "THERMAL:Floor average"}
+
+    {LowairAvg,4,
+	tpm_TM_M2B0Chans.VALA, tpm_TM_M2B0Chans.VALB,
+	tpm_TM_M2B0Chans.VALC, tpm_TM_M2B1Chans.VALD,
+	0,0,0,0,0,0,0,0, "THERMAL:Lower enclosure average"}
+}

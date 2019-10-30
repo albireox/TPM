@@ -1,0 +1,65 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (X11; I; Linux 2.2.13-4mdk i586) [Netscape]">
+   <title>ABDUMP</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#0000FF" alink="#800080" background="Tests/blueback.jpg">
+<font face="Comic Sans MS, Arial, Helvetica"><font color="#000000">
+<blockquote>
+<center>
+<h1>
+ABDUMP - Dump the Interlock Data
+</h1>
+</center>
+
+<b>To create a interlock file in survey standard 
+Yanny parameter file format:</b>
+<br>
+<br>
+[sdsshost:]$ setup tpm
+<br>
+[sdsshost:]$ abdump
+<br><br>
+Usage: abdump outfile {-cnt {cnt 1}} month day hms {year THISYEAR}
+<br><br> 
+<blockquote>
+        outfile = name of Yanny parameter file to create
+<br>
+        cnt     = Number of 1Hz samples to acquire
+<br>
+        month = Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
+<br>
+        day = 1..31
+<br>
+        hms = HH:MM:SS (must be in UT)
+<br>
+        year = Gregorian year, e.g. 2002
+<br></blockquote>
+The default year selects between 1 Jan and TODAY of this year
+and between TODAY and 31 Dec of last year.
+<p>
+<b>To create the interlocks graphical display using IOP:</b>
+<br><br>
+When accessing a multi-sample file, i.e. if you specified cnt to be
+greater than 1 in your adbump call, you
+have to specify the sample number from 0 to N-1, e.g.
+<br><br>
+[sdsshost:]$ setup iop 
+<br>
+[sdsshost:]$ iop 
+<br>
+im> startInterlocks -f tpm.par:2
+<p>                              
+
+abdump is implemented using the casiwish (Tcl) scripting
+interface to the Channel Archiver files.
+<hr>
+Last
+modified on 12 February 2003 by Peregrine M. McGehee.
+
+</font></font></blockquote>
+
+</body>
+</html>

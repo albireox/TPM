@@ -1,0 +1,446 @@
+<html>
+<h2>
+<center>
+SDSS Telescope Performance Monitor (TPM)<br>
+Version tpm_v2_30_0 shakedown request and release notes<br>
+SDSS Summer Shutdown 2003
+</center>
+</h2>
+
+<h3>Introduction</h3>
+During the summer shutdown of 2003 work was done on the TPM involving
+three areas:
+<li>Analysis of TPM generated alarms fielded by the Watcher.
+<li>Communications with the M2 Galil.
+<li>Addition of analog values obtained from the Allen-Bradley PLCs.
+<p>
+The shakedown requests associated with release tpm_v2_30_0 are:
+<li>Verify LN2 pressure readings.
+<b>Observers</b>
+<li>Compare TPM and MCP displays of PLC files B3 and B10.
+<b>Observers</b>
+<li>Verify M2 Galil readings. <b>Observers</b>
+<li>Verify Analog PLC readings. <b>Observers</b>
+<li>Monitor TPM tracking alarms. <b>Peregrine, Observers</b>
+<li>Test frequency of dewar scale communications alarms against
+telescope motion or drive amplifier status. <b>Peregrine, 20 Sept 03 Engineering
+phone-con</b>
+<li>Test frequency of dewar scale communications alarms against
+air conditioner status. <b>Peregrine, Jon, 20 Sept 03 Engineering phone-con</b>
+<li>Discuss new temperature sensor failure mode. 
+<b>20 Sept 03 Engineering phone-con</b>
+<li>Discuss LVDT readings
+<b>20 Sept 03 Engineering phone-con</b>
+
+<h3>Shakedown Requests</h3>
+
+<h4>LN2 Pressure readings</h4>
+<b>PR 4381:</b>
+The observers should verify the LN2 pressure readings displayed on the main
+TPM display. They should verify that the TPM channels tpm_LN2press_spectro
+and tpm_LN2press_imager are being archived. 
+
+<h4>PLC files B3 and B10</h4>
+<b>PR 4865:</b> The current release of data_collection.h now properly exports all of the
+PLC B3 word, thus extending the number of interlock 16-bit words 
+reported by the TPM from 182 to 190.  This work was required by the
+"rebuilding of the world". 
+
+<p>
+Changes visible to the observers are:
+<li>The B3 display under the TPM Interlocks menu now contains 20 shortwords.<br>
+<b>Action:</b> Examine TPM displays for B3 and B10, crosscheck with MCP 
+equivalent (if exists).
+<li>The TPM archiver now includes tpm_ABB3_12 through tpm_ABB3_19.<br>
+<b>Action:</b> Obtain tpm_ABB3_12 through tpm_ABB3_19 values from the TPM
+archives using LibIO client of choice (probably CGI-BIN interface).
+<li>The TPM abdump utility now exports 20 words under B3.<br>
+<b>Action:</b> Run abdump utility and verify that the IOP start_interlocks display
+make sense using the generated Yanny parameter file.
+
+<h4>M2 Galil Readings</h4>
+During an engineering phone-con near the start of the summer shutdown
+it was agree that the serial port speed between the TPM#2 and the M2 Galil
+be increased from 19200 baud to 38400. Russell Owen and Peregrine McGehee
+performed a successful test.
+<p>
+<b>Action:</b> The observers should examine the TPM Galils display and verify
+the numbers.
+
+<h4>Analog PLC Values</h4>
+<b>PR 4659:</b>
+Jon Brinkmann created the following TPM process variables, testing them
+on the IPM EPICS test-bed. These have now been incorporated into the
+TPM#1 system, the TPM displays (under Details/PLC Analogs), and
+the archiver.
+<li>tpm_AzWindErr - Windscreen Azimuth Servo Error (volts)
+<li>tpm_AltWindErr - Windscreen Altitude Servo Error (volts)
+<li>tpm_LiftForce - Instrument Lift Force (lbs)
+<li>tpm_LiftPos - Instrument Lift Position (inches)
+<li>tpm_CW1Pos - Counterweight #1 Position (inches)
+<li>tpm_CW2Pos - Counterweight #2 Position (inches)
+<li>tpm_CW3Pos - Counterweight #3 Position (inches)
+<li>tpm_CW4Pos - Counterweight #4 Postion (inches)
+<p>
+<b>Action:</b> The observers should check the TPM displays and the archiver
+for these channels and verify the reported values.
+
+<h4>Tracking Alarms</h4>
+<b>PR 4973 and PR 4494:</b>
+The TPM logic for generation of tracking alarms has been substantially modified
+(see Release Notes). 
+<p>
+<b>Action:</b>
+Peregrine will conduct an analysis using the archiver
+during the shakedown week once the telescope is back on the sky.
+<p>
+<b>Action:</b>
+The observers should check the time (minutes) into the current track 
+that is shown in the upper left hand side of the main TPM display. This value is also
+archived. The TPM process variable name is tpm_TrackTime.
+
+<h4>Dewar Scale Communications Alarms</h4>
+<b>PR 4973 and PR 4494:</b>
+The bulk of the serial communications arise from the spectrograph and
+imager dewar scales. Jon Brinkmann pointed out that these connections are
+likely more sensitive to electrical and/or vibration noise due to two factors.
+<li>Unlike the other TPM serial devices, the wiring does not immediately
+go (Jon - at all?) into fiber optics.
+<li>The copper section of the serial communications cable is composed of
+two runs joined together. The integrity of that connection needs to checked.
+<p>
+<b>Action:</b> Peregrine and Jon will conduct a test on the effect of the
+air conditioning system on the noise rates. Examination of the archives shows
+that the highest error rate on both dewar scales occurs during the day with
+a smaller maximum during operations (drive motors noise/vibration?). While
+many daytime errors on the spectrograph dewar scale are because the
+spectrograph dewar is often moved away from its scale to facilitate engineering
+operations in the enclosures, this does not account for the daytime imager
+dewar scale faults.
+<p>
+The proposed test is to wait for the air conditioning system to come on
+and then to turn it off for one hour between noon and 1pm. The dewar
+scale communications error rates will be compared between these
+two periods. 
+<p>
+<b>Action:</b> Peregrine will examine the archiver logs generated during the
+shakedown to check for correlation of communications error rate with
+drive amplifier status and/or motion.
+<p>
+<b>Action:</b> A proposal to upgrade the cabling between the TPM and
+dewar scales should be discussed at the 20 Sept 2003 Engineering 
+phone-con.
+
+<h4>New Temperature Sensor Failure Mode</h4>
+<b>PR 4388, PR 4917, PR 4973 and PR 4494:</b>
+See Release Notes for details.
+<p>
+<b>Action:</b> This needs to discussed at the 20 September 2003 Engineering
+phone-con. 
+
+<h4>LVDT Readings</h4>
+<b>PR 4429:</b>
+Jon Brinkmann reports that the LVDT readings obtained from the Allen-Bradley
+system are non-sensical.
+<p>
+<b>Action:</b> This needs to discussed at the 20 September 2003 Engineering
+phone-con.
+
+
+
+<h3>Release Notes</h3>
+
+<h4>Temperature Alarms</h4>
+We presently know of four possible states that a individual temperature sensor
+can be in:
+<br>
+<li>Normal.
+<li>Disconnected. In this case the reported temperature is less than
+-50 degC and all other sensors in the row are affected. 
+<li>Affected by a disconnected sensor in the row. The TPM channels
+that constitute a single row have the identical module numbers and record
+field names (VALA-VALH), but different block numbers. 
+Thus, if tpm_M0B2Chans.VALD were disconnected
+then tpm_M0B0Chans.VALD through tpm_M0B7Chans.VALD would all
+have spurious readings.
+<li>Temporarily replaced by a resister. In this case the other sensors
+in the row are unaffected although this sensor would be reporting an
+arbitrary value (see below).
+<p>
+The current misbehaving sensors are (see sdss-apodaylog/1118) are:
+<li>M0B0S4  on M1, previously seen and replaced with a resistor. Reading
+-131.99 degC.
+<li>M0B0S6  on M1, previously seen and replaced with a resistor. Reading
+84.66 degC. <b>This would not be caught by the present TPM Watcher 
+alarms</b>
+<li>M0B0S7  on M1, new... reads -1.40 degC and is not affecting other readings
+<li>M0B5S4  on M1 internal baffle, new... reads -0.84 degC and is not
+affecting other readings.  We checked the wiring and
+found no problems.  We're unsure where the problem lies.
+ <p>
+The three sensors on M1 are at "2 o'clock" as viewed from the rear of the
+mirror.  The sensor on the internal baffle is at "4 o'clock".    
+
+<h4>Tracking Alarms</h4>
+Investigation of the TPM tracking alarms, which are based on the reported
+MEI servo errors, resulted in redefinition of the TPM's appraisal of the
+operational state of the telescope and a reformulation of the trracking
+alarm condition.
+
+<h5>Telescope mode</h5>
+
+Analysis of the TPM's determination of the telescope operational mode
+(tpm_telescope_mode = 1 if operational, 0 if not) resulted in a change to
+the test against the Altitude drive Amp #1 status.
+<p>
+The specific change in tpm_telescope_mode.CALC is from
+<pre>C||((A&16)&&(B#4095))</pre>
+to
+<pre>C||((A&16)&&(B=4092))</pre>
+where the test against B (tpm_AL1_Ampstat) now correctly checks for
+enabled state.
+This record was moved from the database file util2.db used by TPM#2 to
+util.db used by TPM#1.
+
+util.db:
+<pre>
+record(calc,"tpm_altinrange") {
+        field(DESC, "Is the ALT position OK?")
+        field(SCAN,".1 second")
+        field(INPA,"tpm_ALENC1")
+        field(B,"5142857")
+        field(C,"21857142")
+        field(CALC,"(A>B)&&(A&#060C)?1:0")
+}          
+record(calc, "tpm_TrackStart") {
+        field(DESC, "Last time stamp not tracking")
+        field(INPA, "tpm_ALMCPVEL")
+        field(INPB, "tpm_AL1_Ampstat")
+        field(INPC, "tpm_uptime")
+        field(INPD, "tpm_TrackStart")
+        field(E, "3200")
+        field(CALC, "(ABS(A)&#060E||B#4092)?C:D")
+}
+record(calc, "tpm_TrackTime") {
+        field(DESC, "Elapsed time into track")
+        field(INPA, "tpm_uptime")
+        field(INPB, "tpm_TrackStart")
+        field(CALC, "(A-B)*60")
+        field(EGU, "Minutes")
+        field(PREC, "4")
+}      
+<p>
+</pre>
+tests_axis.db:
+<pre>
+record(calc,"tpm_alttrackchk") {
+        field(DESC,"Check Alt Tracking")
+        field(SCAN,".2 second")
+        field(INPA,"tpm_ALMCPVEL")
+        field(B, "3200")
+        field(INPC,"tpm_alterravg PP NMS")
+        field(INPD,"tpm_telescope_mode")
+        field(INPE,"tpm_TrackTime")
+        field(F,"0.5")
+        field(INPG,"tpm_altinrange")
+        field(CALC,"(ABS(A)&#060B)&&(D=1)&&(E>F)&&(G=1)?C:0")
+ :
+}
+ </pre>                                                        
+<p>
+Likewise for tpm_aztrackchk and tpm_rottrackchk.
+
+<h4>Serial communications.</h4>
+
+We believe there may be a correlation between the dewar scale comm errors and
+noise sources. Specifically: air conditioner and drive motors.
+<p>
+The required test is to observe the error rate when the AC is on during the
+day and then to turn it off of a period of one hour.
+
+<h4>MCP Broadcast of PLC File B3 changed from 12 to 20 shortwords.</h4>
+<li>rtApp/src/tpmSub.h 
+<br>
+tpm_ILOCK[182] -> tpm_ILOCTPMK[190]
+<p>
+<li>rtApp/src/tpmSub.c
+<br>
+<pre>
+long tpmSub1HzProcess(struct subRecord *psub)
+{
+    if (tpm_CRCLOOPS >= CRCCHECK_MAXTRY) return (0);
+ 
+    tpm_M2FORCE = TPM_SDSS_FRAME.status.i1.il10.sec_mir_force_limits;
+    memcpy(tpm_ILOCK, (void *)&TPM_SDSS_FRAME.status.i1, 190*sizeof(unsigned short));       
+</pre>
+<p>
+<li>rtApp/src/tpmABData.tcl
+<pre>
+	B3 list changed from 12 to 20. 
+	for {set i 0} {$i < 20} {incr i} {lappend list20 [format "%2.2d" $i]}
+	makeChanList ABList tpm_ABB3_ $list20  
+</pre>
+<p>
+<li>rtApp/Db/absub.substitutions
+<pre>
+file absub.template {
+    pattern{FILE,NELM,INDX}
+    {I1,32,0}
+    {O1,32,32}
+    {I2,32,64}
+    {O2,32,96}
+    {I3,8,128}
+    {I4,8,136}
+    {I5,8,144}
+    {I6,2,152}
+    {I7,2,154}
+    {I8,2,156}
+    {I9,2,158}
+    {I10,2,160}
+    {O11,2,162}
+    {O12,2,164}
+    {B3,20,166}
+    {B10,4,186}
+}
+
+file abval20.template {
+    pattern{FILE}
+    {B3}
+}
+</pre>
+<p>
+<li> Created absub20.template from absub12.template. Removed latter.
+<p>
+<li> Makefile.Host:
+<pre> 
+Changed
+	USES_TEMPLATE ++ abval12.template
+to
+	USES_TEMPLATE += abval20.template
+</pre>
+
+<li>rtApp/opi:
+Created abval20.dl from abval12.dl. Removed latter.
+Edited Interlocks menu on tpm.dl.
+<p>
+<li>ChanArch/config:
+ab.cfg added tpm_ABB3_12 to tpm_ABB3_20.
+<p>
+
+<h4>PLC analogs (from JB)</h4>
+<p>
+plc_analogs.db:
+<pre>
+record(calc, "tpm_AzWindErr") {
+	field(DESC, "Az Windscreen Servo Error")
+	field(INPA, "tpm_ABI2_02 CPP MS")
+	field(CALC, "(A/3276.8)-10.0")
+	field(EGU, "v")
+	field(HIHI, "24.0")
+	field(LOLO, "-24.0")
+	field(HIGH, "24.0")
+	field(LOW, "-24.0")
+	field(PREC, "3")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_AltWindErr") {
+	field(DESC, "Alt Windscreen Servo Error")
+	field(INPA, "tpm_ABI2_03 CPP MS")
+	field(CALC, "(A/3276.8)-10.0")
+	field(EGU, "v")
+	field(HIHI, "24.0")
+	field(LOLO, "-24.0")
+	field(HIGH, "24.0")
+	field(LOW, "-24.0")
+	field(PREC, "3")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_LiftForce") {
+	field(DESC, "Instrument Lift Force")
+	field(INPA, "tpm_ABI4_04 CPP MS")
+	field(CALC, "(A-1061)*(1500.0/5080.0)")
+	field(EGU, "lb")
+	field(HIHI, "3000.0")
+	field(LOLO, "-1.0")
+	field(HIGH, "2700.0")
+	field(LOW, "-1.0")
+	field(PREC, "1")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_LiftPos") {
+	field(DESC, "Instrument Lift Pos")
+	field(INPA, "tpm_ABI4_05 CPP MS")
+	field(CALC, "(A-32)*(23.0/13880.0)")
+	field(EGU, "in")
+	field(HIHI, "30.0")
+	field(LOLO, "-1.0")
+	field(HIGH, "27.0")
+	field(LOW, "0.0")
+	field(PREC, "2")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_CW1Pos") {
+	field(DESC, "Counterweight One Pos")
+	field(INPA, "tpm_ABI5_00 CPP MS")
+	field(CALC, "A/32.768")
+	field(EGU, "in")
+	field(HIHI, "30.0")
+	field(LOLO, "-1.0")
+	field(HIGH, "27.0")
+	field(LOW, "0.0")
+	field(PREC, "1")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_CW2Pos") {
+	field(DESC, "Counterweight Two Pos")
+	field(INPA, "tpm_ABI5_01 CPP MS")
+	field(CALC, "A/32.768")
+	field(EGU, "in")
+	field(HIHI, "30.0")
+	field(LOLO, "-1.0")
+	field(HIGH, "27.0")
+	field(LOW, "0.0")
+	field(PREC, "1")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_CW3Pos") {
+	field(DESC, "Counterweight Three Pos")
+	field(INPA, "tpm_ABI5_02 CPP MS")
+	field(CALC, "A/32.768")
+	field(EGU, "MCP")
+	field(HIHI, "30.0")
+	field(LOLO, "-1.0")
+	field(HIGH, "27.0")
+	field(LOW, "0.0")
+	field(PREC, "1")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+record(calc, "tpm_CW4Pos") {
+	field(DESC, "Counterweight Four Pos")
+	field(INPA, "tpm_ABI5_03 CPP MS")
+	field(CALC, "A/32.768")
+	field(EGU, "MCP")
+	field(HIHI, "30.0")
+	field(LOLO, "-1.0")
+	field(HIGH, "27.0")
+	field(LOW, "0.0")
+	field(PREC, "1")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+}
+</pre>
+<p>
+Added to ChanArch/config/interlocks.cfg (1.0 sec).
+<p>
+Added plc_analogs.dl to tpm.dl Details menu.
+<p>
+Added dbLoadRecords("plc_analog.db") to ioctpm/st.cmd.
+</html>
+

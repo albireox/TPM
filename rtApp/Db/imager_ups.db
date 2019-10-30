@@ -1,0 +1,78 @@
+record(stringout,"tpm_UPSW") {
+	field(DESC, "UPS:Imager UPS cmd delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r \000")
+	field(OUT,"@/tyCo/9 <writeCmt %s>")
+}
+record(stringout,"tpm_UPSR") {
+	field(DESC, "UPS:Imager UPS resp delim")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(VAL,"\r")
+	field(OUT,"@/tyCo/9 <readCmt %s>")
+}
+record(longout,"tpm_UPSDBG") {
+	field(DESC,"UPS:Imager UPS dbg")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/9 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_UPSTMO") {
+	field(DESC, "UPS:Imager UPS timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/5 <timeout>")
+	field(DOL,"5")
+	field(OMSL,"closed_loop")
+}
+record(waveform,"tpm_UPSStatus") {
+	field(DESC, "UPS:Imager UPS Status String")
+	field(SCAN,"10 second")
+	field(FTVL,"CHAR")
+	field(NELM,"120")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/9 <Q1><%s>")
+	field(FLNK,"tpm_UPSParse")
+}
+record(genSub, "tpm_UPSParse") {
+	field(DESC,"UPS:Imager UPS Parse")
+	field(INAM, "tpmUPSInit")
+	field(SNAM, "tpmUPSProcess")
+        field(EFLG, "ON CHANGE")
+	field(INPA, "tpm_UPSStatus")
+	field(FTA, "CHAR")
+	field(NOA, "120")
+	field(FTVA, "DOUBLE")
+	field(FTVB, "DOUBLE")
+	field(FTVC, "DOUBLE")
+	field(FTVD, "DOUBLE")
+	field(FTVE, "DOUBLE")
+	field(FTVF, "DOUBLE")
+	field(FTVG, "DOUBLE")
+	field(FTVH, "LONG")
+	field(FTVI, "LONG")
+	field(FTVJ, "LONG")
+	field(FTVK, "LONG")
+	field(FTVL, "LONG")
+	field(FTVM, "LONG")
+	field(FTVN, "LONG")
+	field(FTVO, "LONG")
+	field(FLNK, "tpm_UPSAlarm")
+}
+record(calc,"tpm_UPSAlarm")
+{
+        field(DESC,"UPS:Watcher alarm")
+	field(CALC,"A+B+C+D+E+F+G")
+        field(INPA,"tpm_UPSParse.VALH")
+        field(INPB,"tpm_UPSParse.VALI")
+        field(INPC,"tpm_UPSParse.VALJ")
+        field(INPD,"tpm_UPSParse.VALK")
+        field(INPE,"tpm_UPSParse.VALL")
+        field(INPF,"tpm_UPSParse.VALM")
+        field(INPG,"tpm_UPSParse.VALN")
+        field(HSV,"MAJOR")
+        field(HIGH,"1")
+}

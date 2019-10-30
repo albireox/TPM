@@ -1,0 +1,73 @@
+<html>
+<h2>
+<center>
+SDSS Telescope Performance Monitor (TPM)<br>
+Version tpm_v2_33_0 shakedown request and release notes<br>
+October 2003
+</center>
+</h2>
+
+<h3>Alarms</h3>
+
+<b>PR 4973/4494:</b>
+TPM Alarms
+<p>
+
+<b>Item:</b>
+Corrected INP fields for tpm_TM_M1EdgeAvg temperature sensor 
+calculation. These had ".INPA" field extension missing and as
+a consequence were using a value of 0 obtained from the 
+default ".VAL" field.
+<p>
+Working file: rtApp/Db/temp_alarms.db
+<p>
+<b>Item:</b>
+Changed LOW (MINOR alarm) thresholds for tpm_Ndewar_spectro 
+and tpm_Sdewar_imager from 75 lb to 100 lb per Jim Gunn and Jon
+Brinkmann.
+<p>
+<b>To test:</b>
+Verify lack of TPM alarms associated with M1 temperatures. Also
+check value using<br>
+$ caget tpm_TN_M1EdgeAvg
+<p>
+Working file: rtApp/Db/scale.db
+<p>
+<b>Item:</b>
+Reenabled the following TPM/watcher alarms:
+<li>tpm_TM_M1Upper_FB.SEVR 
+<li>tpm_TM_M1Right_FB.SEVR
+<li>tpm_TM_M1_FB.SEVR
+<li>tpm_Serial.VALA (spectro dewar)
+<li>tpm_Serial.VALB (imager dewar)
+<li>tpm_TM_M0B0Chans.SEVR
+<p>
+The temperature alarms were reenabled due to the M1 sensors
+being repaired and the operations requirement that fauly sensors
+are replaced/patched immediately.
+<p>
+The dewar scale communications alarms were reenabled due to the
+fixes made in tpm_v2_31_0.
+<p>
+<b>To test:</b>
+Look at TPM/Watcher alarms.
+<p>
+Working file: rtApp/Db/tpmAlarms.db
+
+<h3>PLC analog values</h3>
+<p>
+<b>PR 4659:</b>
+Analog values.
+<p>
+<b>Item:</b>
+New version of database and displays from Jon Brinkmann.
+<p>
+<b>To test:</b>
+Check TPM displays of the PLC analogs for valid readings.
+<p>
+
+Working file: rtApp/Db/plc_analog.db<br>
+Working file: rtApp/opi/plc_analog.dl<br>
+Working file: rtApp/opi/plc_analog.adl<br>
+
+</html>

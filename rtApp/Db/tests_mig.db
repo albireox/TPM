@@ -1,0 +1,90 @@
+record(ao,"tpm_dmig1a_dtlim") {
+	field(DESC,"DMIG1A/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig1b_dtlim") {
+	field(DESC,"DMIG1B/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig1c_dtlim") {
+	field(DESC,"DMIG1C/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig1dt_dtlim") {
+	field(DESC,"DMIG1DT/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig1el_dtlim") {
+	field(DESC,"DMIG1EL/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig1fl_dtlim") {
+	field(DESC,"DMIG1FL/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig2a_dtlim") {
+	field(DESC,"DMIG2A/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig2b_dtlim") {
+	field(DESC,"DMIG2B/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig2c_dtlim") {
+	field(DESC,"DMIG2C/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(ao,"tpm_dmig2dt_dtlim") {
+	field(DESC,"DMIG2DT/DT Limit")
+	field(EGU,"Inches/Sec")
+}
+record(bi,"tpm_dmig1a_dtstate") {
+	field(DESC, "DMIG1A/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig1b_dtstate") {
+	field(DESC, "DMIG1B/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig1c_dtstate") {
+	field(DESC, "DMIG1C/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig1dt_dtstate") {
+	field(DESC, "DMIG1DT/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig1el_dtstate") {
+	field(DESC, "DMIG1EL/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig1fl_dtstate") {
+	field(DESC, "DMIG1FL/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig2a_dtstate") {
+	field(DESC, "DMIG2A/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig2b_dtstate") {
+	field(DESC, "DMIG2B/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig2c_dtstate") {
+	field(DESC, "DMIG2C/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}
+record(bi,"tpm_dmig2dt_dtstate") {
+	field(DESC, "DMIG2DT/DT State")
+	field(ZNAM, "Ok")
+	field(ONAM, "Fault")
+}

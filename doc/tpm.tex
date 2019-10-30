@@ -1,0 +1,139 @@
+%%
+%% Beginning of file 'sample.tex'
+%%
+%% Modified 03 Nov 99
+%%
+%% This is a sample manuscript marked up using the
+%% AASTeX v5.0 LaTeX 2e macros.
+
+%% The first piece of markup in an AASTeX v5.0 document
+%% is the \documentclass command. LaTeX will ignore
+%% any data that comes before this command.
+
+%% The command below calls the default manuscript style,
+%% which will produce a double-spaced document on one column.
+%% Examples of commands for other substyles follow. Use
+%% whichever is most appropriate for your purposes.
+
+\documentclass[preprint]{aastex}
+\usepackage{amsmath}
+\usepackage{html}
+
+%% preprint produces a one-column, single-spaced document:
+
+% \documentclass[preprint]{aastex}
+
+%% preprint2 produces a double-column, single-spaced document:
+
+% \documentclass[preprint2]{aastex}
+
+%% If you want to create your own macros, you can do so
+%% using \newcommand. Your macros should appear before
+%% the \begin{document} command.
+%%
+%% If you are submitting to a journal that translates manuscripts
+%% into SGML, you need to follow certain guidelines when preparing
+%% your macros. See the AASTeX v5.0 Author Guide
+%% for information.
+
+
+
+%% If you wish, you may supply running head information, although
+%% this information may be modified by the editorial offices.
+%% The left head contains a list of authors,
+%% usually a maximum of three (otherwise use et al.).  The right
+%% head is a modified title of up to roughly 44 characters.  Running heads
+%% will not print in the manuscript style.
+
+
+%% This is the end of the preamble.  Indicate the beginning of the
+%% paper itself with \begin{document}.
+
+\begin{document}
+
+%% LaTeX will automatically break titles if they run longer than
+%% one line. However, you may use \\ to force a line break if
+%% you desire.
+
+\title{The SDSS Telescope Performance Monitor}
+
+\author{Peregrine M. McGehee\\5 March 2004}
+
+The document is maintained by Peregrine M. McGehee at Los Alamos
+National Laboratory and the Department of Astronomy at New Mexico
+State University. Questions and comments should be directed to
+{\it peregrin\_at\_apo.nmsu.edu}.
+
+A gzip-ed Postscript version of this document is available at
+\htmladdnormallink{tpm.ps.gz}{../tpm.ps.gz}. 
+The \LaTeX{} source, figures, and build scripts are in SDSS CVS
+as part of the {\tt tpm} module. 
+
+%% Use \author, \affil, and the \and command to format
+%% author and affiliation information.
+%% Note that \email has replaced the old \authoremail command
+%% from AASTeX v4.0. You can use \email to mark an email address
+%% anywhere in the paper, not just in the front matter.
+%% As in the title, you can use \\ to force line breaks.
+
+\section{Introduction}
+The Telescope Performance Monitor displays and archives engineering data
+using the infrastructure supplied by the Experimental Physics and 
+Industrial Control System (EPICS) toolkit.
+Detailed information concerning EPICS can be found at the project home
+page at Argonne National Laboratory:
+\htmladdnormallink{http://epics.aps.anl.gov/epics}{http://epics.aps.anl.gov/epics}
+
+The real-time component of the TPM is implemented on two Motorola 
+MV162 (Petra) VMEbus computers running the vxWorks operating system 
+(v5.1.1) and version R3.13.5 of EPICS iocCore. These two MV162s, 
+hereafter referred to as Input-Output Controllers (IOCs), acquire 
+information about the Sloan telescope and ancillary systems using a variety of interfaces. 
+
+This document begins with a discussion of the information needed
+for developers followed by an overview of the operator displays.
+The breakdown of the TPM into logical subsystems is presented. Next the
+physical interfaces used by the TPM are described.
+
+Within the section on alarms we categorize those native TPM alarms
+that are transmitted to IOP and watcher. The document concludes
+with a series of tables organized by logical subsystem that
+describe all of the TPM process variables.
+
+\include{developers}
+
+\include{displays}
+
+\include{subsystems}
+
+\include{interfaces}
+
+\include{alarms}
+
+\section{Channel Reports By Subsystem}
+
+To provide an overview of the individual TPM channels we present
+a series of tables for each logical subsystem. The channels within
+each subsystem are separated into those that are written into the
+TPM logs by the EPICS channel archiver and those that are not.
+
+For each channel we provide the full process variable name 
+including the database record field. The default field name
+is ``.VAL''. In addition to the process variable name we
+give the scanning period within the EPICS database, the device
+driver specification, and the channel description.
+
+This section is automatically generated from the ASCII database
+files found in {\tt<tpmbase>}/db and the ChannelArchiver
+configuration files located in {\tt<tpmbase>}/ChanArch/config. The
+documentation generation process uses a combination of bash scripts
+and Tcl program driven by {\tt<tpmbase>}/doc/gentpmdoc.sh.
+
+The calling sequence is:\\
+\$ gentpmdoc.sh {\tt<tpm\_root>} \\
+where {\tt<tpm\_root>} is the top of a TPM distribution directory, e.g.
+/p/tpmbase or /usrdevel/peregrin/tpm.
+
+\include{tpm_channelreport}
+
+\end{document}

@@ -1,0 +1,7 @@
+couldn't open socket: connection refused
+    while executing
+"socket $host $port"
+    (procedure "::http::geturl" line 62)
+    invoked from within
+"::http::geturl $url -timeout 2000 "
+    (file "stopTpm.tcl" line 9)

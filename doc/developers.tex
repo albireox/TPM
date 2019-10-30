@@ -1,0 +1,151 @@
+\section{Information for Developers}
+
+Within this section we describe the structure of the TPM
+code distribution and the build procedure.
+The TPM is available from FermiLab CVS as the module
+{\bf tpm}. 
+
+\subsection{Directory Structure}
+
+Within the installed TPM distribution are found directories
+that are either checked out from CVS or are generated during
+the build process. Table \ref{tbl-directory} provides a summary
+of these directories with their origin and contents listed.
+
+\begin{deluxetable}{lll}
+\tablecaption{TPM Directory Structure\label{tbl-directory}}
+\tablehead{
+\colhead{Directory} &
+\colhead{Origin} &
+\colhead{Description} 
+}
+\startdata
+ChanArch & CVS & Channel Archiver configuration and documents \\
+bin & Built & Workstation and IOC executables \\
+commonApp & CVS & Device drivers and custom EPICS software \\
+config & CVS & EPICS application development system configuration \\
+db & Built & EPICS databases \\
+dbd & Built & EPICS database descriptions \\
+doc & CVS & Documentation \\
+include & Built & C language include files \\
+iocBoot & CVS & vxWorks startup scripts \\
+javalib & Source & Compiled Java code - not used \\
+logApp & CVS & Pre-EPICS TPM software {\bf obsolete} \\
+mcp & CVS & Contains {\tt data\_collection.h} \\
+opi & Built & EPICS EDD/DM real-time display files \\
+rtApp & CVS & TPM application specific software \\
+rtApp/Db & CVS & EPICS database definitions \\
+rtApp/opi & CVS & EPICS EDD/DM real-time display files \\
+rtApp/src & CVS & C source, sequencer scripts, master {\tt .dbd} files \\
+slaApp & CVS & SLALIB source \\
+ups & CVS & FermiLab UPS configuration files \\
+\enddata
+\end{deluxetable}
+
+\subsection{Building the TPM}
+
+Creation of a new version of the TPM is performed using the
+Makefile found in the top level directory. The default action
+is to compile the source and to create the databases. Other
+supported actions are to clean a previous build and to install
+a new build. The TPM uses the EPICS application configuration
+and build system and thus relies on {\tt gnumake} rather than 
+{\tt sdssmake}.
+
+After a update of the TPM has been created and committed to
+CVS it needs to be labeled with a CVS rtag.
+TPM version names have the form
+{\tt tpm\_vXX\_YY\_ZZ} where {\tt XX} is the major release
+number, {\tt YY} is the minor release number, and {\tt ZZ}
+indicates position along a branch. To date all TPM releases
+have been along the main line of development with no
+branches required, therefore the nominal value of {\tt ZZ} is ``00''.
+
+It is project software configuration policy that new release
+numbers be generated when {\bf any} changes are made to an
+operational system.
+
+The build phase for the TPM is:\\
+\$ setup tpm \\
+\$ setup sdsscvs \\
+
+\$ ssh-agent bash \\
+\$ ssh-add \\
+
+\$ cvs rtag {\tt <version>} tpm \\
+
+\$ cvs export -r {\tt <version>} -d {\tt <mydir>} tpm \\
+\$ cd {\tt <mydir>} \\
+\$ gnumake \\
+
+The install option moves the build products into a target
+directory specified by the \$TPM\_DIR environment
+variable. 
+
+The installation phase is:\\
+\$ export TPM\_DIR=/p/tpm/{\tt<new\_version>} \\
+
+\$ gnumake install \\
+\$ ups declare {-c,-t} -f IRIX+6 -m tpm.table \\
+-r /p/tpm/{\tt<new\_version>} tpm {\tt<new\_version>} \\
+\# use -c for current \\
+\# use -t for test \\
+\# use null if normal \\
+
+\subsection{Rebooting the TPM}
+ 
+Changing TPM versions requires first executing the
+{\tt switchTPM} script. This script creates a series of soft links between
+top level subdirectories under \$TPM\_DIR under the TPM's
+standard location of {\tt /p/tpmbase/}. This root
+directory is that hard-coded in the TPM's executable, 
+display, archiver configuration, documentation, and
+system startup paths. The soft links are generated for the
+following directories: db, dbd, bin, opi, iocBoot, and ChanArch.
+
+\$ setup tpm {\tt<new\_version>} \\
+\$ switchTPM 
+
+Rebooting the TPM IOCs requires access to their vxWorks consoles.
+This is done using the terminal server connections to the two
+IOCs. 
+
+To connect to SDSSTPM: {\tt telnet t-g-sdss-2 4000} \\
+To reboot: [tpm:]\$ {\tt reboot} \\
+
+To connect to SDSSTPM2: {\tt telent t-g-sdss-2 3300} \\
+To reboot: [tpm2:]\$ {\tt reboot} \\
+
+\subsection{Location of WWW-based Documentation}
+
+The apache webserver running on sdsshost provides access to
+specific versions of the TPM documentation based on the
+declared ``current'' and ``test'' versions with ups.
+The {\tt /p/www\_server/apache-1.3.26/conf/access.conf.hurl}
+file maps the URL {\tt tpm} to the directory
+{\tt <<upsroot tpm>>/ChanArch/tpmwww} and the URL
+{\tt tpmTest} to {\tt <<upsroot tpm -t>>/ChanArch/tpmwww}.
+
+
+\subsection{Archiver cron Process}
+
+The TPM executes a cron process on sdsshost that checks the
+status of the Channel Archiver and updates the WWW-based
+temperature sensor displays. The source files for the
+cron jon are found in {\tt <tpm\_root>/ChanArch/bin}.
+
+The primary function of status
+check and display update is executed every quarter hour.
+If the ArchiveEngine fails to respond to a query on port 4812
+within 5 seconds then the script attempts to restart the 
+ChannelArchiver process. Temperature sensor data is collected
+from the TPM via channel access and new Web pages are generated.
+These pages are copied into both the UPS declared ``current''
+and ``test'' releases. {\bf Jon Brinkmann indicates this
+explicit dependence on UPS has caused problems with the 
+cron jobs}.
+
+Once a day, at 11:10 hours local time, the cron process stops
+the ChannelArchiver to roll over to a new MJD directory. The
+value of the MJD is acquired in real-time from the TPM
+channel {\tt tpm\_MJD}.

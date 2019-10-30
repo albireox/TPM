@@ -1,0 +1,11 @@
+record(subArray,"tpm_AB$(FILE)") {
+	field(DESC,"PLC:Allen-Bradley file $(FILE)")
+	field(SCAN,"1 second")
+	field(DTYP,"Soft Channel")
+	field(INP,"tpm_AB.VAL")
+	field(NELM,"$(NELM)")
+	field(MALM,"182")
+	field(INDX,"$(INDX)")
+	field(FTVL,"USHORT")
+	field(PHAS,"1")
+}

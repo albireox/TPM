@@ -1,0 +1,123 @@
+record(longout,"tpm_TMDBG") {
+	field(DESC, "THERMAL:TMicro Debug")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <debug>")
+	field(DOL,"0")
+	field(OMSL,"closed_loop")
+}
+record(longout,"tpm_TMTMO") {
+	field(DESC, "THERMAL:TMicro timeout")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <timeout>")
+	field(DOL,"1")
+	field(OMSL,"closed_loop")
+}
+record(stringout,"tpm_TMR") {
+	field(DESC, "THERMAL:TMicro Read")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <readCmt %s>")
+	field(VAL," ok\r\n")
+}
+record(stringout,"tpm_TMW") {
+	field(DESC, "THERMAL:TMicro Write")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <writeCmt %s>")
+	field(VAL,"\r")
+}
+record(ao,"tpm_TMSLP") {
+	field(DESC, "THERMAL:TMicro Slope")
+	field(PINI,"YES")
+	field(DTYP,"Ascii IP Octal")
+	field(OUT,"@/tyCo/2 <slope>")
+	field(DOL,"100.0")
+	field(OMSL,"closed_loop")
+}
+record(ai,"tpm_TMTST") {
+	field(DESC, "THERMAL:TMicro Test Record")
+	field(SCAN,"Passive")
+	field(DTYP,"Ascii IP Octal")
+	field(INP,"@/tyCo/2 <1 GETTEMP><%14k%f>")
+	field(ASLO,".01")
+	field(PREC,"2")
+	field(EGU,"C")
+}
+record(longout,"tpm_TM_MedianParam") {
+	field(DESC, "THERMAL:Median Filter Length")
+	field(SCAN,"Passive")
+	field(PINI,"1")
+	field(VAL,"17")
+}
+record(mbbo,"tpm_TM_Scale") {
+	field(DESC, "THERMAL:Temperature resolution for display")
+	field(SCAN,"Passive")
+	field(DTYP,"Soft Channel")
+	field(ZRST,"0.01 C")
+	field(ONST,"0.02 C")
+	field(TWST,"0.05 C")
+	field(THST,"0.1 C")
+	field(FRST,"0.2 C")
+	field(FVST,"0.5 C")
+	field(SXST,"1.0 C")
+	field(ZRVL,"100")
+	field(ONVL,"50")
+	field(TWVL,"20")
+	field(THVL,"10")
+	field(FRVL,"5")
+	field(FVVL,"2")
+	field(SXVL,"1")
+	field(VAL,"6")
+	field(PINI,"YES")
+}
+record(calc,"tpm_TM_SC7") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"7")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC6") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"6")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC5") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"5")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC4") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"4")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC3") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"3")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC2") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"2")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}
+record(calc,"tpm_TM_SC1") {
+	field(DESC, "THERMAL:Scaling")
+	field(SCAN,"Passive")
+	field(A,"1")
+	field(INPB,"tpm_TM_Scale.RVAL CPP NMS")
+	field(CALC,"A/B")
+}

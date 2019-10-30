@@ -1,0 +1,253 @@
+\section{Watcher Alarms}
+
+The SDSS TPM sends a subset of its native alarms to the Watcher. 
+Within IOP a tpmHandler process is periodically run that uses the 
+EPICS Channel Access client interface (via the UNIX executable caGet1) 
+to obtain the alarm severities of a number of TPM records. These records 
+are then grouped by category, for example M1\_TEMP for all primary mirror 
+thermal management problems.
+
+The file containing the Watcher alarm definitions is
+{\tt<tpm\_root>}/rtApp/Db/tpmAlarms.db. 
+
+The alarm severities are, in order of increasing criticality, NO\_ALARM, 
+MINOR, MAJOR, and INVALID. The INVALID state is set when communications 
+with a device are lost, i.e. when we have no information about a system.
+
+The IOP tpmHandler finds the maximum severity within each group, 
+and populates the tpmError array with that severity and the tpmData 
+array with the corresponding catagory. These two arrays are then 
+transmitted to the Watcher.
+
+The following section describe the individual TPM channels that IOP and 
+the Watcher monitor, the Watcher alarm category they contribute to, 
+and a short description.
+
+\subsection{Alarm Group: M1\_TEMP}
+
+The M1\_TEMP alarm group (Table \ref{tbl-m1temp})  checks 
+for thermal gradients within the 
+primary mirror of the SDSS 2.5 meter and excessive differences 
+between the mirror and its environment. The quoted limits are in
+degC and are those originally specified by Jim Gunn. The TPM 
+is presently running with these limits uniformly increased by a factor of 3.
+
+\begin{deluxetable}{lll}
+\tablecaption{M1 Temperature Alarms\label{tbl-m1temp}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_TM\_M1Upper\_FB & Excessive front to back gradient in upper half of M1 & -0.2, 0.2 \\
+    tpm\_TM\_M1Lower\_FB & Excessive front to back gradient in lower half of M1 & -0.2, 0.2 \\
+    tpm\_TM\_M1Right\_FB & Excessive front to back gradient in right half of M1 & -0.2, 0.2 \\
+    tpm\_TM\_M1Left\_FB & Excessive front to back gradient in left half of M1 & -0.2, 0.2 \\
+    tpm\_TM\_M1\_FB & Excessive front to back gradient in M1 & -0.2, 0.2 \\
+    tpm\_TM\_M1\_Rgrad & Excessive radial (center to edge) gradient in M1 & -1.0, 1.0 \\
+    tpm\_TM\_M1\_Telair & Excessive mirror to ambient difference for M1 & -2.0, 2.0 \\
+    tpm\_TM\_M1\_Denv & Excessive mirror to PMSS difference for M1 & -2.0, 2.0 \\
+\enddata
+\end{deluxetable}
+    
+
+\subsection{Alarm Group: M2\_TEMP}
+
+The M2\_TEMP alarm group (Table \ref{tbl-m2temp}) 
+checks for thermal gradients within 
+the secondary mirror of the SDSS 2.5 meter and excessive 
+differences between the mirror and its environment. The quoted
+limits are in degC and are those originally specified by Jim 
+Gunn. The TPM is presently running with these limits uniformly 
+increased by a factor of 3.
+
+\begin{deluxetable}{lll}
+\tablecaption{M2 Temperature Alarms\label{tbl-m2temp}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_TM\_M2Upper\_FB & Excessive front to back gradient in upper half of M2 &  -0.2, 0.2 \\
+    tpm\_TM\_M2Lower\_FB & Excessive front to back gradient in lower half of M2 & -0.2, 0.2 \\
+    tpm\_TM\_M2Right\_FB & Excessive front to back gradient in right half of M2 & -0.2, 0.2 \\
+    tpm\_TM\_M2Left\_FB & Excessive front to back gradient in left half of M2 & -0.2, 0.2 \\
+    tpm\_TM\_M2\_FB & Excessive front to back gradient in M2 & -0.2, 0.2 \\
+    tpm\_TM\_M2\_Rgrad & Excessive radial (center to edge) gradient in M2 & -1.0, 1.0 \\
+\enddata
+\end{deluxetable}
+
+\subsection{Alarm Group: ENV\_TEMP}
+
+The ENV\_TEMP alarm group (Table \ref{tbl-envtemp}) checks for 
+excessive differences between 
+the telescope structure, the rotating floor, the lower enclosure, the 
+return air from cooling system, and the environments. The quoted 
+limits are in degC and are those originally specified by Jim Gunn. 
+The TPM is presently running with these limits uniformly increased 
+by a factor of 3.
+  
+\begin{deluxetable}{lll}
+\tablecaption{Environmental Temperature Alarms\label{tbl-envtemp}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_TM\_Floor\_Telair & Excessive difference between floor and ambient & -2.0, 2.0 \\
+    tpm\_TM\_Return\_Telair & Excessive difference between cooling return air and ambient & -2.0, 2.0 \\
+    tpm\_TM\_Lowair\_Telair & Excessive difference between lower enclosure and ambient & -3.0, 3.0 \\
+\enddata
+\end{deluxetable}  
+
+\subsection{Alarm Group: TRACKING}
+
+The TRACKING alarm group (Table \ref{tbl-tracking}) checks the
+magnitudes of the axis 
+servo errors when the telescope is assumed to be tracking. The 
+alarm limits are in encoder counts and define the MINOR (warning level) 
+and MAJOR (problems) conditions.
+
+\begin{deluxetable}{lll}
+\tablecaption{Tracking Alarms\label{tbl-tracking}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_alttrackchk & Altitude servo error exceeds limits & -10, -7, 7, 10 \\ 
+    & & when v $<$ 3200 counts/sec \\
+    tpm\_aztrackchk & Azimuth servo error exceeds limits & -10, -7, 7, 10 \\ 
+    & & when v $<$ 3200 counts/sec \\
+    tpm\_rottrackchk &  Rotator servo error exceeds limits & -2800, -1400, 1400, 2800  \\ 
+    & & when v $<$ 3200 counts/sec \\
+\enddata
+\end{deluxetable}
+
+\subsection{Alarm Group: CURRENTS}
+
+The CURRENTS alarm group (Table \ref{tbl-currents}) 
+checks the reported motor currents 
+for possible problems. The present limits (in counts) are 
+arbitrary. These alarms have never been enabled.
+
+\begin{deluxetable}{lll}
+\tablecaption{Current Limit Alarms\label{tbl-currents}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_ALMTRC1 & Altitude drive motor \#1 current exceeds limits & 1000, 2000 \\
+    tpm\_ALMTRC2 & Altitude drive motor \#2 current exceeds limits & 1000, 2000 \\
+    tpm\_AZMTRC1 & Azimuth drive motor \#1 current exceeds limits & 1000, 2000 \\
+    tpm\_AZMTRC2 & Azimuth drive motor \#2 current exceeds limits & 1000, 2000 \\
+    tpm\_ROMTRC & Rotator drive motor current exceeds limits & 1000, 2000 \\
+\enddata
+\end{deluxetable}
+
+\subsection{Alarm Group: DEWARS}
+ 
+The DEWARS alarm group (Table \ref{tbl-dewar}) 
+checks for the imager and spectrograph 
+dewar weights dropping below safe levels. These alarms also check 
+the status of the serial communications between the TPM and the 
+dewar scales. The alarm limits define the MINOR (warning level) 
+and MAJOR (problem) weight limits in pounds.
+
+\begin{deluxetable}{lll}
+\tablecaption{Dewar Alarms\label{tbl-dewar}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_Ndewar\_spectro & Spectro dewar weight low or communications failure & 50, 75 and comm \\
+    tpm\_Sdewar\_imager & Imager dewar weight low or communications failure & 50, 75 and comm \\
+\enddata
+\end{deluxetable}
+
+\subsection {Alarm Group: MIGS}
+The MIGS alarm group (Table \ref{tbl-mig}) 
+monitors the state of the 
+serial communications between the TPM and the M1/M2 MIGS.
+
+\begin{deluxetable}{lll}
+\tablecaption{MIG Alarms\label{tbl-mig}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_MIG1A & M1 MIG communications failure & comm \\
+    tpm\_MIG2A & M2 MIG communications failure & comm \\
+\enddata
+\end{deluxetable}
+
+\subsection{Alarm Group: GALILS}
+The GALILS alarm group (Table \ref{tbl-galil})
+monitors the state of the 
+serial communications between the TPM and the M1/M2 Galils. The 
+mirror misposition alarms proposed by Jim Gunn have not been implemented.
+
+\begin{deluxetable}{lll}
+\tablecaption{Galil Alarms\label{tbl-galil}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_GAL1 & M1 Galil communications failure & comm \\
+    tpm\_GAL2 & M2 Galil communications failure & comm \\
+\enddata
+\end{deluxetable}
+
+\subsection{Alarm Group: TMICRO}
+The TMICRO alarm group (Table \ref{tbl-tmicro}) 
+monitors the state of the 
+serial communication between the TPM and the Temperature Micro in 
+addition to checking for broken or faulty sensors. A sensor fault condition is assumed if the readback is less than -50 degC.
+\begin{deluxetable}{lll}
+\tablecaption{TMICRO Alarms\label{tbl-tmicro}}
+\tablehead{
+\colhead{Channel} &
+\colhead{Description} &
+\colhead{Limits} 
+}
+\startdata
+    tpm\_TM\_M0B0 & TMICRO communications failures & comm \\
+    tpm\_TM\_M0B0Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B1Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B2Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B3Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B4Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B5Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B6Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M0B7Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M1B0Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M1B1Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M1B2Chans & Faulty temperature sensors & -50 \\ 
+    tpm\_TM\_M1B3Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M1B4Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M1B5Chans & Faulty temperature sensors & -50 \\ 
+    tpm\_TM\_M1B6Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M1B7Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B0Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B1Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B2Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B3Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B4Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B5Chans & Faulty temperature sensors & -50 \\ 
+    tpm\_TM\_M2B6Chans & Faulty temperature sensors & -50 \\
+    tpm\_TM\_M2B7Chans & Faulty temperature sensors & -50 \\
+\enddata
+\end{deluxetable}
+

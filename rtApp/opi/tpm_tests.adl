@@ -1,0 +1,1971 @@
+file {
+	name="tpm_tests.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="8"
+	npc="200"
+	nstr="200"
+	ndynamic="6"
+	nplot="0"
+	nrd="8"
+	nes="0"
+	nkd="2"
+	npd="0"
+	npo="0"
+	object {
+		x="0"
+		y="0"
+		width="468"
+		height="295"
+	}
+	clr="14"
+	bclr="2"
+	nwords_dspy="6478"
+	nwords_sta="224"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="4358"
+	osta="4134"
+	odynamic="4778"
+	oplot="5174"
+	ord="5174"
+	oes="6454"
+	okd="6454"
+	opd="6478"
+	opo="6478"
+	opc="68"
+	ostr="2236"
+	ocmap="4134"
+	ocrules="4134"
+	style="solid"
+	fill="outline"
+	width="0"
+	clrmod="static"
+	vismod="static"
+	precision="255"
+	clrrule="alarm"
+	pv=""
+	cmap="medm_colors.dl"
+	pixwid="1024"
+	pixht="768"
+	mmwid="347"
+	mmht="260"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="13"
+		y="23"
+		width="423"
+		height="26"
+		groupid="0"
+	}
+	textix="TELESCOPE PERFORMANCE ALARMS"
+	align="horiz. left"
+}
+"rectangle" {
+	object {
+		x="7"
+		y="22"
+		width="443"
+		height="25"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="12"
+		y="88"
+		width="197"
+		height="16"
+		groupid="0"
+	}
+	textix="Tracking Performance"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="259"
+		y="88"
+		width="154"
+		height="16"
+		groupid="0"
+	}
+	textix="Current Limits"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="258"
+		y="107"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="AL1"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="258"
+		y="130"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="AL2"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="258"
+		y="154"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="AZ1"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="258"
+		y="179"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="AZ2"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="258"
+		y="203"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="ROT"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="21"
+		y="107"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="AL"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="21"
+		y="130"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="AZ"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="21"
+		y="154"
+		width="62"
+		height="21"
+		groupid="0"
+	}
+	textix="ROT"
+	align="horiz. centered"
+}
+"rectangle" {
+	object {
+		x="8"
+		y="180"
+		width="216"
+		height="87"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="13"
+		y="182"
+		width="212"
+		height="16"
+		groupid="0"
+	}
+	textix="Servo Error Mean Filter"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="65"
+		y="198"
+		width="58"
+		height="14"
+		groupid="0"
+	}
+	textix="Length"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="15"
+		y="212"
+		width="63"
+		height="15"
+		groupid="0"
+	}
+	textix="AL"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="15"
+		y="228"
+		width="63"
+		height="16"
+		groupid="0"
+	}
+	textix="AZ"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="15"
+		y="246"
+		width="63"
+		height="16"
+		groupid="0"
+	}
+	textix="ROT"
+	align="horiz. centered"
+}
+"text" {
+	object {
+		x="128"
+		y="198"
+		width="58"
+		height="14"
+		groupid="0"
+	}
+	textix="Scan"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="14"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_ALMTRC1.SEVR"
+			rulechan[1] = "tpm_ALMTRC1.SEVR"
+			rulechan[2] = "tpm_ALMTRC1.SEVR"
+			rulechan[3] = "tpm_ALMTRC1.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_ALMTRC1"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="314"
+		y="107"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_ALMTRC2.SEVR"
+			rulechan[1] = "tpm_ALMTRC2.SEVR"
+			rulechan[2] = "tpm_ALMTRC2.SEVR"
+			rulechan[3] = "tpm_ALMTRC2.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_ALMTRC2"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="314"
+		y="130"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_AZMTRC1.SEVR"
+			rulechan[1] = "tpm_AZMTRC1.SEVR"
+			rulechan[2] = "tpm_AZMTRC1.SEVR"
+			rulechan[3] = "tpm_AZMTRC1.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_AZMTRC1"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="314"
+		y="154"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_AZMTRC2.SEVR"
+			rulechan[1] = "tpm_AZMTRC2.SEVR"
+			rulechan[2] = "tpm_AZMTRC2.SEVR"
+			rulechan[3] = "tpm_AZMTRC2.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_AZMTRC2"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="314"
+		y="180"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_ROMTRC.SEVR"
+			rulechan[1] = "tpm_ROMTRC.SEVR"
+			rulechan[2] = "tpm_ROMTRC.SEVR"
+			rulechan[3] = "tpm_ROMTRC.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_ROMTRC"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="314"
+		y="204"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_alttrackchk.SEVR"
+			rulechan[1] = "tpm_alttrackchk.SEVR"
+			rulechan[2] = "tpm_alttrackchk.SEVR"
+			rulechan[3] = "tpm_alttrackchk.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_alttrackchk"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="77"
+		y="107"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_aztrackchk.SEVR"
+			rulechan[1] = "tpm_aztrackchk.SEVR"
+			rulechan[2] = "tpm_aztrackchk.SEVR"
+			rulechan[3] = "tpm_aztrackchk.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_aztrackchk"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="77"
+		y="130"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="14"
+			rulecolorbg="14"
+			chan=""
+			rulechan[0] = "tpm_rottrackchk.SEVR"
+			rulechan[1] = "tpm_rottrackchk.SEVR"
+			rulechan[2] = "tpm_rottrackchk.SEVR"
+			rulechan[3] = "tpm_rottrackchk.SEVR"
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="C=tpm_rottrackchk"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="77"
+		y="154"
+		width="27"
+		height="17"
+		groupid="0"
+	}
+}
+"text update" {
+	object {
+		x="72"
+		y="213"
+		width="36"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_alterravg.N"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="116"
+		y="213"
+		width="87"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_alttrackchk.SCAN"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="72"
+		y="230"
+		width="36"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_azerravg.N"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="116"
+		y="230"
+		width="87"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_aztrackchk.SCAN"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="72"
+		y="248"
+		width="36"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_roterravg.N"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="116"
+		y="248"
+		width="87"
+		height="14"
+		groupid="0"
+	}
+	monitor {
+		chan="tpm_rottrackchk.SCAN"
+		clr="14"
+		bclr="2"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="alarm"
+		clrargs=""
+		rulecolorbg="14"
+		rulecolorfg="14"
+		hdl="0"
+		ldl="0"
+		prec="255"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"related display" {
+	object {
+		x="346"
+		y="107"
+		width="29"
+		height="17"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_ALMTRC1"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="346"
+		y="130"
+		width="29"
+		height="18"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_ALMTRC2"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="346"
+		y="154"
+		width="29"
+		height="18"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_AZMTRC1"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="346"
+		y="180"
+		width="29"
+		height="18"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_AZMTRC2"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="346"
+		y="203"
+		width="29"
+		height="20"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_ROMTRC"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="109"
+		y="107"
+		width="29"
+		height="17"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_alttrackchk"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="109"
+		y="130"
+		width="29"
+		height="18"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_aztrackchk"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"related display" {
+	object {
+		x="109"
+		y="154"
+		width="29"
+		height="18"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CFG"
+		name="tpm_errcfg.dl"
+		args="P=tpm_rottrackchk"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="14"
+	bclr="2"
+	menu_title=""
+	decorate="none"
+}
+"kill display" {
+	object {
+		x="906"
+		y="645"
+		width="116"
+		height="63"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="383"
+		y="232"
+		width="51"
+		height="34"
+		groupid="0"
+	}
+	label="EXIT"
+	clr="14"
+	bclr="20"
+	decorate="outward"
+}
